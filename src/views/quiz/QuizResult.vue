@@ -89,8 +89,9 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'
-import api from '../../services/api'
-import { formatTime } from '../../utils/helpers'
+import apiClient from '@/api/axios'
+import { quizApi } from '@/api/quizApi'
+import { formatTime } from '@/utils/helpers'
 
 const route = useRoute()
 const quizId = route.params.id
@@ -121,8 +122,8 @@ onMounted(async () => {
   try {
     // 최신 결과 가져오기
     const [resultsRes, questionsRes] = await Promise.all([
-      api.get(`/quiz_results?quizId=${quizId}&_sort=completedAt&_order=desc&_limit=1`),
-      api.getQuizQuestions(quizId)
+      apiClient.get(`/quiz_results?quizId=${quizId}&_sort=completedAt&_order=desc&_limit=1`),
+      quizApi.getQuizQuestions(quizId)
     ])
     
     if (resultsRes.data && resultsRes.data.length > 0) {

@@ -104,8 +104,8 @@
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'
-import api from '../../services/api'
-import { formatTime, formatDate } from '../../utils/helpers'
+import { quizApi } from '@/api/quizApi'
+import { formatTime, formatDate } from '@/utils/helpers'
 
 const route = useRoute()
 const quizId = route.params.id
@@ -116,8 +116,8 @@ const rankings = ref([])
 onMounted(async () => {
   try {
     const [quizRes, rankingRes] = await Promise.all([
-      api.getQuiz(quizId),
-      api.getQuizRanking(quizId)
+      quizApi.getQuiz(quizId),
+      quizApi.getQuizRanking(quizId)
     ])
     
     quiz.value = quizRes.data

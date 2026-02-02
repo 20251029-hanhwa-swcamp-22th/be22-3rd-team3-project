@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import api from '../services/api'
+import { quizApi } from '@/api/quizApi'
 import { useAuthStore } from './auth'
 
 export const useQuizStore = defineStore('quiz', () => {
@@ -207,14 +207,14 @@ export const useQuizStore = defineStore('quiz', () => {
                 completedAt: new Date().toISOString()
             }
 
-            await api.saveQuizResult(resultData)
+            await quizApi.saveQuizResult(resultData)
 
             // Update question stats
             for (const answer of answers.value) {
                 if (!answer.skipped) {
                     const question = questions.value.find(q => q.id === answer.questionId)
                     if (question) {
-                        await api.updateQuestionStats(question.id, {
+                        await quizApi.updateQuestionStats(question.id, {
                             correctCount: question.correctCount + (answer.isCorrect ? 1 : 0),
                             totalCount: question.totalCount + 1
                         })

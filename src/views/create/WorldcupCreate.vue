@@ -128,11 +128,12 @@
 <script setup>
 import { ref, reactive, onMounted, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { useAuthStore } from '../../stores/auth'
+import { useAuthStore } from '@/stores/auth'
 import { Plus, Close } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
-import api from '../../services/api'
-import ImageUploader from '../../components/create/ImageUploader.vue'
+import { worldcupApi } from '@/api/worldcupApi'
+import { commonApi } from '@/api/commonApi'
+import ImageUploader from '@/components/create/ImageUploader.vue'
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -181,7 +182,7 @@ onMounted(async () => {
 
 async function loadCategories() {
   try {
-    const response = await api.getCategories('worldcup')
+    const response = await commonApi.getCategories('worldcup')
     categories.value = response.data
   } catch (error) {
     console.error('Failed to load categories:', error)
@@ -249,12 +250,12 @@ async function handleSubmit() {
         playCount: 0
       }
 
-      const worldcupResponse = await api.post('/worldcups', worldcupData)
+      const worldcupResponse = await apiClient.post('/worldcups', worldcupData)
       const worldcupId = worldcupResponse.data.id
 
       // 후보 생성
       for (const candidate of validCandidates) {
-        await api.createCandidate({
+        await worldcupApi.createCandidate({
           worldcupId,
           name: candidate.name,
           imageUrl: candidate.imageUrl,

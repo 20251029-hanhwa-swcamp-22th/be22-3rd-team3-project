@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import api from '../services/api'
+import { worldcupApi } from '@/api/worldcupApi'
 
 export const useWorldcupStore = defineStore('worldcup', () => {
     const currentWorldcup = ref(null)
@@ -85,14 +85,14 @@ export const useWorldcupStore = defineStore('worldcup', () => {
     async function saveResult(winner) {
         try {
             // Update winner stats
-            await api.updateCandidateStats(winner.id, {
+            await worldcupApi.updateCandidateStats(winner.id, {
                 winCount: (winner.winCount || 0) + 1,
                 finalCount: (winner.finalCount || 0) + 1
             })
 
             // Update all candidates' appear count
             for (const candidate of candidates.value) {
-                await api.updateCandidateStats(candidate.id, {
+                await worldcupApi.updateCandidateStats(candidate.id, {
                     appearCount: (candidate.appearCount || 0) + 1
                 })
             }
@@ -106,7 +106,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
                 createdAt: new Date().toISOString()
             }
 
-            await api.saveWorldcupResult(resultData)
+            await worldcupApi.saveWorldcupResult(resultData)
 
             return { success: true }
         } catch (error) {

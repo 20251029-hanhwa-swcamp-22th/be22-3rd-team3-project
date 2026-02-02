@@ -88,8 +88,8 @@
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'
-import api from '../../services/api'
-import { calculateWinRate } from '../../utils/helpers'
+import apiClient from '@/api/axios'
+import { calculateWinRate } from '@/utils/helpers'
 
 const route = useRoute()
 const worldcupId = route.params.id
@@ -136,8 +136,8 @@ onMounted(async () => {
   try {
     // 최신 결과 가져오기 (실제로는 결과 ID를 파라미터로 받아야 하지만, 간단히 최신 것을 가져옴)
     const [resultsRes, candidatesRes] = await Promise.all([
-      api.get(`/worldcup_results?worldcupId=${worldcupId}&_sort=createdAt&_order=desc&_limit=1`),
-      api.get(`/worldcup_candidates?worldcupId=${worldcupId}`)
+      apiClient.get(`/worldcup_results?worldcupId=${worldcupId}&_sort=createdAt&_order=desc&_limit=1`),
+      apiClient.get(`/worldcup_candidates?worldcupId=${worldcupId}`)
     ])
     
     if (resultsRes.data && resultsRes.data.length > 0) {

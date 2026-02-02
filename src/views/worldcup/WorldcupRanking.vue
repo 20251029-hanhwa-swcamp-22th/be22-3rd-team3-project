@@ -62,8 +62,8 @@
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'
-import api from '../../services/api'
-import { calculateWinRate } from '../../utils/helpers'
+import { worldcupApi } from '@/api/worldcupApi'
+import { calculateWinRate } from '@/utils/helpers'
 
 const route = useRoute()
 const worldcupId = route.params.id
@@ -74,8 +74,8 @@ const candidates = ref([])
 onMounted(async () => {
   try {
     const [worldcupRes, rankingRes] = await Promise.all([
-      api.getWorldcup(worldcupId),
-      api.getWorldcupRanking(worldcupId)
+      worldcupApi.getWorldcup(worldcupId),
+      worldcupApi.getWorldcupRanking(worldcupId)
     ])
     
     worldcup.value = worldcupRes.data

@@ -164,11 +164,13 @@
 <script setup>
 import { ref, reactive, onMounted, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { useAuthStore } from '../../stores/auth'
+import { useAuthStore } from '@/stores/auth'
 import { Plus, Close } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
-import api from '../../services/api'
-import ImageUploader from '../../components/create/ImageUploader.vue'
+import { quizApi } from '@/api/quizApi'
+import { commonApi } from '@/api/commonApi'
+import apiClient from '@/api/axios'
+import ImageUploader from '@/components/create/ImageUploader.vue'
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -221,7 +223,7 @@ onMounted(async () => {
 
 async function loadCategories() {
   try {
-    const response = await api.getCategories('quiz')
+    const response = await commonApi.getCategories('quiz')
     categories.value = response.data
   } catch (error) {
     console.error('Failed to load categories:', error)
@@ -296,13 +298,13 @@ async function handleSubmit() {
         playCount: 0
       }
 
-      const quizResponse = await api.post('/quizzes', quizData)
+      const quizResponse = await apiClient.post('/quizzes', quizData)
       const quizId = quizResponse.data.id
 
       // 문제 생성
       for (let i = 0; i < validQuestions.length; i++) {
         const question = validQuestions[i]
-        await api.createQuestion({
+        await quizApi.createQuestion({
           quizId,
           questionNumber: i + 1,
           questionText: question.questionText,

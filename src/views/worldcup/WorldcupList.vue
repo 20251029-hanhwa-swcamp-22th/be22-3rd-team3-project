@@ -62,8 +62,9 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { useAuthStore } from '../../stores/auth'
-import api from '../../services/api'
+import { useAuthStore } from '@/stores/auth'
+import { worldcupApi } from '@/api/worldcupApi'
+import { commonApi } from '@/api/commonApi'
 import { Search } from '@element-plus/icons-vue'
 
 const authStore = useAuthStore()
@@ -81,7 +82,7 @@ onMounted(async () => {
 
 async function loadCategories() {
   try {
-    const response = await api.getCategories('worldcup')
+    const response = await commonApi.getCategories('worldcup')
     categories.value = response.data
   } catch (error) {
     console.error('Failed to load categories:', error)
@@ -98,7 +99,7 @@ async function loadWorldcups() {
     if (selectedCategory.value) {
       params.categoryId = selectedCategory.value
     }
-    const response = await api.getWorldcups(params)
+    const response = await worldcupApi.getWorldcups(params)
     worldcups.value = response.data
   } catch (error) {
     console.error('Failed to load worldcups:', error)

@@ -66,8 +66,9 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import { useAuthStore } from '../../stores/auth'
-import api from '../../services/api'
+import { useAuthStore } from '@/stores/auth'
+import { quizApi } from '@/api/quizApi'
+import { commonApi } from '@/api/commonApi'
 import { Search } from '@element-plus/icons-vue'
 
 const authStore = useAuthStore()
@@ -85,7 +86,7 @@ onMounted(async () => {
 
 async function loadCategories() {
   try {
-    const response = await api.getCategories('quiz')
+    const response = await commonApi.getCategories('quiz')
     categories.value = response.data
   } catch (error) {
     console.error('Failed to load categories:', error)
@@ -102,7 +103,7 @@ async function loadQuizzes() {
     if (selectedCategory.value) {
       params.categoryId = selectedCategory.value
     }
-    const response = await api.getQuizzes(params)
+    const response = await quizApi.getQuizzes(params)
     quizzes.value = response.data
   } catch (error) {
     console.error('Failed to load quizzes:', error)

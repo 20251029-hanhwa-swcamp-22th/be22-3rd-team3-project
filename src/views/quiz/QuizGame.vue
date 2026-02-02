@@ -139,11 +139,11 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useQuizStore } from '../../stores/quiz'
+import { useQuizStore } from '@/stores/quiz'
 import { Timer, CircleCheck, CircleClose } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
-import api from '../../services/api'
-import { formatTime } from '../../utils/helpers'
+import { quizApi } from '@/api/quizApi'
+import { formatTime } from '@/utils/helpers'
 
 const route = useRoute()
 const router = useRouter()
@@ -172,8 +172,8 @@ const correctRate = computed(() => {
 onMounted(async () => {
   try {
     const [quizRes, questionsRes] = await Promise.all([
-      api.getQuiz(quizId),
-      api.startQuiz(quizId)
+      quizApi.getQuiz(quizId),
+      quizApi.startQuiz(quizId)
     ])
     
     quiz.value = quizRes.data
