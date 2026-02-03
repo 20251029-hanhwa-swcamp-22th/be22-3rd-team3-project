@@ -3,16 +3,20 @@
     <div class="container">
       <h1 class="gradient-text text-center">🎉 퀴즈 결과</h1>
 
+      <!-- 결과 데이터가 있을 때만 내용을 보여줍니다 -->
       <div v-if="result" class="result-content">
-        <!-- 점수 카드 -->
+        <!-- 점수 카드: 티어, 점수, 상세 통계를 보여줍니다 -->
         <div class="score-card card card-glass">
+          <!-- 티어 배지 -->
           <div class="tier-badge" :class="tierClass">
             {{ result.tier }}
           </div>
+          <!-- 점수 표시 -->
           <div class="score-display">
             <div class="score-value">{{ result.score }}</div>
             <div class="score-label">점</div>
           </div>
+          <!-- 상세 통계 (정답률, 정답 수, 남은 시간) -->
           <div class="score-details">
             <div class="detail-item">
               <span class="label">정답률</span>
@@ -29,7 +33,7 @@
           </div>
         </div>
 
-        <!-- 문제별 결과 -->
+        <!-- 문제별 결과: 각 문제를 맞혔는지 틀렸는지 상세히 보여줍니다 -->
         <div class="questions-result card card-glass">
           <h2>📊 문제별 결과</h2>
           <div class="questions-list">
@@ -38,11 +42,13 @@
               :key="question.id"
               class="question-result-item"
             >
+              <!-- 문제 번호 -->
               <div class="question-number">{{ index + 1 }}</div>
               <div class="question-content">
                 <div class="question-text">{{ question.questionText }}</div>
                 <div class="question-answer">정답: {{ question.answer }}</div>
                 <div class="question-stats">
+                  <!-- 해당 문제의 전체 정답률 -->
                   <span>정답률: {{ getQuestionAccuracy(question) }}%</span>
                 </div>
               </div>
@@ -50,7 +56,7 @@
           </div>
         </div>
 
-        <!-- 티어 설명 -->
+        <!-- 티어 시스템 설명 -->
         <div class="tier-info card card-glass">
           <h2>🏅 티어 시스템</h2>
           <div class="tier-list">
@@ -63,7 +69,7 @@
           </div>
         </div>
 
-        <!-- 액션 버튼 -->
+        <!-- 하단 액션 버튼들 -->
         <div class="actions">
           <router-link :to="`/quiz/${quizId}/play`" class="btn btn-primary">
             다시 도전하기
@@ -77,6 +83,7 @@
         </div>
       </div>
 
+      <!-- 로딩 중 화면 -->
       <div v-else class="loading">
         <el-icon class="is-loading" size="60"><Loading /></el-icon>
         <p>결과를 불러오는 중...</p>
@@ -96,9 +103,14 @@ import { formatTime } from '@/utils/helpers'
 const route = useRoute()
 const quizId = route.params.id
 
-const result = ref(null)
-const questions = ref([])
+// ==========================================
+// State (상태 데이터)
+// ==========================================
 
+const result = ref(null) // 결과 데이터
+const questions = ref([]) // 문제 목록
+
+// 티어 시스템 정의 (점수 구간별 설명)
 const tiers = [
   { name: '멘사', description: '90점 이상 - 천재적인 실력!' },
   { name: '수재', description: '80-89점 - 뛰어난 실력!' },
@@ -108,24 +120,36 @@ const tiers = [
   { name: '노력필요', description: '50점 미만 - 조금 더 노력해보세요!' }
 ]
 
+// ==========================================
+// Computed Properties (계산된 속성)
+// ==========================================
+
+// 최종 정답률 계산
 const correctRate = computed(() => {
   if (!result.value) return 0
   return Math.round((result.value.correctCount / result.value.totalQuestions) * 100)
 })
 
+// 티어에 따른 CSS 클래스 반환
 const tierClass = computed(() => {
   if (!result.value) return ''
   return 'tier-' + result.value.tier.toLowerCase().replace(/\s/g, '')
 })
 
+// ==========================================
+// Lifecycle Hooks
+// ==========================================
+
 onMounted(async () => {
   try {
-    // 최신 결과 가져오기
+    // 최신 결과와 문제 목록을 동시에 가져옵니다.
     const [resultsRes, questionsRes] = await Promise.all([
+      // 쿼리 파라미터를 사용하여 해당 퀴즈의 가장 최근 결과 1개를 가져옵니다.
       apiClient.get(`/quiz_results?quizId=${quizId}&_sort=completedAt&_order=desc&_limit=1`),
       quizApi.getQuizQuestions(quizId)
     ])
     
+    // 결과가 있으면 상태에 저장합니다.
     if (resultsRes.data && resultsRes.data.length > 0) {
       result.value = resultsRes.data[0]
       questions.value = questionsRes.data
@@ -135,6 +159,13 @@ onMounted(async () => {
   }
 })
 
+// ==========================================
+// Methods (함수)
+// ==========================================
+
+/**
+ * 특정 문제의 전체 사용자 정답률을 계산합니다.
+ */
 function getQuestionAccuracy(question) {
   if (!question.totalCount) return 0
   return Math.round((question.correctCount / question.totalCount) * 100)
