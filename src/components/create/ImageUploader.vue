@@ -56,11 +56,20 @@ const headers = computed(() => {
 const fileList = ref([])
 
 function beforeUpload(file) {
-  const isImage = file.type.startsWith('image/')
+  // MIME 타입 검증 : 파일의 실제 형식이 이미지인지 확인
+  const validMimeTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
+  const isValidMime = validMimeTypes.includes(file.type)
+
+  // 확장자 검증
+  const ext = file.name.substring(file.name.lastIndexOf('.')).toLowerCase()
+  const validExts = ['.jpg', '.jpeg', '.png', '.gif', '.webp']
+  const isValidExt = validExts.includes(ext)
+
+  // 파일 크기 검증
   const isLt5M = file.size / 1024 / 1024 < 5
 
-  if (!isImage) {
-    ElMessage.error('이미지 파일만 업로드 가능합니다!')
+  if (!isValidMime || !isValidExt) {
+    ElMessage.error('JPG, PNG, GIF, WEBP 파일만 업로드 가능합니다!')
     return false
   }
   if (!isLt5M) {
