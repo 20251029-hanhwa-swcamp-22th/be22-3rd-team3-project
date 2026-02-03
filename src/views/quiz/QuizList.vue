@@ -1,5 +1,6 @@
 <template>
   <div class="quiz-list-page">
+    <ExitTransition ref="exitTransition" color="#D4BBFF" />
     <div class="container">
       <div class="page-header">
         <h1 class="gradient-text">🧠 퀴즈 게임</h1>
@@ -34,10 +35,12 @@
 
       <div v-loading="loading" class="grid grid-3">
         <router-link
-          v-for="quiz in quizzes"
+          v-for="(quiz, index) in quizzes"
           :key="quiz.id"
           :to="`/quiz/${quiz.id}/play`"
-          class="quiz-card card"
+          class="quiz-card card drop-in"
+          :style="{ animationDelay: `${index * 0.1}s` }"
+          @click.prevent="handleNavigation(`/quiz/${quiz.id}/play`)"
         >
           <div class="card-image">
             <img :src="quiz.thumbnail || '/placeholder.jpg'" :alt="quiz.title" />
@@ -70,8 +73,12 @@ import { useAuthStore } from '@/stores/auth'
 import { quizApi } from '@/api/quizApi'
 import { commonApi } from '@/api/commonApi'
 import { Search } from '@element-plus/icons-vue'
+import { useRouter } from 'vue-router'
+import ExitTransition from '@/components/ExitTransition.vue'
 
 const authStore = useAuthStore()
+const router = useRouter()
+const exitTransition = ref(null)
 
 const quizzes = ref([])
 const categories = ref([])
@@ -115,9 +122,42 @@ async function loadQuizzes() {
 function handleSearch() {
   loadQuizzes()
 }
+
+async function handleNavigation(path) {
+  if (exitTransition.value) {
+    await exitTransition.value.trigger()
+  }
+  router.push(path)
+}
 </script>
 
 <style scoped>
+/* 퀴즈 페이지 전체 배경 */
+.quiz-list-page {
+  min-height: 100vh;
+  background: #D4BBFF;  /* 보라색 배경 */
+  padding: var(--spacing-xl) 0;
+}
+
+/* 카드 떨어지는 애니메이션 */
+.drop-in {
+  animation: dropIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.8);
+  }
+  70% {
+    transform: translateY(5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;

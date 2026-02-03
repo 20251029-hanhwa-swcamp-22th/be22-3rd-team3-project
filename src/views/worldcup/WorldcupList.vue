@@ -21,6 +21,7 @@
 -->
 <template>
   <div class="worldcup-list-page">
+    <ExitTransition ref="exitTransition" color="#FFB3D9" />
     <div class="container">
       <!-- ===== 페이지 헤더 영역 ===== -->
       <!-- 제목 + 월드컵 만들기 버튼 (로그인 시에만 표시) -->
@@ -65,10 +66,12 @@
       <div v-loading="loading" class="grid grid-3">
         <!-- 각 월드컵 카드: 클릭 시 게임 페이지로 이동 -->
         <router-link
-          v-for="worldcup in worldcups"
+          v-for="(worldcup, index) in worldcups"
           :key="worldcup.id"
           :to="`/worldcup/${worldcup.id}/play`"
-          class="worldcup-card card"
+          class="worldcup-card card drop-in"
+          :style="{ animationDelay: `${index * 0.1}s` }"
+          @click.prevent="handleNavigation(`/worldcup/${worldcup.id}/play`)"
         >
           <!-- 썸네일 이미지 -->
           <div class="card-image">
@@ -107,9 +110,13 @@ import { useAuthStore } from '@/stores/auth'       // 인증 상태 (로그인 �
 import { worldcupApi } from '@/api/worldcupApi'   // 월드컵 API
 import { commonApi } from '@/api/commonApi'       // 공통 API (카테고리 조회)
 import { Search } from '@element-plus/icons-vue'  // 검색 아이콘
+import { useRouter } from 'vue-router'
+import ExitTransition from '@/components/ExitTransition.vue'
 
-// ===== Store =====
+// ===== Store & Router =====
 const authStore = useAuthStore()  // 로그인 상태 확인용
+const router = useRouter()
+const exitTransition = ref(null)  // ExitTransition 컴포넌트 참조
 
 // ===== 반응형 상태 (Reactive State) =====
 const worldcups = ref([])         // 월드컵 목록 데이터
@@ -179,9 +186,46 @@ async function loadWorldcups() {
 function handleSearch() {
   loadWorldcups()
 }
+
+/**
+ * 네비게이션 핸들러
+ * - 링크 클릭 시 ExitTransition 애니메이션 실행 후 페이지 이동
+ */
+async function handleNavigation(path) {
+  if (exitTransition.value) {
+    await exitTransition.value.trigger()
+  }
+  router.push(path)
+}
 </script>
 
 <style scoped>
+/* 월드컵 페이지 전체 배경 */
+.worldcup-list-page {
+  min-height: 100vh;
+  background: #FFB3D9;  /* 핑크색 배경 */
+  padding: var(--spacing-xl) 0;
+}
+
+/* 카드 떨어지는 애니메이션 */
+.drop-in {
+  animation: dropIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.8);
+  }
+  70% {
+    transform: translateY(5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
