@@ -113,7 +113,7 @@
       "answer": "서울",
       "timeLimit": 10,
       "correctCount": 452,
-      "totalCount": 503
+      "totalCount": 504
     },
     {
       "quizId": 2,
@@ -122,8 +122,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 3,
-      "totalCount": 5,
+      "correctCount": 9,
+      "totalCount": 11,
       "id": 2
     },
     {
@@ -133,8 +133,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 3,
-      "totalCount": 5,
+      "correctCount": 8,
+      "totalCount": 11,
       "id": 3
     },
     {
@@ -144,8 +144,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 2,
-      "totalCount": 4,
+      "correctCount": 6,
+      "totalCount": 9,
       "id": 4
     },
     {
@@ -155,8 +155,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 3,
-      "totalCount": 4,
+      "correctCount": 6,
+      "totalCount": 9,
       "id": 5
     },
     {
@@ -166,8 +166,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 2,
-      "totalCount": 4,
+      "correctCount": 5,
+      "totalCount": 9,
       "id": 6
     }
   ],
@@ -303,6 +303,90 @@
       "tier": "노력필요",
       "completedAt": "2026-02-03T11:16:20.759Z",
       "id": 11
+    },
+    {
+      "quizId": 1,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 1,
+      "remainingTime": 117,
+      "tier": "노력필요",
+      "completedAt": "2026-02-03T15:03:19.438Z",
+      "id": 12
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 52,
+      "correctCount": 2,
+      "totalQuestions": 5,
+      "remainingTime": 87,
+      "tier": "평범",
+      "completedAt": "2026-02-03T15:03:55.837Z",
+      "id": 13
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 148,
+      "correctCount": 5,
+      "totalQuestions": 5,
+      "remainingTime": 106,
+      "tier": "수재",
+      "completedAt": "2026-02-03T15:07:09.262Z",
+      "id": 14
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 5,
+      "correctCount": 5,
+      "totalQuestions": 5,
+      "remainingTime": 104,
+      "tier": "노력필요",
+      "completedAt": "2026-02-03T15:16:23.312Z",
+      "id": 15
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 50,
+      "correctCount": 5,
+      "totalQuestions": 5,
+      "remainingTime": 106,
+      "tier": "모범생",
+      "completedAt": "2026-02-03T15:19:59.894Z",
+      "id": 16
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 108,
+      "tier": "노력필요",
+      "completedAt": "2026-02-03T15:21:00.449Z",
+      "id": 17
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 30,
+      "correctCount": 3,
+      "totalQuestions": 5,
+      "remainingTime": 106,
+      "tier": "평범",
+      "completedAt": "2026-02-03T15:21:18.108Z",
+      "id": 18
     }
   ],
   "categories": [
