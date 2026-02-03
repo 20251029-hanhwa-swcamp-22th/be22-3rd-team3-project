@@ -295,14 +295,14 @@
     {
       "quizId": 1,
       "userId": 2,
-      "nickname": "정현호그라이더",
+      "nickname": "테스트유저",
       "score": 0,
       "correctCount": 0,
       "totalQuestions": 1,
-      "remainingTime": 116,
+      "remainingTime": 119,
       "tier": "노력필요",
-      "completedAt": "2026-02-03T11:16:20.759Z",
-      "id": 11
+      "completedAt": "2026-02-03T13:36:44.850Z",
+      "id": 6
     }
   ],
   "categories": [
