@@ -1,6 +1,29 @@
+<!--
+  ============================================================================
+  WorldcupList.vue - 월드컵 목록 페이지
+  ============================================================================
+  
+  [페이지 개요]
+  - 생성된 모든 월드컵 목록을 카드 형태로 표시
+  - 검색 및 카테고리 필터링 기능 제공
+  - 로그인된 사용자는 "월드컵 만들기" 버튼으로 새 월드컵 생성 가능
+  
+  [라우트]
+  - 현재 경로: /worldcup
+  - 카드 클릭 시: /worldcup/:id/play (게임 페이지로 이동)
+  
+  [사용하는 API]
+  - commonApi.getCategories('worldcup') : 카테고리 목록 조회
+  - worldcupApi.getWorldcups(params)    : 월드컵 목록 조회 (검색/필터 적용)
+  
+  [담당] 팀원1 - 월드컵 도메인
+  ============================================================================
+-->
 <template>
   <div class="worldcup-list-page">
     <div class="container">
+      <!-- ===== 페이지 헤더 영역 ===== -->
+      <!-- 제목 + 월드컵 만들기 버튼 (로그인 시에만 표시) -->
       <div class="page-header">
         <h1 class="gradient-text">🏆 이상형 월드컵</h1>
         <router-link to="/worldcup/create" class="btn btn-primary" v-if="authStore.isAuthenticated">
@@ -8,7 +31,10 @@
         </router-link>
       </div>
 
+      <!-- ===== 검색 & 필터 영역 ===== -->
+      <!-- 검색어 입력 + 카테고리 선택 드롭다운 -->
       <div class="filters mb-4">
+        <!-- 검색 입력창: 입력 시 handleSearch 호출 → loadWorldcups 실행 -->
         <el-input
           v-model="searchQuery"
           placeholder="검색..."
@@ -21,6 +47,7 @@
           </template>
         </el-input>
 
+        <!-- 카테고리 선택: 변경 시 loadWorldcups 직접 호출 -->
         <el-select v-model="selectedCategory" placeholder="카테고리" size="large" @change="loadWorldcups">
           <el-option label="전체" :value="null" />
           <el-option 
@@ -32,19 +59,26 @@
         </el-select>
       </div>
 
+      <!-- ===== 월드컵 카드 그리드 ===== -->
+      <!-- v-loading: 데이터 로딩 중 스피너 표시 -->
+      <!-- grid-3: CSS 그리드로 3열 배치 -->
       <div v-loading="loading" class="grid grid-3">
+        <!-- 각 월드컵 카드: 클릭 시 게임 페이지로 이동 -->
         <router-link
           v-for="worldcup in worldcups"
           :key="worldcup.id"
           :to="`/worldcup/${worldcup.id}/play`"
           class="worldcup-card card"
         >
+          <!-- 썸네일 이미지 -->
           <div class="card-image">
             <img :src="worldcup.thumbnail || '/placeholder.jpg'" :alt="worldcup.title" />
           </div>
+          <!-- 카드 본문: 제목, 설명, 통계 -->
           <div class="card-body">
             <h3>{{ worldcup.title }}</h3>
             <p class="card-description">{{ worldcup.description }}</p>
+            <!-- 조회수 & 플레이 횟수 -->
             <div class="card-stats">
               <span>👁️ {{ worldcup.viewCount || 0 }}</span>
               <span>🎮 {{ worldcup.playCount || 0 }}</span>
@@ -53,6 +87,8 @@
         </router-link>
       </div>
 
+      <!-- ===== 빈 상태 표시 ===== -->
+      <!-- 월드컵이 없고 로딩도 완료된 경우 표시 -->
       <div v-if="worldcups.length === 0 && !loading" class="empty-state">
         <p>월드컵이 없습니다. 첫 번째 월드컵을 만들어보세요!</p>
       </div>
@@ -61,25 +97,45 @@
 </template>
 
 <script setup>
+/**
+ * ============================================================================
+ * WorldcupList.vue - Script Section
+ * ============================================================================
+ */
 import { ref, onMounted } from 'vue'
-import { useAuthStore } from '@/stores/auth'
-import { worldcupApi } from '@/api/worldcupApi'
-import { commonApi } from '@/api/commonApi'
-import { Search } from '@element-plus/icons-vue'
+import { useAuthStore } from '@/stores/auth'       // 인증 상태 (로그인 여부 확인용)
+import { worldcupApi } from '@/api/worldcupApi'   // 월드컵 API
+import { commonApi } from '@/api/commonApi'       // 공통 API (카테고리 조회)
+import { Search } from '@element-plus/icons-vue'  // 검색 아이콘
 
-const authStore = useAuthStore()
+// ===== Store =====
+const authStore = useAuthStore()  // 로그인 상태 확인용
 
-const worldcups = ref([])
-const categories = ref([])
-const loading = ref(false)
-const searchQuery = ref('')
-const selectedCategory = ref(null)
+// ===== 반응형 상태 (Reactive State) =====
+const worldcups = ref([])         // 월드컵 목록 데이터
+const categories = ref([])        // 카테고리 목록 데이터
+const loading = ref(false)        // 로딩 상태 (스피너 표시용)
+const searchQuery = ref('')       // 검색어 입력값
+const selectedCategory = ref(null) // 선택된 카테고리 ID (null = 전체)
 
+// ===== 라이프사이클 훅 =====
+/**
+ * 컴포넌트 마운트 시 실행
+ * 1. 카테고리 목록 로드
+ * 2. 월드컵 목록 로드
+ */
 onMounted(async () => {
   await loadCategories()
   await loadWorldcups()
 })
 
+// ===== 메서드 =====
+
+/**
+ * 카테고리 목록 조회
+ * - API: commonApi.getCategories('worldcup')
+ * - 월드컵 타입의 카테고리만 조회
+ */
 async function loadCategories() {
   try {
     const response = await commonApi.getCategories('worldcup')
@@ -89,25 +145,37 @@ async function loadCategories() {
   }
 }
 
+/**
+ * 월드컵 목록 조회
+ * - API: worldcupApi.getWorldcups(params)
+ * - 검색어(q)와 카테고리ID(categoryId)를 파라미터로 전달
+ */
 async function loadWorldcups() {
-  loading.value = true
+  loading.value = true  // 로딩 시작
   try {
+    // 쿼리 파라미터 구성
     const params = {}
     if (searchQuery.value) {
-      params.q = searchQuery.value
+      params.q = searchQuery.value  // 검색어 필터
     }
     if (selectedCategory.value) {
-      params.categoryId = selectedCategory.value
+      params.categoryId = selectedCategory.value  // 카테고리 필터
     }
+    
     const response = await worldcupApi.getWorldcups(params)
     worldcups.value = response.data
   } catch (error) {
     console.error('Failed to load worldcups:', error)
   } finally {
-    loading.value = false
+    loading.value = false  // 로딩 종료
   }
 }
 
+/**
+ * 검색 핸들러
+ * - 검색창 입력 시 호출
+ * - loadWorldcups를 호출하여 필터링된 결과 조회
+ */
 function handleSearch() {
   loadWorldcups()
 }

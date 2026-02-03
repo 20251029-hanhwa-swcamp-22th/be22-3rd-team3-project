@@ -1,23 +1,59 @@
+<!--
+  ============================================================================
+  WorldcupGame.vue - 월드컵 게임 진행 페이지
+  ============================================================================
+  
+  [페이지 개요]
+  - 실제 월드컵 토너먼트 게임이 진행되는 핵심 페이지
+  - 32강 → 16강 → 8강 → 4강 → 결승 순으로 진행
+  - 두 후보 중 하나를 선택하면 다음 라운드에 진출
+  
+  [라우트]
+  - 현재 경로: /worldcup/:id/play
+  - 결과 보기 클릭 시: /worldcup/:id/result
+  - 목록으로 클릭 시: /worldcup
+  
+  [사용하는 API]
+  - worldcupApi.getWorldcup(id)       : 월드컵 정보 조회
+  - worldcupApi.startWorldcup(id, 32) : 게임 시작 (32명 후보 셔플하여 반환)
+  
+  [사용하는 Store]
+  - worldcupStore.startGame()         : 게임 초기화
+  - worldcupStore.selectCandidate()   : 후보 선택 처리
+  - worldcupStore.saveResult()        : 결과 저장
+  
+  [담당] 팀원1 - 월드컵 도메인
+  ============================================================================
+-->
 <template>
   <div class="worldcup-game-page">
+    <!-- ===== 파티클 효과 ===== -->
+    <!-- 게임 우승 시 색종이 효과 표시 (3초 동안) -->
     <ParticleEffect v-if="showParticles" type="confetti" :duration="3000" @complete="showParticles = false" />
     
     <div class="container">
-      <!-- 라운드 정보 -->
+      <!-- ===== 게임 헤더 (라운드 정보) ===== -->
+      <!-- 월드컵 제목, 현재 라운드명, 진행률 표시 -->
       <div class="game-header">
         <h2 class="game-title">{{ worldcup?.title }}</h2>
+        <!-- 현재 라운드 배지 (32강, 16강, 8강, 4강, 결승) -->
         <div class="round-badge">{{ roundName }}</div>
+        <!-- 진행률 프로그레스 바 -->
         <div class="progress-container">
           <div class="progress-bar">
             <div class="progress-fill" :style="{ width: progress.percentage + '%' }"></div>
           </div>
+          <!-- 현재 매치 / 총 매치 수 표시 -->
           <span class="progress-text">{{ progress.current }} / {{ progress.total }}</span>
         </div>
       </div>
 
-      <!-- 매치 -->
+      <!-- ===== 매치 컨테이너 (게임 진행 중) ===== -->
+      <!-- 게임이 끝나지 않았고 현재 매치가 있을 때만 표시 -->
       <div v-if="!gameFinished && currentMatch" class="match-container">
         <div class="candidates">
+          <!-- 왼쪽 후보 카드 -->
+          <!-- selected: 이 카드가 선택됨, dimmed: 상대 카드가 선택됨 -->
           <div 
             class="candidate-card"
             :class="{ 'selected': selectedCard === 'left', 'dimmed': selectedCard === 'right' }"
@@ -27,8 +63,10 @@
             <h3>{{ currentMatch.left.name }}</h3>
           </div>
 
+          <!-- VS 배지 (애니메이션 적용) -->
           <div class="vs-badge">VS</div>
 
+          <!-- 오른쪽 후보 카드 -->
           <div 
             class="candidate-card"
             :class="{ 'selected': selectedCard === 'right', 'dimmed': selectedCard === 'left' }"
@@ -40,13 +78,16 @@
         </div>
       </div>
 
-      <!-- 결과 -->
+      <!-- ===== 결과 컨테이너 (게임 종료 시) ===== -->
+      <!-- 최종 우승자 표시 + 결과 보기/목록으로 버튼 -->
       <div v-if="gameFinished" class="result-container">
         <h2 class="winner-title bounce-in">🏆 우승자!</h2>
+        <!-- 우승자 카드 -->
         <div class="winner-card">
           <img :src="winner?.imageUrl" :alt="winner?.name" />
           <h3>{{ winner?.name }}</h3>
         </div>
+        <!-- 액션 버튼들 -->
         <div class="result-actions">
           <router-link :to="`/worldcup/${worldcupId}/result`" class="btn btn-primary btn-lg">
             결과 보기
@@ -61,57 +102,98 @@
 </template>
 
 <script setup>
+/**
+ * ============================================================================
+ * WorldcupGame.vue - Script Section
+ * ============================================================================
+ */
 import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { useWorldcupStore } from '@/stores/worldcup'
-import { worldcupApi } from '@/api/worldcupApi'
-import { ElMessage } from 'element-plus'
-import ParticleEffect from '@/components/ParticleEffect.vue'
+import { useWorldcupStore } from '@/stores/worldcup'  // 월드컵 게임 상태 관리
+import { worldcupApi } from '@/api/worldcupApi'       // 월드컵 API
+import { ElMessage } from 'element-plus'              // 에러 메시지 표시용
+import ParticleEffect from '@/components/ParticleEffect.vue'  // 파티클 효과 컴포넌트
 
+// ===== 라우터 & 스토어 =====
 const route = useRoute()
 const router = useRouter()
 const worldcupStore = useWorldcupStore()
 
-const worldcupId = route.params.id
-const worldcup = ref(null)
-const gameFinished = ref(false)
-const winner = ref(null)
-const selectedCard = ref(null)
-const showParticles = ref(false)
+// ===== 반응형 상태 (Reactive State) =====
+const worldcupId = route.params.id   // URL에서 월드컵 ID 추출
+const worldcup = ref(null)           // 월드컵 정보 객체
+const gameFinished = ref(false)      // 게임 종료 여부
+const winner = ref(null)             // 최종 우승자 객체
+const selectedCard = ref(null)       // 현재 선택된 카드 ('left' | 'right' | null)
+const showParticles = ref(false)     // 파티클 효과 표시 여부
 
+// ===== Computed (Store에서 가져오는 값) =====
+/**
+ * 현재 매치 정보 - { left: 후보1, right: 후보2 }
+ */
 const currentMatch = computed(() => worldcupStore.getCurrentMatch())
+
+/**
+ * 현재 라운드명 - '32강', '16강', '8강', '4강', '결승'
+ */
 const roundName = computed(() => worldcupStore.roundName)
+
+/**
+ * 진행률 정보 - { current: 현재 매치, total: 총 매치, percentage: 퍼센트 }
+ */
 const progress = computed(() => worldcupStore.getProgress())
 
+// ===== 라이프사이클 훅 =====
+/**
+ * 컴포넌트 마운트 시 실행
+ * 1. 월드컵 정보 조회
+ * 2. 게임 시작 API 호출 (32명 후보 셔플)
+ * 3. Store에 게임 초기화
+ */
 onMounted(async () => {
   try {
+    // 병렬로 월드컵 정보와 게임 시작 API 호출
     const [worldcupRes, candidatesRes] = await Promise.all([
-      worldcupApi.getWorldcup(worldcupId),
-      worldcupApi.startWorldcup(worldcupId, 32)
+      worldcupApi.getWorldcup(worldcupId),        // 월드컵 상세 정보
+      worldcupApi.startWorldcup(worldcupId, 32)   // 32강용 후보 셔플
     ])
     
     worldcup.value = worldcupRes.data
+    // Store에 게임 상태 초기화 (월드컵 정보 + 셔플된 후보 목록)
     worldcupStore.startGame(worldcup.value, candidatesRes.data)
   } catch (error) {
     ElMessage.error('월드컵을 불러오는데 실패했습니다')
-    router.push('/worldcup')
+    router.push('/worldcup')  // 에러 시 목록 페이지로 이동
   }
 })
 
+// ===== 메서드 =====
+/**
+ * 후보 선택 핸들러
+ * @param {Object} candidate - 선택된 후보 객체
+ * @param {string} side - 선택된 위치 ('left' | 'right')
+ * 
+ * [동작 흐름]
+ * 1. 선택 애니메이션 표시 (selectedCard 설정)
+ * 2. 600ms 후 Store에 선택 처리
+ * 3. 게임 종료 시 우승자 저장 + 파티클 효과
+ */
 function selectCandidate(candidate, side) {
-  selectedCard.value = side
+  selectedCard.value = side  // 선택 애니메이션 트리거
   
+  // 애니메이션 완료 후 다음 로직 실행
   setTimeout(() => {
     const result = worldcupStore.selectCandidate(candidate)
     
+    // 게임이 끝났으면 결과 처리
     if (result.finished) {
       gameFinished.value = true
       winner.value = result.winner
-      worldcupStore.saveResult(result.winner)
-      showParticles.value = true
+      worldcupStore.saveResult(result.winner)  // 결과 저장 (통계 업데이트)
+      showParticles.value = true               // 축하 파티클 효과
     }
     
-    selectedCard.value = null
+    selectedCard.value = null  // 애니메이션 리셋
   }, 600)
 }
 </script>
