@@ -17,6 +17,12 @@
       "password": "$2a$10$IM3OjlGI0bzwhFACc8Dby.Bp1Bmuvu/78xYQPuuBwVgUIyTdHrNDe",
       "nickname": "testuser",
       "id": 3
+    },
+    {
+      "email": "kim@kim.com",
+      "password": "$2a$10$TlhB2rGnFnbAquzb.kaGUu968q1yuijprnqZTGpH18ehfeLt2sjd6",
+      "nickname": "김태형",
+      "id": 4
     }
   ],
   "worldcups": [
@@ -284,4 +290,3 @@
     }
   ]
 }
-
