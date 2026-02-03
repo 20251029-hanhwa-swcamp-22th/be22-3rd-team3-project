@@ -19,7 +19,7 @@ export const useAuthStore = defineStore('auth', () => {
         } catch (error) {
             return {
                 success: false,
-                message: error.response?.data || '로그인에 실패했습니다.'
+                message: '이메일 또는 비밀번호가 일치하지 않습니다.'
             }
         }
     }
@@ -35,7 +35,7 @@ export const useAuthStore = defineStore('auth', () => {
         } catch (error) {
             return {
                 success: false,
-                message: error.response?.data || '회원가입에 실패했습니다.'
+                message: '회원가입할 수 없습니다. 이메일, 닉네임 또는 비밀번호를 확인해주세요.'
             }
         }
     }
