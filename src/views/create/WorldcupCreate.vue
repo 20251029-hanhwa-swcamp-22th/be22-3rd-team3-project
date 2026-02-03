@@ -57,6 +57,37 @@
 
         <h3>후보 등록 ({{ candidates.length }}개)</h3>
         <p class="hint">최소 32개의 후보를 등록해야 합니다.</p>
+        
+        <!-- 다중 이미지 업로드 -->
+        <div class="bulk-upload-section">
+          <!-- 
+          multiple : 여러 파일 선택 가능
+          on-success : 업로드 성공 시 호출될 함수
+          before-upload : 업로드 전 호출될 함수
+          file-list : 업로드할 파일 목록
+          -->
+          <el-upload
+              action="http://localhost:3000/upload"
+              accept=".jpg,.jpeg,.png,.gif,.webp"
+              name="image"
+              :headers="uploadHeaders"
+              :multiple="true"  
+              :show-file-list="false"
+              :on-success="handleBulkImageUpload"
+              :before-upload="beforeUpload"
+              :file-list="bulkFileList"
+          >
+            <el-button type="success" size="default">
+              <el-icon class="mr-1"><Upload /></el-icon>
+              여러 이미지 한번에 업로드
+            </el-button>
+            <template #tip>
+              <div class="el-upload__tip">
+                여러 이미지를 선택하면 빈 후보 슬롯부터 순서대로 자동 등록됩니다
+              </div>
+            </template>
+          </el-upload>
+        </div>
 
         <div class="candidates-grid">
           <div
@@ -134,7 +165,7 @@
 import {computed, onMounted, reactive, ref} from 'vue'
 import {useRouter} from 'vue-router'
 import {useAuthStore} from '@/stores/auth'
-import {Close, Plus} from '@element-plus/icons-vue'
+import {Close, Plus, Upload} from '@element-plus/icons-vue'
 import {ElMessage} from 'element-plus'
 import {worldcupApi} from '@/api/worldcupApi'
 import {commonApi} from '@/api/commonApi'
@@ -155,6 +186,7 @@ const form = reactive({
 })
 
 const candidates = ref([])
+const bulkFileList = ref([])
 
 const uploadHeaders = computed(() => {
   const token = localStorage.getItem('token')
@@ -250,6 +282,31 @@ function handleCandidateImageUpload(response, index) {
   }
 }
 
+// 다중 이미지 업로드 핸들러
+function handleBulkImageUpload(response, file, fileList) {
+  console.log('다중 업로드 서버 응답:', response);
+  
+  if (response && response.url) {
+    // 빈 후보 슬롯 찾기 (이미지가 없는 첫 번째 후보)
+    const emptyIndex = candidates.value.findIndex(c => !c.imageUrl);
+    
+    if (emptyIndex !== -1) {
+      const imageUrl = response.url.startsWith('http')
+          ? response.url : `${SERVER_URL}${response.url}`;
+      candidates.value[emptyIndex].imageUrl = imageUrl;
+      
+      // 업로드된 파일 개수 계산
+      const uploadedCount = fileList.filter(f => f.status === 'success').length;
+      ElMessage.success(`이미지 업로드 중... (${uploadedCount}/${fileList.length})`);
+    } else {
+      ElMessage.warning('모든 후보 슬롯에 이미지가 등록되었습니다.');
+    }
+  } else {
+    console.error('응답 객체에 url 필드가 없습니다.');
+    ElMessage.error('서버 응답 형식이 올바르지 않습니다.');
+  }
+}
+
 
 async function handleSubmit() {
   if (!formRef.value) return
@@ -260,7 +317,7 @@ async function handleSubmit() {
     // 후보 검증
     const validCandidates = candidates.value.filter(c => c.name && c.imageUrl)
     if (validCandidates.length < 32) {
-      ElMessage.error('최소 32개의 후보에 이름과 이미지를 모두 입력해주세요')
+      ElMessage.error('최소 32개의 후보에 이름과 이미지를 모두 입력해주세요. 💡 팁: 상단의 "여러 이미지 한번에 업로드" 버튼으로 여러 이미지를 한번에 등록할 수 있습니다!')
       return
     }
 
@@ -279,7 +336,7 @@ async function handleSubmit() {
         playCount: 0
       }
 
-      const worldcupResponse = await apiClient.post('/worldcups', worldcupData)
+      const worldcupResponse = await worldcupApi.createWorldcup(worldcupData)
       const worldcupId = worldcupResponse.data.id
 
       // 후보 생성
@@ -412,4 +469,17 @@ async function handleSubmit() {
 .mt-2 {
   margin-top: var(--spacing-sm);
 }
+
+.bulk-upload-section {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  border: 2px dashed var(--primary-light);
+}
+
+.mr-1 {
+  margin-right: var(--spacing-xs);
+}
+
 </style>
