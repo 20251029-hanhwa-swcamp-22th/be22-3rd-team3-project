@@ -21,10 +21,7 @@
             @mouseleave="isWorldcupHover = false"
             @click="navigateTo('/worldcup', '#FFB3D9')"
           >
-            <div class="confetti-container">
-              <span class="confetti" v-for="i in 20" :key="i" :style="{ '--i': i }"></span>
-            </div>
-            <span class="icon">🏆</span>
+            <img src="/trophy-icon.png" alt="trophy" class="icon icon-image" />
             <span class="text">월드컵</span>
           </div>
           
@@ -34,11 +31,7 @@
             @mouseleave="isQuizHover = false"
             @click="navigateTo('/quiz', '#D4BBFF')"
           >
-            <div class="quiz-animation">
-              <span class="graduation-cap-throw">🎓</span>
-              <span class="book-open">📖</span>
-            </div>
-            <span class="icon">🎓</span>
+            <img src="/quiz-icon.png" alt="quiz" class="icon icon-image" />
             <span class="text">퀴즈</span>
           </div>
         </div>
@@ -107,30 +100,34 @@
           
           <!-- 2. 차트 - 위아래 움직임 -->
           <div class="feature-card fade-in-section chart-card" style="transition-delay: 0.1s">
-            <div class="chart-animation">
+            <!-- <div class="chart-animation">
               <span class="chart-bar" v-for="i in 5" :key="i" :style="{ '--i': i }">📊</span>
+            </div> -->
+            <div class="feature-icon">
+              <img src="/chart-icon.png" alt="chart" class="icon-image" />
             </div>
-            <div class="feature-icon">📊</div>
             <h3>실시간 랭킹</h3>
             <p>다른 사람들의 선택과 비교하고 인기 순위를 확인하세요</p>
           </div>
           
-          <!-- 3. 다트 - 꽂히는 애니메이션 -->
-          <div class="feature-card fade-in-section dart-card" style="transition-delay: 0.2s">
-            <div class="dart-animation">
-              <span class="dart" v-for="i in 3" :key="i" :style="{ '--i': i }">🎯</span>
+          <!-- 3. 타임어택 퀴즈 - 호버 시 GIF 전환 -->
+          <div class="feature-card fade-in-section timer-card" style="transition-delay: 0.2s">
+            <div class="feature-icon">
+              <img src="/timer-icon.png" alt="timer" class="icon-image timer-static" />
+              <img src="/timer-animated.gif" alt="timer animated" class="icon-image timer-animated" />
             </div>
-            <div class="feature-icon">🎯</div>
             <h3>타임어택 퀴즈</h3>
             <p>제한 시간 내에 퀴즈를 풀고 점수를 겨뤄보세요</p>
           </div>
           
           <!-- 4. 반짝반짝 -->
           <div class="feature-card fade-in-section sparkle-card" style="transition-delay: 0.3s">
-            <div class="sparkle-animation">
+            <!-- <div class="sparkle-animation">
               <span class="sparkle" v-for="i in 8" :key="i" :style="{ '--i': i }">✨</span>
+            </div> -->
+            <div class="feature-icon">
+              <img src="/star-icon.png" alt="star" class="icon-image" />
             </div>
-            <div class="feature-icon">✨</div>
             <h3>나만의 콘텐츠</h3>
             <p>직접 월드컵과 퀴즈를 만들어 공유할 수 있어요</p>
           </div>
@@ -206,42 +203,69 @@ onMounted(async () => {
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, #FFFFFF 0%, #F8F8F8 100%);
-  background-size: 200% 200%;
-  transition: all 0.8s ease;
-  z-index: -1;
+  z-index: 0;  /* -1 → 0으로 변경하여 body 배경 위에 표시 */
+  overflow: hidden;
 }
 
-.background-layer.worldcup-active {
-  background: linear-gradient(135deg, 
-    #FFE8F5 0%, 
-    #FFF0F8 25%,
-    #FFE0F0 50%,
-    #FFF5FA 75%,
-    #FFE8F5 100%
+/* 물결 효과용 ::before pseudo-element */
+.background-layer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-size: 200% 100%;  /* 가로 방향으로 2배 크기 */
+  background-position: 0% 0%;  /* 초기 위치: 왼쪽 */
+}
+
+/* 월드컵 호버: 왼쪽에서 분홍색 물결 */
+.background-layer.worldcup-active::before {
+  opacity: 1;
+  background: linear-gradient(90deg,
+    #FFB3D9 0%,                  /* 분홍색으로 시작 */
+    #FFB3D9 50%,                 /* 분홍색 유지 */
+    rgba(255, 179, 217, 0) 100%  /* 투명하게 끝 */
   );
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite;
+  animation: waveWorldcup 2s ease-out forwards;  /* 2초 동안 한 번 실행 후 유지 */
 }
 
-.background-layer.quiz-active {
-  background: linear-gradient(135deg, 
-    #F0E8FF 0%, 
-    #F8F0FF 25%,
-    #E8E0FF 50%,
-    #F5F0FF 75%,
-    #F0E8FF 100%
+/* 퀴즈 호버: 오른쪽에서 보라색 물결 */
+.background-layer.quiz-active::before {
+  opacity: 1;
+  background: linear-gradient(90deg,
+    rgba(212, 187, 255, 0) 0%,   /* 투명으로 시작 */
+    #D4BBFF 50%,                 /* 보라색 유지 */
+    #D4BBFF 100%                 /* 보라색으로 끝 */
   );
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite;
+  animation: waveQuiz 2s ease-out forwards;  /* 2초 동안 한 번 실행 후 유지 */
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* 월드컵 물결: 왼쪽에서 오른쪽으로 흐르며 화면 채우기 */
+@keyframes waveWorldcup {
+  0% { 
+    background-position: -100% 0%;  /* 왼쪽 밖에서 시작 */
+  }
+  100% { 
+    background-position: 0% 0%;     /* 화면 전체를 채우며 종료 */
+  }
+}
+
+/* 퀴즈 물결: 오른쪽에서 왼쪽으로 흐르며 화면 채우기 */
+@keyframes waveQuiz {
+  0% { 
+    background-position: 100% 0%;   /* 오른쪽 밖에서 시작 */
+  }
+  100% { 
+    background-position: 0% 0%;     /* 화면 전체를 채우며 종료 */
+  }
 }
 
 .hero {
+  position: relative;  /* z-index가 적용되도록 position 추가 */
+  z-index: 1;  /* 배경 레이어(z-index: 0) 위에 표시 */
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -306,8 +330,11 @@ onMounted(async () => {
   transition: opacity 0.3s ease;
 }
 
-.game-button:hover .icon {
-  opacity: 0;
+/* 이미지 아이콘용 스타일 */
+.game-button .icon-image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 
 .game-button .text {
@@ -315,10 +342,6 @@ onMounted(async () => {
   font-weight: 600;
   color: white;
   transition: opacity 0.3s ease;
-}
-
-.game-button:hover .text {
-  opacity: 0.5;
 }
 
 /* 빵빠레 애니메이션 */
@@ -587,7 +610,9 @@ onMounted(async () => {
   top: -50px;
   left: 50%;
   opacity: 0;
-  font-size: 2rem;
+  width: 40px;  /* 이미지 크기 설정 */
+  height: 40px;
+  object-fit: contain;
   transform: translateX(-50%) rotate(-45deg);
 }
 
@@ -661,6 +686,13 @@ onMounted(async () => {
   z-index: 10;
 }
 
+/* feature-icon 내부 이미지 스타일 */
+.feature-icon .icon-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
 /* 트로피 아이콘 - 흔들림 */
 .trophy-card:hover .feature-icon {
   animation: trophyShake 0.6s ease infinite;
@@ -682,14 +714,38 @@ onMounted(async () => {
   50% { transform: scale(1.2); }
 }
 
-/* 다트 아이콘 - 회전 */
-.dart-card:hover .feature-icon {
-  animation: dartSpin 0.8s linear infinite;
+/* 타이머 아이콘 - 호버 시 PNG에서 GIF로 전환 */
+.timer-card .feature-icon {
+  position: relative;
+  height: 60px;  /* 아이콘 높이 고정 */
+  margin-bottom: 1rem;  /* 하단 여백 - 다른 카드와 동일 */
 }
 
-@keyframes dartSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.timer-card .timer-static,
+.timer-card .timer-animated {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;  /* 다른 카드와 동일한 크기 */
+  height: 60px;
+  object-fit: contain;
+}
+
+.timer-card .timer-static {
+  opacity: 1;
+}
+
+.timer-card .timer-animated {
+  opacity: 0;
+}
+
+.timer-card:hover .timer-static {
+  opacity: 0;
+}
+
+.timer-card:hover .timer-animated {
+  opacity: 1;
 }
 
 /* 반짝 아이콘 - 반짝임 */
@@ -723,6 +779,8 @@ onMounted(async () => {
 
 /* 인기 콘텐츠 */
 .popular {
+  position: relative;  /* z-index가 적용되도록 position 추가 */
+  z-index: 1;  /* 배경 레이어(z-index: 0) 위에 표시 */
   padding: 4rem 0;
 }
 

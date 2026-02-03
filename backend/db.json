@@ -11,6 +11,12 @@
       "password": "$2a$10$B/3wwtIcyZxn571R9nlAo.NcQJwTEhXhbAQ8IQdXsmiPLgbTyVaEW",
       "nickname": "테스트유저",
       "id": 2
+    },
+    {
+      "email": "test2@example.com",
+      "password": "$2a$10$IM3OjlGI0bzwhFACc8Dby.Bp1Bmuvu/78xYQPuuBwVgUIyTdHrNDe",
+      "nickname": "testuser",
+      "id": 3
     }
   ],
   "worldcups": [
