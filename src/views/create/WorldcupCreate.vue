@@ -279,7 +279,7 @@ async function handleSubmit() {
         playCount: 0
       }
 
-      const worldcupResponse = await apiClient.post('/worldcups', worldcupData)
+      const worldcupResponse = await worldcupApi.createWorldcup(worldcupData);
       const worldcupId = worldcupResponse.data.id
 
       // 후보 생성
