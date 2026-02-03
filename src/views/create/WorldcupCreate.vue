@@ -88,6 +88,7 @@
             
             <el-upload
               action="http://localhost:3000/upload"
+              accept=".jpg,.jpeg,.png,.gif,.webp"
               name="image"
               :headers="uploadHeaders"
               :show-file-list="false"
@@ -203,18 +204,29 @@ function removeCandidate(index) {
 }
 
 function beforeUpload(file) {
-  const isImage = file.type.startsWith('image/')
-  const isLt5M = file.size / 1024 / 1024 < 5
+  // 1. 허용할 확장자 목록
+  const allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
 
-  if (!isImage) {
-    ElMessage.error('이미지 파일만 업로드 가능합니다!')
-    return false
+  // 2. 파일 타입 확인
+  const isImage = allowedTypes.includes(file.type);
+
+  // 3. (옵션) 확장자 명으로 한 번 더 확인
+  const extension = file.name.substring(file.name.lastIndexOf('.') + 1).toLowerCase();
+  const isExtAllowed = ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(extension);
+
+  if (!isImage && !isExtAllowed) {
+    ElMessage.error('JPG, PNG, GIF, WebP 형식의 이미지인지만 확인해주세요!');
+    return false;
   }
+
+  // 용량 제한도 추가하는 것을 권장합니다 (예: 5MB)
+  const isLt5M = file.size / 1024 / 1024 < 5;
   if (!isLt5M) {
-    ElMessage.error('이미지 크기는 5MB를 초과할 수 없습니다!')
-    return false
+    ElMessage.error('이미지 크기는 5MB를 넘을 수 없습니다.');
+    return false;
   }
-  return true
+
+  return true;
 }
 
 function handleCandidateImageUpload(response, index) {
