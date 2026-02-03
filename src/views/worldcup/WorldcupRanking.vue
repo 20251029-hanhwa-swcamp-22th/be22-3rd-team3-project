@@ -1,25 +1,52 @@
+<!--
+  ============================================================================
+  WorldcupRanking.vue - 월드컵 랭킹 페이지
+  ============================================================================
+  [페이지 개요]
+  - 해당 월드컵의 전체 후보 랭킹을 표시
+  - 승률 기준으로 정렬된 후보 목록 제공
+  - 우승 횟수, 결승 진출 횟수, 승률 통계 표시
+  
+  [라우트]
+  - 현재 경로: /worldcup/:id/ranking
+  - 도전하기: /worldcup/:id/play
+  - 목록으로: /worldcup
+  
+  [사용하는 API]
+  - worldcupApi.getWorldcup(id)        : 월드컵 정보 조회
+  - worldcupApi.getWorldcupRanking(id) : 랭킹 조회 (승률 기준 정렬)
+  
+  [담당] 팀원1 - 월드컵 도메인
+  ============================================================================
+-->
 <template>
   <div class="ranking-page">
     <div class="container">
+      <!-- ===== 페이지 헤더 ===== -->
       <div class="page-header">
         <h1 class="gradient-text">📊 월드컵 랭킹</h1>
         <p v-if="worldcup">{{ worldcup.title }}</p>
       </div>
 
+      <!-- ===== 랭킹 콘텐츠 ===== -->
       <div v-if="candidates.length > 0" class="ranking-content">
         <div class="ranking-list">
+          <!-- 각 후보별 랭킹 아이템 -->
           <div
             v-for="(candidate, index) in candidates"
             :key="candidate.id"
             class="ranking-item card"
             :class="{ 'top-rank': index < 3 }"
           >
+            <!-- 순위 배지 (1~3위는 특별 스타일) -->
             <div class="rank" :class="'rank-' + (index + 1)">
               {{ index + 1 }}
             </div>
+            <!-- 후보 이미지 -->
             <div class="candidate-image">
               <img :src="candidate.imageUrl" :alt="candidate.name" />
             </div>
+            <!-- 후보 정보 및 통계 -->
             <div class="candidate-info">
               <h3>{{ candidate.name }}</h3>
               <div class="stats">
@@ -40,6 +67,7 @@
           </div>
         </div>
 
+        <!-- ===== 액션 버튼 ===== -->
         <div class="actions">
           <router-link :to="`/worldcup/${worldcupId}/play`" class="btn btn-primary">
             도전하기
@@ -50,6 +78,7 @@
         </div>
       </div>
 
+      <!-- ===== 로딩 상태 ===== -->
       <div v-else class="loading">
         <el-icon class="is-loading" size="60"><Loading /></el-icon>
         <p>랭킹을 불러오는 중...</p>
@@ -59,20 +88,32 @@
 </template>
 
 <script setup>
+/**
+ * ============================================================================
+ * WorldcupRanking.vue - Script Section
+ * ============================================================================
+ */
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import { Loading } from '@element-plus/icons-vue'
-import { worldcupApi } from '@/api/worldcupApi'
-import { calculateWinRate } from '@/utils/helpers'
+import { Loading } from '@element-plus/icons-vue'  // 로딩 아이콘
+import { worldcupApi } from '@/api/worldcupApi'   // 월드컵 API
+import { calculateWinRate } from '@/utils/helpers' // 승률 계산 유틸
 
+// ===== 라우터 =====
 const route = useRoute()
-const worldcupId = route.params.id
+const worldcupId = route.params.id  // URL에서 월드컵 ID 추출
 
-const worldcup = ref(null)
-const candidates = ref([])
+// ===== 반응형 상태 =====
+const worldcup = ref(null)    // 월드컵 정보 객체
+const candidates = ref([])    // 랭킹 정렬된 후보 목록
 
+// ===== 라이프사이클 훅 =====
+/**
+ * 마운트 시 월드컵 정보와 랭킹 데이터 로드
+ */
 onMounted(async () => {
   try {
+    // 병렬로 월드컵 정보와 랭킹 조회
     const [worldcupRes, rankingRes] = await Promise.all([
       worldcupApi.getWorldcup(worldcupId),
       worldcupApi.getWorldcupRanking(worldcupId)

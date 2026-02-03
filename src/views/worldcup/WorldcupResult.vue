@@ -1,10 +1,31 @@
+<!--
+  ============================================================================
+  WorldcupResult.vue - 월드컵 결과 페이지
+  ============================================================================
+  [페이지 개요]
+  - 게임 완료 후 최종 결과 표시 (우승자, TOP 4, 선택 히스토리)
+  
+  [라우트]
+  - 현재 경로: /worldcup/:id/result
+  - 다시 하기: /worldcup/:id/play
+  - 랭킹 보기: /worldcup/:id/ranking
+  
+  [사용하는 API]
+  - GET /worldcup_results?worldcupId=:id : 결과 데이터 조회
+  - GET /worldcup_candidates?worldcupId=:id : 후보 목록 조회
+  
+  [담당] 팀원1 - 월드컵 도메인
+  ============================================================================
+-->
 <template>
   <div class="result-page">
     <div class="container">
       <h1 class="gradient-text text-center">🏆 월드컵 결과</h1>
 
+      <!-- ===== 결과 콘텐츠 (데이터 있을 때) ===== -->
       <div v-if="result" class="result-content">
-        <!-- 우승자 -->
+        <!-- ===== 우승자 섹션 ===== -->
+        <!-- 최종 우승자 이미지, 이름, 통계(우승횟수/결승진출/승률) -->
         <div class="winner-section card card-glass">
           <h2>👑 우승자</h2>
           <div class="winner-card">
@@ -18,10 +39,12 @@
           </div>
         </div>
 
-        <!-- TOP 4 -->
+        <!-- ===== TOP 4 섹션 ===== -->
+        <!-- 4강 진출자 4명을 순위별로 표시 -->
         <div class="top4-section card card-glass">
           <h2>🥇 TOP 4</h2>
           <div class="top4-grid">
+            <!-- result.top4는 후보 ID 배열 → getCandidateById로 후보 객체 조회 -->
             <div
               v-for="(candidateId, index) in result.top4"
               :key="candidateId"
@@ -34,10 +57,12 @@
           </div>
         </div>
 
-        <!-- 선택 히스토리 -->
+        <!-- ===== 선택 히스토리 섹션 ===== -->
+        <!-- 라운드별 매치 기록 (누구 vs 누구 → 누구 선택) -->
         <div class="history-section card card-glass">
           <h2>📊 선택 히스토리</h2>
           <div class="history-timeline">
+            <!-- selectionHistory: computed로 계산된 선택 기록 배열 -->
             <div
               v-for="(selection, index) in selectionHistory"
               :key="index"
@@ -62,7 +87,7 @@
           </div>
         </div>
 
-        <!-- 액션 버튼 -->
+        <!-- ===== 액션 버튼 ===== -->
         <div class="actions">
           <router-link :to="`/worldcup/${worldcupId}/play`" class="btn btn-primary">
             다시 하기
@@ -76,6 +101,7 @@
         </div>
       </div>
 
+      <!-- ===== 로딩 상태 ===== -->
       <div v-else class="loading">
         <el-icon class="is-loading" size="60"><Loading /></el-icon>
         <p>결과를 불러오는 중...</p>
@@ -85,19 +111,32 @@
 </template>
 
 <script setup>
+/**
+ * ============================================================================
+ * WorldcupResult.vue - Script Section
+ * ============================================================================
+ */
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import { Loading } from '@element-plus/icons-vue'
-import apiClient from '@/api/axios'
-import { calculateWinRate } from '@/utils/helpers'
+import { Loading } from '@element-plus/icons-vue'  // 로딩 스피너 아이콘
+import apiClient from '@/api/axios'                 // Axios 인스턴스
+import { calculateWinRate } from '@/utils/helpers' // 승률 계산 유틸
 
+// ===== 라우터 =====
 const route = useRoute()
-const worldcupId = route.params.id
+const worldcupId = route.params.id  // URL에서 월드컵 ID 추출
 
-const result = ref(null)
-const candidates = ref([])
-const winner = ref(null)
+// ===== 반응형 상태 =====
+const result = ref(null)        // 결과 데이터 (winnerId, top4, selections)
+const candidates = ref([])      // 후보 목록 (ID → 객체 매핑용)
+const winner = ref(null)        // 우승자 객체
 
+// ===== Computed =====
+/**
+ * 선택 히스토리 계산
+ * - result.selections 배열을 라운드별 매치 정보로 변환
+ * - 반환값: [{ round, left, right, selected }, ...]
+ */
 const selectionHistory = computed(() => {
   if (!result.value || !result.value.selections) return []
   
@@ -106,7 +145,7 @@ const selectionHistory = computed(() => {
   const rounds = ['32강', '16강', '8강', '준결승', '결승']
   
   let roundIndex = 0
-  let matchesInRound = 16 // 32강은 16경기
+  let matchesInRound = 16  // 32강 = 16경기
   let currentMatch = 0
   
   for (let i = 0; i < selections.length - 1; i += 2) {
@@ -132,10 +171,14 @@ const selectionHistory = computed(() => {
   return history
 })
 
+// ===== 라이프사이클 훅 =====
+/**
+ * 마운트 시 결과 및 후보 데이터 로드
+ */
 onMounted(async () => {
   try {
-    // 최신 결과 가져오기 (실제로는 결과 ID를 파라미터로 받아야 하지만, 간단히 최신 것을 가져옴)
     const [resultsRes, candidatesRes] = await Promise.all([
+      // 최신 결과 1개 조회
       apiClient.get(`/worldcup_results?worldcupId=${worldcupId}&_sort=createdAt&_order=desc&_limit=1`),
       apiClient.get(`/worldcup_candidates?worldcupId=${worldcupId}`)
     ])
@@ -150,6 +193,12 @@ onMounted(async () => {
   }
 })
 
+// ===== 메서드 =====
+/**
+ * ID로 후보 객체 조회
+ * @param {number|string} id - 후보 ID
+ * @returns {Object|undefined}
+ */
 function getCandidateById(id) {
   return candidates.value.find(c => c.id === id)
 }
