@@ -135,6 +135,7 @@ const SERVER_URL = 'http://localhost:3000'
  * - 이미 http로 시작하는 경우 그대로 반환
  */
 function getImageUrl(url) {
+  console.log(`${SERVER_URL}${url}`);
   if (!url) return '/placeholder.jpg'
   return url.startsWith('http') ? url : `${SERVER_URL}${url}`
 }
