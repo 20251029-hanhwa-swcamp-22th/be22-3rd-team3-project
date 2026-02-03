@@ -216,7 +216,7 @@ onMounted(async () => {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 2s ease;
   background-size: 200% 100%;  /* 가로 방향으로 2배 크기 */
   background-position: 0% 0%;  /* 초기 위치: 왼쪽 */
 }
@@ -229,7 +229,7 @@ onMounted(async () => {
     #FFB3D9 50%,                 /* 분홍색 유지 */
     rgba(255, 179, 217, 0) 100%  /* 투명하게 끝 */
   );
-  animation: waveWorldcup 2s ease-out forwards;  /* 2초 동안 한 번 실행 후 유지 */
+  animation: waveWorldcup 5s ease-out forwards;  /* 5초 동안 한 번 실행 후 유지 */
 }
 
 /* 퀴즈 호버: 오른쪽에서 보라색 물결 */
@@ -240,7 +240,7 @@ onMounted(async () => {
     #D4BBFF 50%,                 /* 보라색 유지 */
     #D4BBFF 100%                 /* 보라색으로 끝 */
   );
-  animation: waveQuiz 2s ease-out forwards;  /* 2초 동안 한 번 실행 후 유지 */
+  animation: waveQuiz 5s ease-out forwards;  /* 5초 동안 한 번 실행 후 유지 */
 }
 
 /* 월드컵 물결: 왼쪽에서 오른쪽으로 흐르며 화면 채우기 */
@@ -275,7 +275,7 @@ onMounted(async () => {
 
 .hero-title {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 700;
   margin-bottom: 1rem;
   color: #2D2D2D;
   letter-spacing: -0.5px;
@@ -344,17 +344,6 @@ onMounted(async () => {
   transition: opacity 0.3s ease;
 }
 
-/* 빵빠레 애니메이션 */
-.confetti-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: visible;
-}
 
 .confetti {
   position: absolute;
@@ -395,67 +384,6 @@ onMounted(async () => {
   }
 }
 
-/* 퀴즈 애니메이션 - 학사모 던지기 → 책 펼치기 */
-.quiz-animation {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: visible;
-}
-
-.graduation-cap-throw,
-.book-open {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  font-size: 3rem;
-  transform: translate(-50%, -50%);
-}
-
-/* 1단계: 학사모가 위로 던져짐 */
-.btn-quiz:hover .graduation-cap-throw {
-  animation: throwCap 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
-
-@keyframes throwCap {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -50%) translateY(0) rotate(0deg) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) translateY(-150px) rotate(360deg) scale(0.3);
-  }
-}
-
-/* 2단계: 책이 펼쳐짐 (학사모 사라진 후) */
-.btn-quiz:hover .book-open {
-  animation: openBook 1s ease-out 0.6s forwards;
-}
-
-@keyframes openBook {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0) rotateY(90deg);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.5) rotateY(0deg);
-  }
-  60% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.3) rotateY(0deg);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1.8) rotateY(0deg);
-  }
-}
 
 /* 스크롤 애니메이션 */
 .fade-in-section {
@@ -592,90 +520,6 @@ onMounted(async () => {
 @keyframes chartBounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-20px); }
-}
-
-/* 3. 다트 카드 - 꽂히는 애니메이션 */
-.dart-animation {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.dart {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  opacity: 0;
-  width: 40px;  /* 이미지 크기 설정 */
-  height: 40px;
-  object-fit: contain;
-  transform: translateX(-50%) rotate(-45deg);
-}
-
-.dart-card:hover .dart {
-  animation: dartThrow 0.6s ease-in forwards;
-  animation-delay: calc(var(--i) * 0.2s);
-}
-
-@keyframes dartThrow {
-  0% {
-    opacity: 1;
-    top: -50px;
-    transform: translateX(-50%) rotate(-45deg);
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    top: 25%;
-    transform: translateX(calc(-50% + (var(--i) - 2) * 30px)) rotate(0deg) scale(1.2);
-  }
-}
-
-/* 4. 반짝반짝 카드 */
-.sparkle-animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.sparkle {
-  position: absolute;
-  opacity: 0;
-  font-size: 1.5rem;
-}
-
-.sparkle:nth-child(8n+1) { top: 20%; left: 20%; }
-.sparkle:nth-child(8n+2) { top: 20%; right: 20%; }
-.sparkle:nth-child(8n+3) { top: 50%; left: 10%; }
-.sparkle:nth-child(8n+4) { top: 50%; right: 10%; }
-.sparkle:nth-child(8n+5) { top: 80%; left: 25%; }
-.sparkle:nth-child(8n+6) { top: 80%; right: 25%; }
-.sparkle:nth-child(8n+7) { top: 35%; left: 50%; }
-.sparkle:nth-child(8n) { top: 65%; right: 50%; }
-
-.sparkle-card:hover .sparkle {
-  animation: sparkleShine 1.5s ease-in-out infinite;
-  animation-delay: calc(var(--i) * 0.15s);
-}
-
-@keyframes sparkleShine {
-  0%, 100% {
-    opacity: 0;
-    transform: scale(0) rotate(0deg);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.5) rotate(180deg);
-  }
 }
 
 .feature-icon {
