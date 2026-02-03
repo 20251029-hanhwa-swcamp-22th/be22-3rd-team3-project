@@ -6,9 +6,12 @@
         <p v-if="quiz">{{ quiz.title }}</p>
       </div>
 
+      <!-- 랭킹 데이터가 있을 때만 보여줍니다 -->
       <div v-if="rankings.length > 0" class="ranking-content">
+        <!-- 1, 2, 3등을 강조해서 보여주는 포디움(시상대) 영역 -->
+        <!-- 최소 3명 이상의 데이터가 있을 때만 표시합니다 -->
         <div class="podium" v-if="rankings.length >= 3">
-          <!-- 2등 -->
+          <!-- 2등 은메달 -->
           <div class="podium-item second">
             <div class="rank-badge silver">2</div>
             <div class="player-info">
@@ -18,7 +21,7 @@
             </div>
           </div>
 
-          <!-- 1등 -->
+          <!-- 1등 금메달 -->
           <div class="podium-item first">
             <div class="rank-badge gold">1</div>
             <div class="player-info">
@@ -28,7 +31,7 @@
             </div>
           </div>
 
-          <!-- 3등 -->
+          <!-- 3등 동메달 -->
           <div class="podium-item third">
             <div class="rank-badge bronze">3</div>
             <div class="player-info">
@@ -39,6 +42,7 @@
           </div>
         </div>
 
+        <!-- 전체 랭킹 리스트 영역 -->
         <div class="ranking-list">
           <div
             v-for="(result, index) in rankings"
@@ -46,16 +50,21 @@
             class="ranking-item card"
             :class="{ 'top-rank': index < 3 }"
           >
+            <!-- 순위 표시 (1,2,3등은 특별한 스타일 적용) -->
             <div class="rank" :class="'rank-' + (index + 1)">
               {{ index + 1 }}
             </div>
+            
             <div class="player-details">
               <div class="player-name">
                 <h3>{{ result.nickname }}</h3>
+                <!-- 티어에 따라 다른 색상의 배지를 보여줍니다 -->
                 <span class="tier-badge" :class="getTierClass(result.tier)">
                   {{ result.tier }}
                 </span>
               </div>
+              
+              <!-- 상세 기록 표시 -->
               <div class="stats">
                 <div class="stat">
                   <span class="label">점수</span>
@@ -92,6 +101,7 @@
         </div>
       </div>
 
+      <!-- 로딩 중 화면 -->
       <div v-else class="loading">
         <el-icon class="is-loading" size="60"><Loading /></el-icon>
         <p>랭킹을 불러오는 중...</p>
@@ -110,11 +120,20 @@ import { formatTime, formatDate } from '@/utils/helpers'
 const route = useRoute()
 const quizId = route.params.id
 
-const quiz = ref(null)
-const rankings = ref([])
+// ==========================================
+// State (상태 데이터)
+// ==========================================
+
+const quiz = ref(null) // 퀴즈 정보
+const rankings = ref([]) // 랭킹 목록
+
+// ==========================================
+// Lifecycle Hooks
+// ==========================================
 
 onMounted(async () => {
   try {
+    // 퀴즈 정보와 랭킹 정보를 동시에 가져옵니다.
     const [quizRes, rankingRes] = await Promise.all([
       quizApi.getQuiz(quizId),
       quizApi.getQuizRanking(quizId)
@@ -127,10 +146,22 @@ onMounted(async () => {
   }
 })
 
+// ==========================================
+// Helper Functions (보조 함수들)
+// ==========================================
+
+/**
+ * 정답률 계산 함수
+ * (정답 수 / 전체 문제 수) * 100
+ */
 function getCorrectRate(result) {
   return Math.round((result.correctCount / result.totalQuestions) * 100)
 }
 
+/**
+ * 티어에 맞는 CSS 클래스 이름을 반환합니다.
+ * 예: "멘사" -> "tier-멘사" (CSS에서 색상 스타일링에 사용됨)
+ */
 function getTierClass(tier) {
   return 'tier-' + tier.toLowerCase().replace(/\s/g, '')
 }

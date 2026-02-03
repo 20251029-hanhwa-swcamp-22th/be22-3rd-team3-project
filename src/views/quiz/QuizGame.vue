@@ -1,12 +1,13 @@
 <template>
   <div class="quiz-game-page">
     <div class="container">
-      <!-- 게임 헤더 -->
+      <!-- 게임 헤더: 퀴즈 제목과 통계(문제 수, 점수, 시간)를 보여줍니다 -->
       <div class="game-header" v-if="quiz">
         <h2>{{ quiz.title }}</h2>
         <div class="game-stats">
           <div class="stat-item">
             <span class="label">문제</span>
+            <!-- 현재 문제 번호 / 전체 문제 수 -->
             <span class="value">{{ currentQuestionIndex + 1 }} / {{ quizStore.totalQuestions }}</span>
           </div>
           <div class="stat-item">
@@ -15,6 +16,7 @@
           </div>
           <div class="stat-item">
             <span class="label">남은 시간</span>
+            <!-- 시간이 10초 미만으로 남으면 빨간색(warning 클래스)으로 표시합니다 -->
             <span class="value timer" :class="{ warning: quizStore.remainingTime < 10 }">
               {{ formatTime(quizStore.remainingTime) }}
             </span>
@@ -22,21 +24,23 @@
         </div>
       </div>
 
-      <!-- 진행바 -->
+      <!-- 진행바: 전체 문제 중 얼마나 풀었는지 시각적으로 보여줍니다 -->
       <div class="progress-bar mb-4">
         <div class="progress-fill" :style="{ width: progress + '%' }"></div>
       </div>
 
-      <!-- 게임 진행 중 -->
+      <!-- 게임 진행 중: 문제가 있을 때만 보여줍니다 -->
       <div v-if="!gameFinished && currentQuestion" class="question-container card card-glass">
         <div class="question-header">
           <h3>문제 {{ currentQuestionIndex + 1 }}</h3>
+          <!-- 문제별 제한시간 타이머 -->
           <div class="question-timer">
             <el-icon><Timer /></el-icon>
             <span>{{ formatTime(quizStore.questionTimeRemaining) }}</span>
           </div>
         </div>
 
+        <!-- 문제 이미지가 있는 경우에만 이미지를 표시합니다 -->
         <div class="question-image" v-if="currentQuestion.questionImage">
           <img :src="currentQuestion.questionImage" :alt="'문제 ' + (currentQuestionIndex + 1)" />
         </div>
@@ -46,16 +50,19 @@
         </div>
 
         <div class="answer-section">
+          <!-- 정답 입력창 -->
+          <!-- 엔터키를 누르면(@keyup.enter) 바로 제출됩니다 -->
           <el-input
             v-model="userAnswer"
             placeholder="정답을 입력하세요"
             size="large"
-            :disabled="answerSubmitted"
+            :disabled="answerSubmitted" 
             @keyup.enter="submitAnswer"
             ref="answerInput"
           />
           
           <div class="action-buttons">
+            <!-- 제출 버튼: 정답을 입력했을 때만 활성화됩니다 -->
             <el-button
               type="primary"
               size="large"
@@ -64,14 +71,8 @@
             >
               제출
             </el-button>
-            <el-button
-              type="warning"
-              size="large"
-              @click="passQuestion"
-              :disabled="answerSubmitted || quizStore.passCount >= 3"
-            >
-              패스 ({{ 3 - quizStore.passCount }})
-            </el-button>
+
+            <!-- 건너뛰기 버튼: 현재 문제를 포기하고 넘어갑니다 -->
             <el-button
               type="info"
               size="large"
@@ -83,7 +84,7 @@
           </div>
         </div>
 
-        <!-- 정답/오답 피드백 -->
+        <!-- 정답/오답 피드백: 제출 후에만 보여줍니다 -->
         <div v-if="answerSubmitted" class="feedback" :class="{ correct: isCorrect, incorrect: !isCorrect }">
           <div class="feedback-icon">
             <el-icon v-if="isCorrect" size="60"><CircleCheck /></el-icon>
@@ -98,7 +99,7 @@
         </div>
       </div>
 
-      <!-- 게임 종료 -->
+      <!-- 게임 종료: 모든 문제를 풀거나 시간이 다 되었을 때 -->
       <div v-if="gameFinished" class="result-container">
         <h2 class="gradient-text">🎉 퀴즈 완료!</h2>
         <div class="result-card card card-glass">
@@ -123,6 +124,7 @@
           </div>
 
           <div class="result-actions">
+            <!-- 결과 상세 페이지로 이동 -->
             <router-link :to="`/quiz/${quizId}/result`" class="btn btn-primary">
               상세 결과 보기
             </router-link>
@@ -147,39 +149,62 @@ import { formatTime } from '@/utils/helpers'
 
 const route = useRoute()
 const router = useRouter()
+// Pinia 스토어를 사용하여 게임 상태를 관리합니다.
 const quizStore = useQuizStore()
 
+// URL에서 퀴즈 ID를 추출합니다.
 const quizId = route.params.id
-const quiz = ref(null)
-const userAnswer = ref('')
-const answerSubmitted = ref(false)
-const isCorrect = ref(false)
-const lastScore = ref(0)
-const gameFinished = ref(false)
-const answerInput = ref(null)
 
+// ==========================================
+// State (상태 데이터)
+// ==========================================
+
+const quiz = ref(null) // 퀴즈 기본 정보
+const userAnswer = ref('') // 사용자가 입력한 정답
+const answerSubmitted = ref(false) // 정답 제출 여부 (중복 제출 방지 및 UI 표시용)
+const isCorrect = ref(false) // 현재 문제 정답 여부
+const lastScore = ref(0) // 방금 획득한 점수
+const gameFinished = ref(false) // 게임 종료 여부
+const answerInput = ref(null) // 입력창 DOM 참조 (포커스 이동용)
+
+// ==========================================
+// Computed Properties (계산된 속성)
+// ==========================================
+
+// 스토어에서 현재 문제 정보를 가져옵니다.
 const currentQuestion = computed(() => quizStore.getCurrentQuestion())
 const currentQuestionIndex = computed(() => quizStore.currentQuestionIndex)
+
+// 상단 진행바의 너비(%)를 계산합니다.
 const progress = computed(() => {
   if (!quizStore.totalQuestions) return 0
   return ((currentQuestionIndex.value + 1) / quizStore.totalQuestions) * 100
 })
+
+// 정답률을 계산합니다.
 const correctRate = computed(() => {
   if (!quizStore.totalQuestions) return 0
   return Math.round((quizStore.correctCount / quizStore.totalQuestions) * 100)
 })
 
+// ==========================================
+// Lifecycle Hooks
+// ==========================================
+
+// 컴포넌트 마운트 시 게임을 초기화하고 시작합니다.
 onMounted(async () => {
   try {
+    // 퀴즈 정보와 문제 목록을 동시에 가져옵니다.
     const [quizRes, questionsRes] = await Promise.all([
       quizApi.getQuiz(quizId),
       quizApi.startQuiz(quizId)
     ])
     
     quiz.value = quizRes.data
+    // 스토어의 startGame 액션을 호출하여 게임을 시작합니다.
     quizStore.startGame(quiz.value, questionsRes.data)
     
-    // 첫 문제 입력창에 포커스
+    // 화면이 다 그려진 후(nextTick) 첫 문제 입력창에 커서를 위치시킵니다.
     await nextTick()
     answerInput.value?.focus()
   } catch (error) {
@@ -189,15 +214,25 @@ onMounted(async () => {
   }
 })
 
+// 컴포넌트가 사라질 때 게임 상태를 초기화합니다.
 onUnmounted(() => {
   quizStore.resetGame()
 })
 
+// ==========================================
+// Methods (함수)
+// ==========================================
+
+/**
+ * 정답 제출 처리
+ * 사용자가 입력한 답을 확인하고 피드백을 보여줍니다.
+ */
 async function submitAnswer() {
   if (!userAnswer.value || answerSubmitted.value) return
   
-  answerSubmitted.value = true
+  answerSubmitted.value = true // 제출 상태로 변경
   
+  // 스토어의 checkAnswer 함수로 정답 확인
   const result = quizStore.checkAnswer(userAnswer.value)
   isCorrect.value = result.correct
   lastScore.value = result.score
@@ -208,41 +243,42 @@ async function submitAnswer() {
     ElMessage.error('오답입니다')
   }
   
-  // 2초 후 다음 문제로
+  // 2초 동안 결과를 보여주고 다음 문제로 넘어갑니다.
   setTimeout(() => {
     moveToNextQuestion()
   }, 2000)
 }
 
-function passQuestion() {
-  if (quizStore.passCount >= 3) {
-    ElMessage.warning('패스 횟수를 모두 사용했습니다')
-    return
-  }
-  
-  quizStore.passQuestion()
-  moveToNextQuestion()
-  ElMessage.info('문제를 패스했습니다')
-}
 
+/**
+ * 문제 건너뛰기
+ * 현재 문제를 푼 것으로 처리하지 않고(오답 처리) 넘어갑니다.
+ */
 function skipQuestion() {
   quizStore.skipQuestion()
   moveToNextQuestion()
   ElMessage.info('문제를 건너뛰었습니다')
 }
 
+/**
+ * 다음 문제로 이동 처리
+ * 다음 문제를 불러오거나 게임을 종료합니다.
+ */
 async function moveToNextQuestion() {
+  // 상태 초기화
   userAnswer.value = ''
   answerSubmitted.value = false
   isCorrect.value = false
   
+  // 스토어에서 다음 문제 준비
   const nextResult = quizStore.nextQuestion()
   
   if (nextResult.finished) {
+    // 게임이 끝났으면 결과를 저장하고 종료 화면을 보여줍니다.
     gameFinished.value = true
     await quizStore.saveResult()
   } else {
-    // 다음 문제 입력창에 포커스
+    // 다음 문제가 있으면 입력창에 포커스를 줍니다.
     await nextTick()
     answerInput.value?.focus()
   }
