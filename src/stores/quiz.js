@@ -25,9 +25,6 @@ export const useQuizStore = defineStore('quiz', () => {
     // 사용자가 제출한 답안들의 목록
     const answers = ref([])
 
-    // 사용자가 '패스'하기를 사용한 횟수
-    const passCount = ref(0)
-
     // 현재 획득한 총 점수
     const score = ref(0)
 
@@ -98,7 +95,6 @@ export const useQuizStore = defineStore('quiz', () => {
         questions.value = questionsList
         currentQuestionIndex.value = 0
         answers.value = []
-        passCount.value = 0
         score.value = 0
         tier.value = ''
 
@@ -342,7 +338,6 @@ export const useQuizStore = defineStore('quiz', () => {
         questions.value = []
         currentQuestionIndex.value = 0
         answers.value = []
-        passCount.value = 0
         score.value = 0
         tier.value = ''
         remainingTime.value = 0
@@ -357,7 +352,6 @@ export const useQuizStore = defineStore('quiz', () => {
         questions,
         currentQuestionIndex,
         answers,
-        passCount,
         score,
         tier,
         remainingTime,
