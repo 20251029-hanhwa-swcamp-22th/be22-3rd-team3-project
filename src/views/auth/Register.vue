@@ -5,47 +5,47 @@
         <h2 class="text-center mb-4">회원가입</h2>
         
         <el-form :model="form" :rules="rules" ref="formRef" @submit.prevent="handleSubmit">
-          <el-form-item prop="nickname">
-            <el-input 
-              v-model="form.nickname" 
-              placeholder="닉네임"
-              size="large"
+          <el-form-item label="닉네임" prop="nickname">
+            <el-input
+                v-model="form.nickname"
+                placeholder="닉네임을 입력하세요"
+                size="large"
             />
           </el-form-item>
-          
-          <el-form-item prop="email">
-            <el-input 
-              v-model="form.email" 
-              placeholder="이메일"
-              size="large"
-              type="email"
+
+          <el-form-item label="이메일" prop="email">
+            <el-input
+                v-model="form.email"
+                placeholder="이메일을 입력하세요"
+                size="large"
+                type="email"
             />
           </el-form-item>
-          
-          <el-form-item prop="password">
-            <el-input 
-              v-model="form.password" 
-              placeholder="비밀번호"
-              size="large"
-              type="password"
-              show-password
+
+          <el-form-item label="비밀번호" prop="password">
+            <el-input
+                v-model="form.password"
+                placeholder="비밀번호를 입력하세요"
+                size="large"
+                type="password"
+                show-password
             />
           </el-form-item>
-          
-          <el-form-item prop="confirmPassword">
-            <el-input 
-              v-model="form.confirmPassword" 
-              placeholder="비밀번호 확인"
-              size="large"
-              type="password"
-              show-password
+
+          <el-form-item label="비밀번호 확인" prop="confirmPassword">
+            <el-input
+                v-model="form.confirmPassword"
+                placeholder="비밀번호를 다시 입력하세요"
+                size="large"
+                type="password"
+                show-password
             />
           </el-form-item>
-          
+
           <el-form-item>
-            <el-button 
-              type="primary" 
-              size="large" 
+            <el-button
+              type="primary"
+              size="large"
               :loading="loading"
               native-type="submit"
               style="width: 100%"
