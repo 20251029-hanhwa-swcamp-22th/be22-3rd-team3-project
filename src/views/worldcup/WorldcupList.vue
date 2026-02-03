@@ -75,7 +75,7 @@
         >
           <!-- 썸네일 이미지 -->
           <div class="card-image">
-            <img :src="worldcup.thumbnail || '/placeholder.jpg'" :alt="worldcup.title" />
+            <img :src="getImageUrl(worldcup.thumbnail)" :alt="worldcup.title" />
           </div>
           <!-- 카드 본문: 제목, 설명, 통계 -->
           <div class="card-body">
@@ -124,6 +124,21 @@ const categories = ref([])        // 카테고리 목록 데이터
 const loading = ref(false)        // 로딩 상태 (스피너 표시용)
 const searchQuery = ref('')       // 검색어 입력값
 const selectedCategory = ref(null) // 선택된 카테고리 ID (null = 전체)
+
+// ===== 상수 =====
+const SERVER_URL = 'http://localhost:3000'
+
+// ===== 헬퍼 함수 =====
+/**
+ * 이미지 URL 포맷팅
+ * - 상대 경로(/uploads/...)를 절대 URL로 변환
+ * - 이미 http로 시작하는 경우 그대로 반환
+ */
+function getImageUrl(url) {
+  if (!url) return '/placeholder.jpg'
+  return url.startsWith('http') ? url : `${SERVER_URL}${url}`
+}
+
 
 // ===== 라이프사이클 훅 =====
 /**
