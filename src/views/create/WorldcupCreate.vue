@@ -7,93 +7,95 @@
       </div>
 
       <el-form
-        ref="formRef"
-        :model="form"
-        :rules="rules"
-        label-position="top"
-        class="create-form card card-glass"
-        @submit.prevent="handleSubmit"
+          ref="formRef"
+          :model="form"
+          :rules="rules"
+          label-position="top"
+          class="create-form card card-glass"
+          @submit.prevent="handleSubmit"
       >
         <h3>기본 정보</h3>
-        
+
         <el-form-item label="제목" prop="title">
           <el-input
-            v-model="form.title"
-            placeholder="월드컵 제목을 입력하세요"
-            size="large"
+              v-model="form.title"
+              placeholder="월드컵 제목을 입력하세요"
+              size="large"
           />
         </el-form-item>
 
         <el-form-item label="설명" prop="description">
           <el-input
-            v-model="form.description"
-            type="textarea"
-            :rows="3"
-            placeholder="월드컵에 대한 설명을 입력하세요"
+              v-model="form.description"
+              type="textarea"
+              :rows="3"
+              placeholder="월드컵에 대한 설명을 입력하세요"
           />
         </el-form-item>
 
         <el-form-item label="카테고리" prop="categoryId">
           <el-select
-            v-model="form.categoryId"
-            placeholder="카테고리를 선택하세요"
-            size="large"
-            style="width: 100%"
+              v-model="form.categoryId"
+              placeholder="카테고리를 선택하세요"
+              size="large"
+              style="width: 100%"
           >
             <el-option
-              v-for="category in categories"
-              :key="category.id"
-              :label="category.name"
-              :value="category.id"
+                v-for="category in categories"
+                :key="category.id"
+                :label="category.name"
+                :value="category.id"
             />
           </el-select>
         </el-form-item>
 
         <el-form-item label="썸네일 이미지" prop="thumbnail">
-          <ImageUploader v-model="form.thumbnail" />
+          <ImageUploader v-model="form.thumbnail"/>
         </el-form-item>
 
-        <el-divider />
+        <el-divider/>
 
         <h3>후보 등록 ({{ candidates.length }}개)</h3>
         <p class="hint">최소 32개의 후보를 등록해야 합니다.</p>
 
         <div class="candidates-grid">
           <div
-            v-for="(candidate, index) in candidates"
-            :key="index"
-            class="candidate-item card"
+              v-for="(candidate, index) in candidates"
+              :key="index"
+              class="candidate-item card"
           >
             <el-button
-              type="danger"
-              size="small"
-              circle
-              class="remove-btn"
-              @click="removeCandidate(index)"
+                type="danger"
+                size="small"
+                circle
+                class="remove-btn"
+                @click="removeCandidate(index)"
             >
-              <el-icon><Close /></el-icon>
+              <el-icon>
+                <Close/>
+              </el-icon>
             </el-button>
-            
+
             <div class="candidate-image">
-              <img v-if="candidate.imageUrl" :src="candidate.imageUrl" alt="후보 이미지" />
+              <img v-if="candidate.imageUrl" :src="candidate.imageUrl" alt="후보 이미지"/>
               <div v-else class="placeholder">이미지 없음</div>
             </div>
-            
+
             <el-input
-              v-model="candidate.name"
-              placeholder="후보 이름"
-              size="small"
-              class="mt-2"
+                v-model="candidate.name"
+                placeholder="후보 이름"
+                size="small"
+                class="mt-2"
             />
-            
+
             <el-upload
-              action="http://localhost:3000/upload"
-              accept=".jpg,.jpeg,.png,.gif,.webp"
-              name="image"
-              :headers="uploadHeaders"
-              :show-file-list="false"
-              :on-success="(res) => handleCandidateImageUpload(res, index)"
-              :before-upload="beforeUpload"
+                action="http://localhost:3000/upload"
+                accept=".jpg,.jpeg,.png,.gif,.webp"
+                name="image"
+                :headers="uploadHeaders"
+                :show-file-list="false"
+                :on-success="(res) => handleCandidateImageUpload(res, index)"
+                :before-upload="beforeUpload"
             >
               <el-button size="small" type="primary" class="mt-1">
                 이미지 업로드
@@ -102,18 +104,20 @@
           </div>
 
           <div class="add-candidate-btn card" @click="addCandidate">
-            <el-icon size="40"><Plus /></el-icon>
+            <el-icon size="40">
+              <Plus/>
+            </el-icon>
             <p>후보 추가</p>
           </div>
         </div>
 
         <el-form-item class="submit-section">
           <el-button
-            type="primary"
-            size="large"
-            :loading="loading"
-            native-type="submit"
-            :disabled="candidates.length < 32"
+              type="primary"
+              size="large"
+              :loading="loading"
+              native-type="submit"
+              :disabled="candidates.length < 32"
           >
             월드컵 만들기
           </el-button>
@@ -127,13 +131,13 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, computed } from 'vue'
-import { useRouter } from 'vue-router'
-import { useAuthStore } from '@/stores/auth'
-import { Plus, Close } from '@element-plus/icons-vue'
-import { ElMessage } from 'element-plus'
-import { worldcupApi } from '@/api/worldcupApi'
-import { commonApi } from '@/api/commonApi'
+import {computed, onMounted, reactive, ref} from 'vue'
+import {useRouter} from 'vue-router'
+import {useAuthStore} from '@/stores/auth'
+import {Close, Plus} from '@element-plus/icons-vue'
+import {ElMessage} from 'element-plus'
+import {worldcupApi} from '@/api/worldcupApi'
+import {commonApi} from '@/api/commonApi'
 import ImageUploader from '@/components/create/ImageUploader.vue'
 
 const router = useRouter()
@@ -154,22 +158,22 @@ const candidates = ref([])
 
 const uploadHeaders = computed(() => {
   const token = localStorage.getItem('token')
-  return token ? { Authorization: `Bearer ${token}` } : {}
+  return token ? {Authorization: `Bearer ${token}`} : {}
 })
 
 const rules = {
   title: [
-    { required: true, message: '제목을 입력해주세요', trigger: 'blur' },
-    { min: 2, max: 100, message: '제목은 2-100자 사이여야 합니다', trigger: 'blur' }
+    {required: true, message: '제목을 입력해주세요', trigger: 'blur'},
+    {min: 2, max: 100, message: '제목은 2-100자 사이여야 합니다', trigger: 'blur'}
   ],
   description: [
-    { required: true, message: '설명을 입력해주세요', trigger: 'blur' }
+    {required: true, message: '설명을 입력해주세요', trigger: 'blur'}
   ],
   categoryId: [
-    { required: true, message: '카테고리를 선택해주세요', trigger: 'change' }
+    {required: true, message: '카테고리를 선택해주세요', trigger: 'change'}
   ],
   thumbnail: [
-    { required: true, message: '썸네일 이미지를 업로드해주세요', trigger: 'change' }
+    {required: true, message: '썸네일 이미지를 업로드해주세요', trigger: 'change'}
   ]
 }
 
@@ -177,7 +181,7 @@ onMounted(async () => {
   await loadCategories()
   // 초기 후보 32개 생성
   for (let i = 0; i < 32; i++) {
-    candidates.value.push({ name: '', imageUrl: '' })
+    candidates.value.push({name: '', imageUrl: ''})
   }
 })
 
@@ -192,7 +196,7 @@ async function loadCategories() {
 }
 
 function addCandidate() {
-  candidates.value.push({ name: '', imageUrl: '' })
+  candidates.value.push({name: '', imageUrl: ''})
 }
 
 function removeCandidate(index) {
@@ -229,10 +233,23 @@ function beforeUpload(file) {
   return true;
 }
 
+const SERVER_URL = 'http://localhost:3000';
+
 function handleCandidateImageUpload(response, index) {
-  candidates.value[index].imageUrl = response.url
-  ElMessage.success('이미지 업로드 성공!')
+  console.log('서버 응답 데이터:', response);
+
+  // 서버 응답 구조에 맞춰 할당 (예: response.url 또는 response.path 등)
+  if (response && response.url) {
+    // 경로가 http로 시작하지 않으면 서버 주소를 붙여줌
+    candidates.value[index].imageUrl = response.url.startsWith('http')
+        ? response.url : `${SERVER_URL}${response.url}`;
+    ElMessage.success(`${index + 1}번 후보 이미지 업로드 성공!`);
+  } else {
+    console.error('응답 객체에 url 필드가 없습니다.');
+    ElMessage.error('서버 응답 형식이 올바르지 않습니다.');
+  }
 }
+
 
 async function handleSubmit() {
   if (!formRef.value) return
