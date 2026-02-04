@@ -141,6 +141,25 @@ server.get('/quizzes/:id/ranking', (req, res) => {
     res.json(results);
 });
 
+// 파일 삭제 API 추가
+server.delete('/upload/files/:filename', (req, res) => {
+
+  const filename = req.params.filename;
+  const filepath = path.join(__dirname, 'uploads', filename);
+
+  if (fs.existsSync(filepath)) {
+    fs.unlink(filepath, (err) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).json({ error: '파일 삭제 실패' });
+      }
+      res.json({ message: '파일 삭제 성공' });
+    });
+  } else {
+    res.status(404).json({ error: '파일을 찾을 수 없습니다' });
+  }
+});
+
 // Bind the router db to the app
 server.db = router.db;
 

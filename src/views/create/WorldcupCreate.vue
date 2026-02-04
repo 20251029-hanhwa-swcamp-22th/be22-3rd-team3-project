@@ -57,7 +57,7 @@
 
         <h3>후보 등록 ({{ candidates.length }}개)</h3>
         <p class="hint">최소 32개의 후보를 등록해야 합니다.</p>
-        
+
         <!-- 다중 이미지 업로드 -->
         <div class="bulk-upload-section">
           <!-- 
@@ -71,14 +71,16 @@
               accept=".jpg,.jpeg,.png,.gif,.webp"
               name="image"
               :headers="uploadHeaders"
-              :multiple="true"  
+              :multiple="true"
               :show-file-list="false"
               :on-success="handleBulkImageUpload"
               :before-upload="beforeUpload"
               :file-list="bulkFileList"
           >
             <el-button type="success" size="default">
-              <el-icon class="mr-1"><Upload /></el-icon>
+              <el-icon class="mr-1">
+                <Upload/>
+              </el-icon>
               여러 이미지 한번에 업로드
             </el-button>
             <template #tip>
@@ -292,15 +294,15 @@ function handleCandidateImageUpload(response, index) {
 // 다중 이미지 업로드 핸들러
 function handleBulkImageUpload(response, file, fileList) {
   console.log('다중 업로드 서버 응답:', response);
-  
+
   if (response && response.url) {
     // 빈 후보 슬롯 찾기 (이미지가 없는 첫 번째 후보)
     const emptyIndex = candidates.value.findIndex(c => !c.imageUrl);
-    
+
     if (emptyIndex !== -1) {
       // 서버에서 이미 /uploads/파일명 형식으로 반환하므로 그대로 저장
       candidates.value[emptyIndex].imageUrl = response.url;
-      
+
       // 업로드된 파일 개수 계산
       const uploadedCount = fileList.filter(f => f.status === 'success').length;
       ElMessage.success(`이미지 업로드 중... (${uploadedCount}/${fileList.length})`);
@@ -322,26 +324,26 @@ async function handleSubmit() {
     const validationResult = await formRef.value.validate().catch((errors) => {
       // 검증 실패 시 어떤 필드가 비어있는지 확인
       const errorMessages = [];
-      
+
       // rules 객체의 각 필드를 확인하여 빈 부분 찾기
       if (!form.title || form.title.trim() === '') {
         errorMessages.push('📝 제목을 입력해주세요');
       } else if (form.title.length < 2 || form.title.length > 100) {
         errorMessages.push('📝 제목은 2-100자 사이여야 합니다');
       }
-      
+
       if (!form.description || form.description.trim() === '') {
         errorMessages.push('📄 설명을 입력해주세요');
       }
-      
+
       if (!form.categoryId) {
         errorMessages.push('🏷️ 카테고리를 선택해주세요');
       }
-      
+
       if (!form.thumbnail || form.thumbnail.trim() === '') {
         errorMessages.push('🖼️ 썸네일 이미지를 업로드해주세요');
       }
-      
+
       // 에러 메시지 출력
       if (errorMessages.length > 0) {
         errorMessages.forEach(msg => {
@@ -350,7 +352,7 @@ async function handleSubmit() {
       } else {
         ElMessage.error('입력 항목 중 빠진 부분이 있는지 확인해주세요.');
       }
-      
+
       throw new Error('Form validation failed');
     });
 
@@ -361,31 +363,36 @@ async function handleSubmit() {
 
     // 최소 32개 조건 체크
     if (validCandidates.length < 32) {
-      ElMessage.error('최소 32개의 후보에 이름과 이미지를 모두 입력해주세요. 💡 팁: 상단의 "여러 이미지 한번에 업로드" 버튼으로 여러 이미지를 한번에 등록할 수 있습니다!')
-      return
+      ElMessage.error(
+          `🎯 최소 32개의 후보가 필요합니다. (현재 완료: ${validCandidates.length}/32)
+          💡 팁: 상단의 "여러 이미지 한번에 업로드" 버튼으로 여러 이미지를 한번에 등록할 수 있습니다!`
+      );
+      return; // 실행 중단
     }
 
-    loading.value = true
+    // 3. 생성 프로세스 시작
+    loading.value = true;
 
-    try {
-      // 월드컵 생성
-      const worldcupData = {
-        title: form.title,
-        description: form.description,
-        categoryId: form.categoryId,
-        thumbnail: form.thumbnail,
-        userId: authStore.user.id,
-        createdAt: new Date().toISOString(),
-        viewCount: 0,
-        playCount: 0
-      }
+    // 4. 월드컵 기본 정보 생성 (worldcupApi 사용)
+    const worldcupData = {
+      title: form.title,
+      description: form.description,
+      categoryId: form.categoryId,
+      thumbnail: form.thumbnail,
+      userId: authStore.user?.id,
+      createdAt: new Date().toISOString(),
+      viewCount: 0,
+      playCount: 0
+    };
 
-      const worldcupResponse = await worldcupApi.createWorldcup(worldcupData)
-      const worldcupId = worldcupResponse.data.id
+    // apiClient 대신 정의된 worldcupApi.createWorldcup 호출
+    const worldcupResponse = await worldcupApi.createWorldcup(worldcupData);
+    const worldcupId = worldcupResponse.data.id;
 
-      // 후보 생성
-      for (const candidate of validCandidates) {
-        await worldcupApi.createCandidate({
+    // 5. 유효한 후보자들을 서버에 등록
+    // 여러 개의 요청을 병렬로 처리하여 속도를 높입니다.
+    const candidatePromises = validCandidates.map((candidate) =>
+        worldcupApi.createCandidate({
           worldcupId,
           name: candidate.name,
           imageUrl: candidate.imageUrl,
