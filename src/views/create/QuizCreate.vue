@@ -94,7 +94,7 @@
 
             <el-form-item :label="`문제 ${index + 1} - 이미지 (선택사항)`">
               <el-upload
-                action="http://localhost:3000/upload"
+                action="/api/upload"
                 name="image"
                 :headers="uploadHeaders"
                 :show-file-list="false"
@@ -106,7 +106,7 @@
                 </el-button>
               </el-upload>
               <div v-if="question.questionImage" class="question-image-preview">
-                <img :src="question.questionImage" alt="문제 이미지" />
+                <img :src="getImageUrl(question.questionImage)" alt="문제 이미지" />
               </div>
             </el-form-item>
           </div>
@@ -141,6 +141,7 @@ import { quizApi } from '@/api/quizApi'
 import { commonApi } from '@/api/commonApi'
 import apiClient from '@/api/axios'
 import ImageUploader from '@/components/create/ImageUploader.vue'
+import {getImageUrl} from "@/utils/helpers.js";
 
 const router = useRouter()
 const authStore = useAuthStore()

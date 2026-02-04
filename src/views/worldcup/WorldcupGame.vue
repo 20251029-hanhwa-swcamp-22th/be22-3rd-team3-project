@@ -113,6 +113,7 @@ import { useWorldcupStore } from '@/stores/worldcup'  // 월드컵 게임 상태
 import { worldcupApi } from '@/api/worldcupApi'       // 월드컵 API
 import { ElMessage } from 'element-plus'              // 에러 메시지 표시용
 import ParticleEffect from '@/components/ParticleEffect.vue'  // 파티클 효과 컴포넌트
+import {getImageUrl} from "../../utils/helpers.js";
 
 // ===== 라우터 & 스토어 =====
 const route = useRoute()
@@ -142,21 +143,6 @@ const roundName = computed(() => worldcupStore.roundName)
  * 진행률 정보 - { current: 현재 매치, total: 총 매치, percentage: 퍼센트 }
  */
 const progress = computed(() => worldcupStore.getProgress())
-
-const SERVER_URL = 'http://localhost:3000'
-
-// ===== 헬퍼 함수 =====
-/**
- * 이미지 URL 포맷팅
- * - 상대 경로(/uploads/...)를 절대 URL로 변환
- * - 이미 http로 시작하는 경우 그대로 반환
- */
-function getImageUrl(url) {
-  if (!url) return '/placeholder.jpg'
-  if (url.startsWith('http')) return url
-  // 슬래시가 없으면 추가
-  return url.startsWith('/') ? `${SERVER_URL}${url}` : `${SERVER_URL}/${url}`
-}
 
 // ===== 라이프사이클 훅 =====
 /**

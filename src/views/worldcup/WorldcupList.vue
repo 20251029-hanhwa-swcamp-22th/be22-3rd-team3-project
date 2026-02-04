@@ -21,7 +21,7 @@
 -->
 <template>
   <div class="worldcup-list-page">
-    <ExitTransition ref="exitTransition" color="#FFB3D9" />
+    <ExitTransition ref="exitTransition" color="#FFB3D9"/>
     <div class="container">
       <!-- ===== 페이지 헤더 영역 ===== -->
       <!-- 제목 + 월드컵 만들기 버튼 (로그인 시에만 표시) -->
@@ -37,25 +37,27 @@
       <div class="filters mb-4">
         <!-- 검색 입력창: 입력 시 handleSearch 호출 → loadWorldcups 실행 -->
         <el-input
-          v-model="searchQuery"
-          placeholder="검색..."
-          size="large"
-          clearable
-          @input="handleSearch"
+            v-model="searchQuery"
+            placeholder="검색..."
+            size="large"
+            clearable
+            @input="handleSearch"
         >
           <template #prefix>
-            <el-icon><search /></el-icon>
+            <el-icon>
+              <search/>
+            </el-icon>
           </template>
         </el-input>
 
         <!-- 카테고리 선택: 변경 시 loadWorldcups 직접 호출 -->
         <el-select v-model="selectedCategory" placeholder="카테고리" size="large" @change="loadWorldcups">
-          <el-option label="전체" :value="null" />
-          <el-option 
-            v-for="category in categories" 
-            :key="category.id"
-            :label="category.name"
-            :value="category.id"
+          <el-option label="전체" :value="null"/>
+          <el-option
+              v-for="category in categories"
+              :key="category.id"
+              :label="category.name"
+              :value="category.id"
           />
         </el-select>
       </div>
@@ -66,16 +68,16 @@
       <div v-loading="loading" class="grid grid-3">
         <!-- 각 월드컵 카드: 클릭 시 게임 페이지로 이동 -->
         <router-link
-          v-for="(worldcup, index) in worldcups"
-          :key="worldcup.id"
-          :to="`/worldcup/${worldcup.id}/play`"
-          class="worldcup-card card drop-in"
-          :style="{ animationDelay: `${index * 0.1}s` }"
-          @click.prevent="handleNavigation(`/worldcup/${worldcup.id}/play`)"
+            v-for="(worldcup, index) in worldcups"
+            :key="worldcup.id"
+            :to="`/worldcup/${worldcup.id}/play`"
+            class="worldcup-card card drop-in"
+            :style="{ animationDelay: `${index * 0.1}s` }"
+            @click.prevent="handleNavigation(`/worldcup/${worldcup.id}/play`)"
         >
           <!-- 썸네일 이미지 -->
           <div class="card-image">
-            <img :src="getImageUrl(worldcup.thumbnail)" :alt="worldcup.title" />
+            <img :src="getImageUrl(worldcup.thumbnail)" :alt="worldcup.title"/>
           </div>
           <!-- 카드 본문: 제목, 설명, 통계 -->
           <div class="card-body">
@@ -105,13 +107,14 @@
  * WorldcupList.vue - Script Section
  * ============================================================================
  */
-import { ref, onMounted } from 'vue'
-import { useAuthStore } from '@/stores/auth'       // 인증 상태 (로그인 여부 확인용)
-import { worldcupApi } from '@/api/worldcupApi'   // 월드컵 API
-import { commonApi } from '@/api/commonApi'       // 공통 API (카테고리 조회)
-import { Search } from '@element-plus/icons-vue'  // 검색 아이콘
-import { useRouter } from 'vue-router'
+import {ref, onMounted} from 'vue'
+import {useAuthStore} from '@/stores/auth'       // 인증 상태 (로그인 여부 확인용)
+import {worldcupApi} from '@/api/worldcupApi'   // 월드컵 API
+import {commonApi} from '@/api/commonApi'       // 공통 API (카테고리 조회)
+import {Search} from '@element-plus/icons-vue'  // 검색 아이콘
+import {useRouter} from 'vue-router'
 import ExitTransition from '@/components/ExitTransition.vue'
+import {getImageUrl} from "../../utils/helpers.js";
 
 // ===== Store & Router =====
 const authStore = useAuthStore()  // 로그인 상태 확인용
@@ -124,21 +127,6 @@ const categories = ref([])        // 카테고리 목록 데이터
 const loading = ref(false)        // 로딩 상태 (스피너 표시용)
 const searchQuery = ref('')       // 검색어 입력값
 const selectedCategory = ref(null) // 선택된 카테고리 ID (null = 전체)
-
-// ===== 상수 =====
-const SERVER_URL = 'http://localhost:3000'
-
-// ===== 헬퍼 함수 =====
-/**
- * 이미지 URL 포맷팅
- * - 상대 경로(/uploads/...)를 절대 URL로 변환
- * - 이미 http로 시작하는 경우 그대로 반환
- */
-function getImageUrl(url) {
-  console.log(`${SERVER_URL}${url}`);
-  if (!url) return '/placeholder.jpg'
-  return url.startsWith('http') ? url : `${SERVER_URL}${url}`
-}
 
 
 // ===== 라이프사이클 훅 =====
@@ -184,7 +172,7 @@ async function loadWorldcups() {
     if (selectedCategory.value) {
       params.categoryId = selectedCategory.value  // 카테고리 필터
     }
-    
+
     const response = await worldcupApi.getWorldcups(params)
     worldcups.value = response.data
   } catch (error) {
@@ -219,7 +207,7 @@ async function handleNavigation(path) {
 /* 월드컵 페이지 전체 배경 */
 .worldcup-list-page {
   min-height: 100vh;
-  background: #FFB3D9;  /* 핑크색 배경 */
+  background: #FFB3D9; /* 핑크색 배경 */
   padding: var(--spacing-xl) 0;
 }
 
