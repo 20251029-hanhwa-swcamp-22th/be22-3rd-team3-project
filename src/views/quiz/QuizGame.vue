@@ -101,7 +101,7 @@
           <div class="result-stats">
             <div class="stat-box">
               <div class="stat-label">최종 점수</div>
-              <div class="stat-value large">{{ quizStore.score }}</div>
+              <div class="stat-value large">{{ finalScore }}점</div>
             </div>
             <div class="stat-box">
               <div class="stat-label">정답률</div>
@@ -179,6 +179,11 @@ const progress = computed(() => {
 const correctRate = computed(() => {
   if (!quizStore.totalQuestions) return 0
   return Math.round((quizStore.correctCount / quizStore.totalQuestions) * 100)
+})
+
+// 최종 점수를 계산합니다 (correctCount 기반)
+const finalScore = computed(() => {
+  return quizStore.correctCount * 10
 })
 
 // ==========================================
@@ -291,14 +296,23 @@ async function moveToNextQuestion() {
   answerSubmitted.value = false
   isCorrect.value = false
 
-  // 스토어에서 다음 문제 준비
-  const nextResult = quizStore.nextQuestion()
-
-  if (nextResult.finished) {
-    // 게임이 끝났으면 결과를 저장하고 종료 화면을 보여줍니다.
+  // 다음 문제로 이동하기 전에 먼저 종료 체크
+  // currentQuestionIndex는 0부터 시작하므로
+  // index가 9(10번째 문제)이고 totalQuestions가 10이면 마지막 문제
+  if (quizStore.currentQuestionIndex + 1 >= quizStore.totalQuestions) {
+    // endGame() 호출 - 티어 산정 수행
+    quizStore.endGame()
+    
+    // 마지막 문제를 완료했으면 바로 종료 처리
     gameFinished.value = true
     await quizStore.saveResult()
-  } else {
+    return  // 더 이상 진행하지 않음
+  }
+
+  // 아직 문제가 남았으면 다음 문제로 이동
+  const nextResult = quizStore.nextQuestion()
+
+  if (!nextResult.finished) {
     // 다음 문제가 있으면 입력창에 포커스를 줍니다.
     await nextTick()
     answerInput.value?.focus()

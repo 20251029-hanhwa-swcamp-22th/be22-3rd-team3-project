@@ -119,6 +119,7 @@
                 placeholder="후보 이름"
                 size="small"
                 class="mt-2"
+                :tabindex="index + 1"
             />
 
             <el-upload
