@@ -204,7 +204,7 @@ async function loadCategories() {
 
 function addQuestion() {
   questions.value.push({
-    questionText: '',
+    questionText: '사진을 보고 정답을 맞춰보세요.',
     answer: '',
     timeLimit: 10,
     questionImage: null
