@@ -25,7 +25,9 @@
     <div class="container">
       <!-- 로딩 상태 -->
       <div v-if="loading" class="loading">
-        <el-icon class="is-loading" size="60"><Loading /></el-icon>
+        <el-icon class="is-loading" size="60">
+          <Loading/>
+        </el-icon>
         <p>월드컵 정보를 불러오는 중...</p>
       </div>
 
@@ -34,7 +36,9 @@
         <!-- 뒤로가기 버튼 -->
         <div class="back-link">
           <router-link to="/worldcup" class="btn-back">
-            <el-icon><ArrowLeft /></el-icon>
+            <el-icon>
+              <ArrowLeft/>
+            </el-icon>
             목록으로
           </router-link>
         </div>
@@ -43,7 +47,7 @@
         <div class="detail-card card card-glass">
           <!-- 썸네일 -->
           <div class="thumbnail-section">
-            <img :src="getImageUrl(worldcup.thumbnail)" :alt="worldcup.title" class="thumbnail" />
+            <img :src="getImageUrl(worldcup.thumbnail)" :alt="worldcup.title" class="thumbnail"/>
           </div>
 
           <!-- 정보 섹션 -->
@@ -73,28 +77,28 @@
             <!-- 라운드 선택 -->
             <div class="round-selection">
               <label class="round-label">라운드 선택</label>
-              <el-select 
-                v-model="selectedRound" 
-                placeholder="라운드를 선택하세요"
-                size="large"
-                class="round-select"
+              <el-select
+                  v-model="selectedRound"
+                  placeholder="라운드를 선택하세요"
+                  size="large"
+                  class="round-select"
               >
-                <el-option 
-                  v-for="option in roundOptions" 
-                  :key="option.value" 
-                  :label="option.label" 
-                  :value="option.value"
+                <el-option
+                    v-for="option in roundOptions"
+                    :key="option.value"
+                    :label="option.label"
+                    :value="option.value"
                 />
               </el-select>
             </div>
 
             <!-- 액션 버튼 -->
             <div class="actions">
-              <el-button 
-                type="primary" 
-                size="large" 
-                class="play-btn"
-                @click="startGame"
+              <el-button
+                  type="primary"
+                  size="large"
+                  class="play-btn"
+                  @click="startGame"
               >
                 🎮 플레이 시작
               </el-button>
@@ -121,11 +125,11 @@
  * WorldcupDetail.vue - Script Section
  * ============================================================================
  */
-import { ref, computed, onMounted } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import { Loading, ArrowLeft } from '@element-plus/icons-vue'
-import { worldcupApi } from '@/api/worldcupApi'
-import { getImageUrl } from '@/utils/helpers'
+import {ref, computed, onMounted} from 'vue'
+import {useRoute, useRouter} from 'vue-router'
+import {Loading, ArrowLeft} from '@element-plus/icons-vue'
+import {worldcupApi} from '@/api/worldcupApi'
+import {getImageUrl} from '@/utils/helpers'
 import ExitTransition from '@/components/ExitTransition.vue'
 
 // ===== Router =====
@@ -138,7 +142,7 @@ const exitTransition = ref(null)
 const worldcup = ref(null)
 const candidates = ref([])
 const loading = ref(true)
-const selectedRound = ref(16)  // 기본값: 16강
+const selectedRound = ref('')  // 기본값: ''
 
 // ===== Computed =====
 const candidatesCount = computed(() => candidates.value.length)
@@ -147,11 +151,12 @@ const candidatesCount = computed(() => candidates.value.length)
 const roundOptions = computed(() => {
   const count = candidatesCount.value
   const options = []
-  
-  if (count >= 8) options.push({ label: '8강 (8명)', value: 8 })
-  if (count >= 16) options.push({ label: '16강 (16명)', value: 16 })
-  if (count >= 32) options.push({ label: '32강 (32명)', value: 32 })
-  
+
+  if (count >= 8 ) options.push({label: '8강', value: 8})
+  if (count >= 16 ) options.push({label: '16강', value: 16})
+  if (count >= 32) options.push({label: '32강', value: 32})
+  if (count >= 64) options.push({label: '64강', value: 64})
+
   return options
 })
 
@@ -163,10 +168,10 @@ onMounted(async () => {
       worldcupApi.getWorldcup(worldcupId),
       worldcupApi.getCandidates(worldcupId)
     ])
-    
+
     worldcup.value = worldcupRes.data
     candidates.value = candidatesRes.data
-    
+
     // 후보 수에 맞는 기본 라운드 설정
     const count = candidates.value.length
     if (count >= 32) {
@@ -332,15 +337,15 @@ async function startGame() {
   .detail-card {
     grid-template-columns: 1fr;
   }
-  
+
   .thumbnail {
     height: 250px;
   }
-  
+
   .stats {
     justify-content: center;
   }
-  
+
   .actions {
     flex-direction: column;
   }

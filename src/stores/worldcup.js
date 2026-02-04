@@ -8,6 +8,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
     const currentRound = ref([])
     const nextRound = ref([])
     const roundName = ref('32강')
+    const startRoundCount = ref(16)  // 시작 라운드 (8, 16, 32 등)
     const matchIndex = ref(0)
     const selections = ref([])
     const top4 = ref([])
@@ -23,13 +24,24 @@ export const useWorldcupStore = defineStore('worldcup', () => {
 
         // Determine round name based on candidate count
         const count = candidatesList.length
+        startRoundCount.value = count  // 시작 라운드 저장
         roundName.value = count === 32 ? '32강' : count === 16 ? '16강' :
             count === 8 ? '8강' : count === 4 ? '4강' : '결승'
     }
 
     function selectCandidate(candidate) {
-        // Save selection
-        selections.value.push(candidate.id)
+        // 현재 매치 정보 가져오기
+        const currentMatch = getCurrentMatch()
+
+        // Save selection with match info (left, right, selected, round)
+        if (currentMatch) {
+            selections.value.push({
+                leftId: currentMatch.left.id,
+                rightId: currentMatch.right.id,
+                selectedId: candidate.id,
+                round: roundName.value
+            })
+        }
 
         // Add to next round
         nextRound.value.push(candidate)
@@ -103,6 +115,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
                 winnerId: winner.id,
                 top4: top4.value.map(c => c.id),
                 selections: selections.value,
+                startRound: startRoundCount.value,  // 시작 라운드 저장
                 createdAt: new Date().toISOString()
             }
 
@@ -121,6 +134,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
         currentRound.value = []
         nextRound.value = []
         roundName.value = '32강'
+        startRoundCount.value = 16
         matchIndex.value = 0
         selections.value = []
         top4.value = []
@@ -131,6 +145,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
         candidates,
         currentRound,
         roundName,
+        startRoundCount,
         matchIndex,
         selections,
         top4,
