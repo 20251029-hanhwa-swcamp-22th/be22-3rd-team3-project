@@ -3,7 +3,6 @@
     <el-upload
       :action="uploadUrl"
       :name="uploadFieldName"
-      :headers="headers"
       :on-success="handleSuccess"
       :on-error="handleError"
       :before-upload="beforeUpload"
@@ -48,10 +47,7 @@ const uploadFieldName = computed(() => {
   return props.multiple ? 'images' : 'image'
 })
 
-const headers = computed(() => {
-  const token = localStorage.getItem('token')
-  return token ? { Authorization: `Bearer ${token}` } : {}
-})
+
 
 const fileList = ref([])
 

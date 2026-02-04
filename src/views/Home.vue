@@ -17,9 +17,10 @@
         <div class="game-buttons">
           <div 
             class="game-button btn-worldcup"
+            :class="{ expanding: expandingButton === 'worldcup' }"
             @mouseenter="isWorldcupHover = true"
             @mouseleave="isWorldcupHover = false"
-            @click="navigateTo('/worldcup', '#FFB3D9')"
+            @click="navigateTo('/worldcup', 'worldcup', $event)"
           >
             <img src="/trophy-icon.png" alt="trophy" class="icon icon-image" />
             <span class="text">월드컵</span>
@@ -27,9 +28,10 @@
           
           <div 
             class="game-button btn-quiz"
+            :class="{ expanding: expandingButton === 'quiz' }"
             @mouseenter="isQuizHover = true"
             @mouseleave="isQuizHover = false"
-            @click="navigateTo('/quiz', '#D4BBFF')"
+            @click="navigateTo('/quiz', 'quiz', $event)"
           >
             <img src="/quiz-icon.png" alt="quiz" class="icon icon-image" />
             <span class="text">퀴즈</span>
@@ -44,7 +46,10 @@
         <h2 class="section-title fade-in-section">인기 콘텐츠</h2>
         
         <div v-if="popularWorldcups.length > 0" class="content-section">
-          <h3 class="subsection-title fade-in-section">🏆 인기 월드컵</h3>
+          <h3 class="subsection-title fade-in-section">
+            <img src="/trophy-icon.png" alt="trophy" class="section-icon" />
+            인기 월드컵
+          </h3>
           <div class="content-grid">
             <router-link 
               v-for="(worldcup, index) in popularWorldcups" 
@@ -63,7 +68,10 @@
         </div>
 
         <div v-if="popularQuizzes.length > 0" class="content-section">
-          <h3 class="subsection-title fade-in-section">🎓 인기 퀴즈</h3>
+          <h3 class="subsection-title fade-in-section">
+            <img src="/quiz-icon.png" alt="quiz" class="section-icon" />
+            인기 퀴즈
+          </h3>
           <div class="content-grid">
             <router-link 
               v-for="(quiz, index) in popularQuizzes" 
@@ -151,12 +159,37 @@ const popularWorldcups = ref([])
 const popularQuizzes = ref([])
 const isWorldcupHover = ref(false)
 const isQuizHover = ref(false)
+const expandingButton = ref(null)  // 확대 중인 버튼 추적
 
-const navigateTo = (path, color) => {
-  transitionStore.triggerTransition(color)
+const navigateTo = (path, buttonType, event) => {
+  // 버튼의 현재 위치 계산
+  const button = event.currentTarget
+  const rect = button.getBoundingClientRect()
+  
+  // 버튼의 중심 좌표
+  const buttonCenterX = rect.left + rect.width / 2
+  const buttonCenterY = rect.top + rect.height / 2
+  
+  // CSS 변수로 버튼 위치 저장
+  button.style.setProperty('--button-x', `${buttonCenterX}px`)
+  button.style.setProperty('--button-y', `${buttonCenterY}px`)
+  
+  // 버튼 색상에 맞게 body 배경색 미리 설정 (흰 배경 방지)
+  const bgColor = buttonType === 'worldcup' ? '#FFB3D9' : '#D4BBFF'
+  document.body.style.backgroundColor = bgColor
+  
+  // 버튼 확대 시작
+  expandingButton.value = buttonType
+  
+  // 300ms 후 페이지 전환
   setTimeout(() => {
     router.push(path)
-  }, 400)
+    // 페이지 전환 후 상태 초기화 및 body 배경색 제거 (페이지 자체 배경색 사용)
+    setTimeout(() => {
+      expandingButton.value = null
+      document.body.style.backgroundColor = ''  // 원래대로 복원
+    }, 100)
+  }, 300)
 }
 
 onMounted(async () => {
@@ -309,6 +342,32 @@ onMounted(async () => {
   position: relative;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   cursor: pointer;
+}
+
+/* 버튼 확대 애니메이션 */
+.game-button.expanding {
+  position: fixed;
+  z-index: 9999;
+  animation: expandButton 0.6s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes expandButton {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(
+      calc(50vw - 50% - var(--button-x)),
+      calc(50vh - 50% - var(--button-y))
+    ) scale(15);
+  }
+}
+
+/* 확대 중일 때 내부 콘텐츠 숨기기 */
+.game-button.expanding .icon-image,
+.game-button.expanding .text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .btn-worldcup {
@@ -637,6 +696,16 @@ onMounted(async () => {
   font-weight: 400;
   margin-bottom: 1.5rem;
   color: #2D2D2D;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 섹션 제목 아이콘 */
+.subsection-title .section-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .content-grid {
