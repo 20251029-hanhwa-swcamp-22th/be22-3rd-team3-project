@@ -906,7 +906,30 @@
     }
   ],
   "quiz_results": [
-
+    {
+      "quizId": 2,
+      "userId": 4,
+      "nickname": "김태형",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T13:15:07.420Z",
+      "id": 1
+    },
+    {
+      "quizId": 3,
+      "userId": 4,
+      "nickname": "김태형",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 10,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T13:33:15.002Z",
+      "id": 2
+    }
   ],
   "categories": [
     {
