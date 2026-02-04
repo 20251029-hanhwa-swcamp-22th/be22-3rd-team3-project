@@ -45,6 +45,10 @@
               <!-- 문제 번호 -->
               <div class="question-number">{{ index + 1 }}</div>
               <div class="question-content">
+                <!-- 문제 이미지 -->
+                <div v-if="question.questionImage" class="question-image">
+                  <img :src="getImageUrl(question.questionImage)" :alt="'문제 ' + (index + 1)" />
+                </div>
                 <div class="question-text">{{ question.questionText }}</div>
                 <div class="question-answer">정답: {{ question.answer }}</div>
                 <div class="question-stats">
@@ -98,7 +102,7 @@ import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'
 import apiClient from '@/api/axios'
 import { quizApi } from '@/api/quizApi'
-import { formatTime } from '@/utils/helpers'
+import { formatTime, getImageUrl } from '@/utils/helpers'
 
 const route = useRoute()
 const quizId = route.params.id
@@ -219,7 +223,6 @@ function getQuestionAccuracy(question) {
   font-weight: bold;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
-  //-webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
@@ -287,13 +290,27 @@ function getQuestionAccuracy(question) {
   align-items: center;
   justify-content: center;
   background: var(--gradient-primary);
-  color: white;
+  color: #070606;
   border-radius: 50%;
   font-weight: bold;
 }
 
 .question-content {
   flex: 1;
+}
+
+.question-image {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto var(--spacing-md);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.question-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .question-text {
