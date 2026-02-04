@@ -101,7 +101,7 @@
           <div class="result-stats">
             <div class="stat-box">
               <div class="stat-label">최종 점수</div>
-              <div class="stat-value large">{{ finalScore }}점</div>
+              <div class="stat-value">{{ finalScore }}점</div>
             </div>
             <div class="stat-box">
               <div class="stat-label">정답률</div>
@@ -160,6 +160,7 @@ const isCorrect = ref(false) // 현재 문제 정답 여부
 const lastScore = ref(0) // 방금 획득한 점수
 const gameFinished = ref(false) // 게임 종료 여부
 const answerInput = ref(null) // 입력창 DOM 참조 (포커스 이동용)
+const finalScoreValue = ref(0) // 최종 점수 저장용
 
 // ==========================================
 // Computed Properties (계산된 속성)
@@ -302,6 +303,22 @@ async function moveToNextQuestion() {
   if (quizStore.currentQuestionIndex + 1 >= quizStore.totalQuestions) {
     // endGame() 호출 - 티어 산정 수행
     quizStore.endGame()
+    
+    // 점수를 로컬 변수에 확실하게 저장 (gameFinished 전에!)
+    // quizStore.score를 우선 사용
+    const currentScore = quizStore.score
+    const calculatedScore = quizStore.correctCount * 10
+    finalScoreValue.value = currentScore !== undefined && currentScore !== null ? currentScore : calculatedScore
+    
+    console.log('게임 종료 - 점수 저장:', {
+      storeScore: currentScore,
+      calculatedScore: calculatedScore,
+      finalScore: finalScoreValue.value,
+      correctCount: quizStore.correctCount
+    })
+    
+    // 점수 설정 후 UI 업데이트를 기다림
+    await nextTick()
     
     // 마지막 문제를 완료했으면 바로 종료 처리
     gameFinished.value = true
