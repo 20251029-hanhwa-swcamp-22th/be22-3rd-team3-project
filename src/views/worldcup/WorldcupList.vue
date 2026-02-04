@@ -84,9 +84,15 @@
             <h3>{{ worldcup.title }}</h3>
             <p class="card-description">{{ worldcup.description }}</p>
             <!-- 조회수 & 플레이 횟수 -->
-            <div class="card-stats">
-              <span>👁️ {{ worldcup.viewCount || 0 }}</span>
-              <span>🎮 {{ worldcup.playCount || 0 }}</span>
+          </div>
+          <div class="card-stats">
+            <div class="stats" style="margin-top: auto; margin-bottom: 10px;">
+                <span><img src="@/assets/icons/views-icon.png" style="width:20px" alt="조회수" class="stat-icon"/> {{
+                    worldcup.viewCount || 0
+                  }}</span>
+              <span><img src="@/assets/icons/play-icon.png" style="width:20px" alt="플레이" class="stat-icon"/>{{
+                  worldcup.playCount || 0
+                }}</span>
             </div>
           </div>
         </router-link>
