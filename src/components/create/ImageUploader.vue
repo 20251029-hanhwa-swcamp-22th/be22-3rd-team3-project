@@ -1,26 +1,28 @@
 <template>
   <div class="image-uploader">
     <el-upload
-      :action="uploadUrl"
-      :name="uploadFieldName"
-      :on-success="handleSuccess"
-      :on-error="handleError"
-      :before-upload="beforeUpload"
-      :file-list="fileList"
-      :limit="limit"
-      :multiple="multiple"
-      list-type="picture-card"
-      :auto-upload="true"
+        :action="uploadUrl"
+        :name="uploadFieldName"
+        :on-success="handleSuccess"
+        :on-error="handleError"
+        :before-upload="beforeUpload"
+        :file-list="fileList"
+        :limit="limit"
+        :multiple="multiple"
+        list-type="picture-card"
+        :auto-upload="true"
     >
-      <el-icon><Plus /></el-icon>
+      <el-icon>
+        <Plus/>
+      </el-icon>
     </el-upload>
   </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-import { Plus } from '@element-plus/icons-vue'
-import { ElMessage } from 'element-plus'
+import {ref, computed} from 'vue'
+import {Plus} from '@element-plus/icons-vue'
+import {ElMessage} from 'element-plus'
 
 const props = defineProps({
   modelValue: {
@@ -40,13 +42,13 @@ const props = defineProps({
 const emit = defineEmits(['update:modelValue'])
 
 const uploadUrl = computed(() => {
-  return props.multiple ? 'http://localhost:3000/upload-multiple' : 'http://localhost:3000/upload'
+  return import.meta.env.VITE_API_BASE_URL
+  + props.multiple ? '/upload-multiple' : '/upload'
 })
 
 const uploadFieldName = computed(() => {
   return props.multiple ? 'images' : 'image'
 })
-
 
 
 const fileList = ref([])

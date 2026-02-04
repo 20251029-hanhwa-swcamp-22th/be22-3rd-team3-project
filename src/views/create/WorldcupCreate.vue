@@ -67,7 +67,7 @@
           file-list : 업로드할 파일 목록
           -->
           <el-upload
-              action="http://localhost:3000/upload"
+              action="{{import.meta.env.VITE_API_BASE_URL}}+/upload"
               accept=".jpg,.jpeg,.png,.gif,.webp"
               name="image"
               :headers="uploadHeaders"
@@ -122,7 +122,7 @@
             />
 
             <el-upload
-                action="http://localhost:3000/upload"
+                action="{{import.meta.env.VITE_API_BASE_URL}}+/upload"
                 accept=".jpg,.jpeg,.png,.gif,.webp"
                 name="image"
                 :headers="uploadHeaders"
@@ -267,15 +267,6 @@ function beforeUpload(file) {
   return true;
 }
 
-const SERVER_URL = 'http://localhost:3000';
-
-// 이미지 URL 포맷팅 헬퍼 함수
-function getImageUrl(url) {
-  if (!url) return '';
-  if (url.startsWith('http')) return url;
-  // 슬래시가 없으면 추가
-  return url.startsWith('/') ? `${SERVER_URL}${url}` : `${SERVER_URL}/${url}`;
-}
 
 function handleCandidateImageUpload(response, index) {
   console.log('서버 응답 데이터:', response);
