@@ -18,11 +18,14 @@
               </span>
               <template #dropdown>
                 <el-dropdown-menu>
-                  <el-dropdown-item>
-                    <router-link to="/worldcup/create">월드컵 만들기</router-link>
+                  <el-dropdown-item @click="router.push('/worldcup/create')">
+                    월드컵 만들기
                   </el-dropdown-item>
-                  <el-dropdown-item>
-                    <router-link to="/quiz/create">퀴즈 만들기</router-link>
+                  <el-dropdown-item @click="router.push('/quiz/create')">
+                    퀴즈 만들기
+                  </el-dropdown-item>
+                  <el-dropdown-item @click="router.push('/mypage')">
+                    마이페이지
                   </el-dropdown-item>
                   <el-dropdown-item divided @click="handleLogout">
                     로그아웃

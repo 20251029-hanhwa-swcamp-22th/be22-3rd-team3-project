@@ -50,13 +50,21 @@
 
       <!-- ===== 매치 컨테이너 (게임 진행 중) ===== -->
       <!-- 게임이 끝나지 않았고 현재 매치가 있을 때만 표시 -->
-      <div v-if="!gameFinished && currentMatch" class="match-container">
+      <div v-if="!gameFinished && currentMatch" class="match-container" :class="{ 'final-match': roundName === '결승' }">
+        <!-- 결승전 FINAL 배경 텍스트 -->
+        <div v-if="roundName === '결승'" class="final-background">FINAL</div>
+        
         <div class="candidates">
           <!-- 왼쪽 후보 카드 -->
-          <!-- selected: 이 카드가 선택됨, dimmed: 상대 카드가 선택됨 -->
+          <!-- 부드러운 2단계 애니메이션: 쳐내기 → 확대 -->
           <div 
             class="candidate-card"
-            :class="{ 'selected': selectedCard === 'left', 'dimmed': selectedCard === 'right' }"
+            :class="{
+              'push-left': selectedCard === 'left',
+              'fly-out-left': selectedCard === 'right' || selectedCard === 'right-expand',
+              'winner-expand': selectedCard === 'left-expand',
+              'final-card': roundName === '결승'
+            }"
             @click="selectCandidate(currentMatch.left, 'left')"
           >
             <img :src="getImageUrl(currentMatch.left.imageUrl)" :alt="currentMatch.left.name" />
@@ -64,12 +72,24 @@
           </div>
 
           <!-- VS 배지 (애니메이션 적용) -->
-          <div class="vs-badge">VS</div>
+          <!-- 확대 시 숨김 -->
+          <div 
+            class="vs-badge" 
+            :class="{ 
+              'hidden': selectedCard === 'left-expand' || selectedCard === 'right-expand',
+              'final-vs': roundName === '결승'
+            }"
+          >VS</div>
 
           <!-- 오른쪽 후보 카드 -->
           <div 
             class="candidate-card"
-            :class="{ 'selected': selectedCard === 'right', 'dimmed': selectedCard === 'left' }"
+            :class="{
+              'push-right': selectedCard === 'right',
+              'fly-out-right': selectedCard === 'left' || selectedCard === 'left-expand',
+              'winner-expand': selectedCard === 'right-expand',
+              'final-card': roundName === '결승'
+            }"
             @click="selectCandidate(currentMatch.right, 'right')"
           >
             <img :src="getImageUrl(currentMatch.right.imageUrl)" :alt="currentMatch.right.name" />
@@ -148,15 +168,18 @@ const progress = computed(() => worldcupStore.getProgress())
 /**
  * 컴포넌트 마운트 시 실행
  * 1. 월드컵 정보 조회
- * 2. 게임 시작 API 호출 (32명 후보 셔플)
+ * 2. 게임 시작 API 호출 (선택된 라운드 수로 후보 셔플)
  * 3. Store에 게임 초기화
  */
 onMounted(async () => {
   try {
+    // 쿼리 파라미터에서 라운드 수 가져오기 (기본값: 16)
+    const roundCount = parseInt(route.query.round) || 16
+    
     // 병렬로 월드컵 정보와 게임 시작 API 호출
     const [worldcupRes, candidatesRes] = await Promise.all([
-      worldcupApi.getWorldcup(worldcupId),        // 월드컵 상세 정보
-      worldcupApi.startWorldcup(worldcupId, 32)   // 32강용 후보 셔플
+      worldcupApi.getWorldcup(worldcupId),           // 월드컵 상세 정보
+      worldcupApi.startWorldcup(worldcupId, roundCount)  // 선택된 라운드용 후보 셔플
     ])
     
     worldcup.value = worldcupRes.data
@@ -175,14 +198,19 @@ onMounted(async () => {
  * @param {string} side - 선택된 위치 ('left' | 'right')
  * 
  * [동작 흐름]
- * 1. 선택 애니메이션 표시 (selectedCard 설정)
- * 2. 600ms 후 Store에 선택 처리
- * 3. 게임 종료 시 우승자 저장 + 파티클 효과
+ * 1. 1단계(600ms): 부드러운 쳐내기 애니메이션 (scale 1.3 유지)
+ * 2. 2단계(1000ms): 끊김 없이 중앙 확대 (scale 1.3 유지)
+ * 3. Store에 선택 처리 및 다음 매치로 전환
+ * 4. 게임 종료 시 우승자 저장 + 파티클 효과
  */
 function selectCandidate(candidate, side) {
-  selectedCard.value = side  // 선택 애니메이션 트리거
+  // 중복 클릭 방지
+  if (selectedCard.value !== null) return
   
-  // 애니메이션 완료 후 다음 로직 실행
+  // 쳐내기 애니메이션 시작 (1000ms)
+  selectedCard.value = side
+  
+  // 1000ms 후: 바로 다음 매치로 전환
   setTimeout(() => {
     const result = worldcupStore.selectCandidate(candidate)
     
@@ -195,7 +223,7 @@ function selectCandidate(candidate, side) {
     }
     
     selectedCard.value = null  // 애니메이션 리셋
-  }, 600)
+  }, 1000)
 }
 </script>
 
@@ -267,6 +295,21 @@ function selectCandidate(candidate, side) {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+/* 결승전 배경 번쩍이는 효과 */
+.match-container.final-match {
+  animation: final-flash 4s ease-in-out infinite;
+}
+
+@keyframes final-flash {
+  0%, 100% {
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+  }
+  50% {
+    background: radial-gradient(circle at center, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
+  }
 }
 
 .candidates {
@@ -292,16 +335,152 @@ function selectCandidate(candidate, side) {
   box-shadow: 0 20px 40px rgba(255, 179, 217, 0.4);
 }
 
-.candidate-card.selected {
-  transform: scale(1.15) rotate(3deg);
-  box-shadow: 0 24px 48px rgba(255, 140, 197, 0.5);
+/* 결승전 카드 - 황금색 빛나는 테두리 */
+.candidate-card.final-card {
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #FFD700, #FFA500, #FFD700) border-box;
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.12),
+    0 0 30px rgba(255, 215, 0, 0.4),
+    inset 0 0 20px rgba(255, 215, 0, 0.1);
+  animation: golden-glow 3s ease-in-out infinite;
+}
+
+@keyframes golden-glow {
+  0%, 100% {
+    box-shadow: 
+      0 8px 24px rgba(0, 0, 0, 0.12),
+      0 0 30px rgba(255, 215, 0, 0.4),
+      inset 0 0 20px rgba(255, 215, 0, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 8px 24px rgba(0, 0, 0, 0.12),
+      0 0 50px rgba(255, 215, 0, 0.8),
+      inset 0 0 30px rgba(255, 215, 0, 0.2);
+  }
+}
+
+.candidate-card.final-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 
+    0 20px 40px rgba(255, 215, 0, 0.5),
+    0 0 60px rgba(255, 215, 0, 1);
+}
+
+/* ===== 부드럽게 연결된 2단계 선택 애니메이션 ===== */
+/* 
+ * Phase 1 (600ms): 쳐내기 - 선택된 카드 scale 1.3으로 확대하며 반대편 밀어냄
+ * Phase 2 (1000ms): 확대 - 끊김 없이 중앙으로 이동하며 scale 1.3 유지
+ * 핵심: 크기가 처음부터 끝까지 1.3으로 일정
+ */
+
+/* Phase 1: 왼쪽 선택 시 쳐내기 (600ms) */
+.candidate-card.push-left {
+  animation: push-left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   z-index: 10;
 }
 
-.candidate-card.dimmed {
-  opacity: 0.3;
-  filter: grayscale(100%);
-  transform: scale(0.9);
+/* Phase 1: 오른쪽 선택 시 쳐내기 (600ms) */
+.candidate-card.push-right {
+  animation: push-right 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  z-index: 10;
+}
+
+/* Phase 2: 중앙 확대 (1000ms) - 쳐내기 위치부터 부드럽게 연결 */
+.candidate-card.winner-expand {
+  animation: expand-to-center 1s cubic-bezier(0.34, 1.1, 0.64, 1) forwards;
+  z-index: 100;
+}
+
+/* 쳐내진 카드 - 화면 밖으로 날아감 (왼쪽) */
+.candidate-card.fly-out-left {
+  animation: fly-out-left 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+  z-index: 5;
+}
+
+/* 쳐내진 카드 - 화면 밖으로 날아감 (오른쪽) */
+.candidate-card.fly-out-right {
+  animation: fly-out-right 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
+  z-index: 5;
+}
+
+/* VS 배지 숨김 */
+.vs-badge.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* ===== Keyframes ===== */
+
+/* Phase 1: 왼쪽 쳐내기 - scale 1.3으로 확대 */
+@keyframes push-left {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    /* 오른쪽으로 70% 이동하며 확대 (크기 1.3) */
+    transform: translateX(65%) scale(1.5);
+  }
+}
+
+/* Phase 1: 오른쪽 쳐내기 - scale 1.3으로 확대 */
+@keyframes push-right {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  100% {
+    /* 왼쪽으로 70% 이동하며 확대 (크기 1.3) */
+    transform: translateX(-65%) scale(1.5);
+  }
+}
+
+/* Phase 2: 쳐낸 위치에서 유지 (중앙 이동 없음) */
+@keyframes expand-to-center {
+  0% {
+    /* 쳐내기 애니메이션 끝 상태 유지 */
+    transform: scale(1.3);
+  }
+  100% {
+    /* 그대로 유지 */
+    transform: scale(1.3);
+  }
+}
+
+/* 왼쪽으로 날아감 */
+@keyframes fly-out-left {
+  0% {
+    transform: translateX(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  20% {
+    /* 살짝 오른쪽으로 밀림 */
+    transform: translateX(10%) scale(0.95);
+  }
+  100% {
+    /* 왼쪽으로 날아감 */
+    transform: translateX(-150%) rotate(-20deg) scale(0.6);
+    opacity: 0;
+  }
+}
+
+/* 오른쪽으로 날아감 */
+@keyframes fly-out-right {
+  0% {
+    transform: translateX(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  20% {
+    /* 살짝 왼쪽으로 밀림 */
+    transform: translateX(-10%) scale(0.95);
+  }
+  100% {
+    /* 오른쪽으로 날아감 */
+    transform: translateX(150%) rotate(20deg) scale(0.6);
+    opacity: 0;
+  }
 }
 
 .candidate-card img {
@@ -332,18 +511,88 @@ function selectCandidate(candidate, side) {
   50% { opacity: 0.8; transform: scale(1.1); }
 }
 
+/* ===== 결승전 특별 효과 ===== */
+
+/* FINAL 배경 텍스트 */
+.final-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15rem;
+  font-weight: 900;
+  color: rgba(255, 215, 0, 0.08);
+  letter-spacing: 2rem;
+  z-index: 1;
+  pointer-events: none;
+  text-shadow: 0 0 80px rgba(255, 215, 0, 0.3);
+  animation: final-glow 3s ease-in-out infinite;
+}
+
+@keyframes final-glow {
+  0%, 100% { 
+    opacity: 0.08;
+    text-shadow: 0 0 80px rgba(255, 215, 0, 0.3);
+  }
+  50% { 
+    opacity: 0.15;
+    text-shadow: 0 0 120px rgba(255, 215, 0, 0.5);
+  }
+}
+
+/* 결승전 VS 뱃지 - 더 크고 화려하게 */
+.vs-badge.final-vs {
+  font-size: 4rem;
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: final-vs-shine 2s ease-in-out infinite;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
+}
+
+@keyframes final-vs-shine {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
+  }
+  50% { 
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 0 40px rgba(255, 215, 0, 1));
+  }
+}
+
+
 /* 결과 */
 .result-container {
   text-align: center;
   padding: 3rem 0;
 }
 
+/* 타이틀과 카드를 앞으로 */
+.result-container > * {
+  position: relative;
+  z-index: 1;
+}
+
 .winner-title {
   font-size: 3rem;
   margin-bottom: 2rem;
-  background: linear-gradient(135deg, #FFB3D9, #FF8CC5);
+  /* 황금빛으로 변경 */
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+  animation: title-glow 2s ease-in-out infinite;
+}
+
+@keyframes title-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.6));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(255, 215, 0, 1));
+  }
 }
 
 .winner-card {
@@ -352,7 +601,30 @@ function selectCandidate(candidate, side) {
   background: white;
   border-radius: 24px;
   padding: 2rem;
-  box-shadow: 0 20px 40px rgba(255, 179, 217, 0.3);
+  /* 황금색 빛나는 테두리 */
+  border: 3px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #FFD700, #FFA500, #FFD700) border-box;
+  box-shadow: 
+    0 20px 40px rgba(255, 179, 217, 0.3),
+    0 0 30px rgba(255, 215, 0, 0.4),
+    inset 0 0 20px rgba(255, 215, 0, 0.1);
+  animation: winner-golden-glow 3s ease-in-out infinite;
+}
+
+@keyframes winner-golden-glow {
+  0%, 100% {
+    box-shadow: 
+      0 20px 40px rgba(255, 179, 217, 0.3),
+      0 0 30px rgba(255, 215, 0, 0.4),
+      inset 0 0 20px rgba(255, 215, 0, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 20px 40px rgba(255, 179, 217, 0.3),
+      0 0 50px rgba(255, 215, 0, 0.8),
+      inset 0 0 30px rgba(255, 215, 0, 0.2);
+  }
 }
 
 .winner-card img {
