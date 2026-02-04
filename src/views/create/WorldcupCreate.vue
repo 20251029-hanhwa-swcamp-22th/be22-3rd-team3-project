@@ -108,7 +108,7 @@
             </el-button>
 
             <div class="candidate-image">
-              <img v-if="candidate.imageUrl" :src="candidate.imageUrl" alt="후보 이미지"/>
+              <img v-if="candidate.imageUrl" :src="getImageUrl(candidate.imageUrl)" alt="후보 이미지"/>
               <div v-else class="placeholder">이미지 없음</div>
             </div>
 
@@ -267,14 +267,21 @@ function beforeUpload(file) {
 
 const SERVER_URL = 'http://localhost:3000';
 
+// 이미지 URL 포맷팅 헬퍼 함수
+function getImageUrl(url) {
+  if (!url) return '';
+  if (url.startsWith('http')) return url;
+  // 슬래시가 없으면 추가
+  return url.startsWith('/') ? `${SERVER_URL}${url}` : `${SERVER_URL}/${url}`;
+}
+
 function handleCandidateImageUpload(response, index) {
   console.log('서버 응답 데이터:', response);
 
-  // 서버 응답 구조에 맞춰 할당 (예: response.url 또는 response.path 등)
   if (response && response.url) {
-    // 경로가 http로 시작하지 않으면 서버 주소를 붙여줌
-    candidates.value[index].imageUrl = response.url.startsWith('http')
-        ? response.url : `${SERVER_URL}${response.url}`;
+    // 서버에서 이미 /uploads/파일명 형식으로 반환하므로 그대로 저장
+    console.log(response.url);
+    candidates.value[index].imageUrl = response.url;
     ElMessage.success(`${index + 1}번 후보 이미지 업로드 성공!`);
   } else {
     console.error('응답 객체에 url 필드가 없습니다.');
@@ -291,9 +298,8 @@ function handleBulkImageUpload(response, file, fileList) {
     const emptyIndex = candidates.value.findIndex(c => !c.imageUrl);
     
     if (emptyIndex !== -1) {
-      const imageUrl = response.url.startsWith('http')
-          ? response.url : `${SERVER_URL}${response.url}`;
-      candidates.value[emptyIndex].imageUrl = imageUrl;
+      // 서버에서 이미 /uploads/파일명 형식으로 반환하므로 그대로 저장
+      candidates.value[emptyIndex].imageUrl = response.url;
       
       // 업로드된 파일 개수 계산
       const uploadedCount = fileList.filter(f => f.status === 'success').length;

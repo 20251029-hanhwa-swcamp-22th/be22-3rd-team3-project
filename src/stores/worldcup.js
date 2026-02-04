@@ -73,7 +73,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
     }
 
     function getProgress() {
-        const totalMatches = currentRound.value.length / 2
+        const totalMatches = currentRound.value.length / 2 < 1 ? 1 : currentRound.value.length / 2
         const currentMatch = Math.floor(matchIndex.value / 2) + 1
         return {
             current: currentMatch,
