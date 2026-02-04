@@ -5,6 +5,7 @@
       :name="uploadFieldName"
       :on-success="handleSuccess"
       :on-error="handleError"
+      :on-remove="handleRemove"
       :before-upload="beforeUpload"
       :file-list="fileList"
       :limit="limit"
@@ -21,6 +22,7 @@
 import { ref, computed } from 'vue'
 import { Plus } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
+import { commonApi } from "@/api/commonApi.js";
 
 const props = defineProps({
   modelValue: {
@@ -83,6 +85,32 @@ function handleSuccess(response, file) {
     emit('update:modelValue', response.url)
   }
   ElMessage.success('이미지 업로드 성공!')
+}
+
+
+async function handleRemove(uploadFile) {
+  // 1. URL에서 파일명 추출 (예: /uploads/abc.jpg -> abc.jpg)
+  // uploadFile구조에 따라 response가 있을수도 없을수도 있음
+  const fileUrl = uploadFile.response ? uploadFile.response.url : uploadFile.url
+  if (!fileUrl) return
+
+  const filename = fileUrl.split('/').pop() // URL의 마지막 부분이 파일명
+
+  try {
+    // 2. 서버에 실제 파일 삭제 요청
+    await commonApi.deleteImage(filename)
+    console.log('서버 파일 삭제 성공:', filename)
+  } catch (error) {
+    console.error('서버 파일 삭제 실패:', error)
+    // 실패해도 UI에서는 지워줘야 할까? -> 일단 진행 (사용자 경험 위해)
+  }
+
+  if (props.multiple) {
+    const newValue = props.modelValue.filter(url => url !== fileUrl)
+    emit('update:modelValue', newValue)
+  } else {
+    emit('update:modelValue', '')
+  }
 }
 
 function handleError(error) {

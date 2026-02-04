@@ -1,0 +1,287 @@
+{
+  "users": [
+    {
+      "email": "test@test.com",
+      "password": "$2a$10$9s0r6p.GNI64xyI0CROwGeHEM0Jm.zaCl2CmfnR5DYeHq4ZSGPY4a",
+      "nickname": "찬진이바보",
+      "id": 1
+    },
+    {
+      "email": "test@example.com",
+      "password": "$2a$10$B/3wwtIcyZxn571R9nlAo.NcQJwTEhXhbAQ8IQdXsmiPLgbTyVaEW",
+      "nickname": "테스트유저",
+      "id": 2
+    },
+    {
+      "email": "test2@example.com",
+      "password": "$2a$10$IM3OjlGI0bzwhFACc8Dby.Bp1Bmuvu/78xYQPuuBwVgUIyTdHrNDe",
+      "nickname": "testuser",
+      "id": 3
+    }
+  ],
+  "worldcups": [
+    {
+      "id": 1,
+      "title": "K-POP 아이돌 이상형 월드컵",
+      "description": "가장 좋아하는 K-POP 아이돌을 선택해보세요!",
+      "thumbnail": "/uploads/worldcup_1_thumb.jpg",
+      "categoryId": 2,
+      "userId": 1,
+      "createdAt": "2026-01-25T10:00:00Z",
+      "viewCount": 1523,
+      "playCount": 892
+    }
+  ],
+  "worldcup_candidates": [
+    {
+      "id": 1,
+      "worldcupId": 1,
+      "name": "후보 1",
+      "imageUrl": "/uploads/candidate_1.jpg",
+      "winCount": 45,
+      "appearCount": 120,
+      "finalCount": 8
+    }
+  ],
+  "worldcup_results": [
+    {
+      "id": 1,
+      "worldcupId": 1,
+      "winnerId": 1,
+      "top4": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "selections": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        1,
+        3,
+        5,
+        7,
+        1,
+        3,
+        1
+      ],
+      "createdAt": "2026-01-30T14:30:00Z",
+      "userId": null
+    }
+  ],
+  "quizzes": [
+    {
+      "id": 1,
+      "title": "상식 퀴즈 - 기본편",
+      "description": "누구나 알 수 있는 기본 상식 퀴즈!",
+      "thumbnail": "/uploads/quiz_1_thumb.jpg",
+      "categoryId": 7,
+      "userId": 1,
+      "totalQuestions": 10,
+      "totalTime": 120,
+      "createdAt": "2026-01-20T09:00:00Z",
+      "viewCount": 2341,
+      "playCount": 1567
+    },
+    {
+      "title": "123",
+      "description": "123",
+      "categoryId": 8,
+      "thumbnail": "/uploads/1769921716258-722250828.png",
+      "userId": 1,
+      "totalQuestions": 5,
+      "totalTime": 120,
+      "createdAt": "2026-02-01T04:55:34.863Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 2
+    }
+  ],
+  "quiz_questions": [
+    {
+      "id": 1,
+      "quizId": 1,
+      "questionNumber": 1,
+      "questionText": "대한민국의 수도는?",
+      "questionImage": null,
+      "answer": "서울",
+      "timeLimit": 10,
+      "correctCount": 451,
+      "totalCount": 501
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 1,
+      "questionText": "123",
+      "questionImage": null,
+      "answer": "123",
+      "timeLimit": 10,
+      "correctCount": 1,
+      "totalCount": 1,
+      "id": 2
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 2,
+      "questionText": "123",
+      "questionImage": null,
+      "answer": "123",
+      "timeLimit": 10,
+      "correctCount": 1,
+      "totalCount": 1,
+      "id": 3
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 3,
+      "questionText": "123",
+      "questionImage": null,
+      "answer": "123",
+      "timeLimit": 10,
+      "correctCount": 1,
+      "totalCount": 1,
+      "id": 4
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 4,
+      "questionText": "123",
+      "questionImage": null,
+      "answer": "123",
+      "timeLimit": 10,
+      "correctCount": 1,
+      "totalCount": 1,
+      "id": 5
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 5,
+      "questionText": "123",
+      "questionImage": null,
+      "answer": "123",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 1,
+      "id": 6
+    }
+  ],
+  "quiz_results": [
+    {
+      "id": 1,
+      "quizId": 1,
+      "userId": null,
+      "nickname": "퀴즈왕",
+      "score": 180,
+      "correctCount": 8,
+      "totalQuestions": 10,
+      "remainingTime": 45,
+      "tier": "멘사",
+      "completedAt": "2026-01-30T15:45:00Z"
+    },
+    {
+      "quizId": 2,
+      "userId": 1,
+      "nickname": "찬진이바보",
+      "score": 102,
+      "correctCount": 4,
+      "totalQuestions": 5,
+      "remainingTime": 98,
+      "tier": "우등생",
+      "completedAt": "2026-02-01T05:05:00.442Z",
+      "id": 2
+    },
+    {
+      "quizId": 2,
+      "userId": 1,
+      "nickname": "찬진이바보",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 8,
+      "remainingTime": 113,
+      "tier": "노력필요",
+      "completedAt": "2026-02-01T05:05:27.133Z",
+      "id": 3
+    },
+    {
+      "quizId": 1,
+      "userId": 1,
+      "nickname": "찬진이바보",
+      "score": 26,
+      "correctCount": 1,
+      "totalQuestions": 1,
+      "remainingTime": 116,
+      "tier": "노력필요",
+      "completedAt": "2026-02-01T05:05:36.436Z",
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "음식",
+      "type": "worldcup"
+    },
+    {
+      "id": 2,
+      "name": "연예인",
+      "type": "worldcup"
+    },
+    {
+      "id": 3,
+      "name": "여행",
+      "type": "worldcup"
+    },
+    {
+      "id": 4,
+      "name": "동물",
+      "type": "worldcup"
+    },
+    {
+      "id": 5,
+      "name": "애니",
+      "type": "worldcup"
+    },
+    {
+      "id": 6,
+      "name": "유머",
+      "type": "worldcup"
+    },
+    {
+      "id": 7,
+      "name": "상식",
+      "type": "quiz"
+    },
+    {
+      "id": 8,
+      "name": "넌센스",
+      "type": "quiz"
+    },
+    {
+      "id": 9,
+      "name": "나라",
+      "type": "quiz"
+    },
+    {
+      "id": 10,
+      "name": "애니",
+      "type": "quiz"
+    },
+    {
+      "id": 11,
+      "name": "연예인",
+      "type": "quiz"
+    },
+    {
+      "id": 12,
+      "name": "동물",
+      "type": "quiz"
+    }
+  ]
+}
+
