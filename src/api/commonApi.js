@@ -39,5 +39,14 @@ export const commonApi = {
         return apiClient.post('/upload-multiple', formData, {
             headers: { 'Content-Type': 'multipart/form-data' }
         })
+    },
+
+    /**
+     *
+     * @param {string} filename
+     * @returns {Promise}
+     */
+    deleteImage(filename){
+      return apiClient.delete(`/upload/files/${filename}`)
     }
 }
