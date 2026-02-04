@@ -118,7 +118,6 @@
             size="large"
             :loading="loading"
             native-type="submit"
-            :disabled="!allQuestionsValid"
           >
             퀴즈 만들기
           </el-button>
@@ -180,10 +179,6 @@ const rules = {
   ]
 }
 
-const allQuestionsValid = computed(() => {
-  return questions.value.every(q => q.questionText.trim() && q.answer.trim())
-})
-
 onMounted(async () => {
   await loadCategories()
   // 초기 문제 10개 생성
@@ -237,57 +232,89 @@ async function handleSubmit() {
   if (!formRef.value) return
 
   await formRef.value.validate(async (valid) => {
-    if (!valid) return
+  // 1. 기본 정보 유효성 검증
+  const errorMessages = [];
+  
+  if (!form.title || form.title.trim() === '') {
+    errorMessages.push('📝 제목을 입력해주세요');
+  }
+  
+  if (!form.description || form.description.trim() === '') {
+    errorMessages.push('📄 설명을 입력해주세요');
+  }
+  
+  if (!form.categoryId) {
+    errorMessages.push('🏷️ 카테고리를 선택해주세요');
+  }
+  
+  if (!form.thumbnail || form.thumbnail.trim() === '') {
+    errorMessages.push('🖼️ 썸네일 이미지를 업로드해주세요');
+  }
+  
+  // 에러 메시지 출력
+  if (errorMessages.length > 0) {
+    errorMessages.forEach(msg => {
+      ElMessage.error(msg);
+    });
+    return; // 실행 중단
+  }
+  
+  // 2. 문제 유효성 검증
+  const validQuestions = questions.value.filter(q => 
+    q.questionText.trim() && q.answer.trim()
+  );
+  
+  // 최소 문제 수 체크
+  if (validQuestions.length < 10) {
+    ElMessage.error(
+      `🎯 최소 10개의 문제가 필요합니다. (현재 완료: ${validQuestions.length}/10)`
+    );
+    return; // 실행 중단
+  }
+  
+  // 3. 생성 프로세스 시작
+  loading.value = true;
 
-    // 문제 검증 - 정확히 10개 모두 입력되어야 함
-    const validQuestions = questions.value.filter(q => q.questionText.trim() && q.answer.trim())
-    if (validQuestions.length !== 10) {
-      ElMessage.error('10개 문제 모두에 질문과 정답을 입력해주세요')
-      return
+  try {
+    // 퀴즈 생성
+    const quizData = {
+      title: form.title,
+      description: form.description,
+      categoryId: form.categoryId,
+      thumbnail: form.thumbnail,
+      userId: authStore.user.id,
+      totalQuestions: 10,
+      createdAt: new Date().toISOString(),
+      viewCount: 0,
+      playCount: 0
     }
 
-    loading.value = true
+    const quizResponse = await apiClient.post('/quizzes', quizData)
+    const quizId = quizResponse.data.id
 
-    try {
-      // 퀴즈 생성
-      const quizData = {
-        title: form.title,
-        description: form.description,
-        categoryId: form.categoryId,
-        thumbnail: form.thumbnail,
-        userId: authStore.user.id,
-        totalQuestions: 10,
-        createdAt: new Date().toISOString(),
-        viewCount: 0,
-        playCount: 0
-      }
-
-      const quizResponse = await apiClient.post('/quizzes', quizData)
-      const quizId = quizResponse.data.id
-
-      // 문제 생성
-      for (let i = 0; i < validQuestions.length; i++) {
-        const question = validQuestions[i]
-        await quizApi.createQuestion({
-          quizId,
-          questionNumber: i + 1,
-          questionText: question.questionText,
-          questionImage: question.questionImage,
-          answer: question.answer,
-          timeLimit: question.timeLimit,
-          correctCount: 0,
-          totalCount: 0
-        })
-      }
-
-      ElMessage.success('퀴즈가 성공적으로 생성되었습니다!')
-      router.push('/quiz')
-    } catch (error) {
-      console.error('Failed to create quiz:', error)
-      ElMessage.error('퀴즈 생성에 실패했습니다')
-    } finally {
-      loading.value = false
+    // 문제 생성
+    for (let i = 0; i < validQuestions.length; i++) {
+      const question = validQuestions[i]
+      await quizApi.createQuestion({
+        quizId,
+        questionNumber: i + 1,
+        questionText: question.questionText,
+        questionImage: question.questionImage,
+        answer: question.answer,
+        timeLimit: question.timeLimit,
+        correctCount: 0,
+        totalCount: 0
+      })
     }
+
+    ElMessage.success('퀴즈가 성공적으로 생성되었습니다!')
+    router.push('/quiz')
+  } catch (error) {
+    console.error('Failed to create quiz:', error)
+    ElMessage.error('퀴즈 생성에 실패했습니다')
+  } finally {
+    loading.value = false
+  }
   })
 }
 </script>
