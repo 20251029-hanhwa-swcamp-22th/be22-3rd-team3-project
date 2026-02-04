@@ -34,7 +34,7 @@
             <div class="winner-stats">
               <span>총 우승: {{ winner?.winCount }}회</span>
               <span>결승 진출: {{ winner?.finalCount }}회</span>
-              <span>승률: {{ calculateWinRate(winner) }}%</span>
+              <span>승률: {{ getWinRate(winner) }}%</span>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
         </div>
 
         <!-- ===== 선택 히스토리 섹션 ===== -->
-        <!-- 라운드별 매치 기록 (누구 vs 누구 → 누구 선택) -->
+        <!-- 라운드별 선택 기록 (누구 vs 누구 → 누구 선택) -->
         <div class="history-section card card-glass">
           <h2>📊 선택 히스토리</h2>
           <div class="history-timeline">
@@ -69,19 +69,21 @@
               class="history-item"
             >
               <div class="round-label">{{ selection.round }}</div>
-              <div class="vs-match">
-                <div class="candidate-mini">
+              <!-- left vs right 형식으로 표시 (새로운 형식) -->
+              <div v-if="selection.left && selection.right" class="vs-match">
+                <div class="candidate-mini" :class="{ winner: selection.selected?.id === selection.left?.id }">
                   <img :src="getImageUrl(selection.left.imageUrl)" :alt="selection.left.name" />
                   <span>{{ selection.left.name }}</span>
                 </div>
                 <span class="vs">VS</span>
-                <div class="candidate-mini">
+                <div class="candidate-mini" :class="{ winner: selection.selected?.id === selection.right?.id }">
                   <img :src="getImageUrl(selection.right.imageUrl)" :alt="selection.right.name" />
                   <span>{{ selection.right.name }}</span>
                 </div>
               </div>
+              <!-- 선택 결과 표시 -->
               <div class="selected">
-                선택: <strong>{{ selection.selected.name }}</strong>
+                선택: <strong>{{ selection.selected?.name }}</strong>
               </div>
             </div>
           </div>
@@ -120,9 +122,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'  // 로딩 스피너 아이콘
 import apiClient from '@/api/axios'                 // Axios 인스턴스
-import { calculateWinRate } from '@/utils/helpers'
-import {getImageUrl} from "../../utils/helpers.js"; // 승률 계산 유틸
-
+import { calculateWinRate,getImageUrl } from '@/utils/helpers'
 // ===== 라우터 =====
 const route = useRoute()
 const worldcupId = route.params.id  // URL에서 월드컵 ID 추출
@@ -135,42 +135,88 @@ const winner = ref(null)        // 우승자 객체
 // ===== Computed =====
 /**
  * 선택 히스토리 계산
- * - result.selections 배열을 라운드별 매치 정보로 변환
+ * - result.selections 배열은 매치 정보 객체로 저장됨
+ * - { leftId, rightId, selectedId, round }
  * - 반환값: [{ round, left, right, selected }, ...]
+ */
+/**
+ * 선택 히스토리 계산
  */
 const selectionHistory = computed(() => {
   if (!result.value || !result.value.selections) return []
-  
-  const history = []
+
   const selections = result.value.selections
-  const rounds = ['32강', '16강', '8강', '준결승', '결승']
-  
+
+  // 1. 라운드 숫자를 한글 명칭으로 변환하는 공통 맵
+  const roundNameMap = {
+    64: '64강', 32: '32강', 16: '16강', 8: '8강', 4: '준결승', 2: '결승', '4강': '준결승'
+  }
+
+  // ===== 새로운 형식: [{ leftId, rightId, selectedId, round }, ...] =====
+  if (selections.length > 0 && typeof selections[0] === 'object') {
+    return selections.map((match, index) => ({
+      // match.round가 4, 4강이라면 '준결승', 8이라면 '8강'으로 변환
+      // 만약 맵에 없는 숫자라면 숫자에 '강'을 붙여서 표시
+      round: roundNameMap[match.round] || (typeof match.round === 'number' ? `${match.round}강` : match.round),
+      matchNumber: index + 1,
+      left: getCandidateById(match.leftId),
+      right: getCandidateById(match.rightId),
+      selected: getCandidateById(match.selectedId)
+    }))
+  }
+
+  // ===== 기존 형식 (호환성 유지): [selectedId, selectedId, ...] =====
+  const history = []
+  const startRound = result.value.startRound || 16
+
+  const roundsInfo = []
+  let r = startRound
+  while (r >= 2) {
+    // 위에서 정의한 roundNameMap을 사용하도록 통일
+    roundsInfo.push({ name: roundNameMap[r] || `${r}강`, matches: r / 2 })
+    r = r / 2
+  }
+
   let roundIndex = 0
-  let matchesInRound = 16  // 32강 = 16경기
-  let currentMatch = 0
-  
-  for (let i = 0; i < selections.length - 1; i += 2) {
-    const leftId = selections[i]
-    const rightId = selections[i + 1]
-    const selectedId = i + 1 < selections.length - 1 ? selections[i + 2] : selections[i + 1]
-    
-    history.push({
-      round: rounds[roundIndex],
-      left: getCandidateById(leftId),
-      right: getCandidateById(rightId),
-      selected: getCandidateById(selectedId)
-    })
-    
-    currentMatch++
-    if (currentMatch >= matchesInRound) {
-      roundIndex++
-      matchesInRound = Math.floor(matchesInRound / 2)
-      currentMatch = 0
+  let matchInCurrentRound = 0
+
+  for (let i = 0; i < selections.length; i++) {
+    const selectedId = selections[i]
+    const currentRoundInfo = roundsInfo[roundIndex]
+
+    if (currentRoundInfo) {
+      history.push({
+        round: currentRoundInfo.name,
+        matchNumber: matchInCurrentRound + 1,
+        selected: getCandidateById(selectedId)
+      })
+
+      matchInCurrentRound++
+      if (matchInCurrentRound >= currentRoundInfo.matches) {
+        roundIndex++
+        matchInCurrentRound = 0
+      }
     }
   }
-  
+
   return history
 })
+// ===== 승률 계산 ======
+// 1. 해당 월드컵의 모든 후보들의 winCount 총합 계산
+const totalWinCount = computed(() => {
+  if (candidates.value.length === 0) return 0;
+  return candidates.value.reduce((sum, candidate) => sum + (candidate.winCount || 0), 0);
+});
+
+// 2. 특정 후보의 승률을 계산하는 함수 (수정)
+const getWinRate = (candidate) => {
+  if (!candidate || totalWinCount.value === 0) return '0.0';
+
+  // (해당 후보 우승 횟수 / 전제 후보 우승 횟수 총합) * 100
+  console.log(`우승횟수 : ${candidate.winCount} / 전체 후보 우승 횟수 : ${totalWinCount.value}`);
+  const rate = (candidate.winCount / totalWinCount.value) * 100;
+  return rate.toFixed(1); // 소수점 첫째 자리까지
+};
 
 // ===== 라이프사이클 훅 =====
 /**
@@ -338,6 +384,38 @@ function getCandidateById(id) {
   margin-bottom: var(--spacing-sm);
 }
 
+.selected-candidate {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm);
+  background: var(--bg-tertiary);
+  border-radius: var(--border-radius-sm);
+  border-left: 3px solid var(--primary-light);
+}
+
+.selected-candidate img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: var(--border-radius-sm);
+}
+
+.selected-name {
+  flex: 1;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.badge {
+  background: var(--primary-light);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
 .candidate-mini {
   display: flex;
   align-items: center;
@@ -346,10 +424,22 @@ function getCandidateById(id) {
 }
 
 .candidate-mini img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: var(--border-radius-sm);
+}
+
+.candidate-mini.winner {
+  background: rgba(255, 179, 217, 0.2);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-xs);
+  border: 2px solid var(--primary-light);
+}
+
+.candidate-mini.winner span {
+  color: var(--primary-light);
+  font-weight: bold;
 }
 
 .vs {
