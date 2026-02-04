@@ -159,8 +159,7 @@ onMounted(async () => {
       questions.value = questionsRes.data
     }
 
-    // 플레이 횟수 증가 (게임 완료 후 결과 페이지 진입 시)
-    quizApi.increasePlayCount(quizId).catch(err => console.error('Play count update failed:', err));
+
 
   } catch (error) {
     console.error('Failed to load result:', error)

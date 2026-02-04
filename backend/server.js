@@ -273,7 +273,8 @@ const pruneLogs = (db, logCollection) => {
 }
 
 // Helper: 카운트 증가 공통 로직
-const incrementCount = (req, res, collection, logCollection, durationHours, idParam = 'id') => {
+// Helper: 카운트 증가 공통 로직 (시간 제한 없음)
+const incrementCount = (req, res, collection, logCollection, idParam = 'id') => {
   const db = router.db;
   const targetId = parseInt(req.params[idParam]);
   const user = req.user; // json-server-auth (JWT)
@@ -286,7 +287,7 @@ const incrementCount = (req, res, collection, logCollection, durationHours, idPa
 
   const identifier = user ? `user:${user.id}` : `guest:${guestId}`;
   const now = new Date();
-  const durationMs = durationHours * 60 * 60 * 1000;
+
 
   // 해당 타겟의 로그 확인
   const lastLog = db.get(logCollection)
@@ -296,13 +297,7 @@ const incrementCount = (req, res, collection, logCollection, durationHours, idPa
     .value();
 
   // 시간 제한 체크
-  if (lastLog) {
-    const lastTime = new Date(lastLog.timestamp).getTime();
-    // 지정된 시간(durationHours) 내에 기록이 있으면 무시
-    if (now.getTime() - lastTime < durationMs) {
-      return res.json({ message: 'Already counted within time limit', updated: false });
-    }
-  }
+
 
   // 타겟(월드컵/퀴즈) 존재 확인
   const targetItem = db.get(collection).find({ id: targetId }).value();
@@ -322,8 +317,11 @@ const incrementCount = (req, res, collection, logCollection, durationHours, idPa
   // 로그 기록
   db.get(logCollection)
     .push({
-      targetId,
-      identifier,
+      userId: user ? user.id : null,
+      guestId: user ? null : guestId, // 비회원일 경우만 guestId 저장 (또는 둘 다 저장 정책에 따라 조정)
+      type: collection === 'worldcups' ? 'worldcup' : 'quiz',
+      contentId: targetId,
+      identifier, // 기존 호환성 유지 (선택사항)
       timestamp: now.toISOString()
     })
     .write();
@@ -338,22 +336,22 @@ const incrementCount = (req, res, collection, logCollection, durationHours, idPa
   });
 };
 
-// 1. 조회수 증가 (1시간 제한)
+// 1. 조회수 증가 (제한 없음)
 server.post('/worldcups/:id/view', (req, res) => {
-  incrementCount(req, res, 'worldcups', 'view_logs', 1);
+  incrementCount(req, res, 'worldcups', 'view_logs');
 });
 
 server.post('/quizzes/:id/view', (req, res) => {
-  incrementCount(req, res, 'quizzes', 'view_logs', 1);
+  incrementCount(req, res, 'quizzes', 'view_logs');
 });
 
-// 2. 플레이 횟수 증가 (24시간 제한, 게임 완료 시 호출)
+// 2. 플레이 횟수 증가 (게임 완료 시 호출, 제한 없음)
 server.post('/worldcups/:id/play', (req, res) => {
-  incrementCount(req, res, 'worldcups', 'play_logs', 24);
+  incrementCount(req, res, 'worldcups', 'play_logs');
 });
 
 server.post('/quizzes/:id/play', (req, res) => {
-  incrementCount(req, res, 'quizzes', 'play_logs', 24);
+  incrementCount(req, res, 'quizzes', 'play_logs');
 });
 
 

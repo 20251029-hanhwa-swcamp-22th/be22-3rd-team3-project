@@ -209,6 +209,13 @@ watch(() => quizStore.timeoutOccurred, (newValue) => {
   }
 })
 
+// 게임 종료 감지 및 플레이 카운트 증가
+watch(gameFinished, (newVal) => {
+  if (newVal) {
+    quizApi.increasePlayCount(quizId).catch(err => console.error('Play count update failed:', err));
+  }
+})
+
 // ==========================================
 // Lifecycle Hooks
 // ==========================================
