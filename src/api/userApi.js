@@ -1,4 +1,7 @@
 import apiClient from "@/api/axios.js";
+import { useAuthStore } from "@/stores/auth.js";
+
+const authStore = useAuthStore();
 
 // 사용자 정보 관련 API
 
@@ -8,7 +11,7 @@ export const userApi = {
    * @returns {Promise} 사용자 정보 (이메일, 닉네임, ID 등)
    */
   getMyInfo() {
-    return apiClient.get('/users/me')
+    return apiClient.get(`/users/${authStore.user.id}`)
   },
 
   /**
