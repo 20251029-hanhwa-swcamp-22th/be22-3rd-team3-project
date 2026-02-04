@@ -75,7 +75,7 @@
       "name": "킬러경찰",
       "imageUrl": "/uploads/1770167167905-823179312.webp",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 2
     },
@@ -84,7 +84,7 @@
       "name": "광장",
       "imageUrl": "/uploads/1770167174689-293749044.webp",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 3
     },
@@ -93,7 +93,7 @@
       "name": "역대급 영지 설계사 ",
       "imageUrl": "/uploads/1770167174694-784644419.webp",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 4
     },
@@ -102,7 +102,7 @@
       "name": "천화서고 대공자",
       "imageUrl": "/uploads/1770167174690-52397882.webp",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 5
     },
@@ -111,7 +111,7 @@
       "name": "별을품은 소드마스터",
       "imageUrl": "/uploads/1770167174688-50406047.webp",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 6
     },
@@ -138,7 +138,7 @@
       "name": "별이삼샵",
       "imageUrl": "/uploads/1770167174699-513362935.webp",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 7,
       "finalCount": 0,
       "id": 9
     },
@@ -156,7 +156,7 @@
       "name": "지금우리 학교는",
       "imageUrl": "/uploads/1770167174701-578568467.webp",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 11
     },
@@ -165,7 +165,7 @@
       "name": "스위트홈",
       "imageUrl": "/uploads/1770167174702-181111543.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 12
     },
@@ -210,7 +210,7 @@
       "name": "후레자식",
       "imageUrl": "/uploads/1770167174709-730343969.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 17
     },
@@ -237,7 +237,7 @@
       "name": "정열맨",
       "imageUrl": "/uploads/1770167174711-749792750.webp",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 20
     },
@@ -254,9 +254,9 @@
       "worldcupId": 2,
       "name": "트레이스",
       "imageUrl": "/uploads/1770167174714-562274436.jpg",
-      "winCount": 0,
-      "appearCount": 1,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 6,
+      "finalCount": 1,
       "id": 22
     },
     {
@@ -282,7 +282,7 @@
       "name": "타이밍ㅅ",
       "imageUrl": "/uploads/1770167174716-235432601.jpg",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 25
     },
@@ -291,7 +291,7 @@
       "name": "선천적 얼간이들",
       "imageUrl": "/uploads/1770167174712-375582875.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 26
     },
@@ -299,9 +299,9 @@
       "worldcupId": 2,
       "name": "기기괴괴",
       "imageUrl": "/uploads/1770167174718-479102657.webp",
-      "winCount": 0,
-      "appearCount": 1,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 6,
+      "finalCount": 1,
       "id": 27
     },
     {
@@ -318,7 +318,7 @@
       "name": "무빙",
       "imageUrl": "/uploads/1770167174718-143837142.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 29
     },
@@ -327,7 +327,7 @@
       "name": "죽음에 관하여",
       "imageUrl": "/uploads/1770167174720-806464538.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 30
     },
@@ -335,27 +335,27 @@
       "worldcupId": 2,
       "name": "목욕의 신",
       "imageUrl": "/uploads/1770167174720-977575471.jpg",
-      "winCount": 0,
-      "appearCount": 2,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 6,
+      "finalCount": 1,
       "id": 31
     },
     {
       "worldcupId": 2,
       "name": "안나라수마나라",
       "imageUrl": "/uploads/1770167174721-431386870.webp",
-      "winCount": 1,
-      "appearCount": 2,
-      "finalCount": 1,
+      "winCount": 0,
+      "appearCount": 7,
+      "finalCount": 0,
       "id": 32
     },
     {
       "worldcupId": 2,
       "name": "당골",
       "imageUrl": "/uploads/1770167422763-379832918.jpg",
-      "winCount": 0,
-      "appearCount": 1,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 6,
+      "finalCount": 1,
       "id": 33
     },
     {
@@ -363,7 +363,7 @@
       "name": "별을 품은 소드마스터",
       "imageUrl": "/uploads/1770187537869-719806552.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 34
     },
@@ -395,14 +395,73 @@
       "id": 37
     },
     {
-      "worldcupId": 3,
-      "name": "천화서고대공자",
-      "imageUrl": "/uploads/1770187537874-954365287.webp",
-      "winCount": 0,
-      "appearCount": 0,
-      "finalCount": 0,
-      "id": 38
+      "worldcupId": 2,
+      "winnerId": 28,
+      "top4": [
+        28,
+        32,
+        19,
+        33
+      ],
+      "selections": [
+        28,
+        3,
+        4,
+        20,
+        32,
+        21,
+        10,
+        7,
+        19,
+        8,
+        22,
+        25,
+        33,
+        12,
+        23,
+        9,
+        28,
+        4,
+        32,
+        10,
+        19,
+        22,
+        33,
+        23,
+        28,
+        32,
+        19,
+        33,
+        28,
+        19,
+        28
+      ],
+      "createdAt": "2026-02-04T05:33:24.483Z",
+      "id": 6
     },
+    {
+      "worldcupId": 2,
+      "winnerId": 33,
+      "top4": [
+        17,
+        12,
+        4,
+        33
+      ],
+      "selections": [
+        17,
+        12,
+        4,
+        33,
+        17,
+        33,
+        33
+      ],
+      "createdAt": "2026-02-04T07:14:50.724Z",
+      "id": 7
+    }
+  ],
+  "quizzes": [
     {
       "worldcupId": 3,
       "name": "샤money즘",
@@ -1029,8 +1088,50 @@
         2,
         32
       ],
-      "createdAt": "2026-02-04T06:41:29.499Z",
-      "id": 3
+      "createdAt": "2026-02-04T05:33:24.483Z",
+      "id": 6
+    },
+    {
+      "worldcupId": 2,
+      "winnerId": 27,
+      "top4": [
+        27,
+        31,
+        5,
+        29
+      ],
+      "selections": [
+        27,
+        31,
+        5,
+        29,
+        27,
+        5,
+        27
+      ],
+      "createdAt": "2026-02-04T07:08:27.495Z",
+      "id": 7
+    },
+    {
+      "worldcupId": 2,
+      "winnerId": 22,
+      "top4": [
+        33,
+        32,
+        11,
+        22
+      ],
+      "selections": [
+        33,
+        32,
+        11,
+        22,
+        32,
+        22,
+        22
+      ],
+      "createdAt": "2026-02-04T07:15:12.688Z",
+      "id": 8
     }
   ],
   "quizzes": [
@@ -1071,18 +1172,6 @@
       "viewCount": 0,
       "playCount": 0,
       "id": 3
-    },
-    {
-      "title": "배우 이름 맞추기",
-      "description": "배우 이름 맞추기 퀴즈 입니다.",
-      "categoryId": 11,
-      "thumbnail": "/uploads/1770182113465-427758584.png",
-      "userId": 2,
-      "totalQuestions": 10,
-      "createdAt": "2026-02-04T05:15:34.685Z",
-      "viewCount": 0,
-      "playCount": 0,
-      "id": 4
     }
   ],
   "quiz_questions": [
@@ -1261,116 +1350,6 @@
       "correctCount": 1,
       "totalCount": 1,
       "id": 16
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 1,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181763945-301627023.jpg",
-      "answer": "채종협",
-      "timeLimit": 10,
-      "correctCount": 7,
-      "totalCount": 9,
-      "id": 17
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 2,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181781936-18272647.png",
-      "answer": "송강",
-      "timeLimit": 10,
-      "correctCount": 9,
-      "totalCount": 10,
-      "id": 18
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 3,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181850821-583285911.jpg",
-      "answer": "변우석",
-      "timeLimit": 10,
-      "correctCount": 7,
-      "totalCount": 11,
-      "id": 19
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 4,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181859554-482900848.webp",
-      "answer": "노정의",
-      "timeLimit": 10,
-      "correctCount": 8,
-      "totalCount": 10,
-      "id": 20
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 5,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181867874-780599971.webp",
-      "answer": "이정은",
-      "timeLimit": 10,
-      "correctCount": 7,
-      "totalCount": 9,
-      "id": 21
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 6,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181875208-746697308.jpg",
-      "answer": "유연석",
-      "timeLimit": 10,
-      "correctCount": 7,
-      "totalCount": 10,
-      "id": 22
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 7,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181883981-723895759.jpg",
-      "answer": "박해수",
-      "timeLimit": 10,
-      "correctCount": 7,
-      "totalCount": 9,
-      "id": 23
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 8,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181899328-932064999.jpg",
-      "answer": "박은빈",
-      "timeLimit": 10,
-      "correctCount": 7,
-      "totalCount": 10,
-      "id": 24
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 9,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181906032-524857738.webp",
-      "answer": "이정재",
-      "timeLimit": 10,
-      "correctCount": 7,
-      "totalCount": 10,
-      "id": 25
-    },
-    {
-      "quizId": 4,
-      "questionNumber": 10,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770181913735-996596526.jpg",
-      "answer": "고윤정",
-      "timeLimit": 10,
-      "correctCount": 9,
-      "totalCount": 10,
-      "id": 26
     }
   ],
   "quiz_results": [
@@ -1615,268 +1594,28 @@
       "id": 20
     },
     {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 10,
-      "correctCount": 1,
-      "totalQuestions": 5,
-      "remainingTime": 0,
+      "quizId": 1,
+      "userId": 4,
+      "nickname": "test",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 1,
+      "remainingTime": 118,
       "tier": "노력필요",
-      "completedAt": "2026-02-04T01:34:58.423Z",
+      "completedAt": "2026-02-04T03:49:55.138Z",
       "id": 21
     },
     {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 30,
-      "correctCount": 3,
-      "totalQuestions": 5,
+      "quizId": 3,
+      "userId": 4,
+      "nickname": "test",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 10,
       "remainingTime": 0,
-      "tier": "평범",
-      "completedAt": "2026-02-04T01:43:36.026Z",
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T07:24:07.353Z",
       "id": 22
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 5,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T01:47:43.498Z",
-      "id": 23
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 5,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T01:48:44.363Z",
-      "id": 24
-    },
-    {
-      "quizId": 3,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 20,
-      "correctCount": 2,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "평범",
-      "completedAt": "2026-02-04T03:30:44.852Z",
-      "id": 25
-    },
-    {
-      "quizId": 3,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 10,
-      "correctCount": 1,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T03:33:36.297Z",
-      "id": 26
-    },
-    {
-      "quizId": 3,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 30,
-      "correctCount": 3,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "평범",
-      "completedAt": "2026-02-04T03:36:21.104Z",
-      "id": 27
-    },
-    {
-      "quizId": 3,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 60,
-      "correctCount": 6,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "우등생",
-      "completedAt": "2026-02-04T03:37:47.664Z",
-      "id": 28
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 40,
-      "correctCount": 4,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "모범생",
-      "completedAt": "2026-02-04T05:17:40.573Z",
-      "id": 29
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T05:25:54.926Z",
-      "id": 30
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "",
-      "completedAt": "2026-02-04T05:47:15.142Z",
-      "id": 31
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 100,
-      "correctCount": 10,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "",
-      "completedAt": "2026-02-04T05:49:11.806Z",
-      "id": 32
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 80,
-      "correctCount": 8,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "",
-      "completedAt": "2026-02-04T05:50:41.971Z",
-      "id": 33
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 50,
-      "correctCount": 5,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "",
-      "completedAt": "2026-02-04T05:51:45.234Z",
-      "id": 34
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 100,
-      "correctCount": 10,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "멘사",
-      "completedAt": "2026-02-04T06:06:53.357Z",
-      "id": 35
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 100,
-      "correctCount": 10,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "멘사",
-      "completedAt": "2026-02-04T06:10:54.264Z",
-      "id": 36
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 100,
-      "correctCount": 10,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "멘사",
-      "completedAt": "2026-02-04T06:16:15.857Z",
-      "id": 37
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 100,
-      "correctCount": 10,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "멘사",
-      "completedAt": "2026-02-04T06:27:02.452Z",
-      "id": 38
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T06:27:39.324Z",
-      "id": 39
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 60,
-      "correctCount": 6,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "우등생",
-      "completedAt": "2026-02-04T06:34:57.895Z",
-      "id": 40
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 20,
-      "correctCount": 2,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "평범",
-      "completedAt": "2026-02-04T06:38:37.491Z",
-      "id": 41
-    },
-    {
-      "quizId": 4,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T06:40:53.486Z",
-      "id": 42
     }
   ],
   "categories": [
