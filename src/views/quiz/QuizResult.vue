@@ -219,7 +219,7 @@ function getQuestionAccuracy(question) {
   font-weight: bold;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  //-webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
