@@ -14,13 +14,6 @@
             <span class="label">점수</span>
             <span class="value">{{ quizStore.score }}</span>
           </div>
-          <div class="stat-item">
-            <span class="label">남은 시간</span>
-            <!-- 시간이 10초 미만으로 남으면 빨간색(warning 클래스)으로 표시합니다 -->
-            <span class="value timer" :class="{ warning: quizStore.remainingTime < 10 }">
-              {{ formatTime(quizStore.remainingTime) }}
-            </span>
-          </div>
         </div>
       </div>
 
@@ -120,7 +113,6 @@
 
           <div class="result-details">
             <p>정답: {{ quizStore.correctCount }} / {{ quizStore.totalQuestions }}</p>
-            <p>남은 시간: {{ formatTime(quizStore.remainingTime) }}</p>
           </div>
 
           <div class="result-actions">
@@ -139,7 +131,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/quiz'
 import { Timer, CircleCheck, CircleClose } from '@element-plus/icons-vue'
@@ -188,6 +180,28 @@ const correctRate = computed(() => {
 })
 
 // ==========================================
+// Watchers (감시자)
+// ==========================================
+
+// 시간 초과 감지 및 피드백 표시
+watch(() => quizStore.timeoutOccurred, (newValue) => {
+  if (newValue) {
+    // 시간 초과 발생 시 피드백 표시
+    answerSubmitted.value = true
+    isCorrect.value = false
+    lastScore.value = 0
+    
+    ElMessage.warning('시간 초과!')
+    
+    // 2초 후 다음 문제로 이동
+    setTimeout(() => {
+      quizStore.resetTimeoutFlag()
+      moveToNextQuestion()
+    }, 2000)
+  }
+})
+
+// ==========================================
 // Lifecycle Hooks
 // ==========================================
 
@@ -230,6 +244,9 @@ onUnmounted(() => {
 async function submitAnswer() {
   if (!userAnswer.value || answerSubmitted.value) return
 
+  // 즉시 타이머 정지 (시간 초과 이벤트 방지)
+  quizStore.stopQuestionTimer()
+  
   answerSubmitted.value = true // 제출 상태로 변경
 
   // 스토어의 checkAnswer 함수로 정답 확인
@@ -254,6 +271,9 @@ async function submitAnswer() {
  * 현재 문제를 푼 것으로 처리하지 않고(오답 처리) 넘어갑니다.
  */
 function skipQuestion() {
+  // 타이머 정지
+  quizStore.stopQuestionTimer()
+  
   quizStore.skipQuestion()
   moveToNextQuestion()
   ElMessage.info('문제를 건너뛰었습니다')

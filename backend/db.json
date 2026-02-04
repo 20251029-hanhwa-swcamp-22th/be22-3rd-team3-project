@@ -472,8 +472,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 11,
-      "totalCount": 13,
+      "correctCount": 12,
+      "totalCount": 16,
       "id": 2
     },
     {
@@ -484,7 +484,7 @@
       "answer": "123",
       "timeLimit": 10,
       "correctCount": 10,
-      "totalCount": 13,
+      "totalCount": 14,
       "id": 3
     },
     {
@@ -494,8 +494,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 7,
-      "totalCount": 10,
+      "correctCount": 8,
+      "totalCount": 11,
       "id": 4
     },
     {
@@ -505,8 +505,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 8,
-      "totalCount": 11,
+      "correctCount": 10,
+      "totalCount": 14,
       "id": 5
     },
     {
@@ -517,7 +517,7 @@
       "answer": "123",
       "timeLimit": 10,
       "correctCount": 6,
-      "totalCount": 11,
+      "totalCount": 12,
       "id": 6
     }
   ],
@@ -761,6 +761,54 @@
       "tier": "평범",
       "completedAt": "2026-02-04T01:02:00.914Z",
       "id": 20
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T01:34:58.423Z",
+      "id": 21
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 30,
+      "correctCount": 3,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "평범",
+      "completedAt": "2026-02-04T01:43:36.026Z",
+      "id": 22
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T01:47:43.498Z",
+      "id": 23
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T01:48:44.363Z",
+      "id": 24
     }
   ],
   "categories": [
