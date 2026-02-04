@@ -85,6 +85,99 @@ server.post('/upload-multiple', upload.array('images', 64), (req, res) => {
     res.json({ files: urls });
 });
 
+// 사용자 정보 관련 API (마이페이지)
+
+// 1. 내 정보 조회 API
+server.get('/users/me', (req, res) => {
+  // json-server-auth가 자동으로 req.user에 사용자 정보를 넣어준다.
+  // JWT 토큰이 유효한 경우에만
+  if (!req.user) {
+    return res.status(401).json({ error : '인증이 필요합니다'});
+  }
+
+  const db = router.db;
+  const userId = req.user.id; // JWT에서 추출한 사용자 ID
+
+  // DB에서 해당 사용자 정보 찾기
+  const user = db.get('users')
+      .find({ id:userId })
+      .value();
+
+  if (!user) {
+    return res.status(404).json({ error : '사용자를 찾을 수 없습니다' });
+  }
+
+  // 비밀번호는 제외하고 반환
+  const { password, ...userWithoutPassword } = user;
+  res.json(userWithoutPassword);
+});
+
+
+
+// 2. 닉네임 중복 체크 API
+server.get('/users/check-nickname', (req, res) => {
+  const nickname = req.query.nickname;
+
+  if (!nickname) {
+    return res.status(400).json({ error: '닉네임을 입력해주세요' });
+  }
+  const db = router.db;
+
+  // 본인 제외하고 중복 체크
+  const currentUserId = req.user ? req.user.id : null;
+
+  const existingUser = db.get('users')
+      .find(user =>
+          user.nickname === nickname &&
+          user.id !== currentUserId
+      )
+      .value();
+  // available: true면 사용 가능, false면 이미 사용 중
+  res.json({ available: !existingUser });
+});
+
+
+// 3. 닉네임 변경 API
+server.patch('/users/me', (req, res) => {
+  if (!req.user) {
+    return res.status(401).json({ error: '인증이 필요합니다' });
+  }
+  const { nickname } = req.body;
+
+  if (!nickname) {
+    return res.status(400).json({ error: '닉네임을 입력해주세요' });
+  }
+
+  // 닉네임 유효성 검사 (2-20자)
+  if (nickname.length < 2 || nickname.length > 20) {
+    return res.status(400).json({ error: '닉네임은 2-20자 사이여야 합니다' });
+  }
+  const db = router.db;
+  const userId = req.user.id;
+
+  // 중복 체크 (본인 제외)
+  const duplicate = db.get('users')
+      .find(user => user.nickname === nickname && user.id !== userId)
+      .value();
+  if (duplicate) {
+    return res.status(409).json({ error: '이미 사용 중인 닉네임입니다' });
+  }
+
+  // DB 업데이트
+  db.get('users')
+      .find({ id: userId })
+      .assign({ nickname: nickname })
+      .write();
+
+  // 업데이트된 사용자 정보 반환
+  const updatedUser = db.get('users')
+      .find({ id: userId })
+      .value();
+  const { password, ...userWithoutPassword } = updatedUser;
+  res.json(userWithoutPassword);
+});
+
+
 // Custom route for worldcup game start - get random candidates
 server.get('/worldcups/:id/start/:count', (req, res) => {
     const db = router.db;
