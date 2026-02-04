@@ -128,7 +128,7 @@
                 name="image"
                 :headers="uploadHeaders"
                 :show-file-list="false"
-                :on-success="(res) => handleCandidateImageUpload(res, index)"
+                :on-success="(res, file) => handleCandidateImageUpload(res, file, index)"
                 :before-upload="beforeUpload"
             >
               <el-button size="small" type="primary" class="mt-1">
@@ -270,13 +270,20 @@ function beforeUpload(file) {
 }
 
 
-function handleCandidateImageUpload(response, index) {
+function handleCandidateImageUpload(response, file, index) {
   console.log('서버 응답 데이터:', response);
 
   if (response && response.url) {
     // 서버에서 이미 /uploads/파일명 형식으로 반환하므로 그대로 저장
-    console.log(response.url);
     candidates.value[index].imageUrl = response.url;
+    
+    // ⭐ 파일명에서 확장자 제거하여 후보 이름 자동 설정
+    if (file && file.name && !candidates.value[index].name) {
+      const fileName = file.name;
+      const nameWithoutExt = fileName.substring(0, fileName.lastIndexOf('.')) || fileName;
+      candidates.value[index].name = nameWithoutExt;
+    }
+    
     ElMessage.success(`${index + 1}번 후보 이미지 업로드 성공!`);
   } else {
     console.error('응답 객체에 url 필드가 없습니다.');
@@ -295,6 +302,13 @@ function handleBulkImageUpload(response, file, fileList) {
     if (emptyIndex !== -1) {
       // 서버에서 이미 /uploads/파일명 형식으로 반환하므로 그대로 저장
       candidates.value[emptyIndex].imageUrl = response.url;
+      
+      // ⭐ 파일명에서 확장자 제거하여 후보 이름 자동 설정
+      if (file && file.name && !candidates.value[emptyIndex].name) {
+        const fileName = file.name;
+        const nameWithoutExt = fileName.substring(0, fileName.lastIndexOf('.')) || fileName;
+        candidates.value[emptyIndex].name = nameWithoutExt;
+      }
 
       // 업로드된 파일 개수 계산
       const uploadedCount = fileList.filter(f => f.status === 'success').length;
