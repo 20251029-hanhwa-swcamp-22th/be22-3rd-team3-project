@@ -451,6 +451,18 @@
       "viewCount": 0,
       "playCount": 0,
       "id": 2
+    },
+    {
+      "title": "한국인이면 맞춰야하는 퀴즈 ",
+      "description": "못맞추면... 음...🤨",
+      "categoryId": 7,
+      "thumbnail": "/uploads/1770175403350-994349101.png",
+      "userId": 2,
+      "totalQuestions": 10,
+      "createdAt": "2026-02-04T03:26:12.303Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 3
     }
   ],
   "quiz_questions": [
@@ -519,6 +531,116 @@
       "correctCount": 6,
       "totalCount": 12,
       "id": 6
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 1,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175411991-16397559.jpg",
+      "answer": "이순신",
+      "timeLimit": 10,
+      "correctCount": 3,
+      "totalCount": 3,
+      "id": 7
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 2,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175422368-906718740.jpg",
+      "answer": "세종대왕",
+      "timeLimit": 10,
+      "correctCount": 2,
+      "totalCount": 2,
+      "id": 8
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 3,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175430190-732719343.jpeg",
+      "answer": "장영실",
+      "timeLimit": 10,
+      "correctCount": 1,
+      "totalCount": 3,
+      "id": 9
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 4,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175437063-439193981.jpg",
+      "answer": "윤동주",
+      "timeLimit": 10,
+      "correctCount": 2,
+      "totalCount": 3,
+      "id": 10
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 5,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175445408-185379492.jpeg",
+      "answer": "안창호",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 1,
+      "id": 11
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 6,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175487160-840736214.jpg",
+      "answer": "이봉창",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 1,
+      "id": 12
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 7,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175499141-721479854.jpg",
+      "answer": "정조",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 1,
+      "id": 13
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 8,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175504786-732176751.jpg",
+      "answer": "정약용",
+      "timeLimit": 10,
+      "correctCount": 2,
+      "totalCount": 2,
+      "id": 14
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 9,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175511506-801789738.jpeg",
+      "answer": "강감찬",
+      "timeLimit": 10,
+      "correctCount": 1,
+      "totalCount": 1,
+      "id": 15
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 10,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770175570254-357697866.jpg",
+      "answer": "김좌진",
+      "timeLimit": 10,
+      "correctCount": 1,
+      "totalCount": 1,
+      "id": 16
     }
   ],
   "quiz_results": [
@@ -809,6 +931,54 @@
       "tier": "노력필요",
       "completedAt": "2026-02-04T01:48:44.363Z",
       "id": 24
+    },
+    {
+      "quizId": 3,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 20,
+      "correctCount": 2,
+      "totalQuestions": 10,
+      "remainingTime": 0,
+      "tier": "평범",
+      "completedAt": "2026-02-04T03:30:44.852Z",
+      "id": 25
+    },
+    {
+      "quizId": 3,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 10,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T03:33:36.297Z",
+      "id": 26
+    },
+    {
+      "quizId": 3,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 30,
+      "correctCount": 3,
+      "totalQuestions": 10,
+      "remainingTime": 0,
+      "tier": "평범",
+      "completedAt": "2026-02-04T03:36:21.104Z",
+      "id": 27
+    },
+    {
+      "quizId": 3,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 60,
+      "correctCount": 6,
+      "totalQuestions": 10,
+      "remainingTime": 0,
+      "tier": "우등생",
+      "completedAt": "2026-02-04T03:37:47.664Z",
+      "id": 28
     }
   ],
   "categories": [

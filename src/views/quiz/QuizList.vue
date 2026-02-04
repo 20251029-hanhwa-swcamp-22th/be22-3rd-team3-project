@@ -51,7 +51,7 @@
         >
           <div class="card-image">
             <!-- 썸네일이 없으면 기본 이미지를 보여줍니다 -->
-            <img :src="quiz.thumbnail || '/placeholder.jpg'" :alt="quiz.title" />
+            <img :src="getImageUrl(quiz.thumbnail || '/placeholder.jpg')" :alt="quiz.title" />
           </div>
           <div class="card-body">
             <h3>{{ quiz.title }}</h3>
@@ -84,6 +84,7 @@ import { commonApi } from '@/api/commonApi'
 import { Search } from '@element-plus/icons-vue'
 import { useRouter } from 'vue-router'
 import ExitTransition from '@/components/ExitTransition.vue'
+import {getImageUrl} from "@/utils/helpers.js";
 
 // 인증 상태 관리를 위한 스토어 사용
 const authStore = useAuthStore()

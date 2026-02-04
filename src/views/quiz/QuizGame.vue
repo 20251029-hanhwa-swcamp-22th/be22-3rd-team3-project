@@ -33,13 +33,13 @@
           </div>
         </div>
 
-        <!-- 문제 이미지가 있는 경우에만 이미지를 표시합니다 -->
-        <div class="question-image" v-if="currentQuestion.questionImage">
-          <img :src="currentQuestion.questionImage" :alt="'문제 ' + (currentQuestionIndex + 1)" />
-        </div>
-
         <div class="question-text">
           {{ currentQuestion.questionText }}
+        </div>
+
+        <!-- 문제 이미지가 있는 경우에만 이미지를 표시합니다 -->
+        <div class="question-image" v-if="currentQuestion.questionImage">
+          <img :src="getImageUrl(currentQuestion.questionImage)" :alt="'문제 ' + (currentQuestionIndex + 1)" />
         </div>
 
         <div class="answer-section">
@@ -76,9 +76,11 @@
             </el-button>
           </div>
         </div>
+      </div>
 
-        <!-- 정답/오답 피드백: 제출 후에만 보여줍니다 -->
-        <div v-if="answerSubmitted" class="feedback" :class="{ correct: isCorrect, incorrect: !isCorrect }">
+      <!-- 정답/오답 피드백: 화면 중앙에 고정 표시 -->
+      <div v-if="answerSubmitted" class="feedback-overlay">
+        <div class="feedback" :class="{ correct: isCorrect, incorrect: !isCorrect }">
           <div class="feedback-icon">
             <el-icon v-if="isCorrect" size="60"><CircleCheck /></el-icon>
             <el-icon v-else size="60"><CircleClose /></el-icon>
@@ -137,7 +139,7 @@ import { useQuizStore } from '@/stores/quiz'
 import { Timer, CircleCheck, CircleClose } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import { quizApi } from '@/api/quizApi'
-import { formatTime } from '@/utils/helpers'
+import {formatTime, getImageUrl} from '@/utils/helpers'
 
 const route = useRoute()
 const router = useRouter()
@@ -381,7 +383,7 @@ async function moveToNextQuestion() {
 
 .question-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 250px;
   margin: 0 auto var(--spacing-lg);
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -413,33 +415,56 @@ async function moveToNextQuestion() {
   flex-wrap: wrap;
 }
 
+/* 피드백 오버레이 - 화면 전체를 덮는 반투명 배경 */
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 피드백 카드 */
 .feedback {
-  margin-top: var(--spacing-xl);
+  background: white;
   padding: var(--spacing-xl);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 0.3s ease-in-out;
 }
 
 .feedback.correct {
-  background: rgba(103, 194, 58, 0.1);
+  background: #67c23a;
   border: 2px solid var(--success);
+  color: white;
 }
 
 .feedback.incorrect {
-  background: rgba(245, 108, 108, 0.1);
+  background: #f56c6c;
   border: 2px solid var(--danger);
+  color: white;
 }
 
 .feedback-icon {
   margin-bottom: var(--spacing-md);
+  color: white;
 }
 
 .feedback.correct .feedback-icon {
-  color: var(--success);
+  color: white;
 }
 
 .feedback.incorrect .feedback-icon {
-  color: var(--danger);
+  color: white;
 }
 
 .feedback-text h3 {
@@ -536,4 +561,26 @@ async function moveToNextQuestion() {
     width: 100%;
   }
 }
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 </style>
