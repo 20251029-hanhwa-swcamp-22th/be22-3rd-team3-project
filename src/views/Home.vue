@@ -48,7 +48,7 @@
         <div v-if="popularWorldcups.length > 0" class="content-section">
           <h3 class="subsection-title fade-in-section">
             <img src="/trophy-icon.png" alt="trophy" class="section-icon" />
-            인기 월드컵
+            인기 월드컵 보기
           </h3>
           <div class="content-grid">
             <router-link 
@@ -70,13 +70,13 @@
         <div v-if="popularQuizzes.length > 0" class="content-section">
           <h3 class="subsection-title fade-in-section">
             <img src="/quiz-icon.png" alt="quiz" class="section-icon" />
-            인기 퀴즈
+            인기 퀴즈 풀어보기
           </h3>
           <div class="content-grid">
             <router-link 
               v-for="(quiz, index) in popularQuizzes" 
               :key="quiz.id"
-              :to="`/quiz/${quiz.id}`"
+              :to="`/quiz/${quiz.id}/play`"
               class="content-card fade-in-section"
               :style="{ transitionDelay: `${index * 0.1}s` }"
             >

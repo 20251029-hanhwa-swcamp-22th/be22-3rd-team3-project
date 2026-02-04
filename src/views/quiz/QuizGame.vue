@@ -229,6 +229,9 @@ onMounted(async () => {
     // 화면이 다 그려진 후(nextTick) 첫 문제 입력창에 커서를 위치시킵니다.
     await nextTick()
     answerInput.value?.focus()
+
+    // 조회수 증가
+    quizApi.increaseViewCount(quizId).catch(err => console.error('View count update failed:', err));
   } catch (error) {
     console.error('Failed to load quiz:', error)
     ElMessage.error('퀴즈를 불러오는데 실패했습니다')

@@ -29,7 +29,7 @@
         <div class="winner-section card card-glass">
           <h2>👑 우승자</h2>
           <div class="winner-card">
-            <img v-if="winner" :src="getImageUrl(winner.imageUrl)" :alt="winner.name" />
+            <img v-if="winner" :src="getImageUrl(winner.imageUrl)" :alt="winner.name"/>
             <h3>{{ winner?.name }}</h3>
             <div class="winner-stats">
               <span>총 우승: {{ winner?.winCount }}회</span>
@@ -46,12 +46,13 @@
           <div class="top4-grid">
             <!-- result.top4는 후보 ID 배열 → getCandidateById로 후보 객체 조회 -->
             <div
-              v-for="(candidateId, index) in result.top4"
-              :key="candidateId"
-              class="top4-item"
+                v-for="(candidateId, index) in result.top4"
+                :key="candidateId"
+                class="top4-item"
             >
               <div class="rank-badge">{{ index + 1 }}</div>
-              <img :src="getImageUrl(getCandidateById(candidateId)?.imageUrl)" :alt="getCandidateById(candidateId)?.name" />
+              <img :src="getImageUrl(getCandidateById(candidateId)?.imageUrl)"
+                   :alt="getCandidateById(candidateId)?.name"/>
               <h4>{{ getCandidateById(candidateId)?.name }}</h4>
             </div>
           </div>
@@ -64,20 +65,20 @@
           <div class="history-timeline">
             <!-- selectionHistory: computed로 계산된 선택 기록 배열 -->
             <div
-              v-for="(selection, index) in selectionHistory"
-              :key="index"
-              class="history-item"
+                v-for="(selection, index) in selectionHistory"
+                :key="index"
+                class="history-item"
             >
               <div class="round-label">{{ selection.round }}</div>
               <!-- left vs right 형식으로 표시 (새로운 형식) -->
               <div v-if="selection.left && selection.right" class="vs-match">
                 <div class="candidate-mini" :class="{ winner: selection.selected?.id === selection.left?.id }">
-                  <img :src="getImageUrl(selection.left.imageUrl)" :alt="selection.left.name" />
+                  <img :src="getImageUrl(selection.left.imageUrl)" :alt="selection.left.name"/>
                   <span>{{ selection.left.name }}</span>
                 </div>
                 <span class="vs">VS</span>
                 <div class="candidate-mini" :class="{ winner: selection.selected?.id === selection.right?.id }">
-                  <img :src="getImageUrl(selection.right.imageUrl)" :alt="selection.right.name" />
+                  <img :src="getImageUrl(selection.right.imageUrl)" :alt="selection.right.name"/>
                   <span>{{ selection.right.name }}</span>
                 </div>
               </div>
@@ -105,7 +106,9 @@
 
       <!-- ===== 로딩 상태 ===== -->
       <div v-else class="loading">
-        <el-icon class="is-loading" size="60"><Loading /></el-icon>
+        <el-icon class="is-loading" size="60">
+          <Loading/>
+        </el-icon>
         <p>결과를 불러오는 중...</p>
       </div>
     </div>
@@ -120,43 +123,31 @@
  */
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
-import { Loading } from '@element-plus/icons-vue'  // 로딩 스피너 아이콘
-import apiClient from '@/api/axios'                 // Axios 인스턴스
-import { calculateWinRate,getImageUrl } from '@/utils/helpers'
+import { Loading } from '@element-plus/icons-vue'
+import { worldcupApi } from '@/api/worldcupApi'
+import apiClient from "@/api/axios.js"
+import { getImageUrl } from '@/utils/helpers'
+
 // ===== 라우터 =====
 const route = useRoute()
-const worldcupId = route.params.id  // URL에서 월드컵 ID 추출
+const worldcupId = route.params.id
 
 // ===== 반응형 상태 =====
-const result = ref(null)        // 결과 데이터 (winnerId, top4, selections)
-const candidates = ref([])      // 후보 목록 (ID → 객체 매핑용)
-const winner = ref(null)        // 우승자 객체
+const result = ref(null)
+const candidates = ref([])
+const winner = ref(null)
 
 // ===== Computed =====
-/**
- * 선택 히스토리 계산
- * - result.selections 배열은 매치 정보 객체로 저장됨
- * - { leftId, rightId, selectedId, round }
- * - 반환값: [{ round, left, right, selected }, ...]
- */
-/**
- * 선택 히스토리 계산
- */
 const selectionHistory = computed(() => {
   if (!result.value || !result.value.selections) return []
 
   const selections = result.value.selections
-
-  // 1. 라운드 숫자를 한글 명칭으로 변환하는 공통 맵
   const roundNameMap = {
     64: '64강', 32: '32강', 16: '16강', 8: '8강', 4: '준결승', 2: '결승', '4강': '준결승'
   }
 
-  // ===== 새로운 형식: [{ leftId, rightId, selectedId, round }, ...] =====
   if (selections.length > 0 && typeof selections[0] === 'object') {
     return selections.map((match, index) => ({
-      // match.round가 4, 4강이라면 '준결승', 8이라면 '8강'으로 변환
-      // 만약 맵에 없는 숫자라면 숫자에 '강'을 붙여서 표시
       round: roundNameMap[match.round] || (typeof match.round === 'number' ? `${match.round}강` : match.round),
       matchNumber: index + 1,
       left: getCandidateById(match.leftId),
@@ -165,57 +156,22 @@ const selectionHistory = computed(() => {
     }))
   }
 
-  // ===== 기존 형식 (호환성 유지): [selectedId, selectedId, ...] =====
-  const history = []
-  const startRound = result.value.startRound || 16
-
-  const roundsInfo = []
-  let r = startRound
-  while (r >= 2) {
-    // 위에서 정의한 roundNameMap을 사용하도록 통일
-    roundsInfo.push({ name: roundNameMap[r] || `${r}강`, matches: r / 2 })
-    r = r / 2
-  }
-
-  let roundIndex = 0
-  let matchInCurrentRound = 0
-
-  for (let i = 0; i < selections.length; i++) {
-    const selectedId = selections[i]
-    const currentRoundInfo = roundsInfo[roundIndex]
-
-    if (currentRoundInfo) {
-      history.push({
-        round: currentRoundInfo.name,
-        matchNumber: matchInCurrentRound + 1,
-        selected: getCandidateById(selectedId)
-      })
-
-      matchInCurrentRound++
-      if (matchInCurrentRound >= currentRoundInfo.matches) {
-        roundIndex++
-        matchInCurrentRound = 0
-      }
-    }
-  }
-
-  return history
+  // Legacy support
+  return []
 })
-// ===== 승률 계산 ======
-// 1. 해당 월드컵의 모든 후보들의 winCount 총합 계산
+
 const totalWinCount = computed(() => {
   if (candidates.value.length === 0) return 0;
   return candidates.value.reduce((sum, candidate) => sum + (candidate.winCount || 0), 0);
 });
 
-// 2. 특정 후보의 승률을 계산하는 함수 (수정)
 const getWinRate = (candidate) => {
   if (!candidate || totalWinCount.value === 0) return '0.0';
 
   // (해당 후보 우승 횟수 / 전제 후보 우승 횟수 총합) * 100
   console.log(`우승횟수 : ${candidate.winCount} / 전체 후보 우승 횟수 : ${totalWinCount.value}`);
   const rate = (candidate.winCount / totalWinCount.value) * 100;
-  return rate.toFixed(1); // 소수점 첫째 자리까지
+  return rate.toFixed(1);
 };
 
 // ===== 라이프사이클 훅 =====
@@ -229,12 +185,16 @@ onMounted(async () => {
       apiClient.get(`/worldcup_results?worldcupId=${worldcupId}&_sort=createdAt&_order=desc&_limit=1`),
       apiClient.get(`/worldcup_candidates?worldcupId=${worldcupId}`)
     ])
-    
+
     if (resultsRes.data && resultsRes.data.length > 0) {
       result.value = resultsRes.data[0]
       candidates.value = candidatesRes.data
       winner.value = getCandidateById(result.value.winnerId)
     }
+
+    // 플레이 횟수 증가 (게임 완료 후 결과 페이지 진입 시)
+    worldcupApi.increasePlayCount(worldcupId).catch(err => console.error('Play count update failed:', err));
+
   } catch (error) {
     console.error('Failed to load result:', error)
   }

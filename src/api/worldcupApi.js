@@ -1,4 +1,6 @@
 import apiClient from './axios'
+import { getOrInitGuestId } from '@/utils/identity'
+
 
 /**
  * 월드컵 관련 API
@@ -85,5 +87,28 @@ export const worldcupApi = {
      */
     saveWorldcupResult(data) {
         return apiClient.post('/worldcup_results', data)
+    },
+
+    /**
+     * 월드컵 조회수를 증가시킵니다. (1시간 1회 제한)
+     * @param {number} id - 월드컵 ID
+     */
+    increaseViewCount(id) {
+        const guestId = getOrInitGuestId();
+        return apiClient.post(`/worldcups/${id}/view`, { guestId }, {
+            headers: { 'X-Guest-Id': guestId }
+        });
+    },
+
+    /**
+     * 월드컵 플레이 횟수를 증가시킵니다. (24시간 1회 제한)
+     * @param {number} id - 월드컵 ID
+     */
+    increasePlayCount(id) {
+        const guestId = getOrInitGuestId();
+        return apiClient.post(`/worldcups/${id}/play`, { guestId }, {
+            headers: { 'X-Guest-Id': guestId }
+        });
     }
 }
+
