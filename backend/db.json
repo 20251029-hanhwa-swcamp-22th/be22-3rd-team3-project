@@ -1075,6 +1075,30 @@
       "tier": "노력필요",
       "completedAt": "2026-02-04T03:49:55.138Z",
       "id": 21
+    },
+    {
+      "quizId": 3,
+      "userId": 4,
+      "nickname": "김태형",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 10,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T06:23:16.286Z",
+      "id": 22
+    },
+    {
+      "quizId": 2,
+      "userId": 4,
+      "nickname": "김태형",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T06:23:51.133Z",
+      "id": 23
     }
   ],
   "categories": [
