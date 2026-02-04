@@ -12,9 +12,9 @@
   --purple-light: #E5D9FF;
   --purple-dark: #C09FFF;
 
-  --gradient-pink: linear-gradient(135deg, #FFB3D9 0%, #FFC9E5 100%);
+  --gradient-pink: linear-gradient(135deg, #e572ac 0%, #a373f7 100%);
   --gradient-purple: linear-gradient(135deg, #D4BBFF 0%, #E5D9FF 100%);
-  --gradient-mix: linear-gradient(135deg, #FFB3D9 0%, #D4BBFF 100%);
+  --gradient-mix: linear-gradient(135deg, #e572ac 0%, #a373f7 100%);
 
   /* 배경 - 깔끔한 흰색 베이스 */
   --bg-primary: #FFFFFF;
