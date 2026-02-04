@@ -3,7 +3,7 @@
     <div class="container">
       <div class="header-content">
         <router-link to="/" class="logo">
-          <h2 class="gradient-text">🎮 이상형 & 퀴즈</h2>
+          <h2 class="gradient-text">골라보숑</h2>
         </router-link>
         
         <nav class="nav-menu">

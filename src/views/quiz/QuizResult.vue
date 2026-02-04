@@ -168,11 +168,16 @@ onMounted(async () => {
 // ==========================================
 
 /**
- * 특정 문제의 전체 사용자 정답률을 계산합니다.
+ * 특정 문제의 전체 사용자 정답률을 계산
+ * @param {Object} question - 문제 객체 (correctCount, totalCount 포함)
+ * @returns {number} 정답률 (0-100 사이의 숫자)
  */
 function getQuestionAccuracy(question) {
+  // totalCount가 0이면 정답률도 0
   if (!question.totalCount) return 0
-  return Math.round((question.correctCount / question.totalCount))
+  
+  // 정답률 = (정답 맞춘 사람 수 / 전체 플레이한 사람 수) * 100
+  return Math.round((question.correctCount / question.totalCount) * 100)
 }
 </script>
 
