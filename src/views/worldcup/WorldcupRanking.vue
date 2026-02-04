@@ -44,7 +44,7 @@
             </div>
             <!-- 후보 이미지 -->
             <div class="candidate-image">
-              <img :src="candidate.imageUrl" :alt="candidate.name" />
+              <img :src="getImageUrl(candidate.imageUrl)" :alt="candidate.name" />
             </div>
             <!-- 후보 정보 및 통계 -->
             <div class="candidate-info">
@@ -55,12 +55,8 @@
                   <span class="value">{{ candidate.winCount }}회</span>
                 </div>
                 <div class="stat">
-                  <span class="label">결승</span>
-                  <span class="value">{{ candidate.finalCount }}회</span>
-                </div>
-                <div class="stat">
                   <span class="label">승률</span>
-                  <span class="value">{{ calculateWinRate(candidate) }}%</span>
+                  <span class="value">{{ getWinRate(candidate, totalWinCount) }}%</span>
                 </div>
               </div>
             </div>
@@ -93,11 +89,11 @@
  * WorldcupRanking.vue - Script Section
  * ============================================================================
  */
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'  // 로딩 아이콘
 import { worldcupApi } from '@/api/worldcupApi'   // 월드컵 API
-import { calculateWinRate } from '@/utils/helpers' // 승률 계산 유틸
+import { getImageUrl, getWinRate } from '@/utils/helpers' // 승률 계산 유틸
 
 // ===== 라우터 =====
 const route = useRoute()
@@ -106,6 +102,9 @@ const worldcupId = route.params.id  // URL에서 월드컵 ID 추출
 // ===== 반응형 상태 =====
 const worldcup = ref(null)    // 월드컵 정보 객체
 const candidates = ref([])    // 랭킹 정렬된 후보 목록
+const totalWinCount = computed(() => {
+  return candidates.value.reduce((sum, c) => sum + (c.winCount || 0), 0)
+})
 
 // ===== 라이프사이클 훅 =====
 /**

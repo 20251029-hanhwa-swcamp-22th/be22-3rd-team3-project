@@ -45,7 +45,7 @@ const routes = [
         component: () => import('@/views/worldcup/WorldcupResult.vue')
     },
     {
-        path: '/worldcup/ranking',
+        path: '/worldcup/:id/ranking',
         name: 'WorldcupRanking',
         component: () => import('@/views/worldcup/WorldcupRanking.vue')
     },
