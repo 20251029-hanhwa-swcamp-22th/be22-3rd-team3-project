@@ -56,3 +56,12 @@ export function formatDate(dateString) {
         minute: '2-digit'
     })
 }
+
+// 이미지 URL 포맷팅 헬퍼 함수
+export function getImageUrl(url) {
+    if (!url) return '';
+    if (url.startsWith('http')) return url;
+    // 슬래시가 없으면 추가
+    return url.startsWith('/') ? `${import.meta.env.VITE_API_BASE_URL}${url}`
+        : `${import.meta.env.VITE_API_BASE_URL}/${url}`;
+}
