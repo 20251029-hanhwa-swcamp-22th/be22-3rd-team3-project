@@ -23,6 +23,12 @@
       "password": "$2a$10$TlhB2rGnFnbAquzb.kaGUu968q1yuijprnqZTGpH18ehfeLt2sjd6",
       "nickname": "김태형",
       "id": 4
+    },
+    {
+      "email": "gusgh@gush.com",
+      "password": "$2a$10$7S4FvS0Kuay2egkuKW9UlukgughyCgQdZ.TkvqPMBnp0Gzrdrp/52",
+      "nickname": "정현호~그라이더!",
+      "id": 5
     }
   ],
   "worldcups": [
@@ -111,7 +117,7 @@
       "name": "별을품은 소드마스터",
       "imageUrl": "/uploads/1770167174688-50406047.webp",
       "winCount": 0,
-      "appearCount": 7,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 6
     },
@@ -129,7 +135,7 @@
       "name": "일렉시드",
       "imageUrl": "/uploads/1770167174692-109842028.jpg",
       "winCount": 0,
-      "appearCount": 3,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 8
     },
@@ -174,7 +180,7 @@
       "name": "절대회귀",
       "imageUrl": "/uploads/1770167174696-149234050.jpg",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 13
     },
@@ -237,7 +243,7 @@
       "name": "정열맨",
       "imageUrl": "/uploads/1770167174711-749792750.webp",
       "winCount": 0,
-      "appearCount": 7,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 20
     },
@@ -246,7 +252,7 @@
       "name": "패션왕",
       "imageUrl": "/uploads/1770167174714-493435358.jpg",
       "winCount": 1,
-      "appearCount": 2,
+      "appearCount": 1,
       "finalCount": 1,
       "id": 21
     },
@@ -264,7 +270,7 @@
       "name": "국세청 망나니",
       "imageUrl": "/uploads/1770167174709-872612883.jpg",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 23
     },
@@ -281,9 +287,9 @@
       "worldcupId": 2,
       "name": "타이밍ㅅ",
       "imageUrl": "/uploads/1770167174716-235432601.jpg",
-      "winCount": 1,
-      "appearCount": 7,
-      "finalCount": 1,
+      "winCount": 0,
+      "appearCount": 6,
+      "finalCount": 0,
       "id": 25
     },
     {
@@ -291,7 +297,7 @@
       "name": "선천적 얼간이들",
       "imageUrl": "/uploads/1770167174712-375582875.jpg",
       "winCount": 0,
-      "appearCount": 7,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 26
     },
@@ -725,63 +731,6 @@
       ],
       "createdAt": "2026-02-04T08:59:48.573Z",
       "id": 7
-    },
-    {
-      "worldcupId": 2,
-      "winnerId": 25,
-      "top4": [
-        25,
-        21,
-        13,
-        23
-      ],
-      "selections": [
-        {
-          "leftId": 25,
-          "rightId": 20,
-          "selectedId": 25,
-          "round": "8강"
-        },
-        {
-          "leftId": 21,
-          "rightId": 8,
-          "selectedId": 21,
-          "round": "8강"
-        },
-        {
-          "leftId": 13,
-          "rightId": 26,
-          "selectedId": 13,
-          "round": "8강"
-        },
-        {
-          "leftId": 23,
-          "rightId": 6,
-          "selectedId": 23,
-          "round": "8강"
-        },
-        {
-          "leftId": 25,
-          "rightId": 21,
-          "selectedId": 25,
-          "round": "4강"
-        },
-        {
-          "leftId": 13,
-          "rightId": 23,
-          "selectedId": 13,
-          "round": "4강"
-        },
-        {
-          "leftId": 25,
-          "rightId": 13,
-          "selectedId": 25,
-          "round": "결승"
-        }
-      ],
-      "startRound": 8,
-      "createdAt": "2026-02-04T16:06:28.953Z",
-      "id": 8
     }
   ],
   "quiz_questions": [
@@ -836,8 +785,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 12,
-      "totalCount": 16,
+      "correctCount": 11,
+      "totalCount": 15,
       "id": 5
     },
     {
@@ -986,18 +935,6 @@
       "tier": "노력필요",
       "completedAt": "2026-02-04T13:33:15.002Z",
       "id": 2
-    },
-    {
-      "quizId": 2,
-      "userId": 4,
-      "nickname": "김태형",
-      "score": 10,
-      "correctCount": 1,
-      "totalQuestions": 5,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T15:22:04.925Z",
-      "id": 3
     }
   ],
   "categories": [
