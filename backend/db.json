@@ -58,17 +58,6 @@
       "viewCount": 0,
       "playCount": 0,
       "id": 3
-    },
-    {
-      "title": "남자 아이돌 월드컵",
-      "description": "남자 아이돌 월드컵 입니다!",
-      "categoryId": 2,
-      "thumbnail": "/uploads/1770189790050-900468707.jpg",
-      "userId": 2,
-      "createdAt": "2026-02-04T07:49:44.366Z",
-      "viewCount": 0,
-      "playCount": 0,
-      "id": 4
     }
   ],
   "worldcup_candidates": [
@@ -373,9 +362,9 @@
       "worldcupId": 3,
       "name": "별을 품은 소드마스터",
       "imageUrl": "/uploads/1770187537869-719806552.webp",
-      "winCount": 1,
-      "appearCount": 3,
-      "finalCount": 1,
+      "winCount": 0,
+      "appearCount": 6,
+      "finalCount": 0,
       "id": 34
     },
     {
@@ -392,7 +381,7 @@
       "name": "절대회귀",
       "imageUrl": "/uploads/1770187537871-16203170.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 36
     },
@@ -400,19 +389,55 @@
       "worldcupId": 3,
       "name": "역대급 영지 설계사",
       "imageUrl": "/uploads/1770187537870-718703898.webp",
-      "winCount": 1,
-      "appearCount": 3,
-      "finalCount": 1,
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
       "id": 37
     },
     {
-      "worldcupId": 3,
-      "name": "천화서고대공자",
-      "imageUrl": "/uploads/1770187537874-954365287.webp",
-      "winCount": 0,
-      "appearCount": 2,
-      "finalCount": 0,
-      "id": 38
+      "worldcupId": 2,
+      "winnerId": 28,
+      "top4": [
+        28,
+        32,
+        19,
+        33
+      ],
+      "selections": [
+        28,
+        3,
+        4,
+        20,
+        32,
+        21,
+        10,
+        7,
+        19,
+        8,
+        22,
+        25,
+        33,
+        12,
+        23,
+        9,
+        28,
+        4,
+        32,
+        10,
+        19,
+        22,
+        33,
+        23,
+        28,
+        32,
+        19,
+        33,
+        28,
+        19,
+        28
+      ],
+      "createdAt": "2026-02-04T05:33:24.483Z",
+      "id": 6
     },
     {
       "worldcupId": 2,
