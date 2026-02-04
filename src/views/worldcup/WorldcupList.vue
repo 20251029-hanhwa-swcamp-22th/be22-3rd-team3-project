@@ -51,8 +51,15 @@
         </el-input>
 
         <!-- 카테고리 선택: 변경 시 loadWorldcups 직접 호출 -->
-        <el-select v-model="selectedCategory" placeholder="카테고리" size="large" @change="loadWorldcups">
-          <el-option label="전체" :value="null"/>
+        <el-select 
+          v-model="selectedCategory" 
+          placeholder="전체"
+          size="large" 
+          @change="loadWorldcups"
+          style="width: 160px"
+        >
+
+          <el-option label="전체" value=""/>
           <el-option
               v-for="category in categories"
               :key="category.id"
@@ -120,7 +127,7 @@ import {commonApi} from '@/api/commonApi'       // 공통 API (카테고리 조�
 import {Search} from '@element-plus/icons-vue'  // 검색 아이콘
 import {useRouter} from 'vue-router'
 import ExitTransition from '@/components/ExitTransition.vue'
-import {getImageUrl} from "../../utils/helpers.js";
+import {getImageUrl} from "@/utils/helpers.js";
 
 // ===== Store & Router =====
 const authStore = useAuthStore()  // 로그인 상태 확인용
@@ -132,7 +139,7 @@ const worldcups = ref([])         // 월드컵 목록 데이터
 const categories = ref([])        // 카테고리 목록 데이터
 const loading = ref(false)        // 로딩 상태 (스피너 표시용)
 const searchQuery = ref('')       // 검색어 입력값
-const selectedCategory = ref(null) // 선택된 카테고리 ID (null = 전체)
+const selectedCategory = ref('') // 선택된 카테고리 ID (null = 전체)
 
 
 // ===== 라이프사이클 훅 =====
