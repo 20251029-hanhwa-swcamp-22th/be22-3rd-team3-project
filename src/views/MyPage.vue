@@ -11,10 +11,6 @@
             <label>이메일</label>
             <p>{{ user?.email || '-' }}</p>
           </div>
-          <div class="info-item">
-            <label>가입일</label>
-            <p>{{ formatDate(user?.createdAt) }}</p>
-          </div>
         </div>
         <el-divider />
         <!-- 닉네임 변경 섹션 -->
@@ -101,14 +97,6 @@ const rules = {
     { required: true, message: '닉네임을 입력해주세요', trigger: 'blur' },
     { min: 2, max: 20, message: '닉네임은 2-20자 사이여야 합니다', trigger: 'blur' }
   ]
-}
-// ========================================
-// 날짜 포맷 함수
-// ========================================
-function formatDate(timestamp) {
-  if (!timestamp) return '-'
-  const date = new Date(timestamp)
-  return date.toLocaleDateString('ko-KR')
 }
 
 // ========================================

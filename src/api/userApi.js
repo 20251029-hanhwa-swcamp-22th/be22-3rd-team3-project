@@ -31,6 +31,6 @@ export const userApi = {
    * @returns {Promise} 업데이트된 사용자 정보
    */
   updateNickname(nickname) {
-    return apiClient.patch('/users/me', { nickname })
+    return apiClient.patch(`/users/${authStore.user.id}`, { nickname })
   }
 }
