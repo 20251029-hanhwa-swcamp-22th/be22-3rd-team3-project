@@ -112,12 +112,12 @@ const questions = ref([]) // 문제 목록
 
 // 티어 시스템 정의 (점수 구간별 설명)
 const tiers = [
-  { name: '멘사', description: '90점 이상 - 천재적인 실력!' },
-  { name: '수재', description: '80-89점 - 뛰어난 실력!' },
-  { name: '우등생', description: '70-79점 - 훌륭한 실력!' },
-  { name: '모범생', description: '60-69점 - 좋은 실력!' },
-  { name: '평범', description: '50-59점 - 평균 실력' },
-  { name: '노력필요', description: '50점 미만 - 조금 더 노력해보세요!' }
+  { name: '멘사', description: '100점 - 천재적인 실력!' },
+  { name: '수재', description: '70-90점 - 뛰어난 실력!' },
+  { name: '우등생', description: '60-79점 - 훌륭한 실력!' },
+  { name: '모범생', description: '40-59점 - 좋은 실력!' },
+  { name: '평범', description: '20-39점 - 평균 실력' },
+  { name: '노력필요', description: '20점 미만 - 조금 더 노력해보세요!' }
 ]
 
 // ==========================================
@@ -168,7 +168,7 @@ onMounted(async () => {
  */
 function getQuestionAccuracy(question) {
   if (!question.totalCount) return 0
-  return Math.round((question.correctCount / question.totalCount) * 100)
+  return Math.round((question.correctCount / question.totalCount))
 }
 </script>
 

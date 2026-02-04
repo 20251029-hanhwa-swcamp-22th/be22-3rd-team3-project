@@ -56,11 +56,11 @@
             v-model="userAnswer"
             placeholder="정답을 입력하세요"
             size="large"
-            :disabled="answerSubmitted" 
+            :disabled="answerSubmitted"
             @keyup.enter="submitAnswer"
             ref="answerInput"
           />
-          
+
           <div class="action-buttons">
             <!-- 제출 버튼: 정답을 입력했을 때만 활성화됩니다 -->
             <el-button
@@ -117,7 +117,7 @@
               <div class="stat-value tier">{{ quizStore.tier }}</div>
             </div>
           </div>
-          
+
           <div class="result-details">
             <p>정답: {{ quizStore.correctCount }} / {{ quizStore.totalQuestions }}</p>
             <p>남은 시간: {{ formatTime(quizStore.remainingTime) }}</p>
@@ -199,11 +199,11 @@ onMounted(async () => {
       quizApi.getQuiz(quizId),
       quizApi.startQuiz(quizId)
     ])
-    
+
     quiz.value = quizRes.data
     // 스토어의 startGame 액션을 호출하여 게임을 시작합니다.
     quizStore.startGame(quiz.value, questionsRes.data)
-    
+
     // 화면이 다 그려진 후(nextTick) 첫 문제 입력창에 커서를 위치시킵니다.
     await nextTick()
     answerInput.value?.focus()
@@ -229,26 +229,25 @@ onUnmounted(() => {
  */
 async function submitAnswer() {
   if (!userAnswer.value || answerSubmitted.value) return
-  
+
   answerSubmitted.value = true // 제출 상태로 변경
-  
+
   // 스토어의 checkAnswer 함수로 정답 확인
   const result = quizStore.checkAnswer(userAnswer.value)
   isCorrect.value = result.correct
   lastScore.value = result.score
-  
+
   if (result.correct) {
     ElMessage.success('정답입니다!')
   } else {
     ElMessage.error('오답입니다')
   }
-  
+
   // 2초 동안 결과를 보여주고 다음 문제로 넘어갑니다.
   setTimeout(() => {
     moveToNextQuestion()
   }, 2000)
 }
-
 
 /**
  * 문제 건너뛰기
@@ -269,10 +268,10 @@ async function moveToNextQuestion() {
   userAnswer.value = ''
   answerSubmitted.value = false
   isCorrect.value = false
-  
+
   // 스토어에서 다음 문제 준비
   const nextResult = quizStore.nextQuestion()
-  
+
   if (nextResult.finished) {
     // 게임이 끝났으면 결과를 저장하고 종료 화면을 보여줍니다.
     gameFinished.value = true

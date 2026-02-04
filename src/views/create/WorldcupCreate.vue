@@ -309,13 +309,51 @@ function handleBulkImageUpload(response, file, fileList) {
 
 
 async function handleSubmit() {
-  if (!formRef.value) return
+  if (!formRef.value) return;
 
-  await formRef.value.validate(async (valid) => {
-    if (!valid) return
+  try {
+    // 1. Element Plus 폼 검증 - 각 필드별 상세 에러 메시지 표시
+    const validationResult = await formRef.value.validate().catch((errors) => {
+      // 검증 실패 시 어떤 필드가 비어있는지 확인
+      const errorMessages = [];
+      
+      // rules 객체의 각 필드를 확인하여 빈 부분 찾기
+      if (!form.title || form.title.trim() === '') {
+        errorMessages.push('📝 제목을 입력해주세요');
+      } else if (form.title.length < 2 || form.title.length > 100) {
+        errorMessages.push('📝 제목은 2-100자 사이여야 합니다');
+      }
+      
+      if (!form.description || form.description.trim() === '') {
+        errorMessages.push('📄 설명을 입력해주세요');
+      }
+      
+      if (!form.categoryId) {
+        errorMessages.push('🏷️ 카테고리를 선택해주세요');
+      }
+      
+      if (!form.thumbnail || form.thumbnail.trim() === '') {
+        errorMessages.push('🖼️ 썸네일 이미지를 업로드해주세요');
+      }
+      
+      // 에러 메시지 출력
+      if (errorMessages.length > 0) {
+        errorMessages.forEach(msg => {
+          ElMessage.error(msg);
+        });
+      } else {
+        ElMessage.error('입력 항목 중 빠진 부분이 있는지 확인해주세요.');
+      }
+      
+      throw new Error('Form validation failed');
+    });
 
-    // 후보 검증
-    const validCandidates = candidates.value.filter(c => c.name && c.imageUrl)
+    // 2. 후보자 유효성 검증 (이름과 이미지가 모두 있는 것만 필터링)
+    const validCandidates = candidates.value.filter(
+        (c) => c.name.trim() !== '' && c.imageUrl.trim() !== ''
+    );
+
+    // 최소 32개 조건 체크
     if (validCandidates.length < 32) {
       ElMessage.error('최소 32개의 후보에 이름과 이미지를 모두 입력해주세요. 💡 팁: 상단의 "여러 이미지 한번에 업로드" 버튼으로 여러 이미지를 한번에 등록할 수 있습니다!')
       return
@@ -349,17 +387,23 @@ async function handleSubmit() {
           appearCount: 0,
           finalCount: 0
         })
-      }
+    );
 
-      ElMessage.success('월드컵이 성공적으로 생성되었습니다!')
-      router.push('/worldcup')
-    } catch (error) {
-      console.error('Failed to create worldcup:', error)
-      ElMessage.error('월드컵 생성에 실패했습니다')
-    } finally {
-      loading.value = false
+    await Promise.all(candidatePromises);
+
+    ElMessage.success('월드컵이 성공적으로 생성되었습니다! 🏆');
+    router.push('/worldcup');
+
+  } catch (error) {
+    // 폼 검증 실패가 아닌 실제 API 에러인 경우에만 메시지 출력
+    if (error.message !== 'Form validation failed') {
+      console.error('월드컵 생성 중 에러 발생:', error);
+      const serverMsg = error.response?.data?.message || '서버와의 통신 중 오류가 발생했습니다.';
+      ElMessage.error(serverMsg);
     }
-  })
+  } finally {
+    loading.value = false;
+  }
 }
 </script>
 

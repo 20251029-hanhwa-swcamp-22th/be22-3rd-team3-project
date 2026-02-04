@@ -25,9 +25,6 @@ export const useQuizStore = defineStore('quiz', () => {
     // 사용자가 제출한 답안들의 목록
     const answers = ref([])
 
-    // 사용자가 '패스'하기를 사용한 횟수
-    const passCount = ref(0)
-
     // 현재 획득한 총 점수
     const score = ref(0)
 
@@ -98,7 +95,6 @@ export const useQuizStore = defineStore('quiz', () => {
         questions.value = questionsList
         currentQuestionIndex.value = 0
         answers.value = []
-        passCount.value = 0
         score.value = 0
         tier.value = ''
 
@@ -206,7 +202,7 @@ export const useQuizStore = defineStore('quiz', () => {
         let questionScore = 0
         if (isCorrect) {
             // 기본 10점 + 빨리 맞출수록 추가 점수 (남은 시간 * 2)
-            questionScore = 10 + (questionTimeRemaining.value * 2)
+            questionScore = 10
             score.value += questionScore // 총점 누적
         }
 
@@ -272,15 +268,15 @@ export const useQuizStore = defineStore('quiz', () => {
 
         // 최종 점수에 따른 티어 산정
         const finalScore = score.value
-        if (finalScore >= 180) {
+        if (finalScore >= 100) {
             tier.value = '멘사'
-        } else if (finalScore >= 140) {
+        } else if (finalScore >= 90) {
             tier.value = '수재'
-        } else if (finalScore >= 100) {
-            tier.value = '우등생'
         } else if (finalScore >= 60) {
+            tier.value = '우등생'
+        } else if (finalScore >= 40) {
             tier.value = '모범생'
-        } else if (finalScore >= 30) {
+        } else if (finalScore >= 20) {
             tier.value = '평범'
         } else {
             tier.value = '노력필요'
@@ -342,7 +338,6 @@ export const useQuizStore = defineStore('quiz', () => {
         questions.value = []
         currentQuestionIndex.value = 0
         answers.value = []
-        passCount.value = 0
         score.value = 0
         tier.value = ''
         remainingTime.value = 0
@@ -357,7 +352,6 @@ export const useQuizStore = defineStore('quiz', () => {
         questions,
         currentQuestionIndex,
         answers,
-        passCount,
         score,
         tier,
         remainingTime,
