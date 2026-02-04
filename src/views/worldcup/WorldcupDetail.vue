@@ -54,17 +54,17 @@
             <!-- 통계 -->
             <div class="stats">
               <div class="stat-item">
-                <span class="stat-icon">👁️</span>
+                <img src="@/assets/icons/views-icon.png" alt="조회수" class="stat-icon" />
                 <span class="stat-value">{{ worldcup.viewCount || 0 }}</span>
                 <span class="stat-label">조회수</span>
               </div>
               <div class="stat-item">
-                <span class="stat-icon">🎮</span>
+                <img src="@/assets/icons/play-icon.png" alt="플레이" class="stat-icon" />
                 <span class="stat-value">{{ worldcup.playCount || 0 }}</span>
                 <span class="stat-label">플레이</span>
               </div>
               <div class="stat-item">
-                <span class="stat-icon">👥</span>
+                <img src="@/assets/icons/candidates-icon.png" alt="후보" class="stat-icon" />
                 <span class="stat-value">{{ candidatesCount }}</span>
                 <span class="stat-label">후보</span>
               </div>
