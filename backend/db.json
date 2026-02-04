@@ -721,8 +721,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 23,
-      "totalCount": 27,
+      "correctCount": 24,
+      "totalCount": 28,
       "id": 2
     },
     {
@@ -1720,6 +1720,42 @@
       "tier": "평범",
       "completedAt": "2026-02-04T10:47:49.396Z",
       "id": 70
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T15:07:14.984Z",
+      "id": 71
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T15:23:37.104Z",
+      "id": 72
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T15:57:25.104Z",
+      "id": 73
     }
   ],
   "categories": [

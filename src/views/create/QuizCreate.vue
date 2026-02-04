@@ -276,6 +276,9 @@ async function handleSubmit() {
   loading.value = true;
 
   try {
+    // 총 시간 계산 (각 문제의 timeLimit 합산)
+    const totalTime = validQuestions.reduce((sum, q) => sum + q.timeLimit, 0);
+    
     // 퀴즈 생성
     const quizData = {
       title: form.title,
@@ -284,6 +287,7 @@ async function handleSubmit() {
       thumbnail: form.thumbnail,
       userId: authStore.user.id,
       totalQuestions: 10,
+      totalTime: totalTime,  // 총 시간 추가
       createdAt: new Date().toISOString(),
       viewCount: 0,
       playCount: 0

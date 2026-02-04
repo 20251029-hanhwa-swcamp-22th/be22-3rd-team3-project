@@ -58,7 +58,7 @@
             <p class="card-description">{{ quiz.description }}</p>
             <div class="card-info">
               <span>📝 {{ quiz.totalQuestions }}문제</span>
-              <span>⏱️ {{ quiz.totalTime }}초</span>
+              <span>⏱️ {{ quiz.totalTime || 0 }}초</span>
             </div>
             <div class="card-stats">
               <span>👁️ {{ quiz.viewCount || 0 }}</span>
@@ -146,6 +146,19 @@ async function loadQuizzes() {
     // API 요청
     const response = await quizApi.getQuizzes(params)
     quizzes.value = response.data
+    
+    // totalTime이 없는 퀴즈에 대해 자동 계산
+    for (const quiz of quizzes.value) {
+      if (!quiz.totalTime || quiz.totalTime === 0) {
+        try {
+          const questionsResponse = await quizApi.getQuizQuestions(quiz.id)
+          quiz.totalTime = questionsResponse.data.reduce((sum, q) => sum + (q.timeLimit || 10), 0)
+        } catch (error) {
+          console.error(`Failed to calculate totalTime for quiz ${quiz.id}:`, error)
+          quiz.totalTime = 0 // 계산 실패 시 0으로 설정
+        }
+      }
+    }
   } catch (error) {
     console.error('Failed to load quizzes:', error)
   } finally {
