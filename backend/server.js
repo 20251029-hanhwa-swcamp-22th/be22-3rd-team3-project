@@ -27,7 +27,31 @@ const storage = multer.diskStorage({
     }
 });
 
-const upload = multer({ storage: storage });
+const upload = multer({
+  // 1. 저장 위치 및 파일명 설정 (앞서 정의한 storage 객체 사용)
+  storage: storage,
+
+  // 2. 업로드 제한 설정
+  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB 제한
+
+  // 3. 파일 필터링 로직 (허용되는 파일인지 확인)
+  fileFilter: (req, file, cb) => {
+    // 허용할 MIME 타입 목록
+    const allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
+    // 허용할 확장자 목록
+    const allowedExts = ['.jpg', '.jpeg', '.png', '.gif', '.webp']
+
+    const ext = path.extname(file.originalname).toLowerCase();
+    const mimeType = file.mimetype
+
+    // 조건 검사: MIME 타입과 확장자가 모두 목록에 포함되어 있는지 확인
+    if(allowedTypes.includes(mimeType) && allowedExts.includes(ext)){
+      cb(null, true)
+    } else {
+      cb(new Error('이미지 파일만 업로드 가능합니다 (jpg, png, gif, webp)'))
+    }
+  }
+});
 
 // Enable CORS
 server.use(cors());
