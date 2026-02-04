@@ -112,6 +112,30 @@ server.get('/users/me', (req, res) => {
   res.json(userWithoutPassword);
 });
 
+
+
+// 2. 닉네임 중복 체크 API
+server.get('/users/check-nickname', (req, res) => {
+  const nickname = req.query.nickname;
+
+  if (!nickname) {
+    return res.status(400).json({ error: '닉네임을 입력해주세요' });
+  }
+  const db = router.db;
+
+  // 본인 제외하고 중복 체크
+  const currentUserId = req.user ? req.user.id : null;
+
+  const existingUser = db.get('users')
+      .find(user =>
+          user.nickname === nickname &&
+          user.id !== currentUserId
+      )
+      .value();
+  // available: true면 사용 가능, false면 이미 사용 중
+  res.json({ available: !existingUser });
+});
+
 // Custom route for worldcup game start - get random candidates
 server.get('/worldcups/:id/start/:count', (req, res) => {
     const db = router.db;
