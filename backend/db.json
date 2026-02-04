@@ -58,6 +58,17 @@
       "viewCount": 0,
       "playCount": 0,
       "id": 3
+    },
+    {
+      "title": "남자 아이돌 월드컵",
+      "description": "남자 아이돌 월드컵 입니다!",
+      "categoryId": 2,
+      "thumbnail": "/uploads/1770189790050-900468707.jpg",
+      "userId": 2,
+      "createdAt": "2026-02-04T07:49:44.366Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 4
     }
   ],
   "worldcup_candidates": [
@@ -362,9 +373,9 @@
       "worldcupId": 3,
       "name": "별을 품은 소드마스터",
       "imageUrl": "/uploads/1770187537869-719806552.webp",
-      "winCount": 0,
-      "appearCount": 0,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 3,
+      "finalCount": 1,
       "id": 34
     },
     {
@@ -381,7 +392,7 @@
       "name": "절대회귀",
       "imageUrl": "/uploads/1770187537871-16203170.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 36
     },
@@ -389,9 +400,9 @@
       "worldcupId": 3,
       "name": "역대급 영지 설계사",
       "imageUrl": "/uploads/1770187537870-718703898.webp",
-      "winCount": 0,
-      "appearCount": 0,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 3,
+      "finalCount": 1,
       "id": 37
     },
     {
@@ -399,7 +410,7 @@
       "name": "천화서고대공자",
       "imageUrl": "/uploads/1770187537874-954365287.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 38
     },
@@ -408,7 +419,7 @@
       "name": "샤money즘",
       "imageUrl": "/uploads/1770187537868-948363845.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 39
     },
@@ -417,7 +428,7 @@
       "name": "당골",
       "imageUrl": "/uploads/1770187537868-311407652.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 40
     },
@@ -426,7 +437,7 @@
       "name": "광장",
       "imageUrl": "/uploads/1770187537874-580580878.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 41
     },
@@ -435,7 +446,7 @@
       "name": "일렉시드",
       "imageUrl": "/uploads/1770187537877-998004630.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 42
     },
@@ -453,7 +464,7 @@
       "name": "덴마",
       "imageUrl": "/uploads/1770187537882-9027659.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 44
     },
@@ -462,7 +473,7 @@
       "name": "별이삼샵",
       "imageUrl": "/uploads/1770187537882-942601973.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 45
     },
@@ -471,7 +482,7 @@
       "name": "타인은지옥이다",
       "imageUrl": "/uploads/1770187537882-262119137.jpeg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 46
     },
@@ -480,7 +491,7 @@
       "name": "후레자식",
       "imageUrl": "/uploads/1770187537883-694397928.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 47
     },
@@ -498,7 +509,7 @@
       "name": "비질란테",
       "imageUrl": "/uploads/1770187537885-246077520.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 49
     },
@@ -525,7 +536,7 @@
       "name": "후레자식",
       "imageUrl": "/uploads/1770187537891-954110261.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 52
     },
@@ -534,7 +545,7 @@
       "name": "신과함께",
       "imageUrl": "/uploads/1770187537891-764546697.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 53
     },
@@ -552,7 +563,7 @@
       "name": "타이밍",
       "imageUrl": "/uploads/1770187537893-10561322.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 55
     },
@@ -561,7 +572,7 @@
       "name": "목욕의 신",
       "imageUrl": "/uploads/1770187537892-185966381.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 3,
       "finalCount": 0,
       "id": 56
     },
@@ -570,7 +581,7 @@
       "name": "1초",
       "imageUrl": "/uploads/1770187537893-894079434.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 57
     },
@@ -579,7 +590,7 @@
       "name": "안나라수마나라",
       "imageUrl": "/uploads/1770187537901-533018640.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 58
     },
@@ -597,7 +608,7 @@
       "name": "바른연애길잡이",
       "imageUrl": "/uploads/1770187537905-177582896.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 60
     },
@@ -606,7 +617,7 @@
       "name": "이태원클라쓰",
       "imageUrl": "/uploads/1770187537914-584831872.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 61
     },
@@ -633,7 +644,7 @@
       "name": "캐슬",
       "imageUrl": "/uploads/1770187537924-703741860.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 64
     },
@@ -642,7 +653,7 @@
       "name": "연애혁명",
       "imageUrl": "/uploads/1770187537940-841185664.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 65
     },
@@ -660,7 +671,7 @@
       "name": "치즈인더트랩",
       "imageUrl": "/uploads/1770187537942-417447594.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 67
     },
@@ -669,7 +680,7 @@
       "name": "레사",
       "imageUrl": "/uploads/1770187537942-206624132.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 68
     },
@@ -678,7 +689,7 @@
       "name": "잔불의 기사",
       "imageUrl": "/uploads/1770187537951-509640200.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 69
     },
@@ -705,7 +716,7 @@
       "name": "나이트런",
       "imageUrl": "/uploads/1770187537953-290084213.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 72
     },
@@ -713,9 +724,9 @@
       "worldcupId": 3,
       "name": "이직로그",
       "imageUrl": "/uploads/1770187537954-887117859.webp",
-      "winCount": 0,
-      "appearCount": 0,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 1,
       "id": 73
     },
     {
@@ -723,7 +734,7 @@
       "name": "쿠베라",
       "imageUrl": "/uploads/1770187537958-982949057.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 74
     },
@@ -759,7 +770,7 @@
       "name": "싸움독학",
       "imageUrl": "/uploads/1770187537960-225237331.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 78
     },
@@ -777,7 +788,7 @@
       "name": "나노마신",
       "imageUrl": "/uploads/1770187537965-131319460.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 80
     },
@@ -786,7 +797,7 @@
       "name": "고수",
       "imageUrl": "/uploads/1770187537967-925155263.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 81
     },
@@ -795,7 +806,7 @@
       "name": "더복서",
       "imageUrl": "/uploads/1770187537972-271932427.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 82
     },
@@ -804,7 +815,7 @@
       "name": "선천적얼간이들",
       "imageUrl": "/uploads/1770187537974-239232684.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 83
     },
@@ -812,9 +823,9 @@
       "worldcupId": 3,
       "name": "호랑이형님",
       "imageUrl": "/uploads/1770187537973-301354634.jpg",
-      "winCount": 0,
-      "appearCount": 0,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 3,
+      "finalCount": 1,
       "id": 84
     },
     {
@@ -831,7 +842,7 @@
       "name": "기기괴괴",
       "imageUrl": "/uploads/1770187537975-855969695.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 86
     },
@@ -858,7 +869,7 @@
       "name": "전지적 독자시점",
       "imageUrl": "/uploads/1770187537996-733915795.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 89
     },
@@ -876,7 +887,7 @@
       "name": "화산귀환",
       "imageUrl": "/uploads/1770187537995-40419175.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 91
     },
@@ -885,7 +896,7 @@
       "name": "독고",
       "imageUrl": "/uploads/1770187538002-274999972.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 92
     },
@@ -894,7 +905,7 @@
       "name": "갓 오브 하이스쿨",
       "imageUrl": "/uploads/1770187538004-332470853.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 93
     },
@@ -912,7 +923,7 @@
       "name": "나 혼자만 레벨업",
       "imageUrl": "/uploads/1770187538009-766877942.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 95
     },
@@ -921,7 +932,7 @@
       "name": "신의탑",
       "imageUrl": "/uploads/1770187538008-190398335.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 96
     },
@@ -930,9 +941,585 @@
       "name": "오피스 누나 이야기",
       "imageUrl": "/uploads/1770187670274-723772800.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 97
+    },
+    {
+      "worldcupId": 4,
+      "name": "하이라이트-양요섭",
+      "imageUrl": "/uploads/1770189806634-924982825.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 98
+    },
+    {
+      "worldcupId": 4,
+      "name": "하이라이트-이기광",
+      "imageUrl": "/uploads/1770189806633-968629274.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 99
+    },
+    {
+      "worldcupId": 4,
+      "name": "투바투-범규",
+      "imageUrl": "/uploads/1770189911222-924635627.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 100
+    },
+    {
+      "worldcupId": 4,
+      "name": "하이라이트-윤두준",
+      "imageUrl": "/uploads/1770189806634-282906693.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 101
+    },
+    {
+      "worldcupId": 4,
+      "name": "손동운",
+      "imageUrl": "/uploads/1770189806635-179434006.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 102
+    },
+    {
+      "worldcupId": 4,
+      "name": "투바투-수빈",
+      "imageUrl": "/uploads/1770189911222-931966791.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 103
+    },
+    {
+      "worldcupId": 4,
+      "name": "투바투-연준",
+      "imageUrl": "/uploads/1770189911221-813403138.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 104
+    },
+    {
+      "worldcupId": 4,
+      "name": "제로베이스원-장하오",
+      "imageUrl": "/uploads/1770189982316-270100865.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 105
+    },
+    {
+      "worldcupId": 4,
+      "name": "제로베이스원-성한빈",
+      "imageUrl": "/uploads/1770189982316-113590682.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 106
+    },
+    {
+      "worldcupId": 4,
+      "name": "엔시티-재민",
+      "imageUrl": "/uploads/1770190027450-36520008.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 107
+    },
+    {
+      "worldcupId": 4,
+      "name": "엔시티-마크",
+      "imageUrl": "/uploads/1770190027450-740411894.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 108
+    },
+    {
+      "worldcupId": 4,
+      "name": "엔시티-태용",
+      "imageUrl": "/uploads/1770190027449-590366102.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 109
+    },
+    {
+      "worldcupId": 4,
+      "name": "엔시티-재현",
+      "imageUrl": "/uploads/1770190027450-586748375.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 110
+    },
+    {
+      "worldcupId": 4,
+      "name": "엔시티-도영",
+      "imageUrl": "/uploads/1770190027451-586997883.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 111
+    },
+    {
+      "worldcupId": 4,
+      "name": "워너원-박지훈",
+      "imageUrl": "/uploads/1770190202632-670301020.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 112
+    },
+    {
+      "worldcupId": 4,
+      "name": "워너원-강다니엘",
+      "imageUrl": "/uploads/1770190202633-63926003.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 113
+    },
+    {
+      "worldcupId": 4,
+      "name": "엑소-백현",
+      "imageUrl": "/uploads/1770190271483-990441243.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 114
+    },
+    {
+      "worldcupId": 4,
+      "name": "엑소-카이",
+      "imageUrl": "/uploads/1770190271479-517630368.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 115
+    },
+    {
+      "worldcupId": 4,
+      "name": "엑소-찬열",
+      "imageUrl": "/uploads/1770190271480-605075128.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 116
+    },
+    {
+      "worldcupId": 4,
+      "name": "엑소-수호",
+      "imageUrl": "/uploads/1770190271480-387465893.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 117
+    },
+    {
+      "worldcupId": 4,
+      "name": "엑소-세훈",
+      "imageUrl": "/uploads/1770190271482-781614446.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 118
+    },
+    {
+      "worldcupId": 4,
+      "name": "엑소-디오",
+      "imageUrl": "/uploads/1770190271485-630529115.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 119
+    },
+    {
+      "worldcupId": 4,
+      "name": "아이콘-김진환",
+      "imageUrl": "/uploads/1770190369011-623979880.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 120
+    },
+    {
+      "worldcupId": 4,
+      "name": "아이콘-바비",
+      "imageUrl": "/uploads/1770190369010-640566229.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 121
+    },
+    {
+      "worldcupId": 4,
+      "name": "스트레이키즈-현진",
+      "imageUrl": "/uploads/1770190452811-226357343.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 122
+    },
+    {
+      "worldcupId": 4,
+      "name": "스트레이키즈-필릭스",
+      "imageUrl": "/uploads/1770190452811-498377186.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 123
+    },
+    {
+      "worldcupId": 4,
+      "name": "스트레이키즈-리노",
+      "imageUrl": "/uploads/1770190452812-921868550.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 124
+    },
+    {
+      "worldcupId": 4,
+      "name": "스트레이키즈-방찬",
+      "imageUrl": "/uploads/1770190452812-440976407.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 125
+    },
+    {
+      "worldcupId": 4,
+      "name": "세븐틴-호시",
+      "imageUrl": "/uploads/1770190702858-91392821.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 126
+    },
+    {
+      "worldcupId": 4,
+      "name": "세븐틴-준",
+      "imageUrl": "/uploads/1770190702858-949764308.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 127
+    },
+    {
+      "worldcupId": 4,
+      "name": "세븐틴-조슈아",
+      "imageUrl": "/uploads/1770190702858-611142442.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 128
+    },
+    {
+      "worldcupId": 4,
+      "name": "세븐틴-민규",
+      "imageUrl": "/uploads/1770190702859-437894478.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 129
+    },
+    {
+      "worldcupId": 4,
+      "name": "세븐틴-에스쿱스",
+      "imageUrl": "/uploads/1770190702859-816544214.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 130
+    },
+    {
+      "worldcupId": 4,
+      "name": "세븐틴-원우",
+      "imageUrl": "/uploads/1770190702859-945745402.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 131
+    },
+    {
+      "worldcupId": 4,
+      "name": "세븐틴-정훈",
+      "imageUrl": "/uploads/1770190702865-336258943.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 132
+    },
+    {
+      "worldcupId": 4,
+      "name": "샤이니-태민",
+      "imageUrl": "/uploads/1770190812893-744084623.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 133
+    },
+    {
+      "worldcupId": 4,
+      "name": "샤이니-키",
+      "imageUrl": "/uploads/1770190812893-799694198.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 134
+    },
+    {
+      "worldcupId": 4,
+      "name": "빅뱅-태양",
+      "imageUrl": "/uploads/1770190872475-959005616.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 135
+    },
+    {
+      "worldcupId": 4,
+      "name": "빅뱅-지드레곤",
+      "imageUrl": "/uploads/1770190883955-165174935.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 136
+    },
+    {
+      "worldcupId": 4,
+      "name": "비투비-이창섭",
+      "imageUrl": "/uploads/1770190895836-473289567.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 137
+    },
+    {
+      "worldcupId": 4,
+      "name": "비투비-이민혁",
+      "imageUrl": "/uploads/1770190903092-140097551.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 138
+    },
+    {
+      "worldcupId": 4,
+      "name": "비투비-육성재",
+      "imageUrl": "/uploads/1770190911873-376801756.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 139
+    },
+    {
+      "worldcupId": 4,
+      "name": "비투비-서은광",
+      "imageUrl": "/uploads/1770190921750-51841296.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 140
+    },
+    {
+      "worldcupId": 4,
+      "name": "보넥도-이한",
+      "imageUrl": "/uploads/1770190937205-182870658.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 141
+    },
+    {
+      "worldcupId": 4,
+      "name": "보넥도-운학",
+      "imageUrl": "/uploads/1770190945820-768216174.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 142
+    },
+    {
+      "worldcupId": 4,
+      "name": "보넥도-리우",
+      "imageUrl": "/uploads/1770190953294-769514475.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 143
+    },
+    {
+      "worldcupId": 4,
+      "name": "bts-진",
+      "imageUrl": "/uploads/1770190969408-959926481.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 144
+    },
+    {
+      "worldcupId": 4,
+      "name": "bts-지민",
+      "imageUrl": "/uploads/1770190985431-409006041.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 145
+    },
+    {
+      "worldcupId": 4,
+      "name": "bts-제이홉",
+      "imageUrl": "/uploads/1770190991864-15039041.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 146
+    },
+    {
+      "worldcupId": 4,
+      "name": "bts-정국",
+      "imageUrl": "/uploads/1770190998175-216162128.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 147
+    },
+    {
+      "worldcupId": 4,
+      "name": "bts-슈가",
+      "imageUrl": "/uploads/1770191005137-481887497.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 148
+    },
+    {
+      "worldcupId": 4,
+      "name": "bts-뷔",
+      "imageUrl": "/uploads/1770191012024-595880607.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 149
+    },
+    {
+      "worldcupId": 4,
+      "name": "bts-RM",
+      "imageUrl": "/uploads/1770191017718-516512204.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 150
+    },
+    {
+      "worldcupId": 4,
+      "name": "몬스타엑스-셔누",
+      "imageUrl": "/uploads/1770191033519-927377575.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 151
+    },
+    {
+      "worldcupId": 4,
+      "name": "몬스타엑스-민혁",
+      "imageUrl": "/uploads/1770191060657-761698326.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 152
+    },
+    {
+      "worldcupId": 4,
+      "name": "라이즈-원빈",
+      "imageUrl": "/uploads/1770191073254-996251561.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 153
+    },
+    {
+      "worldcupId": 4,
+      "name": "라이즈-소희",
+      "imageUrl": "/uploads/1770191080727-155822170.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 154
+    },
+    {
+      "worldcupId": 4,
+      "name": "라이즈-성찬",
+      "imageUrl": "/uploads/1770191088987-228373275.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 155
+    },
+    {
+      "worldcupId": 4,
+      "name": "더보이즈-현재",
+      "imageUrl": "/uploads/1770191106441-541686725.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 156
+    },
+    {
+      "worldcupId": 4,
+      "name": "더 보이즈 -주연",
+      "imageUrl": "/uploads/1770191114155-652794849.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 157
+    },
+    {
+      "worldcupId": 4,
+      "name": "2PM-택연",
+      "imageUrl": "/uploads/1770191131854-998684146.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 158
+    },
+    {
+      "worldcupId": 4,
+      "name": "2PM-준호",
+      "imageUrl": "/uploads/1770191252502-33503503.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 159
+    },
+    {
+      "worldcupId": 4,
+      "name": "2PM-우영",
+      "imageUrl": "/uploads/1770191261098-866547094.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 160
+    },
+    {
+      "worldcupId": 4,
+      "name": "샤이니-민호",
+      "imageUrl": "/uploads/1770191316091-84831804.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 161
     }
   ],
   "worldcup_results": [
@@ -1031,6 +1618,122 @@
       ],
       "createdAt": "2026-02-04T06:41:29.499Z",
       "id": 3
+    },
+    {
+      "worldcupId": 3,
+      "winnerId": 73,
+      "top4": [
+        41,
+        64,
+        73,
+        97
+      ],
+      "selections": [
+        96,
+        84,
+        41,
+        53,
+        64,
+        92,
+        93,
+        55,
+        81,
+        73,
+        38,
+        34,
+        89,
+        97,
+        37,
+        95,
+        96,
+        41,
+        64,
+        93,
+        73,
+        34,
+        97,
+        95,
+        41,
+        64,
+        73,
+        97,
+        41,
+        73,
+        73
+      ],
+      "createdAt": "2026-02-04T07:13:15.187Z",
+      "id": 4
+    },
+    {
+      "worldcupId": 3,
+      "winnerId": 34,
+      "top4": [
+        80,
+        39,
+        34,
+        38
+      ],
+      "selections": [
+        80,
+        37,
+        39,
+        58,
+        34,
+        49,
+        41,
+        38,
+        80,
+        39,
+        34,
+        38,
+        80,
+        34,
+        34
+      ],
+      "createdAt": "2026-02-04T08:38:06.785Z",
+      "id": 5
+    },
+    {
+      "worldcupId": 3,
+      "winnerId": 84,
+      "top4": [
+        84,
+        64,
+        86,
+        47
+      ],
+      "selections": [
+        84,
+        64,
+        86,
+        47,
+        84,
+        47,
+        84
+      ],
+      "createdAt": "2026-02-04T08:59:16.009Z",
+      "id": 6
+    },
+    {
+      "worldcupId": 3,
+      "winnerId": 37,
+      "top4": [
+        37,
+        46,
+        42,
+        56
+      ],
+      "selections": [
+        37,
+        46,
+        42,
+        56,
+        37,
+        42,
+        37
+      ],
+      "createdAt": "2026-02-04T08:59:48.573Z",
+      "id": 7
     }
   ],
   "quizzes": [
@@ -1095,7 +1798,7 @@
       "answer": "서울",
       "timeLimit": 10,
       "correctCount": 452,
-      "totalCount": 504
+      "totalCount": 505
     },
     {
       "quizId": 2,
@@ -1104,8 +1807,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 12,
-      "totalCount": 16,
+      "correctCount": 23,
+      "totalCount": 27,
       "id": 2
     },
     {
@@ -1115,8 +1818,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 10,
-      "totalCount": 14,
+      "correctCount": 13,
+      "totalCount": 17,
       "id": 3
     },
     {
@@ -1126,8 +1829,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 8,
-      "totalCount": 11,
+      "correctCount": 9,
+      "totalCount": 12,
       "id": 4
     },
     {
@@ -1137,8 +1840,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 10,
-      "totalCount": 14,
+      "correctCount": 11,
+      "totalCount": 15,
       "id": 5
     },
     {
@@ -1148,8 +1851,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 6,
-      "totalCount": 12,
+      "correctCount": 9,
+      "totalCount": 15,
       "id": 6
     },
     {
@@ -1877,6 +2580,294 @@
       "tier": "노력필요",
       "completedAt": "2026-02-04T06:40:53.486Z",
       "id": 42
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 50,
+      "correctCount": 5,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "모범생",
+      "completedAt": "2026-02-04T07:59:49.093Z",
+      "id": 43
+    },
+    {
+      "quizId": 4,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 10,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:02:44.809Z",
+      "id": 44
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:05:39.917Z",
+      "id": 45
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 30,
+      "correctCount": 3,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "평범",
+      "completedAt": "2026-02-04T08:05:58.450Z",
+      "id": 46
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:09:25.493Z",
+      "id": 47
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:13:13.459Z",
+      "id": 48
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:13:58.820Z",
+      "id": 49
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:17:49.490Z",
+      "id": 50
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:18:11.689Z",
+      "id": 51
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:19:28.869Z",
+      "id": 52
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:24:21.421Z",
+      "id": 53
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:24:59.940Z",
+      "id": 54
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 10,
+      "correctCount": 1,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:25:40.173Z",
+      "id": 55
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 20,
+      "correctCount": 2,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "평범",
+      "completedAt": "2026-02-04T08:26:47.688Z",
+      "id": 56
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:30:28.509Z",
+      "id": 57
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:30:34.239Z",
+      "id": 58
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:30:49.541Z",
+      "id": 59
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:30:53.211Z",
+      "id": 60
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:30:56.762Z",
+      "id": 61
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:31:00.764Z",
+      "id": 62
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:31:14.131Z",
+      "id": 63
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:31:46.534Z",
+      "id": 64
+    },
+    {
+      "quizId": 2,
+      "userId": 2,
+      "nickname": "정현호그라이더",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 5,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:31:54.153Z",
+      "id": 65
+    },
+    {
+      "quizId": 1,
+      "userId": 4,
+      "nickname": "김태형",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 1,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T08:39:16.977Z",
+      "id": 66
     }
   ],
   "categories": [
