@@ -58,7 +58,6 @@
             <p class="card-description">{{ quiz.description }}</p>
             <div class="card-info">
               <span>📝 {{ quiz.totalQuestions }}문제</span>
-              <span>⏱️ {{ quiz.totalTime }}초</span>
             </div>
             <div class="card-stats">
               <span>👁️ {{ quiz.viewCount || 0 }}</span>
