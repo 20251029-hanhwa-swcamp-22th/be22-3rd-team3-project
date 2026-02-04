@@ -148,15 +148,18 @@ const progress = computed(() => worldcupStore.getProgress())
 /**
  * 컴포넌트 마운트 시 실행
  * 1. 월드컵 정보 조회
- * 2. 게임 시작 API 호출 (32명 후보 셔플)
+ * 2. 게임 시작 API 호출 (선택된 라운드 수로 후보 셔플)
  * 3. Store에 게임 초기화
  */
 onMounted(async () => {
   try {
+    // 쿼리 파라미터에서 라운드 수 가져오기 (기본값: 16)
+    const roundCount = parseInt(route.query.round) || 16
+    
     // 병렬로 월드컵 정보와 게임 시작 API 호출
     const [worldcupRes, candidatesRes] = await Promise.all([
-      worldcupApi.getWorldcup(worldcupId),        // 월드컵 상세 정보
-      worldcupApi.startWorldcup(worldcupId, 32)   // 32강용 후보 셔플
+      worldcupApi.getWorldcup(worldcupId),           // 월드컵 상세 정보
+      worldcupApi.startWorldcup(worldcupId, roundCount)  // 선택된 라운드용 후보 셔플
     ])
     
     worldcup.value = worldcupRes.data
