@@ -1,4 +1,6 @@
 import apiClient from './axios'
+import { getOrInitGuestId } from '@/utils/identity'
+
 
 /**
  * 퀴즈 관련 API
@@ -93,5 +95,28 @@ export const quizApi = {
      */
     saveQuizResult(data) {
         return apiClient.post('/quiz_results', data)
+    },
+
+    /**
+     * 퀴즈 조회수를 증가시킵니다. (1시간 1회 제한)
+     * @param {number} id - 퀴즈 ID
+     */
+    increaseViewCount(id) {
+        const guestId = getOrInitGuestId();
+        return apiClient.post(`/quizzes/${id}/view`, { guestId }, {
+            headers: { 'X-Guest-Id': guestId }
+        });
+    },
+
+    /**
+     * 퀴즈 플레이 횟수를 증가시킵니다. (24시간 1회 제한)
+     * @param {number} id - 퀴즈 ID
+     */
+    increasePlayCount(id) {
+        const guestId = getOrInitGuestId();
+        return apiClient.post(`/quizzes/${id}/play`, { guestId }, {
+            headers: { 'X-Guest-Id': guestId }
+        });
     }
 }
+

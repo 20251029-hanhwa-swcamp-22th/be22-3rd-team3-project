@@ -174,6 +174,14 @@ onMounted(async () => {
     } else if (count >= 8) {
       selectedRound.value = 8
     }
+
+    // 조회수 증가 (비동기 처리 - 에러가 페이지 로드를 막지 않도록 함)
+    worldcupApi.increaseViewCount(worldcupId).then(res => {
+      if (res.data.updated && worldcup.value) {
+        worldcup.value.viewCount = res.data.currentCount
+      }
+    }).catch(err => console.error('View count update failed:', err));
+
   } catch (error) {
     console.error('Failed to load worldcup:', error)
   } finally {

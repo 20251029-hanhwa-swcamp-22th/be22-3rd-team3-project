@@ -13,18 +13,18 @@ const middlewares = jsonServer.defaults();
 // Create uploads directory if it doesn't exist
 const uploadsDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)) {
-    fs.mkdirSync(uploadsDir);
+  fs.mkdirSync(uploadsDir);
 }
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-        cb(null, uploadsDir);
-    },
-    filename: function (req, file, cb) {
-        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-        cb(null, uniqueSuffix + path.extname(file.originalname));
-    }
+  destination: function (req, file, cb) {
+    cb(null, uploadsDir);
+  },
+  filename: function (req, file, cb) {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    cb(null, uniqueSuffix + path.extname(file.originalname));
+  }
 });
 
 const upload = multer({
@@ -45,7 +45,7 @@ const upload = multer({
     const mimeType = file.mimetype
 
     // 조건 검사: MIME 타입과 확장자가 모두 목록에 포함되어 있는지 확인
-    if(allowedTypes.includes(mimeType) && allowedExts.includes(ext)){
+    if (allowedTypes.includes(mimeType) && allowedExts.includes(ext)) {
       cb(null, true)
     } else {
       cb(new Error('이미지 파일만 업로드 가능합니다 (jpg, png, gif, webp)'))
@@ -64,25 +64,25 @@ server.use(middlewares);
 
 // Add custom routes before JSON Server router
 server.post('/upload', upload.single('image'), (req, res) => {
-    if (!req.file) {
-        return res.status(400).json({ error: 'No file uploaded' });
-    }
-    res.json({
-        url: `/uploads/${req.file.filename}`,
-        filename: req.file.filename
-    });
+  if (!req.file) {
+    return res.status(400).json({ error: 'No file uploaded' });
+  }
+  res.json({
+    url: `/uploads/${req.file.filename}`,
+    filename: req.file.filename
+  });
 });
 
 // Add custom route for multiple file uploads
 server.post('/upload-multiple', upload.array('images', 64), (req, res) => {
-    if (!req.files || req.files.length === 0) {
-        return res.status(400).json({ error: 'No files uploaded' });
-    }
-    const urls = req.files.map(file => ({
-        url: `/uploads/${file.filename}`,
-        filename: file.filename
-    }));
-    res.json({ files: urls });
+  if (!req.files || req.files.length === 0) {
+    return res.status(400).json({ error: 'No files uploaded' });
+  }
+  const urls = req.files.map(file => ({
+    url: `/uploads/${file.filename}`,
+    filename: file.filename
+  }));
+  res.json({ files: urls });
 });
 
 // 사용자 정보 관련 API (마이페이지)
@@ -92,7 +92,7 @@ server.get('/users/me', (req, res) => {
   // json-server-auth가 자동으로 req.user에 사용자 정보를 넣어준다.
   // JWT 토큰이 유효한 경우에만
   if (!req.user) {
-    return res.status(401).json({ error : '인증이 필요합니다'});
+    return res.status(401).json({ error: '인증이 필요합니다' });
   }
 
   const db = router.db;
@@ -100,11 +100,11 @@ server.get('/users/me', (req, res) => {
 
   // DB에서 해당 사용자 정보 찾기
   const user = db.get('users')
-      .find({ id:userId })
-      .value();
+    .find({ id: userId })
+    .value();
 
   if (!user) {
-    return res.status(404).json({ error : '사용자를 찾을 수 없습니다' });
+    return res.status(404).json({ error: '사용자를 찾을 수 없습니다' });
   }
 
   // 비밀번호는 제외하고 반환
@@ -127,11 +127,11 @@ server.get('/users/check-nickname', (req, res) => {
   const currentUserId = req.user ? req.user.id : null;
 
   const existingUser = db.get('users')
-      .find(user =>
-          user.nickname === nickname &&
-          user.id !== currentUserId
-      )
-      .value();
+    .find(user =>
+      user.nickname === nickname &&
+      user.id !== currentUserId
+    )
+    .value();
   // available: true면 사용 가능, false면 이미 사용 중
   res.json({ available: !existingUser });
 });
@@ -157,22 +157,22 @@ server.patch('/users/me', (req, res) => {
 
   // 중복 체크 (본인 제외)
   const duplicate = db.get('users')
-      .find(user => user.nickname === nickname && user.id !== userId)
-      .value();
+    .find(user => user.nickname === nickname && user.id !== userId)
+    .value();
   if (duplicate) {
     return res.status(409).json({ error: '이미 사용 중인 닉네임입니다' });
   }
 
   // DB 업데이트
   db.get('users')
-      .find({ id: userId })
-      .assign({ nickname: nickname })
-      .write();
+    .find({ id: userId })
+    .assign({ nickname: nickname })
+    .write();
 
   // 업데이트된 사용자 정보 반환
   const updatedUser = db.get('users')
-      .find({ id: userId })
-      .value();
+    .find({ id: userId })
+    .value();
   const { password, ...userWithoutPassword } = updatedUser;
   res.json(userWithoutPassword);
 });
@@ -180,58 +180,58 @@ server.patch('/users/me', (req, res) => {
 
 // Custom route for worldcup game start - get random candidates
 server.get('/worldcups/:id/start/:count', (req, res) => {
-    const db = router.db;
-    const worldcupId = parseInt(req.params.id);
-    const count = parseInt(req.params.count);
+  const db = router.db;
+  const worldcupId = parseInt(req.params.id);
+  const count = parseInt(req.params.count);
 
-    const candidates = db.get('worldcup_candidates')
-        .filter({ worldcupId: worldcupId })
-        .value();
+  const candidates = db.get('worldcup_candidates')
+    .filter({ worldcupId: worldcupId })
+    .value();
 
-    // Shuffle and get random candidates
-    const shuffled = candidates.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, count);
+  // Shuffle and get random candidates
+  const shuffled = candidates.sort(() => 0.5 - Math.random());
+  const selected = shuffled.slice(0, count);
 
-    res.json(selected);
+  res.json(selected);
 });
 
 // Custom route for quiz game start - get all questions
 server.get('/quizzes/:id/start', (req, res) => {
-    const db = router.db;
-    const quizId = parseInt(req.params.id);
+  const db = router.db;
+  const quizId = parseInt(req.params.id);
 
-    const questions = db.get('quiz_questions')
-        .filter({ quizId: quizId })
-        .orderBy('questionNumber')
-        .value();
+  const questions = db.get('quiz_questions')
+    .filter({ quizId: quizId })
+    .orderBy('questionNumber')
+    .value();
 
-    res.json(questions);
+  res.json(questions);
 });
 
 // Custom route for rankings
 server.get('/worldcups/:id/ranking', (req, res) => {
-    const db = router.db;
-    const worldcupId = parseInt(req.params.id);
+  const db = router.db;
+  const worldcupId = parseInt(req.params.id);
 
-    const candidates = db.get('worldcup_candidates')
-        .filter({ worldcupId: worldcupId })
-        .orderBy('winCount', 'desc')
-        .value();
+  const candidates = db.get('worldcup_candidates')
+    .filter({ worldcupId: worldcupId })
+    .orderBy('winCount', 'desc')
+    .value();
 
-    res.json(candidates);
+  res.json(candidates);
 });
 
 server.get('/quizzes/:id/ranking', (req, res) => {
-    const db = router.db;
-    const quizId = parseInt(req.params.id);
+  const db = router.db;
+  const quizId = parseInt(req.params.id);
 
-    const results = db.get('quiz_results')
-        .filter({ quizId: quizId })
-        .orderBy(['score', 'completedAt'], ['desc', 'asc'])
-        .take(10)
-        .value();
+  const results = db.get('quiz_results')
+    .filter({ quizId: quizId })
+    .orderBy(['score', 'completedAt'], ['desc', 'asc'])
+    .take(10)
+    .value();
 
-    res.json(results);
+  res.json(results);
 });
 
 // 파일 삭제 API 추가
@@ -253,6 +253,108 @@ server.delete('/upload/files/:filename', (req, res) => {
   }
 });
 
+// ==========================================
+// View & Play Counting System Implementation
+// ==========================================
+
+// Helper: 3일 지난 로그 삭제 (Log Pruning)
+const pruneLogs = (db, logCollection) => {
+  const threeDaysAgo = Date.now() - (3 * 24 * 60 * 60 * 1000);
+  const logs = db.get(logCollection).value();
+
+  // 3일 이상 된 로그 필터링
+  if (logs && logs.length > 0) {
+    const validLogs = logs.filter(log => new Date(log.timestamp).getTime() > threeDaysAgo);
+    // 변경사항이 있을 때만 write
+    if (logs.length !== validLogs.length) {
+      db.set(logCollection, validLogs).write();
+    }
+  }
+}
+
+// Helper: 카운트 증가 공통 로직
+// Helper: 카운트 증가 공통 로직 (시간 제한 없음)
+const incrementCount = (req, res, collection, logCollection, idParam = 'id') => {
+  const db = router.db;
+  const targetId = parseInt(req.params[idParam]);
+  const user = req.user; // json-server-auth (JWT)
+  const guestId = req.headers['x-guest-id'] || req.body.guestId;
+
+  // 식별자 확인 (회원 or 비회원)
+  if (!user && !guestId) {
+    return res.status(400).json({ error: 'Identification required (User or Guest ID)' });
+  }
+
+  const identifier = user ? `user:${user.id}` : `guest:${guestId}`;
+  const now = new Date();
+
+
+  // 해당 타겟의 로그 확인
+  const lastLog = db.get(logCollection)
+    .filter({ targetId, identifier })
+    .sortBy('timestamp')
+    .last()
+    .value();
+
+  // 시간 제한 체크
+
+
+  // 타겟(월드컵/퀴즈) 존재 확인
+  const targetItem = db.get(collection).find({ id: targetId }).value();
+  if (!targetItem) {
+    return res.status(404).json({ error: 'Target content not found' });
+  }
+
+  // 카운트 증가
+  const fieldName = logCollection === 'view_logs' ? 'viewCount' : 'playCount';
+  const currentCount = targetItem[fieldName] || 0;
+
+  db.get(collection)
+    .find({ id: targetId })
+    .assign({ [fieldName]: currentCount + 1 })
+    .write();
+
+  // 로그 기록
+  db.get(logCollection)
+    .push({
+      userId: user ? user.id : null,
+      guestId: user ? null : guestId, // 비회원일 경우만 guestId 저장 (또는 둘 다 저장 정책에 따라 조정)
+      type: collection === 'worldcups' ? 'worldcup' : 'quiz',
+      contentId: targetId,
+      identifier, // 기존 호환성 유지 (선택사항)
+      timestamp: now.toISOString()
+    })
+    .write();
+
+  // 오래된 로그 정리 (비동기적으로 수행해도 됨)
+  pruneLogs(db, logCollection);
+
+  res.json({
+    message: 'Count updated successfully',
+    updated: true,
+    currentCount: currentCount + 1
+  });
+};
+
+// 1. 조회수 증가 (제한 없음)
+server.post('/worldcups/:id/view', (req, res) => {
+  incrementCount(req, res, 'worldcups', 'view_logs');
+});
+
+server.post('/quizzes/:id/view', (req, res) => {
+  incrementCount(req, res, 'quizzes', 'view_logs');
+});
+
+// 2. 플레이 횟수 증가 (게임 완료 시 호출, 제한 없음)
+server.post('/worldcups/:id/play', (req, res) => {
+  incrementCount(req, res, 'worldcups', 'play_logs');
+});
+
+server.post('/quizzes/:id/play', (req, res) => {
+  incrementCount(req, res, 'quizzes', 'play_logs');
+});
+
+
 // Bind the router db to the app
 server.db = router.db;
 
@@ -264,6 +366,6 @@ server.use(router);
 
 const PORT = 3000;
 server.listen(PORT, () => {
-    console.log(`JSON Server is running on http://localhost:${PORT}`);
-    console.log(`Uploads directory: ${uploadsDir}`);
+  console.log(`JSON Server is running on http://localhost:${PORT}`);
+  console.log(`Uploads directory: ${uploadsDir}`);
 });

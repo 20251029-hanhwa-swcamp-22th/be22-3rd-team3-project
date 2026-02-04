@@ -133,7 +133,7 @@ import { useWorldcupStore } from '@/stores/worldcup'  // 월드컵 게임 상태
 import { worldcupApi } from '@/api/worldcupApi'       // 월드컵 API
 import { ElMessage } from 'element-plus'              // 에러 메시지 표시용
 import ParticleEffect from '@/components/ParticleEffect.vue'  // 파티클 효과 컴포넌트
-import {getImageUrl} from "../../utils/helpers.js";
+import {getImageUrl} from "@/utils/helpers.js";
 
 // ===== 라우터 & 스토어 =====
 const route = useRoute()
@@ -147,6 +147,16 @@ const gameFinished = ref(false)      // 게임 종료 여부
 const winner = ref(null)             // 최종 우승자 객체
 const selectedCard = ref(null)       // 현재 선택된 카드 ('left' | 'right' | null)
 const showParticles = ref(false)     // 파티클 효과 표시 여부
+
+// ===== Watchers =====
+import { watch } from 'vue'
+
+// 게임 종료 감지 및 플레이 카운트 증가
+watch(gameFinished, (newVal) => {
+  if (newVal) {
+    worldcupApi.increasePlayCount(worldcupId).catch(err => console.error('Play count update failed:', err));
+  }
+})
 
 // ===== Computed (Store에서 가져오는 값) =====
 /**

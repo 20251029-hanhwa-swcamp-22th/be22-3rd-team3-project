@@ -158,6 +158,9 @@ onMounted(async () => {
       result.value = resultsRes.data[0]
       questions.value = questionsRes.data
     }
+
+
+
   } catch (error) {
     console.error('Failed to load result:', error)
   }
