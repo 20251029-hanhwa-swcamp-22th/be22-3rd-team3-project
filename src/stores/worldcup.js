@@ -22,7 +22,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
         selections.value = []
         top4.value = []
 
-        // Determine round name based on candidate count
+        // 후보 수에 따라 라운드 이름 결정
         const count = candidatesList.length
         startRoundCount.value = count  // 시작 라운드 저장
         roundName.value = count === 32 ? '32강' : count === 16 ? '16강' :
@@ -33,7 +33,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
         // 현재 매치 정보 가져오기
         const currentMatch = getCurrentMatch()
 
-        // Save selection with match info (left, right, selected, round)
+        // 매치 정보와 함께 선택 내역 저장 (왼쪽, 오른쪽, 선택됨, 라운드)
         if (currentMatch) {
             selections.value.push({
                 leftId: currentMatch.left.id,
@@ -43,28 +43,28 @@ export const useWorldcupStore = defineStore('worldcup', () => {
             })
         }
 
-        // Add to next round
+        // 다음 라운드에 추가
         nextRound.value.push(candidate)
 
-        // Move to next match
+        // 다음 매치로 이동
         matchIndex.value += 2
 
-        // Check if current round is complete
+        // 현재 라운드가 완료되었는지 확인
         if (matchIndex.value >= currentRound.value.length) {
-            // Save top 4 when entering semifinals
+            // 4강 진입 시 상위 4명 저장
             if (currentRound.value.length === 4) {
                 top4.value = [...currentRound.value]
             }
 
-            // Move to next round
+            // 다음 라운드로 이동
             currentRound.value = [...nextRound.value]
             nextRound.value = []
             matchIndex.value = 0
 
-            // Update round name
+            // 라운드 이름 업데이트
             const count = currentRound.value.length
             if (count === 1) {
-                // Game finished
+                // 게임 종료
                 return { finished: true, winner: currentRound.value[0] }
             }
             roundName.value = count === 16 ? '16강' : count === 8 ? '8강' :
@@ -96,20 +96,20 @@ export const useWorldcupStore = defineStore('worldcup', () => {
 
     async function saveResult(winner) {
         try {
-            // Update winner stats
+            // 우승자 통계 업데이트
             await worldcupApi.updateCandidateStats(winner.id, {
                 winCount: (winner.winCount || 0) + 1,
                 finalCount: (winner.finalCount || 0) + 1
             })
 
-            // Update all candidates' appear count
+            // 모든 후보의 출전 횟수 업데이트
             for (const candidate of candidates.value) {
                 await worldcupApi.updateCandidateStats(candidate.id, {
                     appearCount: (candidate.appearCount || 0) + 1
                 })
             }
 
-            // Save result
+            // 결과 저장
             const resultData = {
                 worldcupId: currentWorldcup.value.id,
                 winnerId: winner.id,

@@ -14,7 +14,7 @@
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
   padding: var(--spacing-lg) 0;
-  margin-top: var(--spacing-2xl);
+  //margin-top: var(--spacing-2xl);
 }
 
 .footer-content {
