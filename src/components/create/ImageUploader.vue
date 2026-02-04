@@ -42,8 +42,8 @@ const props = defineProps({
 const emit = defineEmits(['update:modelValue'])
 
 const uploadUrl = computed(() => {
-  return import.meta.env.VITE_API_BASE_URL
-  + props.multiple ? '/upload-multiple' : '/upload'
+  // vite.config.js에서 설정한 /api 경로를 사용
+  return props.multiple ? '/api/upload-multiple' : '/api/upload'
 })
 
 const uploadFieldName = computed(() => {

@@ -67,7 +67,7 @@
           file-list : 업로드할 파일 목록
           -->
           <el-upload
-              action="{{import.meta.env.VITE_API_BASE_URL}}+/upload"
+              action="/api/upload"
               accept=".jpg,.jpeg,.png,.gif,.webp"
               name="image"
               :headers="uploadHeaders"
@@ -122,7 +122,7 @@
             />
 
             <el-upload
-                action="{{import.meta.env.VITE_API_BASE_URL}}+/upload"
+                action="/api/upload"
                 accept=".jpg,.jpeg,.png,.gif,.webp"
                 name="image"
                 :headers="uploadHeaders"
@@ -171,6 +171,7 @@ import {Close, Plus, Upload} from '@element-plus/icons-vue'
 import {ElMessage} from 'element-plus'
 import {worldcupApi} from '@/api/worldcupApi'
 import {commonApi} from '@/api/commonApi'
+import {getImageUrl} from "@/utils/helpers.js";
 import ImageUploader from '@/components/create/ImageUploader.vue'
 
 const router = useRouter()

@@ -114,7 +114,7 @@
 
             <el-form-item :label="`문제 ${index + 1} - 이미지 (선택사항)`">
               <el-upload
-                action="{{import.meta.env.VITE_API_BASE_URL}}/upload"
+                action="/api/upload"
                 name="image"
                 :headers="uploadHeaders"
                 :show-file-list="false"
