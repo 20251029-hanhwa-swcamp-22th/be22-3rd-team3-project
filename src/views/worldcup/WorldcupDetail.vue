@@ -54,17 +54,17 @@
             <!-- 통계 -->
             <div class="stats">
               <div class="stat-item">
-                <span class="stat-icon">👁️</span>
+                <img src="@/assets/icons/views-icon.png" alt="조회수" class="stat-icon" />
                 <span class="stat-value">{{ worldcup.viewCount || 0 }}</span>
                 <span class="stat-label">조회수</span>
               </div>
               <div class="stat-item">
-                <span class="stat-icon">🎮</span>
+                <img src="@/assets/icons/play-icon.png" alt="플레이" class="stat-icon" />
                 <span class="stat-value">{{ worldcup.playCount || 0 }}</span>
                 <span class="stat-label">플레이</span>
               </div>
               <div class="stat-item">
-                <span class="stat-icon">👥</span>
+                <img src="@/assets/icons/candidates-icon.png" alt="후보" class="stat-icon" />
                 <span class="stat-value">{{ candidatesCount }}</span>
                 <span class="stat-label">후보</span>
               </div>
@@ -91,16 +91,13 @@
             <!-- 액션 버튼 -->
             <div class="actions">
               <el-button 
-                type="primary" 
                 size="large" 
                 class="play-btn"
                 @click="startGame"
               >
-                🎮 플레이 시작
+                <img src="@/assets/icons/play-icon.png" alt="플레이" class="btn-icon" />
+                플레이 시작
               </el-button>
-              <router-link :to="`/worldcup/${worldcupId}/ranking`" class="btn btn-outline">
-                📊 랭킹 보기
-              </router-link>
             </div>
           </div>
         </div>
@@ -184,12 +181,10 @@ onMounted(async () => {
 })
 
 // ===== Methods =====
-async function startGame() {
-  if (exitTransition.value) {
-    await exitTransition.value.trigger()
-  }
+function startGame() {
   router.push(`/worldcup/${worldcupId}/play?round=${selectedRound.value}`)
 }
+
 </script>
 
 <style scoped>
@@ -277,7 +272,9 @@ async function startGame() {
 }
 
 .stat-icon {
-  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
 }
 
 .stat-value {
@@ -308,14 +305,36 @@ async function startGame() {
 
 .actions {
   display: flex;
-  gap: var(--spacing-md);
+  justify-content: center;
   margin-top: var(--spacing-md);
 }
 
 .play-btn {
-  flex: 1;
-  font-size: 1.125rem;
-  padding: var(--spacing-md) var(--spacing-xl);
+  width: 100%;
+  max-width: 400px;
+  font-size: 1.25rem;
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  /* 핑크-보라 그라데이션 (월드컵 만들기 컴러) */
+  background: linear-gradient(135deg, #FFB3D9, #D4BBFF);
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 50px;
+  height: 60px;
+}
+
+.play-btn:hover {
+  background: linear-gradient(135deg, #FF9AC9, #C4ABEF);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 179, 217, 0.4);
+}
+
+.btn-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  filter: brightness(0) invert(1); /* 흰색으로 변경 */
 }
 
 .error-state {

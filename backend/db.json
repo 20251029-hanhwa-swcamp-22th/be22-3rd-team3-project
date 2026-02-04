@@ -64,7 +64,7 @@
       "name": "킬러경찰",
       "imageUrl": "/uploads/1770167167905-823179312.webp",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 2
     },
@@ -82,7 +82,7 @@
       "name": "역대급 영지 설계사 ",
       "imageUrl": "/uploads/1770167174694-784644419.webp",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 4
     },
@@ -154,7 +154,7 @@
       "name": "스위트홈",
       "imageUrl": "/uploads/1770167174702-181111543.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 12
     },
@@ -199,7 +199,7 @@
       "name": "후레자식",
       "imageUrl": "/uploads/1770167174709-730343969.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 17
     },
@@ -226,7 +226,7 @@
       "name": "정열맨",
       "imageUrl": "/uploads/1770167174711-749792750.webp",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 20
     },
@@ -271,7 +271,7 @@
       "name": "타이밍ㅅ",
       "imageUrl": "/uploads/1770167174716-235432601.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 25
     },
@@ -280,7 +280,7 @@
       "name": "선천적 얼간이들",
       "imageUrl": "/uploads/1770167174712-375582875.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 26
     },
@@ -342,9 +342,9 @@
       "worldcupId": 2,
       "name": "당골",
       "imageUrl": "/uploads/1770167422763-379832918.jpg",
-      "winCount": 0,
-      "appearCount": 5,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 6,
+      "finalCount": 1,
       "id": 33
     }
   ],
@@ -603,6 +603,27 @@
       ],
       "createdAt": "2026-02-04T05:33:24.483Z",
       "id": 6
+    },
+    {
+      "worldcupId": 2,
+      "winnerId": 33,
+      "top4": [
+        17,
+        12,
+        4,
+        33
+      ],
+      "selections": [
+        17,
+        12,
+        4,
+        33,
+        17,
+        33,
+        33
+      ],
+      "createdAt": "2026-02-04T07:14:50.724Z",
+      "id": 7
     }
   ],
   "quizzes": [
@@ -1075,6 +1096,18 @@
       "tier": "노력필요",
       "completedAt": "2026-02-04T03:49:55.138Z",
       "id": 21
+    },
+    {
+      "quizId": 3,
+      "userId": 4,
+      "nickname": "test",
+      "score": 0,
+      "correctCount": 0,
+      "totalQuestions": 10,
+      "remainingTime": 0,
+      "tier": "노력필요",
+      "completedAt": "2026-02-04T07:15:28.027Z",
+      "id": 22
     }
   ],
   "categories": [
