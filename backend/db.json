@@ -47,6 +47,17 @@
       "viewCount": 0,
       "playCount": 0,
       "id": 2
+    },
+    {
+      "title": "레전드 웹툰 월드컵",
+      "description": "당신의 인생 웹툰에게 투표하세요",
+      "categoryId": 5,
+      "thumbnail": "/uploads/1770187529048-209590861.png",
+      "userId": 2,
+      "createdAt": "2026-02-04T06:51:13.714Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 3
     }
   ],
   "worldcup_candidates": [
@@ -64,7 +75,7 @@
       "name": "킬러경찰",
       "imageUrl": "/uploads/1770167167905-823179312.webp",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 2
     },
@@ -109,7 +120,7 @@
       "name": "덴마",
       "imageUrl": "/uploads/1770167174697-807798043.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 7
     },
@@ -118,7 +129,7 @@
       "name": "일렉시드",
       "imageUrl": "/uploads/1770167174692-109842028.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 8
     },
@@ -136,7 +147,7 @@
       "name": "아비무쌍",
       "imageUrl": "/uploads/1770167174700-24813330.webp",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 10
     },
@@ -163,7 +174,7 @@
       "name": "절대회귀",
       "imageUrl": "/uploads/1770167174696-149234050.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 13
     },
@@ -172,7 +183,7 @@
       "name": "샤money즘",
       "imageUrl": "/uploads/1770167174691-654460416.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 14
     },
@@ -181,7 +192,7 @@
       "name": "비질란테",
       "imageUrl": "/uploads/1770167174706-577670117.webp",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 15
     },
@@ -189,9 +200,9 @@
       "worldcupId": 2,
       "name": "타인은 지옥이다",
       "imageUrl": "/uploads/1770167174707-150451732.jpeg",
-      "winCount": 1,
-      "appearCount": 5,
-      "finalCount": 1,
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
       "id": 16
     },
     {
@@ -199,7 +210,7 @@
       "name": "후레자식",
       "imageUrl": "/uploads/1770167174709-730343969.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 17
     },
@@ -208,7 +219,7 @@
       "name": "프리드로우",
       "imageUrl": "/uploads/1770167174710-591476315.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 18
     },
@@ -217,7 +228,7 @@
       "name": "윈드브레이커",
       "imageUrl": "/uploads/1770167174710-365188055.webp",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 19
     },
@@ -226,7 +237,7 @@
       "name": "정열맨",
       "imageUrl": "/uploads/1770167174711-749792750.webp",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 20
     },
@@ -235,7 +246,7 @@
       "name": "패션왕",
       "imageUrl": "/uploads/1770167174714-493435358.jpg",
       "winCount": 1,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 1,
       "id": 21
     },
@@ -253,7 +264,7 @@
       "name": "국세청 망나니",
       "imageUrl": "/uploads/1770167174709-872612883.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 23
     },
@@ -262,7 +273,7 @@
       "name": "신과함께",
       "imageUrl": "/uploads/1770167174713-228594648.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 24
     },
@@ -271,7 +282,7 @@
       "name": "타이밍ㅅ",
       "imageUrl": "/uploads/1770167174716-235432601.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 25
     },
@@ -280,7 +291,7 @@
       "name": "선천적 얼간이들",
       "imageUrl": "/uploads/1770167174712-375582875.jpg",
       "winCount": 0,
-      "appearCount": 5,
+      "appearCount": 6,
       "finalCount": 0,
       "id": 26
     },
@@ -297,9 +308,9 @@
       "worldcupId": 2,
       "name": "1초",
       "imageUrl": "/uploads/1770167174719-921837057.webp",
-      "winCount": 2,
-      "appearCount": 5,
-      "finalCount": 2,
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
       "id": 28
     },
     {
@@ -342,10 +353,645 @@
       "worldcupId": 2,
       "name": "당골",
       "imageUrl": "/uploads/1770167422763-379832918.jpg",
+      "winCount": 1,
+      "appearCount": 6,
+      "finalCount": 1,
+      "id": 33
+    },
+    {
+      "worldcupId": 3,
+      "name": "별을 품은 소드마스터",
+      "imageUrl": "/uploads/1770187537869-719806552.webp",
       "winCount": 0,
       "appearCount": 6,
       "finalCount": 0,
-      "id": 33
+      "id": 34
+    },
+    {
+      "worldcupId": 3,
+      "name": "킬러경찰",
+      "imageUrl": "/uploads/1770187537868-289416667.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 35
+    },
+    {
+      "worldcupId": 3,
+      "name": "절대회귀",
+      "imageUrl": "/uploads/1770187537871-16203170.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 36
+    },
+    {
+      "worldcupId": 3,
+      "name": "역대급 영지 설계사",
+      "imageUrl": "/uploads/1770187537870-718703898.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 37
+    },
+    {
+      "worldcupId": 2,
+      "winnerId": 28,
+      "top4": [
+        28,
+        32,
+        19,
+        33
+      ],
+      "selections": [
+        28,
+        3,
+        4,
+        20,
+        32,
+        21,
+        10,
+        7,
+        19,
+        8,
+        22,
+        25,
+        33,
+        12,
+        23,
+        9,
+        28,
+        4,
+        32,
+        10,
+        19,
+        22,
+        33,
+        23,
+        28,
+        32,
+        19,
+        33,
+        28,
+        19,
+        28
+      ],
+      "createdAt": "2026-02-04T05:33:24.483Z",
+      "id": 6
+    },
+    {
+      "worldcupId": 2,
+      "winnerId": 33,
+      "top4": [
+        17,
+        12,
+        4,
+        33
+      ],
+      "selections": [
+        17,
+        12,
+        4,
+        33,
+        17,
+        33,
+        33
+      ],
+      "createdAt": "2026-02-04T07:14:50.724Z",
+      "id": 7
+    }
+  ],
+  "quizzes": [
+    {
+      "worldcupId": 3,
+      "name": "샤money즘",
+      "imageUrl": "/uploads/1770187537868-948363845.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 39
+    },
+    {
+      "worldcupId": 3,
+      "name": "당골",
+      "imageUrl": "/uploads/1770187537868-311407652.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 40
+    },
+    {
+      "worldcupId": 3,
+      "name": "광장",
+      "imageUrl": "/uploads/1770187537874-580580878.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 41
+    },
+    {
+      "worldcupId": 3,
+      "name": "일렉시드",
+      "imageUrl": "/uploads/1770187537877-998004630.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 42
+    },
+    {
+      "worldcupId": 3,
+      "name": "아비무쌍",
+      "imageUrl": "/uploads/1770187537878-502731671.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 43
+    },
+    {
+      "worldcupId": 3,
+      "name": "덴마",
+      "imageUrl": "/uploads/1770187537882-9027659.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 44
+    },
+    {
+      "worldcupId": 3,
+      "name": "별이삼샵",
+      "imageUrl": "/uploads/1770187537882-942601973.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 45
+    },
+    {
+      "worldcupId": 3,
+      "name": "타인은지옥이다",
+      "imageUrl": "/uploads/1770187537882-262119137.jpeg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 46
+    },
+    {
+      "worldcupId": 3,
+      "name": "후레자식",
+      "imageUrl": "/uploads/1770187537883-694397928.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 47
+    },
+    {
+      "worldcupId": 3,
+      "name": "지금우리학교는",
+      "imageUrl": "/uploads/1770187537883-328991729.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 48
+    },
+    {
+      "worldcupId": 3,
+      "name": "비질란테",
+      "imageUrl": "/uploads/1770187537885-246077520.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 49
+    },
+    {
+      "worldcupId": 3,
+      "name": "프리드로우",
+      "imageUrl": "/uploads/1770187537887-738591436.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 50
+    },
+    {
+      "worldcupId": 3,
+      "name": "국세청 망나니",
+      "imageUrl": "/uploads/1770187537887-41877195.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 51
+    },
+    {
+      "worldcupId": 3,
+      "name": "후레자식",
+      "imageUrl": "/uploads/1770187537891-954110261.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 52
+    },
+    {
+      "worldcupId": 3,
+      "name": "신과함께",
+      "imageUrl": "/uploads/1770187537891-764546697.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 53
+    },
+    {
+      "worldcupId": 3,
+      "name": "트레이스",
+      "imageUrl": "/uploads/1770187537892-183342307.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 54
+    },
+    {
+      "worldcupId": 3,
+      "name": "타이밍",
+      "imageUrl": "/uploads/1770187537893-10561322.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 55
+    },
+    {
+      "worldcupId": 3,
+      "name": "목욕의 신",
+      "imageUrl": "/uploads/1770187537892-185966381.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 56
+    },
+    {
+      "worldcupId": 3,
+      "name": "1초",
+      "imageUrl": "/uploads/1770187537893-894079434.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 57
+    },
+    {
+      "worldcupId": 3,
+      "name": "안나라수마나라",
+      "imageUrl": "/uploads/1770187537901-533018640.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 58
+    },
+    {
+      "worldcupId": 3,
+      "name": "패션왕",
+      "imageUrl": "/uploads/1770187537904-913047241.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 59
+    },
+    {
+      "worldcupId": 3,
+      "name": "바른연애길잡이",
+      "imageUrl": "/uploads/1770187537905-177582896.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 60
+    },
+    {
+      "worldcupId": 3,
+      "name": "이태원클라쓰",
+      "imageUrl": "/uploads/1770187537914-584831872.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 61
+    },
+    {
+      "worldcupId": 3,
+      "name": "죽음에 관하여",
+      "imageUrl": "/uploads/1770187537918-545655871.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 62
+    },
+    {
+      "worldcupId": 3,
+      "name": "운명을 보는 회사원",
+      "imageUrl": "/uploads/1770187537919-658153023.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 63
+    },
+    {
+      "worldcupId": 3,
+      "name": "캐슬",
+      "imageUrl": "/uploads/1770187537924-703741860.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 64
+    },
+    {
+      "worldcupId": 3,
+      "name": "연애혁명",
+      "imageUrl": "/uploads/1770187537940-841185664.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 65
+    },
+    {
+      "worldcupId": 3,
+      "name": "격기 3반",
+      "imageUrl": "/uploads/1770187537941-529455888.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 66
+    },
+    {
+      "worldcupId": 3,
+      "name": "치즈인더트랩",
+      "imageUrl": "/uploads/1770187537942-417447594.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 67
+    },
+    {
+      "worldcupId": 3,
+      "name": "레사",
+      "imageUrl": "/uploads/1770187537942-206624132.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 68
+    },
+    {
+      "worldcupId": 3,
+      "name": "잔불의 기사",
+      "imageUrl": "/uploads/1770187537951-509640200.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 69
+    },
+    {
+      "worldcupId": 3,
+      "name": "광마회귀",
+      "imageUrl": "/uploads/1770187537951-830739544.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 70
+    },
+    {
+      "worldcupId": 3,
+      "name": "초인의 시대",
+      "imageUrl": "/uploads/1770187537953-369169358.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 71
+    },
+    {
+      "worldcupId": 3,
+      "name": "나이트런",
+      "imageUrl": "/uploads/1770187537953-290084213.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 72
+    },
+    {
+      "worldcupId": 3,
+      "name": "이직로그",
+      "imageUrl": "/uploads/1770187537954-887117859.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 73
+    },
+    {
+      "worldcupId": 3,
+      "name": "쿠베라",
+      "imageUrl": "/uploads/1770187537958-982949057.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 74
+    },
+    {
+      "worldcupId": 3,
+      "name": "약한 영웅",
+      "imageUrl": "/uploads/1770187537959-905908635.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 75
+    },
+    {
+      "worldcupId": 3,
+      "name": "마술사",
+      "imageUrl": "/uploads/1770187537959-438858796.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 76
+    },
+    {
+      "worldcupId": 3,
+      "name": "헬퍼",
+      "imageUrl": "/uploads/1770187537961-263439371.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 77
+    },
+    {
+      "worldcupId": 3,
+      "name": "싸움독학",
+      "imageUrl": "/uploads/1770187537960-225237331.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 78
+    },
+    {
+      "worldcupId": 3,
+      "name": "외모지상주의",
+      "imageUrl": "/uploads/1770187537963-102438733.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 79
+    },
+    {
+      "worldcupId": 3,
+      "name": "나노마신",
+      "imageUrl": "/uploads/1770187537965-131319460.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 80
+    },
+    {
+      "worldcupId": 3,
+      "name": "고수",
+      "imageUrl": "/uploads/1770187537967-925155263.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 81
+    },
+    {
+      "worldcupId": 3,
+      "name": "더복서",
+      "imageUrl": "/uploads/1770187537972-271932427.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 82
+    },
+    {
+      "worldcupId": 3,
+      "name": "선천적얼간이들",
+      "imageUrl": "/uploads/1770187537974-239232684.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 83
+    },
+    {
+      "worldcupId": 3,
+      "name": "호랑이형님",
+      "imageUrl": "/uploads/1770187537973-301354634.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 84
+    },
+    {
+      "worldcupId": 3,
+      "name": "정열맨",
+      "imageUrl": "/uploads/1770187537975-333794339.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 85
+    },
+    {
+      "worldcupId": 3,
+      "name": "기기괴괴",
+      "imageUrl": "/uploads/1770187537975-855969695.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 86
+    },
+    {
+      "worldcupId": 3,
+      "name": "통",
+      "imageUrl": "/uploads/1770187537975-710493180.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 87
+    },
+    {
+      "worldcupId": 3,
+      "name": "무빙",
+      "imageUrl": "/uploads/1770187537985-350281751.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 88
+    },
+    {
+      "worldcupId": 3,
+      "name": "전지적 독자시점",
+      "imageUrl": "/uploads/1770187537996-733915795.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 89
+    },
+    {
+      "worldcupId": 3,
+      "name": "유미의 세포들",
+      "imageUrl": "/uploads/1770187537983-808113844.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 90
+    },
+    {
+      "worldcupId": 3,
+      "name": "화산귀환",
+      "imageUrl": "/uploads/1770187537995-40419175.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 91
+    },
+    {
+      "worldcupId": 3,
+      "name": "독고",
+      "imageUrl": "/uploads/1770187538002-274999972.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 92
+    },
+    {
+      "worldcupId": 3,
+      "name": "갓 오브 하이스쿨",
+      "imageUrl": "/uploads/1770187538004-332470853.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 93
+    },
+    {
+      "worldcupId": 3,
+      "name": "노블레스",
+      "imageUrl": "/uploads/1770187538007-607009832.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 94
+    },
+    {
+      "worldcupId": 3,
+      "name": "나 혼자만 레벨업",
+      "imageUrl": "/uploads/1770187538009-766877942.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 95
+    },
+    {
+      "worldcupId": 3,
+      "name": "신의탑",
+      "imageUrl": "/uploads/1770187538008-190398335.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 96
+    },
+    {
+      "worldcupId": 3,
+      "name": "오피스 누나 이야기",
+      "imageUrl": "/uploads/1770187670274-723772800.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 97
     }
   ],
   "worldcup_results": [
@@ -426,180 +1072,21 @@
     },
     {
       "worldcupId": 2,
-      "winnerId": 16,
+      "winnerId": 32,
       "top4": [
-        11,
-        21,
-        23,
-        16
-      ],
-      "selections": [
-        20,
-        30,
-        17,
-        11,
-        8,
-        14,
-        21,
-        3,
-        18,
-        9,
         32,
-        23,
-        24,
-        13,
-        10,
-        16,
-        20,
-        11,
         8,
-        21,
-        9,
-        23,
         24,
-        16,
-        11,
-        21,
-        23,
-        16,
-        21,
-        16,
-        16
-      ],
-      "createdAt": "2026-02-04T03:46:24.273Z",
-      "id": 3
-    },
-    {
-      "worldcupId": 2,
-      "winnerId": 31,
-      "top4": [
-        13,
-        14,
-        19,
-        31
-      ],
-      "selections": [
-        11,
-        33,
-        18,
-        13,
-        25,
-        9,
-        27,
-        14,
-        20,
-        26,
-        30,
-        19,
-        16,
-        21,
-        6,
-        31,
-        33,
-        13,
-        9,
-        14,
-        26,
-        19,
-        21,
-        31,
-        13,
-        14,
-        19,
-        31,
-        14,
-        31,
-        31
-      ],
-      "createdAt": "2026-02-04T03:48:13.989Z",
-      "id": 4
-    },
-    {
-      "worldcupId": 2,
-      "winnerId": 28,
-      "top4": [
-        23,
-        30,
-        28,
         2
       ],
       "selections": [
-        26,
-        24,
-        18,
-        23,
-        27,
-        13,
-        21,
-        30,
-        19,
         32,
-        10,
-        28,
-        9,
-        33,
-        3,
-        2,
-        24,
-        23,
-        13,
-        30,
-        32,
-        28,
-        33,
-        2,
-        23,
-        30,
-        28,
-        2,
-        30,
-        28,
-        28
-      ],
-      "createdAt": "2026-02-04T05:11:59.652Z",
-      "id": 5
-    },
-    {
-      "worldcupId": 2,
-      "winnerId": 28,
-      "top4": [
-        28,
-        32,
-        19,
-        33
-      ],
-      "selections": [
-        28,
-        3,
-        4,
-        20,
-        32,
-        21,
-        10,
-        7,
-        19,
         8,
-        22,
-        25,
-        33,
-        12,
-        23,
-        9,
-        28,
-        4,
+        24,
+        2,
         32,
-        10,
-        19,
-        22,
-        33,
-        23,
-        28,
-        32,
-        19,
-        33,
-        28,
-        19,
-        28
+        2,
+        32
       ],
       "createdAt": "2026-02-04T05:33:24.483Z",
       "id": 6
@@ -1121,7 +1608,7 @@
     {
       "quizId": 3,
       "userId": 4,
-      "nickname": "김태형",
+      "nickname": "test",
       "score": 0,
       "correctCount": 0,
       "totalQuestions": 10,
