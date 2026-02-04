@@ -30,7 +30,8 @@ onMounted(() => {
 <style>
 .main-content {
   min-height: calc(100vh - 140px);
-  padding: var(--spacing-xl) 0;
+  padding: 0;
+  //padding: var(--spacing-xl) 0;
   position: relative;
 }
 
