@@ -85,6 +85,33 @@ server.post('/upload-multiple', upload.array('images', 64), (req, res) => {
     res.json({ files: urls });
 });
 
+// 사용자 정보 관련 API (마이페이지)
+
+// 1. 내 정보 조회 API
+server.get('/users/me', (req, res) => {
+  // json-server-auth가 자동으로 req.user에 사용자 정보를 넣어준다.
+  // JWT 토큰이 유효한 경우에만
+  if (!req.user) {
+    return res.status(401).json({ error : '인증이 필요합니다'});
+  }
+
+  const db = router.db;
+  const userId = req.user.id; // JWT에서 추출한 사용자 ID
+
+  // DB에서 해당 사용자 정보 찾기
+  const user = db.get('users')
+      .find({ id:userId })
+      .value();
+
+  if (!user) {
+    return res.status(404).json({ error : '사용자를 찾을 수 없습니다' });
+  }
+
+  // 비밀번호는 제외하고 반환
+  const { password, ...userWithoutPassword } = user;
+  res.json(userWithoutPassword);
+});
+
 // Custom route for worldcup game start - get random candidates
 server.get('/worldcups/:id/start/:count', (req, res) => {
     const db = router.db;
