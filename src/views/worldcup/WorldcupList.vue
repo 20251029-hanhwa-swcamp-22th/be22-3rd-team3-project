@@ -70,10 +70,10 @@
         <router-link
             v-for="(worldcup, index) in worldcups"
             :key="worldcup.id"
-            :to="`/worldcup/${worldcup.id}/play`"
+            :to="`/worldcup/${worldcup.id}`"
             class="worldcup-card card drop-in"
             :style="{ animationDelay: `${index * 0.1}s` }"
-            @click.prevent="handleNavigation(`/worldcup/${worldcup.id}/play`)"
+            @click.prevent="handleNavigation(`/worldcup/${worldcup.id}`)"
         >
           <!-- 썸네일 이미지 -->
           <div class="card-image">

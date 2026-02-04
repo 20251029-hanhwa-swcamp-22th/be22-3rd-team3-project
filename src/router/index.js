@@ -24,6 +24,11 @@ const routes = [
         component: () => import('../views/worldcup/WorldcupList.vue')
     },
     {
+        path: '/worldcup/:id',
+        name: 'WorldcupDetail',
+        component: () => import('../views/worldcup/WorldcupDetail.vue')
+    },
+    {
         path: '/worldcup/:id/play',
         name: 'WorldcupGame',
         component: () => import('../views/worldcup/WorldcupGame.vue')
