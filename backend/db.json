@@ -499,6 +499,18 @@
       "viewCount": 0,
       "playCount": 0,
       "id": 3
+    },
+    {
+      "title": "배우 이름 맞추기",
+      "description": "배우 이름 맞추기 퀴즈 입니다.",
+      "categoryId": 11,
+      "thumbnail": "/uploads/1770182113465-427758584.png",
+      "userId": 2,
+      "totalQuestions": 10,
+      "createdAt": "2026-02-04T05:15:34.685Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 4
     }
   ],
   "worldcup_results": [
@@ -595,50 +607,124 @@
         2,
         32
       ],
-      "createdAt": "2026-02-04T05:33:24.483Z",
+      "createdAt": "2026-02-04T06:41:29.499Z",
+      "id": 3
+    },
+    {
+      "worldcupId": 3,
+      "winnerId": 73,
+      "top4": [
+        41,
+        64,
+        73,
+        97
+      ],
+      "selections": [
+        96,
+        84,
+        41,
+        53,
+        64,
+        92,
+        93,
+        55,
+        81,
+        73,
+        38,
+        34,
+        89,
+        97,
+        37,
+        95,
+        96,
+        41,
+        64,
+        93,
+        73,
+        34,
+        97,
+        95,
+        41,
+        64,
+        73,
+        97,
+        41,
+        73,
+        73
+      ],
+      "createdAt": "2026-02-04T07:13:15.187Z",
+      "id": 4
+    },
+    {
+      "worldcupId": 3,
+      "winnerId": 34,
+      "top4": [
+        80,
+        39,
+        34,
+        38
+      ],
+      "selections": [
+        80,
+        37,
+        39,
+        58,
+        34,
+        49,
+        41,
+        38,
+        80,
+        39,
+        34,
+        38,
+        80,
+        34,
+        34
+      ],
+      "createdAt": "2026-02-04T08:38:06.785Z",
+      "id": 5
+    },
+    {
+      "worldcupId": 3,
+      "winnerId": 84,
+      "top4": [
+        84,
+        64,
+        86,
+        47
+      ],
+      "selections": [
+        84,
+        64,
+        86,
+        47,
+        84,
+        47,
+        84
+      ],
+      "createdAt": "2026-02-04T08:59:16.009Z",
       "id": 6
     },
     {
-      "worldcupId": 2,
-      "winnerId": 27,
+      "worldcupId": 3,
+      "winnerId": 37,
       "top4": [
-        27,
-        31,
-        5,
-        29
+        37,
+        46,
+        42,
+        56
       ],
       "selections": [
-        27,
-        31,
-        5,
-        29,
-        27,
-        5,
-        27
+        37,
+        46,
+        42,
+        56,
+        37,
+        42,
+        37
       ],
-      "createdAt": "2026-02-04T07:08:27.495Z",
+      "createdAt": "2026-02-04T08:59:48.573Z",
       "id": 7
-    },
-    {
-      "worldcupId": 2,
-      "winnerId": 22,
-      "top4": [
-        33,
-        32,
-        11,
-        22
-      ],
-      "selections": [
-        33,
-        32,
-        11,
-        22,
-        32,
-        22,
-        22
-      ],
-      "createdAt": "2026-02-04T07:15:12.688Z",
-      "id": 8
     }
   ],
   "quiz_questions": [
@@ -651,7 +737,7 @@
       "answer": "서울",
       "timeLimit": 10,
       "correctCount": 452,
-      "totalCount": 504
+      "totalCount": 505
     },
     {
       "quizId": 2,
@@ -660,8 +746,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 12,
-      "totalCount": 16,
+      "correctCount": 23,
+      "totalCount": 27,
       "id": 2
     },
     {
@@ -671,8 +757,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 10,
-      "totalCount": 14,
+      "correctCount": 13,
+      "totalCount": 17,
       "id": 3
     },
     {
@@ -682,8 +768,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 8,
-      "totalCount": 11,
+      "correctCount": 9,
+      "totalCount": 12,
       "id": 4
     },
     {
@@ -693,8 +779,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 10,
-      "totalCount": 14,
+      "correctCount": 11,
+      "totalCount": 15,
       "id": 5
     },
     {
@@ -704,8 +790,8 @@
       "questionImage": null,
       "answer": "123",
       "timeLimit": 10,
-      "correctCount": 6,
-      "totalCount": 12,
+      "correctCount": 9,
+      "totalCount": 15,
       "id": 6
     },
     {
@@ -820,294 +906,7 @@
     }
   ],
   "quiz_results": [
-    {
-      "id": 1,
-      "quizId": 1,
-      "userId": null,
-      "nickname": "퀴즈왕",
-      "score": 180,
-      "correctCount": 8,
-      "totalQuestions": 10,
-      "remainingTime": 45,
-      "tier": "멘사",
-      "completedAt": "2026-01-30T15:45:00Z"
-    },
-    {
-      "quizId": 2,
-      "userId": 1,
-      "nickname": "찬진이바보",
-      "score": 102,
-      "correctCount": 4,
-      "totalQuestions": 5,
-      "remainingTime": 98,
-      "tier": "우등생",
-      "completedAt": "2026-02-01T05:05:00.442Z",
-      "id": 2
-    },
-    {
-      "quizId": 2,
-      "userId": 1,
-      "nickname": "찬진이바보",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 8,
-      "remainingTime": 113,
-      "tier": "노력필요",
-      "completedAt": "2026-02-01T05:05:27.133Z",
-      "id": 3
-    },
-    {
-      "quizId": 1,
-      "userId": 1,
-      "nickname": "찬진이바보",
-      "score": 26,
-      "correctCount": 1,
-      "totalQuestions": 1,
-      "remainingTime": 116,
-      "tier": "노력필요",
-      "completedAt": "2026-02-01T05:05:36.436Z",
-      "id": 4
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 56,
-      "correctCount": 2,
-      "totalQuestions": 5,
-      "remainingTime": 102,
-      "tier": "평범",
-      "completedAt": "2026-02-03T11:07:10.491Z",
-      "id": 5
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 54,
-      "correctCount": 2,
-      "totalQuestions": 8,
-      "remainingTime": 0,
-      "tier": "평범",
-      "completedAt": "2026-02-03T11:10:44.313Z",
-      "id": 6
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 5,
-      "remainingTime": 118,
-      "tier": "노력필요",
-      "completedAt": "2026-02-03T11:11:09.062Z",
-      "id": 7
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 5,
-      "remainingTime": 103,
-      "tier": "노력필요",
-      "completedAt": "2026-02-03T11:11:41.633Z",
-      "id": 8
-    },
-    {
-      "quizId": 1,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 26,
-      "correctCount": 1,
-      "totalQuestions": 1,
-      "remainingTime": 116,
-      "tier": "노력필요",
-      "completedAt": "2026-02-03T11:12:13.153Z",
-      "id": 9
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 130,
-      "correctCount": 5,
-      "totalQuestions": 5,
-      "remainingTime": 98,
-      "tier": "우등생",
-      "completedAt": "2026-02-03T11:12:41.789Z",
-      "id": 10
-    },
-    {
-      "quizId": 1,
-      "userId": 2,
-      "nickname": "테스트유저",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 1,
-      "remainingTime": 119,
-      "tier": "노력필요",
-      "completedAt": "2026-02-03T11:16:20.759Z",
-      "id": 11
-    },
-    {
-      "quizId": 1,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 1,
-      "remainingTime": 117,
-      "tier": "노력필요",
-      "completedAt": "2026-02-03T15:03:19.438Z",
-      "id": 12
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 52,
-      "correctCount": 2,
-      "totalQuestions": 5,
-      "remainingTime": 87,
-      "tier": "평범",
-      "completedAt": "2026-02-03T15:03:55.837Z",
-      "id": 13
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 148,
-      "correctCount": 5,
-      "totalQuestions": 5,
-      "remainingTime": 106,
-      "tier": "수재",
-      "completedAt": "2026-02-03T15:07:09.262Z",
-      "id": 14
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 5,
-      "correctCount": 5,
-      "totalQuestions": 5,
-      "remainingTime": 104,
-      "tier": "노력필요",
-      "completedAt": "2026-02-03T15:16:23.312Z",
-      "id": 15
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 50,
-      "correctCount": 5,
-      "totalQuestions": 5,
-      "remainingTime": 106,
-      "tier": "모범생",
-      "completedAt": "2026-02-03T15:19:59.894Z",
-      "id": 16
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 10,
-      "correctCount": 1,
-      "totalQuestions": 5,
-      "remainingTime": 108,
-      "tier": "노력필요",
-      "completedAt": "2026-02-03T15:21:00.449Z",
-      "id": 17
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 30,
-      "correctCount": 3,
-      "totalQuestions": 5,
-      "remainingTime": 106,
-      "tier": "평범",
-      "completedAt": "2026-02-03T15:21:18.108Z",
-      "id": 18
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 132,
-      "correctCount": 5,
-      "totalQuestions": 5,
-      "remainingTime": 98,
-      "tier": "우등생",
-      "completedAt": "2026-02-03T15:51:14.148Z",
-      "id": 19
-    },
-    {
-      "quizId": 2,
-      "userId": 2,
-      "nickname": "정현호그라이더",
-      "score": 30,
-      "correctCount": 3,
-      "totalQuestions": 5,
-      "remainingTime": 106,
-      "tier": "평범",
-      "completedAt": "2026-02-04T01:02:00.914Z",
-      "id": 20
-    },
-    {
-      "quizId": 1,
-      "userId": 4,
-      "nickname": "test",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 1,
-      "remainingTime": 118,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T03:49:55.138Z",
-      "id": 21
-    },
-    {
-      "quizId": 3,
-      "userId": 4,
-      "nickname": "test",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T07:24:07.353Z",
-      "id": 22
-    },
-    {
-      "quizId": 2,
-      "userId": 4,
-      "nickname": "test",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 5,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T10:40:56.874Z",
-      "id": 23
-    },
-    {
-      "quizId": 2,
-      "userId": 4,
-      "nickname": "test",
-      "score": 0,
-      "correctCount": 0,
-      "totalQuestions": 5,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T10:42:19.604Z",
-      "id": 24
-    }
+
   ],
   "categories": [
     {
