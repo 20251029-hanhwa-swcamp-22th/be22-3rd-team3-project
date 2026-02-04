@@ -126,7 +126,7 @@
                 </el-button>
               </el-upload>
               <div v-if="question.questionImage" class="question-image-preview">
-                <img :src="question.questionImage" alt="문제 이미지" />
+                <img :src="getImageUrl(question.questionImage)" alt="문제 이미지" />
               </div>
             </el-form-item>
           </div>
@@ -171,6 +171,7 @@ import { quizApi } from '@/api/quizApi'
 import { commonApi } from '@/api/commonApi'
 import apiClient from '@/api/axios'
 import ImageUploader from '@/components/create/ImageUploader.vue'
+import {getImageUrl} from "@/utils/helpers.js";
 
 const router = useRouter()
 const authStore = useAuthStore()
