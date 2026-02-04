@@ -29,7 +29,7 @@
         <div class="winner-section card card-glass">
           <h2>👑 우승자</h2>
           <div class="winner-card">
-            <img v-if="winner" :src="winner.imageUrl" :alt="winner.name" />
+            <img v-if="winner" :src="getImageUrl(winner.imageUrl)" :alt="winner.name" />
             <h3>{{ winner?.name }}</h3>
             <div class="winner-stats">
               <span>총 우승: {{ winner?.winCount }}회</span>
@@ -51,7 +51,7 @@
               class="top4-item"
             >
               <div class="rank-badge">{{ index + 1 }}</div>
-              <img :src="getCandidateById(candidateId)?.imageUrl" :alt="getCandidateById(candidateId)?.name" />
+              <img :src="getImageUrl(getCandidateById(candidateId)?.imageUrl)" :alt="getCandidateById(candidateId)?.name" />
               <h4>{{ getCandidateById(candidateId)?.name }}</h4>
             </div>
           </div>
@@ -71,12 +71,12 @@
               <div class="round-label">{{ selection.round }}</div>
               <div class="vs-match">
                 <div class="candidate-mini">
-                  <img :src="selection.left.imageUrl" :alt="selection.left.name" />
+                  <img :src="getImageUrl(selection.left.imageUrl)" :alt="selection.left.name" />
                   <span>{{ selection.left.name }}</span>
                 </div>
                 <span class="vs">VS</span>
                 <div class="candidate-mini">
-                  <img :src="selection.right.imageUrl" :alt="selection.right.name" />
+                  <img :src="getImageUrl(selection.right.imageUrl)" :alt="selection.right.name" />
                   <span>{{ selection.right.name }}</span>
                 </div>
               </div>
@@ -120,7 +120,8 @@ import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'  // 로딩 스피너 아이콘
 import apiClient from '@/api/axios'                 // Axios 인스턴스
-import { calculateWinRate } from '@/utils/helpers' // 승률 계산 유틸
+import { calculateWinRate } from '@/utils/helpers'
+import {getImageUrl} from "../../utils/helpers.js"; // 승률 계산 유틸
 
 // ===== 라우터 =====
 const route = useRoute()

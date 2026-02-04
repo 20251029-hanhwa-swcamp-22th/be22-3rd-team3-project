@@ -14,13 +14,6 @@
             <span class="label">점수</span>
             <span class="value">{{ quizStore.score }}</span>
           </div>
-          <div class="stat-item">
-            <span class="label">남은 시간</span>
-            <!-- 시간이 10초 미만으로 남으면 빨간색(warning 클래스)으로 표시합니다 -->
-            <span class="value timer" :class="{ warning: quizStore.remainingTime < 10 }">
-              {{ formatTime(quizStore.remainingTime) }}
-            </span>
-          </div>
         </div>
       </div>
 
@@ -40,13 +33,13 @@
           </div>
         </div>
 
-        <!-- 문제 이미지가 있는 경우에만 이미지를 표시합니다 -->
-        <div class="question-image" v-if="currentQuestion.questionImage">
-          <img :src="currentQuestion.questionImage" :alt="'문제 ' + (currentQuestionIndex + 1)" />
-        </div>
-
         <div class="question-text">
           {{ currentQuestion.questionText }}
+        </div>
+
+        <!-- 문제 이미지가 있는 경우에만 이미지를 표시합니다 -->
+        <div class="question-image" v-if="currentQuestion.questionImage">
+          <img :src="getImageUrl(currentQuestion.questionImage)" :alt="'문제 ' + (currentQuestionIndex + 1)" />
         </div>
 
         <div class="answer-section">
@@ -83,9 +76,11 @@
             </el-button>
           </div>
         </div>
+      </div>
 
-        <!-- 정답/오답 피드백: 제출 후에만 보여줍니다 -->
-        <div v-if="answerSubmitted" class="feedback" :class="{ correct: isCorrect, incorrect: !isCorrect }">
+      <!-- 정답/오답 피드백: 화면 중앙에 고정 표시 -->
+      <div v-if="answerSubmitted" class="feedback-overlay">
+        <div class="feedback" :class="{ correct: isCorrect, incorrect: !isCorrect }">
           <div class="feedback-icon">
             <el-icon v-if="isCorrect" size="60"><CircleCheck /></el-icon>
             <el-icon v-else size="60"><CircleClose /></el-icon>
@@ -120,7 +115,6 @@
 
           <div class="result-details">
             <p>정답: {{ quizStore.correctCount }} / {{ quizStore.totalQuestions }}</p>
-            <p>남은 시간: {{ formatTime(quizStore.remainingTime) }}</p>
           </div>
 
           <div class="result-actions">
@@ -139,13 +133,13 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useQuizStore } from '@/stores/quiz'
 import { Timer, CircleCheck, CircleClose } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import { quizApi } from '@/api/quizApi'
-import { formatTime } from '@/utils/helpers'
+import {formatTime, getImageUrl} from '@/utils/helpers'
 
 const route = useRoute()
 const router = useRouter()
@@ -185,6 +179,28 @@ const progress = computed(() => {
 const correctRate = computed(() => {
   if (!quizStore.totalQuestions) return 0
   return Math.round((quizStore.correctCount / quizStore.totalQuestions) * 100)
+})
+
+// ==========================================
+// Watchers (감시자)
+// ==========================================
+
+// 시간 초과 감지 및 피드백 표시
+watch(() => quizStore.timeoutOccurred, (newValue) => {
+  if (newValue) {
+    // 시간 초과 발생 시 피드백 표시
+    answerSubmitted.value = true
+    isCorrect.value = false
+    lastScore.value = 0
+    
+    ElMessage.warning('시간 초과!')
+    
+    // 2초 후 다음 문제로 이동
+    setTimeout(() => {
+      quizStore.resetTimeoutFlag()
+      moveToNextQuestion()
+    }, 2000)
+  }
 })
 
 // ==========================================
@@ -230,6 +246,9 @@ onUnmounted(() => {
 async function submitAnswer() {
   if (!userAnswer.value || answerSubmitted.value) return
 
+  // 즉시 타이머 정지 (시간 초과 이벤트 방지)
+  quizStore.stopQuestionTimer()
+  
   answerSubmitted.value = true // 제출 상태로 변경
 
   // 스토어의 checkAnswer 함수로 정답 확인
@@ -254,6 +273,9 @@ async function submitAnswer() {
  * 현재 문제를 푼 것으로 처리하지 않고(오답 처리) 넘어갑니다.
  */
 function skipQuestion() {
+  // 타이머 정지
+  quizStore.stopQuestionTimer()
+  
   quizStore.skipQuestion()
   moveToNextQuestion()
   ElMessage.info('문제를 건너뛰었습니다')
@@ -361,7 +383,7 @@ async function moveToNextQuestion() {
 
 .question-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 250px;
   margin: 0 auto var(--spacing-lg);
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -393,33 +415,56 @@ async function moveToNextQuestion() {
   flex-wrap: wrap;
 }
 
+/* 피드백 오버레이 - 화면 전체를 덮는 반투명 배경 */
+.feedback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 피드백 카드 */
 .feedback {
-  margin-top: var(--spacing-xl);
+  background: white;
   padding: var(--spacing-xl);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 0.3s ease-in-out;
 }
 
 .feedback.correct {
-  background: rgba(103, 194, 58, 0.1);
+  background: #67c23a;
   border: 2px solid var(--success);
+  color: white;
 }
 
 .feedback.incorrect {
-  background: rgba(245, 108, 108, 0.1);
+  background: #f56c6c;
   border: 2px solid var(--danger);
+  color: white;
 }
 
 .feedback-icon {
   margin-bottom: var(--spacing-md);
+  color: white;
 }
 
 .feedback.correct .feedback-icon {
-  color: var(--success);
+  color: white;
 }
 
 .feedback.incorrect .feedback-icon {
-  color: var(--danger);
+  color: white;
 }
 
 .feedback-text h3 {
@@ -516,4 +561,26 @@ async function moveToNextQuestion() {
     width: 100%;
   }
 }
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 </style>

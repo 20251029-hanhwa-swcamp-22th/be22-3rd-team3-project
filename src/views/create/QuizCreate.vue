@@ -53,20 +53,10 @@
           <ImageUploader v-model="form.thumbnail" />
         </el-form-item>
 
-        <el-form-item label="전체 제한 시간 (초)" prop="totalTime">
-          <el-input-number
-            v-model="form.totalTime"
-            :min="30"
-            :max="600"
-            :step="10"
-            size="large"
-          />
-        </el-form-item>
-
         <el-divider />
 
         <h3>문제 목록 ({{ questions.length }}개)</h3>
-        <p class="hint">최소 5개의 문제를 등록해야 합니다.</p>
+        <p class="hint">10개 문제를 모두 입력해야 합니다. (문제당 10초 제한)</p>
 
         <div class="questions-list">
           <div
@@ -76,15 +66,6 @@
           >
             <div class="question-header">
               <h4>문제 {{ index + 1 }}</h4>
-              <el-button
-                type="danger"
-                size="small"
-                circle
-                @click="removeQuestion(index)"
-                v-if="questions.length > 5"
-              >
-                <el-icon><Close /></el-icon>
-              </el-button>
             </div>
 
             <el-form-item :label="`문제 ${index + 1} - 질문`">
@@ -103,18 +84,17 @@
               />
             </el-form-item>
 
-            <el-form-item :label="`문제 ${index + 1} - 제한 시간 (초)`">
-              <el-input-number
-                v-model="question.timeLimit"
-                :min="5"
-                :max="60"
-                :step="5"
-              />
+            <el-form-item :label="`문제 ${index + 1} - 제한 시간`">
+              <el-select v-model="question.timeLimit" placeholder="시간 선택" style="width: 150px">
+                <el-option label="5초" :value="5" />
+                <el-option label="10초" :value="10" />
+                <el-option label="20초" :value="20" />
+              </el-select>
             </el-form-item>
 
             <el-form-item :label="`문제 ${index + 1} - 이미지 (선택사항)`">
               <el-upload
-                action="http://localhost:3000/upload"
+                action="/api/upload"
                 name="image"
                 :headers="uploadHeaders"
                 :show-file-list="false"
@@ -126,21 +106,11 @@
                 </el-button>
               </el-upload>
               <div v-if="question.questionImage" class="question-image-preview">
-                <img :src="question.questionImage" alt="문제 이미지" />
+                <img :src="getImageUrl(question.questionImage)" alt="문제 이미지" />
               </div>
             </el-form-item>
           </div>
         </div>
-
-        <el-button
-          type="success"
-          size="large"
-          class="add-question-btn"
-          @click="addQuestion"
-        >
-          <el-icon><Plus /></el-icon>
-          문제 추가
-        </el-button>
 
         <el-form-item class="submit-section">
           <el-button
@@ -148,7 +118,7 @@
             size="large"
             :loading="loading"
             native-type="submit"
-            :disabled="questions.length < 5"
+            :disabled="!allQuestionsValid"
           >
             퀴즈 만들기
           </el-button>
@@ -171,6 +141,7 @@ import { quizApi } from '@/api/quizApi'
 import { commonApi } from '@/api/commonApi'
 import apiClient from '@/api/axios'
 import ImageUploader from '@/components/create/ImageUploader.vue'
+import {getImageUrl} from "@/utils/helpers.js";
 
 const router = useRouter()
 const authStore = useAuthStore()
@@ -183,8 +154,7 @@ const form = reactive({
   title: '',
   description: '',
   categoryId: null,
-  thumbnail: '',
-  totalTime: 120
+  thumbnail: ''
 })
 
 const questions = ref([])
@@ -207,16 +177,17 @@ const rules = {
   ],
   thumbnail: [
     { required: true, message: '썸네일 이미지를 업로드해주세요', trigger: 'change' }
-  ],
-  totalTime: [
-    { required: true, message: '전체 제한 시간을 설정해주세요', trigger: 'blur' }
   ]
 }
 
+const allQuestionsValid = computed(() => {
+  return questions.value.every(q => q.questionText.trim() && q.answer.trim())
+})
+
 onMounted(async () => {
   await loadCategories()
-  // 초기 문제 5개 생성
-  for (let i = 0; i < 5; i++) {
+  // 초기 문제 10개 생성
+  for (let i = 0; i < 10; i++) {
     addQuestion()
   }
 })
@@ -233,20 +204,14 @@ async function loadCategories() {
 
 function addQuestion() {
   questions.value.push({
-    questionText: '',
+    questionText: '사진을 보고 정답을 맞춰보세요.',
     answer: '',
     timeLimit: 10,
     questionImage: null
   })
 }
 
-function removeQuestion(index) {
-  if (questions.value.length <= 5) {
-    ElMessage.warning('최소 5개의 문제가 필요합니다')
-    return
-  }
-  questions.value.splice(index, 1)
-}
+
 
 function beforeUpload(file) {
   const isImage = file.type.startsWith('image/')
@@ -274,10 +239,10 @@ async function handleSubmit() {
   await formRef.value.validate(async (valid) => {
     if (!valid) return
 
-    // 문제 검증
-    const validQuestions = questions.value.filter(q => q.questionText && q.answer)
-    if (validQuestions.length < 5) {
-      ElMessage.error('최소 5개의 문제에 질문과 정답을 모두 입력해주세요')
+    // 문제 검증 - 정확히 10개 모두 입력되어야 함
+    const validQuestions = questions.value.filter(q => q.questionText.trim() && q.answer.trim())
+    if (validQuestions.length !== 10) {
+      ElMessage.error('10개 문제 모두에 질문과 정답을 입력해주세요')
       return
     }
 
@@ -291,8 +256,7 @@ async function handleSubmit() {
         categoryId: form.categoryId,
         thumbnail: form.thumbnail,
         userId: authStore.user.id,
-        totalQuestions: validQuestions.length,
-        totalTime: form.totalTime,
+        totalQuestions: 10,
         createdAt: new Date().toISOString(),
         viewCount: 0,
         playCount: 0

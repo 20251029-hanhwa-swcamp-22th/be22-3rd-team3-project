@@ -31,20 +31,17 @@ export const useQuizStore = defineStore('quiz', () => {
     // 게임 결과에 따른 등급 (멘사, 수재 등)
     const tier = ref('')
 
-    // 퀴즈 전체 남은 시간 (초 단위)
-    const remainingTime = ref(0)
-
     // 현재 문제에 배정된 남은 시간 (초 단위)
     const questionTimeRemaining = ref(0)
-
-    // 전체 타이머를 관리하기 위한 인터벌 ID (타이머 멈출 때 사용)
-    const timerInterval = ref(null)
 
     // 문제별 타이머를 관리하기 위한 인터벌 ID
     const questionTimerInterval = ref(null)
 
     // 현재 게임이 진행 중인지 여부 (true: 진행 중, false: 종료/대기)
     const isGameActive = ref(false)
+
+    // 시간 초과 발생 여부 플래그
+    const timeoutOccurred = ref(false)
 
     // ==========================================
     // Getters (계산된 속성) - 기존 데이터를 가공해서 새로운 정보를 만듭니다.
@@ -98,12 +95,7 @@ export const useQuizStore = defineStore('quiz', () => {
         score.value = 0
         tier.value = ''
 
-        // 전체 시간 설정 (퀴즈에 설정된 시간이 없으면 기본 120초)
-        remainingTime.value = quiz.totalTime || 120
         isGameActive.value = true
-
-        // 전체 타이머 시작
-        startMainTimer()
 
         // 첫 번째 문제 타이머 시작 (문제가 있을 경우에만)
         if (questionsList.length > 0) {
@@ -111,27 +103,6 @@ export const useQuizStore = defineStore('quiz', () => {
             questionTimeRemaining.value = questionsList[0].timeLimit || 10
             startQuestionTimer()
         }
-    }
-
-    /**
-     * 전체 타이머 시작
-     * 1초마다 남은 시간을 1씩 줄입니다.
-     */
-    function startMainTimer() {
-        // 기존 타이머가 있다면 먼저 정리(멈춤)합니다.
-        if (timerInterval.value) {
-            clearInterval(timerInterval.value)
-        }
-
-        // 1000ms(1초)마다 실행되는 함수를 등록합니다.
-        timerInterval.value = setInterval(() => {
-            if (remainingTime.value > 0 && isGameActive.value) {
-                remainingTime.value-- // 시간 감소
-            } else if (remainingTime.value === 0) {
-                // 시간이 다 되면 게임 종료
-                endGame()
-            }
-        }, 1000)
     }
 
     /**
@@ -156,19 +127,28 @@ export const useQuizStore = defineStore('quiz', () => {
             } else if (questionTimeRemaining.value === 0) {
                 // 문제 시간이 다 되면 자동으로 넘어가기(스킵) 처리
                 skipQuestion()
+                // 시간 초과 플래그 설정 - Vue 컴포넌트에서 피드백 표시 후 이동
+                timeoutOccurred.value = true
             }
         }, 1000)
     }
 
     /**
-     * 모든 타이머 정지
+     * 타이머 정지
      * 게임 종료 시 사용합니다.
      */
     function stopTimers() {
-        if (timerInterval.value) {
-            clearInterval(timerInterval.value)
-            timerInterval.value = null
+        if (questionTimerInterval.value) {
+            clearInterval(questionTimerInterval.value)
+            questionTimerInterval.value = null
         }
+    }
+
+    /**
+     * 현재 문제 타이머만 정지
+     * 답 제출 시 사용 (시간 초과 이벤트 방지)
+     */
+    function stopQuestionTimer() {
         if (questionTimerInterval.value) {
             clearInterval(questionTimerInterval.value)
             questionTimerInterval.value = null
@@ -222,7 +202,7 @@ export const useQuizStore = defineStore('quiz', () => {
 
     /**
      * 문제 건너뛰기 (시간 초과 등)
-     * 문제를 틀린 것으로 처리하고 다음으로 넘어갑니다.
+     * 문제를 틀린 것으로 처리합니다.
      */
     function skipQuestion() {
         const question = getCurrentQuestion()
@@ -238,6 +218,28 @@ export const useQuizStore = defineStore('quiz', () => {
             skipped: true, // 건너뜀 표시
             score: 0
         })
+    }
+
+    /**
+     * 다음 문제로 이동 (내부 헬퍼 함수)
+     */
+    function moveToNextQuestion() {
+        currentQuestionIndex.value++
+
+        // 모든 문제를 다 풀었는지 확인
+        if (currentQuestionIndex.value >= questions.value.length) {
+            endGame() // 게임 종료
+        } else {
+            // 다음 문제 타이머 시작
+            startQuestionTimer()
+        }
+    }
+
+    /**
+     * 시간 초과 플래그 초기화
+     */
+    function resetTimeoutFlag() {
+        timeoutOccurred.value = false
     }
 
     /**
@@ -299,7 +301,7 @@ export const useQuizStore = defineStore('quiz', () => {
                 score: score.value,
                 correctCount: correctCount.value,
                 totalQuestions: totalQuestions.value,
-                remainingTime: remainingTime.value,
+                remainingTime: 0,
                 tier: tier.value,
                 completedAt: new Date().toISOString() // 현재 시간
             }
@@ -340,9 +342,9 @@ export const useQuizStore = defineStore('quiz', () => {
         answers.value = []
         score.value = 0
         tier.value = ''
-        remainingTime.value = 0
         questionTimeRemaining.value = 0
         isGameActive.value = false
+        timeoutOccurred.value = false
         stopTimers()
     }
 
@@ -354,19 +356,20 @@ export const useQuizStore = defineStore('quiz', () => {
         answers,
         score,
         tier,
-        remainingTime,
         questionTimeRemaining,
         isGameActive,
+        timeoutOccurred,
         correctCount,
         totalQuestions,
         getCurrentQuestion,
         startGame,
         checkAnswer,
-
         skipQuestion,
         nextQuestion,
         endGame,
         saveResult,
-        resetGame
+        resetGame,
+        resetTimeoutFlag,
+        stopQuestionTimer
     }
 })

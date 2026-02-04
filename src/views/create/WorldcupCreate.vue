@@ -56,7 +56,7 @@
         <el-divider/>
 
         <h3>후보 등록 ({{ candidates.length }}개)</h3>
-        <p class="hint">최소 32개의 후보를 등록해야 합니다.</p>
+        <p class="hint">최소 64개의 후보를 등록해야 합니다.</p>
 
         <!-- 다중 이미지 업로드 -->
         <div class="bulk-upload-section">
@@ -67,7 +67,7 @@
           file-list : 업로드할 파일 목록
           -->
           <el-upload
-              action="http://localhost:3000/upload"
+              action="/api/upload"
               accept=".jpg,.jpeg,.png,.gif,.webp"
               name="image"
               :headers="uploadHeaders"
@@ -122,7 +122,7 @@
             />
 
             <el-upload
-                action="http://localhost:3000/upload"
+                action="/api/upload"
                 accept=".jpg,.jpeg,.png,.gif,.webp"
                 name="image"
                 :headers="uploadHeaders"
@@ -150,7 +150,7 @@
               size="large"
               :loading="loading"
               native-type="submit"
-              :disabled="candidates.length < 32"
+              :disabled="candidates.length < 64"
           >
             월드컵 만들기
           </el-button>
@@ -171,6 +171,7 @@ import {Close, Plus, Upload} from '@element-plus/icons-vue'
 import {ElMessage} from 'element-plus'
 import {worldcupApi} from '@/api/worldcupApi'
 import {commonApi} from '@/api/commonApi'
+import {getImageUrl} from "@/utils/helpers.js";
 import ImageUploader from '@/components/create/ImageUploader.vue'
 
 const router = useRouter()
@@ -213,8 +214,8 @@ const rules = {
 
 onMounted(async () => {
   await loadCategories()
-  // 초기 후보 32개 생성
-  for (let i = 0; i < 32; i++) {
+  // 초기 후보 64개 생성
+  for (let i = 0; i < 64; i++) {
     candidates.value.push({name: '', imageUrl: ''})
   }
 })
@@ -234,8 +235,8 @@ function addCandidate() {
 }
 
 function removeCandidate(index) {
-  if (candidates.value.length <= 32) {
-    ElMessage.warning('최소 32개의 후보가 필요합니다')
+  if (candidates.value.length <= 64) {
+    ElMessage.warning('최소 64개의 후보가 필요합니다')
     return
   }
   candidates.value.splice(index, 1)
@@ -267,15 +268,6 @@ function beforeUpload(file) {
   return true;
 }
 
-const SERVER_URL = 'http://localhost:3000';
-
-// 이미지 URL 포맷팅 헬퍼 함수
-function getImageUrl(url) {
-  if (!url) return '';
-  if (url.startsWith('http')) return url;
-  // 슬래시가 없으면 추가
-  return url.startsWith('/') ? `${SERVER_URL}${url}` : `${SERVER_URL}/${url}`;
-}
 
 function handleCandidateImageUpload(response, index) {
   console.log('서버 응답 데이터:', response);
@@ -361,10 +353,10 @@ async function handleSubmit() {
         (c) => c.name.trim() !== '' && c.imageUrl.trim() !== ''
     );
 
-    // 최소 32개 조건 체크
-    if (validCandidates.length < 32) {
+    // 최소 64개 조건 체크
+    if (validCandidates.length < 64) {
       ElMessage.error(
-          `🎯 최소 32개의 후보가 필요합니다. (현재 완료: ${validCandidates.length}/32)
+          `🎯 최소 64개의 후보가 필요합니다. (현재 완료: ${validCandidates.length}/64)
           💡 팁: 상단의 "여러 이미지 한번에 업로드" 버튼으로 여러 이미지를 한번에 등록할 수 있습니다!`
       );
       return; // 실행 중단

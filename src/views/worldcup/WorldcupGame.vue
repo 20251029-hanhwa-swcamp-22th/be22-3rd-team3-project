@@ -133,6 +133,7 @@ import { useWorldcupStore } from '@/stores/worldcup'  // 월드컵 게임 상태
 import { worldcupApi } from '@/api/worldcupApi'       // 월드컵 API
 import { ElMessage } from 'element-plus'              // 에러 메시지 표시용
 import ParticleEffect from '@/components/ParticleEffect.vue'  // 파티클 효과 컴포넌트
+import {getImageUrl} from "../../utils/helpers.js";
 
 // ===== 라우터 & 스토어 =====
 const route = useRoute()
@@ -163,34 +164,22 @@ const roundName = computed(() => worldcupStore.roundName)
  */
 const progress = computed(() => worldcupStore.getProgress())
 
-const SERVER_URL = 'http://localhost:3000'
-
-// ===== 헬퍼 함수 =====
-/**
- * 이미지 URL 포맷팅
- * - 상대 경로(/uploads/...)를 절대 URL로 변환
- * - 이미 http로 시작하는 경우 그대로 반환
- */
-function getImageUrl(url) {
-  if (!url) return '/placeholder.jpg'
-  if (url.startsWith('http')) return url
-  // 슬래시가 없으면 추가
-  return url.startsWith('/') ? `${SERVER_URL}${url}` : `${SERVER_URL}/${url}`
-}
-
 // ===== 라이프사이클 훅 =====
 /**
  * 컴포넌트 마운트 시 실행
  * 1. 월드컵 정보 조회
- * 2. 게임 시작 API 호출 (32명 후보 셔플)
+ * 2. 게임 시작 API 호출 (선택된 라운드 수로 후보 셔플)
  * 3. Store에 게임 초기화
  */
 onMounted(async () => {
   try {
+    // 쿼리 파라미터에서 라운드 수 가져오기 (기본값: 16)
+    const roundCount = parseInt(route.query.round) || 16
+    
     // 병렬로 월드컵 정보와 게임 시작 API 호출
     const [worldcupRes, candidatesRes] = await Promise.all([
-      worldcupApi.getWorldcup(worldcupId),        // 월드컵 상세 정보
-      worldcupApi.startWorldcup(worldcupId, 32)   // 32강용 후보 셔플
+      worldcupApi.getWorldcup(worldcupId),           // 월드컵 상세 정보
+      worldcupApi.startWorldcup(worldcupId, roundCount)  // 선택된 라운드용 후보 셔플
     ])
     
     worldcup.value = worldcupRes.data
