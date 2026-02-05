@@ -50,8 +50,8 @@
       "thumbnail": "/uploads/1770167351995-338964800.png",
       "userId": 2,
       "createdAt": "2026-02-04T01:10:28.138Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 3,
+      "playCount": 1,
       "id": 2
     },
     {
@@ -80,9 +80,9 @@
       "worldcupId": 2,
       "name": "킬러경찰",
       "imageUrl": "/uploads/1770167167905-823179312.webp",
-      "winCount": 0,
-      "appearCount": 6,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 7,
+      "finalCount": 1,
       "id": 2
     },
     {
@@ -117,7 +117,7 @@
       "name": "별을품은 소드마스터",
       "imageUrl": "/uploads/1770167174688-50406047.webp",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 6
     },
@@ -144,7 +144,7 @@
       "name": "별이삼샵",
       "imageUrl": "/uploads/1770167174699-513362935.webp",
       "winCount": 0,
-      "appearCount": 7,
+      "appearCount": 8,
       "finalCount": 0,
       "id": 9
     },
@@ -225,7 +225,7 @@
       "name": "프리드로우",
       "imageUrl": "/uploads/1770167174710-591476315.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 18
     },
@@ -252,7 +252,7 @@
       "name": "패션왕",
       "imageUrl": "/uploads/1770167174714-493435358.jpg",
       "winCount": 1,
-      "appearCount": 1,
+      "appearCount": 2,
       "finalCount": 1,
       "id": 21
     },
@@ -270,7 +270,7 @@
       "name": "국세청 망나니",
       "imageUrl": "/uploads/1770167174709-872612883.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 2,
       "finalCount": 0,
       "id": 23
     },
@@ -324,7 +324,7 @@
       "name": "무빙",
       "imageUrl": "/uploads/1770167174718-143837142.jpg",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 7,
       "finalCount": 0,
       "id": 29
     },
@@ -333,7 +333,7 @@
       "name": "죽음에 관하여",
       "imageUrl": "/uploads/1770167174720-806464538.jpg",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 7,
       "finalCount": 0,
       "id": 30
     },
@@ -731,6 +731,63 @@
       ],
       "createdAt": "2026-02-04T08:59:48.573Z",
       "id": 7
+    },
+    {
+      "worldcupId": 2,
+      "winnerId": 2,
+      "top4": [
+        21,
+        6,
+        23,
+        2
+      ],
+      "selections": [
+        {
+          "leftId": 21,
+          "rightId": 30,
+          "selectedId": 21,
+          "round": "8강"
+        },
+        {
+          "leftId": 6,
+          "rightId": 9,
+          "selectedId": 6,
+          "round": "8강"
+        },
+        {
+          "leftId": 23,
+          "rightId": 29,
+          "selectedId": 23,
+          "round": "8강"
+        },
+        {
+          "leftId": 2,
+          "rightId": 18,
+          "selectedId": 2,
+          "round": "8강"
+        },
+        {
+          "leftId": 21,
+          "rightId": 6,
+          "selectedId": 21,
+          "round": "4강"
+        },
+        {
+          "leftId": 23,
+          "rightId": 2,
+          "selectedId": 2,
+          "round": "4강"
+        },
+        {
+          "leftId": 21,
+          "rightId": 2,
+          "selectedId": 2,
+          "round": "결승"
+        }
+      ],
+      "startRound": 8,
+      "createdAt": "2026-02-05T00:20:55.548Z",
+      "id": 8
     }
   ],
   "quiz_questions": [
