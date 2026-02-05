@@ -39,8 +39,8 @@
       "thumbnail": "/uploads/1770250835043-180047445.png",
       "userId": 5,
       "createdAt": "2026-02-05T00:20:52.756Z",
-      "viewCount": 1,
-      "playCount": 0,
+      "viewCount": 41,
+      "playCount": 35,
       "id": 1
     },
     {
@@ -50,8 +50,8 @@
       "thumbnail": "/uploads/1770251479701-373809190.jpg",
       "userId": 5,
       "createdAt": "2026-02-05T00:40:26.621Z",
-      "viewCount": 2,
-      "playCount": 0,
+      "viewCount": 50,
+      "playCount": 31,
       "id": 2
     },
     {
@@ -61,8 +61,8 @@
       "thumbnail": "/uploads/1770254394424-61086662.jpeg",
       "userId": 5,
       "createdAt": "2026-02-05T01:24:43.430Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 23,
+      "playCount": 19,
       "id": 3
     },
     {
@@ -72,8 +72,8 @@
       "thumbnail": "/uploads/1770257863852-349149361.jpeg",
       "userId": 5,
       "createdAt": "2026-02-05T02:19:52.720Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 39,
+      "playCount": 29,
       "id": 4
     },
     {
@@ -83,8 +83,8 @@
       "thumbnail": "/uploads/1770258138582-830528306.jpg",
       "userId": 5,
       "createdAt": "2026-02-05T02:22:23.992Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 49,
+      "playCount": 49,
       "id": 5
     },
     {
@@ -94,8 +94,8 @@
       "thumbnail": "/uploads/1770258609988-694153735.jpg",
       "userId": 5,
       "createdAt": "2026-02-05T02:30:14.122Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 40,
+      "playCount": 38,
       "id": 6
     },
     {
@@ -105,9 +105,20 @@
       "thumbnail": "/uploads/1770259005574-47858605.jpg",
       "userId": 5,
       "createdAt": "2026-02-05T02:36:51.041Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 16,
+      "playCount": 14,
       "id": 7
+    },
+    {
+      "title": "최애 음료 월드컵",
+      "description": "지금 당장 마시고 싶은 음료 골라보숑~",
+      "categoryId": 1,
+      "thumbnail": "/uploads/1770263068546-54570668.png",
+      "userId": 1,
+      "createdAt": "2026-02-05T03:45:20.090Z",
+      "viewCount": 49,
+      "playCount": 36,
+      "id": 8
     }
   ],
   "worldcup_candidates": [
@@ -116,7 +127,7 @@
       "name": "별을품은소드마스터",
       "imageUrl": "/uploads/1770250763123-243061922.webp",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 1
     },
@@ -161,7 +172,7 @@
       "name": "당골",
       "imageUrl": "/uploads/1770250763119-993322868.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 6
     },
@@ -196,8 +207,8 @@
       "worldcupId": 1,
       "name": "아비무쌍",
       "imageUrl": "/uploads/1770250763142-692496294.webp",
-      "winCount": 0,
-      "appearCount": 0,
+      "winCount": 1,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 10
     },
@@ -206,7 +217,7 @@
       "name": "덴마",
       "imageUrl": "/uploads/1770250763152-407770325.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 11
     },
@@ -214,9 +225,9 @@
       "worldcupId": 1,
       "name": "별이삼샵",
       "imageUrl": "/uploads/1770250763154-868301633.webp",
-      "winCount": 0,
-      "appearCount": 0,
-      "finalCount": 0,
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 1,
       "id": 12
     },
     {
@@ -233,7 +244,7 @@
       "name": "스위트홈",
       "imageUrl": "/uploads/1770250763157-194387507.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 14
     },
@@ -268,7 +279,7 @@
       "worldcupId": 1,
       "name": "프리드로우",
       "imageUrl": "/uploads/1770250763172-539851337.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 18
@@ -277,7 +288,7 @@
       "worldcupId": 1,
       "name": "국세청망나니",
       "imageUrl": "/uploads/1770250763165-855283834.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 19
@@ -295,7 +306,7 @@
       "worldcupId": 1,
       "name": "신과함께",
       "imageUrl": "/uploads/1770250763181-807190925.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 21
@@ -304,7 +315,7 @@
       "worldcupId": 1,
       "name": "선천적얼간이들",
       "imageUrl": "/uploads/1770250763180-214875957.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 22
@@ -359,7 +370,7 @@
       "name": "타이밍",
       "imageUrl": "/uploads/1770250763202-159442594.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 28
     },
@@ -367,7 +378,7 @@
       "worldcupId": 1,
       "name": "1초",
       "imageUrl": "/uploads/1770250763204-32694199.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 29
@@ -385,7 +396,7 @@
       "worldcupId": 1,
       "name": "격기3반",
       "imageUrl": "/uploads/1770250763208-48660647.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 31
@@ -404,7 +415,7 @@
       "name": "레사",
       "imageUrl": "/uploads/1770250763231-638040580.jpg",
       "winCount": 0,
-      "appearCount": 0,
+      "appearCount": 1,
       "finalCount": 0,
       "id": 33
     },
@@ -421,7 +432,7 @@
       "worldcupId": 1,
       "name": "치즈인더트랩",
       "imageUrl": "/uploads/1770250763232-750632167.jpg",
-      "winCount": 0,
+      "winCount": 4,
       "appearCount": 0,
       "finalCount": 0,
       "id": 35
@@ -448,7 +459,7 @@
       "worldcupId": 1,
       "name": "약한영웅",
       "imageUrl": "/uploads/1770250763236-555831291.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 38
@@ -457,7 +468,7 @@
       "worldcupId": 1,
       "name": "기기괴괴",
       "imageUrl": "/uploads/1770250763237-948396981.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 39
@@ -466,7 +477,7 @@
       "worldcupId": 1,
       "name": "캐슬",
       "imageUrl": "/uploads/1770250763238-710917090.webp",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 40
@@ -520,7 +531,7 @@
       "worldcupId": 1,
       "name": "호랑이형님",
       "imageUrl": "/uploads/1770250763248-271279700.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 46
@@ -538,7 +549,7 @@
       "worldcupId": 1,
       "name": "화산귀환",
       "imageUrl": "/uploads/1770250763260-765076192.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 48
@@ -547,7 +558,7 @@
       "worldcupId": 1,
       "name": "쿠베라",
       "imageUrl": "/uploads/1770250763263-963721242.webp",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 49
@@ -592,7 +603,7 @@
       "worldcupId": 1,
       "name": "운명을보는회사원",
       "imageUrl": "/uploads/1770250763276-316465814.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 54
@@ -610,7 +621,7 @@
       "worldcupId": 1,
       "name": "잔불의기사",
       "imageUrl": "/uploads/1770250763291-217417174.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 56
@@ -619,7 +630,7 @@
       "worldcupId": 1,
       "name": "마술사",
       "imageUrl": "/uploads/1770250763294-393565813.webp",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 57
@@ -655,7 +666,7 @@
       "worldcupId": 1,
       "name": "무빙",
       "imageUrl": "/uploads/1770250763297-95665752.jpg",
-      "winCount": 0,
+      "winCount": 3,
       "appearCount": 0,
       "finalCount": 0,
       "id": 61
@@ -664,7 +675,7 @@
       "worldcupId": 1,
       "name": "바른연애길잡이",
       "imageUrl": "/uploads/1770250763295-561789735.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 62
@@ -673,7 +684,7 @@
       "worldcupId": 1,
       "name": "전지적독자시점",
       "imageUrl": "/uploads/1770250763301-162115080.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 63
@@ -682,7 +693,7 @@
       "worldcupId": 1,
       "name": "오피스누나이야기",
       "imageUrl": "/uploads/1770250787377-248329623.webp",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 64
@@ -691,7 +702,7 @@
       "worldcupId": 2,
       "name": "도박묵시록카이지",
       "imageUrl": "/uploads/1770251534846-967697033.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 65
@@ -700,7 +711,7 @@
       "worldcupId": 2,
       "name": "유희왕",
       "imageUrl": "/uploads/1770251534862-447987825.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 66
@@ -718,7 +729,7 @@
       "worldcupId": 2,
       "name": "스즈미야하루히의우울",
       "imageUrl": "/uploads/1770251534864-296843299.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 68
@@ -727,7 +738,7 @@
       "worldcupId": 2,
       "name": "마법소녀마도카마기카",
       "imageUrl": "/uploads/1770251534845-730744641.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 69
@@ -745,7 +756,7 @@
       "worldcupId": 2,
       "name": "러브라이브",
       "imageUrl": "/uploads/1770251534851-497383192.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 71
@@ -754,7 +765,7 @@
       "worldcupId": 2,
       "name": "케이온",
       "imageUrl": "/uploads/1770251534865-487342152.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 72
@@ -781,7 +792,7 @@
       "worldcupId": 2,
       "name": "토라도라",
       "imageUrl": "/uploads/1770251534866-619468649.webp",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 75
@@ -790,7 +801,7 @@
       "worldcupId": 2,
       "name": "봇치더락",
       "imageUrl": "/uploads/1770251534868-521229554.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 76
@@ -808,7 +819,7 @@
       "worldcupId": 2,
       "name": "그날본꽃의이름은우리는아직모른다",
       "imageUrl": "/uploads/1770251534870-918568485.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 78
@@ -826,7 +837,7 @@
       "worldcupId": 2,
       "name": "카케구루이",
       "imageUrl": "/uploads/1770251534859-159061301.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 80
@@ -880,7 +891,7 @@
       "worldcupId": 2,
       "name": "헬싱",
       "imageUrl": "/uploads/1770251534880-835820020.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 86
@@ -916,7 +927,7 @@
       "worldcupId": 2,
       "name": "스파이패밀리",
       "imageUrl": "/uploads/1770251534888-667481429.webp",
-      "winCount": 0,
+      "winCount": 3,
       "appearCount": 0,
       "finalCount": 0,
       "id": 90
@@ -925,7 +936,7 @@
       "worldcupId": 2,
       "name": "오버로드",
       "imageUrl": "/uploads/1770251534899-524425342.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 91
@@ -1006,7 +1017,7 @@
       "worldcupId": 2,
       "name": "슈타인즈게이트",
       "imageUrl": "/uploads/1770251534896-78391625.png",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 100
@@ -1051,7 +1062,7 @@
       "worldcupId": 2,
       "name": "모브사이코100",
       "imageUrl": "/uploads/1770251534916-844452442.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 105
@@ -1060,7 +1071,7 @@
       "worldcupId": 2,
       "name": "체인소맨",
       "imageUrl": "/uploads/1770251534925-577436062.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 106
@@ -1069,7 +1080,7 @@
       "worldcupId": 2,
       "name": "도쿄구울",
       "imageUrl": "/uploads/1770251534930-965866228.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 107
@@ -1087,7 +1098,7 @@
       "worldcupId": 2,
       "name": "진격의거인",
       "imageUrl": "/uploads/1770251534946-508598457.webp",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 109
@@ -1096,7 +1107,7 @@
       "worldcupId": 2,
       "name": "데스노트",
       "imageUrl": "/uploads/1770251534950-373022167.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 110
@@ -1114,7 +1125,7 @@
       "worldcupId": 2,
       "name": "강철의연금술사",
       "imageUrl": "/uploads/1770251534953-587354902.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 112
@@ -1150,7 +1161,7 @@
       "worldcupId": 2,
       "name": "이누야샤",
       "imageUrl": "/uploads/1770251534960-604887189.webp",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 116
@@ -1168,7 +1179,7 @@
       "worldcupId": 2,
       "name": "슬램덩크",
       "imageUrl": "/uploads/1770251534962-548719939.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 118
@@ -1177,7 +1188,7 @@
       "worldcupId": 2,
       "name": "나루토",
       "imageUrl": "/uploads/1770251534965-636601055.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 119
@@ -1186,7 +1197,7 @@
       "worldcupId": 2,
       "name": "세일러문",
       "imageUrl": "/uploads/1770251534968-354058797.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 120
@@ -1204,7 +1215,7 @@
       "worldcupId": 2,
       "name": "블리치",
       "imageUrl": "/uploads/1770251534972-786154807.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 122
@@ -1222,7 +1233,7 @@
       "worldcupId": 2,
       "name": "귀멸의칼날",
       "imageUrl": "/uploads/1770251534974-721974211.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 124
@@ -1267,7 +1278,7 @@
       "worldcupId": 3,
       "name": "하이라이트 이기광",
       "imageUrl": "/uploads/1770254401619-347513360.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 129
@@ -1348,7 +1359,7 @@
       "worldcupId": 3,
       "name": "워너원 박지훈",
       "imageUrl": "/uploads/1770254443213-308582602.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 138
@@ -1366,7 +1377,7 @@
       "worldcupId": 3,
       "name": "엔시티 재민",
       "imageUrl": "/uploads/1770254454521-878884673.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 140
@@ -1456,7 +1467,7 @@
       "worldcupId": 3,
       "name": "엑소 디오",
       "imageUrl": "/uploads/1770254465712-192938045.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 150
@@ -1492,7 +1503,7 @@
       "worldcupId": 3,
       "name": "스트레이키즈 현진",
       "imageUrl": "/uploads/1770254488564-415880528.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 154
@@ -1501,7 +1512,7 @@
       "worldcupId": 3,
       "name": "스트레이키즈 방찬",
       "imageUrl": "/uploads/1770254488565-430972004.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 155
@@ -1555,7 +1566,7 @@
       "worldcupId": 3,
       "name": "세븐틴 원우",
       "imageUrl": "/uploads/1770254498952-40474123.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 161
@@ -1636,7 +1647,7 @@
       "worldcupId": 3,
       "name": "비투비 육성재",
       "imageUrl": "/uploads/1770254537234-146057239.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 170
@@ -1663,7 +1674,7 @@
       "worldcupId": 3,
       "name": "보이넥스트도어 운학",
       "imageUrl": "/uploads/1770254551648-352933538.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 173
@@ -1681,7 +1692,7 @@
       "worldcupId": 3,
       "name": "방탄소년단 지민",
       "imageUrl": "/uploads/1770254564674-29585811.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 175
@@ -1744,7 +1755,7 @@
       "worldcupId": 3,
       "name": "몬스타엑스 민혁",
       "imageUrl": "/uploads/1770254577081-487183652.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 182
@@ -1762,7 +1773,7 @@
       "worldcupId": 3,
       "name": "라이즈 원빈",
       "imageUrl": "/uploads/1770254604796-905686306.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 184
@@ -1771,7 +1782,7 @@
       "worldcupId": 3,
       "name": "라이즈 소희",
       "imageUrl": "/uploads/1770254604797-353162498.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 185
@@ -1807,7 +1818,7 @@
       "worldcupId": 3,
       "name": "2PM 준호",
       "imageUrl": "/uploads/1770254634483-393241207.jpg",
-      "winCount": 0,
+      "winCount": 3,
       "appearCount": 0,
       "finalCount": 0,
       "id": 189
@@ -1816,7 +1827,7 @@
       "worldcupId": 3,
       "name": "2PM 택연",
       "imageUrl": "/uploads/1770254634481-550071629.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 190
@@ -1843,7 +1854,7 @@
       "worldcupId": 4,
       "name": "qwer - 히나",
       "imageUrl": "/uploads/1770257899045-824724834.webp",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 193
@@ -1852,7 +1863,7 @@
       "worldcupId": 4,
       "name": "qwer - 쵸단",
       "imageUrl": "/uploads/1770257899046-254128789.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 194
@@ -1897,7 +1908,7 @@
       "worldcupId": 4,
       "name": "프로미스나인 이채영",
       "imageUrl": "/uploads/1770257899060-78882710.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 199
@@ -1906,7 +1917,7 @@
       "worldcupId": 4,
       "name": "프로미스나인 이나경",
       "imageUrl": "/uploads/1770257899063-997332905.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 200
@@ -1924,7 +1935,7 @@
       "worldcupId": 4,
       "name": "하츠투하츠 - 지우",
       "imageUrl": "/uploads/1770257899071-58433426.webp",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 202
@@ -1951,7 +1962,7 @@
       "worldcupId": 4,
       "name": "프로미스나인 박지원",
       "imageUrl": "/uploads/1770257899074-305055329.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 205
@@ -1978,7 +1989,7 @@
       "worldcupId": 4,
       "name": "프로미스나인 백지헌",
       "imageUrl": "/uploads/1770257899083-600295437.jpg",
-      "winCount": 0,
+      "winCount": 3,
       "appearCount": 0,
       "finalCount": 0,
       "id": 208
@@ -1987,7 +1998,7 @@
       "worldcupId": 4,
       "name": "트와이스 쯔위",
       "imageUrl": "/uploads/1770257899084-626436653.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 209
@@ -2068,7 +2079,7 @@
       "worldcupId": 4,
       "name": "케플러 김채현",
       "imageUrl": "/uploads/1770257899113-695573068.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 218
@@ -2104,7 +2115,7 @@
       "worldcupId": 4,
       "name": "있지 채령",
       "imageUrl": "/uploads/1770257899127-214142740.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 222
@@ -2113,7 +2124,7 @@
       "worldcupId": 4,
       "name": "케플러 최유진",
       "imageUrl": "/uploads/1770257899127-465359042.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 223
@@ -2140,7 +2151,7 @@
       "worldcupId": 4,
       "name": "키오프 - 벨",
       "imageUrl": "/uploads/1770257899108-879743469.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 226
@@ -2149,7 +2160,7 @@
       "worldcupId": 4,
       "name": "이안",
       "imageUrl": "/uploads/1770257899136-92743032.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 227
@@ -2167,7 +2178,7 @@
       "worldcupId": 4,
       "name": "있지 리아",
       "imageUrl": "/uploads/1770257899135-905925674.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 229
@@ -2185,7 +2196,7 @@
       "worldcupId": 4,
       "name": "이달의소녀 츄",
       "imageUrl": "/uploads/1770257899140-127549160.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 231
@@ -2194,7 +2205,7 @@
       "worldcupId": 4,
       "name": "오마이걸 유아",
       "imageUrl": "/uploads/1770257899138-205840246.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 232
@@ -2230,7 +2241,7 @@
       "worldcupId": 4,
       "name": "에이핑크 정은지",
       "imageUrl": "/uploads/1770257899153-323868342.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 236
@@ -2257,7 +2268,7 @@
       "worldcupId": 4,
       "name": "윈터",
       "imageUrl": "/uploads/1770257899165-424158516.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 239
@@ -2302,7 +2313,7 @@
       "worldcupId": 4,
       "name": "있지 류진",
       "imageUrl": "/uploads/1770257899171-357199518.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 244
@@ -2338,7 +2349,7 @@
       "worldcupId": 4,
       "name": "아이브 안유진",
       "imageUrl": "/uploads/1770257899178-109600271.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 248
@@ -2347,7 +2358,7 @@
       "worldcupId": 4,
       "name": "아이브 레이",
       "imageUrl": "/uploads/1770257899179-385743473.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 249
@@ -2374,7 +2385,7 @@
       "worldcupId": 4,
       "name": "태연",
       "imageUrl": "/uploads/1770257899183-421681455.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 252
@@ -2383,7 +2394,7 @@
       "worldcupId": 4,
       "name": "수지",
       "imageUrl": "/uploads/1770257899183-484927392.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 253
@@ -2428,7 +2439,7 @@
       "worldcupId": 5,
       "name": "호주(시드니)",
       "imageUrl": "/uploads/1770258071732-681587106.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 258
@@ -2455,7 +2466,7 @@
       "worldcupId": 5,
       "name": "헝가리(부다페스트)",
       "imageUrl": "/uploads/1770258071733-330048267.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 261
@@ -2464,7 +2475,7 @@
       "worldcupId": 5,
       "name": "한국(강릉)",
       "imageUrl": "/uploads/1770258071747-168954567.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 262
@@ -2473,7 +2484,7 @@
       "worldcupId": 5,
       "name": "한국(제주도)",
       "imageUrl": "/uploads/1770258071736-389726830.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 263
@@ -2482,7 +2493,7 @@
       "worldcupId": 5,
       "name": "하와이(호놀룰루)",
       "imageUrl": "/uploads/1770258071748-519206676.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 264
@@ -2509,7 +2520,7 @@
       "worldcupId": 5,
       "name": "필란드(헬싱키)",
       "imageUrl": "/uploads/1770258071750-87343502.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 267
@@ -2527,7 +2538,7 @@
       "worldcupId": 5,
       "name": "프랑스(니스)",
       "imageUrl": "/uploads/1770258071753-369117052.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 269
@@ -2545,7 +2556,7 @@
       "worldcupId": 5,
       "name": "페루(마추픽추)",
       "imageUrl": "/uploads/1770258071755-589815937.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 271
@@ -2554,7 +2565,7 @@
       "worldcupId": 5,
       "name": "터키(카파도키아)",
       "imageUrl": "/uploads/1770258071755-362634742.jpg",
-      "winCount": 0,
+      "winCount": 3,
       "appearCount": 0,
       "finalCount": 0,
       "id": 272
@@ -2563,7 +2574,7 @@
       "worldcupId": 5,
       "name": "태국(푸켓)",
       "imageUrl": "/uploads/1770258071755-487905176.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 273
@@ -2572,7 +2583,7 @@
       "worldcupId": 5,
       "name": "터키(이스탄불)",
       "imageUrl": "/uploads/1770258071755-388274033.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 274
@@ -2581,7 +2592,7 @@
       "worldcupId": 5,
       "name": "태국(방콕)",
       "imageUrl": "/uploads/1770258071757-414674575.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 275
@@ -2599,7 +2610,7 @@
       "worldcupId": 5,
       "name": "캐나다(토론토)",
       "imageUrl": "/uploads/1770258071760-106378550.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 277
@@ -2617,7 +2628,7 @@
       "worldcupId": 5,
       "name": "캐나다(밴쿠버)",
       "imageUrl": "/uploads/1770258071761-78841633.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 279
@@ -2626,7 +2637,7 @@
       "worldcupId": 5,
       "name": "중국(장가계)",
       "imageUrl": "/uploads/1770258071762-880441299.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 280
@@ -2635,7 +2646,7 @@
       "worldcupId": 5,
       "name": "중국(베이징)",
       "imageUrl": "/uploads/1770258071762-824795386.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 281
@@ -2644,7 +2655,7 @@
       "worldcupId": 5,
       "name": "중국(상하이)",
       "imageUrl": "/uploads/1770258071762-475384867.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 282
@@ -2653,7 +2664,7 @@
       "worldcupId": 5,
       "name": "일본(후쿠오카)",
       "imageUrl": "/uploads/1770258071764-57029443.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 283
@@ -2662,7 +2673,7 @@
       "worldcupId": 5,
       "name": "일본(오사카)",
       "imageUrl": "/uploads/1770258071765-729053593.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 284
@@ -2680,7 +2691,7 @@
       "worldcupId": 5,
       "name": "일본(도쿄)",
       "imageUrl": "/uploads/1770258071766-34009813.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 286
@@ -2698,7 +2709,7 @@
       "worldcupId": 5,
       "name": "인도네시아(발리)",
       "imageUrl": "/uploads/1770258071767-899923836.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 288
@@ -2716,7 +2727,7 @@
       "worldcupId": 5,
       "name": "이탈리아(로마)",
       "imageUrl": "/uploads/1770258071769-104425954.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 290
@@ -2725,7 +2736,7 @@
       "worldcupId": 5,
       "name": "이탈리아(밀라노)",
       "imageUrl": "/uploads/1770258071769-933219981.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 291
@@ -2743,7 +2754,7 @@
       "worldcupId": 5,
       "name": "이집트(카이로)",
       "imageUrl": "/uploads/1770258071770-263578406.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 293
@@ -2752,7 +2763,7 @@
       "worldcupId": 5,
       "name": "아이슬란드(레이캬비크)",
       "imageUrl": "/uploads/1770258071772-387732098.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 294
@@ -2797,7 +2808,7 @@
       "worldcupId": 5,
       "name": "스페인(마드리드)",
       "imageUrl": "/uploads/1770258071775-67406365.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 299
@@ -2833,7 +2844,7 @@
       "worldcupId": 5,
       "name": "베트남(하노이)",
       "imageUrl": "/uploads/1770258071778-868507957.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 303
@@ -2842,7 +2853,7 @@
       "worldcupId": 5,
       "name": "베트남(호치민)",
       "imageUrl": "/uploads/1770258071779-255396497.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 304
@@ -2860,7 +2871,7 @@
       "worldcupId": 5,
       "name": "미국(로스엔젤레스)",
       "imageUrl": "/uploads/1770258071781-623287600.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 306
@@ -2878,7 +2889,7 @@
       "worldcupId": 5,
       "name": "미국(뉴욕)",
       "imageUrl": "/uploads/1770258071783-186408252.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 308
@@ -2896,7 +2907,7 @@
       "worldcupId": 5,
       "name": "멕시코(칸쿤)",
       "imageUrl": "/uploads/1770258071787-520849453.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 310
@@ -2932,7 +2943,7 @@
       "worldcupId": 5,
       "name": "독일(베를린)",
       "imageUrl": "/uploads/1770258071789-674200412.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 314
@@ -2941,7 +2952,7 @@
       "worldcupId": 5,
       "name": "대만(타이베이)",
       "imageUrl": "/uploads/1770258071789-91975377.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 315
@@ -2959,7 +2970,7 @@
       "worldcupId": 5,
       "name": "노르웨이(오슬로)",
       "imageUrl": "/uploads/1770258071798-466019419.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 317
@@ -3031,7 +3042,7 @@
       "worldcupId": 6,
       "name": "그린 아나콘다",
       "imageUrl": "/uploads/1770258428749-308914950.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 325
@@ -3094,7 +3105,7 @@
       "worldcupId": 6,
       "name": "도사견",
       "imageUrl": "/uploads/1770258428761-800869591.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 332
@@ -3103,7 +3114,7 @@
       "worldcupId": 6,
       "name": "로트와일러",
       "imageUrl": "/uploads/1770258428762-609421208.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 333
@@ -3112,7 +3123,7 @@
       "worldcupId": 6,
       "name": "말코손바닥사슴",
       "imageUrl": "/uploads/1770258428763-459381121.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 334
@@ -3121,7 +3132,7 @@
       "worldcupId": 6,
       "name": "멘드릴",
       "imageUrl": "/uploads/1770258428765-438855600.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 335
@@ -3130,7 +3141,7 @@
       "worldcupId": 6,
       "name": "바다악어",
       "imageUrl": "/uploads/1770258428766-878024089.jpg",
-      "winCount": 0,
+      "winCount": 3,
       "appearCount": 0,
       "finalCount": 0,
       "id": 336
@@ -3139,7 +3150,7 @@
       "worldcupId": 6,
       "name": "바다코끼리",
       "imageUrl": "/uploads/1770258428767-602394586.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 337
@@ -3148,7 +3159,7 @@
       "worldcupId": 6,
       "name": "반달가슴곰",
       "imageUrl": "/uploads/1770258428767-888605666.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 338
@@ -3157,7 +3168,7 @@
       "worldcupId": 6,
       "name": "벵골호랑이",
       "imageUrl": "/uploads/1770258428768-573899248.jpg",
-      "winCount": 0,
+      "winCount": 3,
       "appearCount": 0,
       "finalCount": 0,
       "id": 339
@@ -3175,7 +3186,7 @@
       "worldcupId": 6,
       "name": "북극곰",
       "imageUrl": "/uploads/1770258428771-952720017.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 341
@@ -3184,7 +3195,7 @@
       "worldcupId": 6,
       "name": "보르네오 오랑우탄",
       "imageUrl": "/uploads/1770258428771-73099548.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 342
@@ -3211,7 +3222,7 @@
       "worldcupId": 6,
       "name": "사자",
       "imageUrl": "/uploads/1770258428773-917319380.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 345
@@ -3229,7 +3240,7 @@
       "worldcupId": 6,
       "name": "스라소니",
       "imageUrl": "/uploads/1770258428775-94745466.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 347
@@ -3256,7 +3267,7 @@
       "worldcupId": 6,
       "name": "아마존 큰수달",
       "imageUrl": "/uploads/1770258428777-301950210.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 350
@@ -3274,7 +3285,7 @@
       "worldcupId": 6,
       "name": "아프리카 물소",
       "imageUrl": "/uploads/1770258428778-826019817.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 352
@@ -3283,7 +3294,7 @@
       "worldcupId": 6,
       "name": "아이벡스",
       "imageUrl": "/uploads/1770258428779-777282952.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 353
@@ -3355,7 +3366,7 @@
       "worldcupId": 6,
       "name": "자이언트숲멧돼지",
       "imageUrl": "/uploads/1770258428784-986791022.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 361
@@ -3364,7 +3375,7 @@
       "worldcupId": 6,
       "name": "자칼",
       "imageUrl": "/uploads/1770258428784-315798944.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 362
@@ -3373,7 +3384,7 @@
       "worldcupId": 6,
       "name": "자이언트 일런드",
       "imageUrl": "/uploads/1770258428784-756565026.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 363
@@ -3391,7 +3402,7 @@
       "worldcupId": 6,
       "name": "점박이하이애나",
       "imageUrl": "/uploads/1770258428786-59422995.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 365
@@ -3409,7 +3420,7 @@
       "worldcupId": 6,
       "name": "천산갑",
       "imageUrl": "/uploads/1770258428786-143506268.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 367
@@ -3418,7 +3429,7 @@
       "worldcupId": 6,
       "name": "치타",
       "imageUrl": "/uploads/1770258428787-701925909.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 368
@@ -3436,7 +3447,7 @@
       "worldcupId": 6,
       "name": "코디액 베어",
       "imageUrl": "/uploads/1770258428789-746921861.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 370
@@ -3463,7 +3474,7 @@
       "worldcupId": 6,
       "name": "큰개미핥기",
       "imageUrl": "/uploads/1770258428791-909600961.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 373
@@ -3490,7 +3501,7 @@
       "worldcupId": 6,
       "name": "표범",
       "imageUrl": "/uploads/1770258428791-552156516.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 376
@@ -3535,7 +3546,7 @@
       "worldcupId": 6,
       "name": "회색늑대",
       "imageUrl": "/uploads/1770258428798-342199431.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 381
@@ -3544,7 +3555,7 @@
       "worldcupId": 6,
       "name": "핏 불 테리어",
       "imageUrl": "/uploads/1770258428798-119566434.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 382
@@ -3553,7 +3564,7 @@
       "worldcupId": 6,
       "name": "흰머리수리",
       "imageUrl": "/uploads/1770258428799-465760975.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 383
@@ -3562,7 +3573,7 @@
       "worldcupId": 6,
       "name": "흰코뿔소",
       "imageUrl": "/uploads/1770258428800-870050039.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 384
@@ -3571,7 +3582,7 @@
       "worldcupId": 7,
       "name": "간장게장",
       "imageUrl": "/uploads/1770258725042-899294807.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 385
@@ -3607,7 +3618,7 @@
       "worldcupId": 7,
       "name": "곱창",
       "imageUrl": "/uploads/1770258725044-740314282.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 389
@@ -3625,7 +3636,7 @@
       "worldcupId": 7,
       "name": "규카츠",
       "imageUrl": "/uploads/1770258725050-267296439.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 391
@@ -3679,7 +3690,7 @@
       "worldcupId": 7,
       "name": "대패삼겹살",
       "imageUrl": "/uploads/1770258725058-507400700.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 397
@@ -3733,7 +3744,7 @@
       "worldcupId": 7,
       "name": "된장찌개",
       "imageUrl": "/uploads/1770258725063-569156839.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 403
@@ -3841,7 +3852,7 @@
       "worldcupId": 7,
       "name": "뿌링클",
       "imageUrl": "/uploads/1770258725075-515991689.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 415
@@ -3877,7 +3888,7 @@
       "worldcupId": 7,
       "name": "소갈비찜",
       "imageUrl": "/uploads/1770258725081-486162655.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 419
@@ -3886,7 +3897,7 @@
       "worldcupId": 7,
       "name": "순대국밥",
       "imageUrl": "/uploads/1770258725081-823233598.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 420
@@ -3922,7 +3933,7 @@
       "worldcupId": 7,
       "name": "양갈비스테이크",
       "imageUrl": "/uploads/1770258725085-870294137.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 424
@@ -3967,7 +3978,7 @@
       "worldcupId": 7,
       "name": "연어초밥",
       "imageUrl": "/uploads/1770258725086-758550916.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 429
@@ -4093,7 +4104,7 @@
       "worldcupId": 7,
       "name": "킹크랩찜",
       "imageUrl": "/uploads/1770258725102-213590660.jpg",
-      "winCount": 0,
+      "winCount": 2,
       "appearCount": 0,
       "finalCount": 0,
       "id": 443
@@ -4102,7 +4113,7 @@
       "worldcupId": 7,
       "name": "티본스테이크",
       "imageUrl": "/uploads/1770258725102-76564961.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 444
@@ -4129,7 +4140,7 @@
       "worldcupId": 7,
       "name": "후라이드치킨",
       "imageUrl": "/uploads/1770258725103-844083902.jpg",
-      "winCount": 0,
+      "winCount": 1,
       "appearCount": 0,
       "finalCount": 0,
       "id": 447
@@ -4142,6 +4153,591 @@
       "appearCount": 0,
       "finalCount": 0,
       "id": 448
+    },
+    {
+      "worldcupId": 8,
+      "name": "갈아만든배",
+      "imageUrl": "/uploads/1770263098016-47272318.webp",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 449
+    },
+    {
+      "worldcupId": 8,
+      "name": "비타500",
+      "imageUrl": "/uploads/1770263100290-917887781.jpg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 450
+    },
+    {
+      "worldcupId": 8,
+      "name": "요구르트",
+      "imageUrl": "/uploads/1770263100775-155123251.jpg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 451
+    },
+    {
+      "worldcupId": 8,
+      "name": "웰치스",
+      "imageUrl": "/uploads/1770263100789-561150810.webp",
+      "winCount": 2,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 452
+    },
+    {
+      "worldcupId": 8,
+      "name": "웰치스 제로",
+      "imageUrl": "/uploads/1770263100783-515799587.jpeg",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 453
+    },
+    {
+      "worldcupId": 8,
+      "name": "칠성사이다 제로",
+      "imageUrl": "/uploads/1770263100924-941376420.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 454
+    },
+    {
+      "worldcupId": 8,
+      "name": "초코에몽",
+      "imageUrl": "/uploads/1770263100923-726597153.jpg",
+      "winCount": 2,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 455
+    },
+    {
+      "worldcupId": 8,
+      "name": "커피맛우유",
+      "imageUrl": "/uploads/1770263100995-563894612.jpeg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 456
+    },
+    {
+      "worldcupId": 8,
+      "name": "게토레이",
+      "imageUrl": "/uploads/1770263098036-454222734.jpg",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 457
+    },
+    {
+      "worldcupId": 8,
+      "name": "칠성사이다",
+      "imageUrl": "/uploads/1770263101152-120478570.jpg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 458
+    },
+    {
+      "worldcupId": 8,
+      "name": "코카콜라 카페인 제로",
+      "imageUrl": "/uploads/1770263101153-234024371.jpg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 459
+    },
+    {
+      "worldcupId": 8,
+      "name": "코카콜라 제로",
+      "imageUrl": "/uploads/1770263101156-782781970.webp",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 460
+    },
+    {
+      "worldcupId": 8,
+      "name": "코카콜라",
+      "imageUrl": "/uploads/1770263101154-917165853.png",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 461
+    },
+    {
+      "worldcupId": 8,
+      "name": "코코팜 망고코넛",
+      "imageUrl": "/uploads/1770263101220-255429910.jpeg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 462
+    },
+    {
+      "worldcupId": 8,
+      "name": "코코팜 포도",
+      "imageUrl": "/uploads/1770263101273-944057282.webp",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 463
+    },
+    {
+      "worldcupId": 8,
+      "name": "코코팜 피치핑크복숭아",
+      "imageUrl": "/uploads/1770263101556-696931483.jpeg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 464
+    },
+    {
+      "worldcupId": 8,
+      "name": "펩시콜라 제로 카페인",
+      "imageUrl": "/uploads/1770263101557-410166403.jpeg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 465
+    },
+    {
+      "worldcupId": 8,
+      "name": "파워에이드",
+      "imageUrl": "/uploads/1770263101568-919303833.jpeg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 466
+    },
+    {
+      "worldcupId": 8,
+      "name": "코코팜 화이트 요구르트",
+      "imageUrl": "/uploads/1770263101558-999084371.jpg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 467
+    },
+    {
+      "worldcupId": 8,
+      "name": "닥터페퍼 제로",
+      "imageUrl": "/uploads/1770263098165-18315439.jpg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 468
+    },
+    {
+      "worldcupId": 8,
+      "name": "초록매실",
+      "imageUrl": "/uploads/1770263101573-752149085.webp",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 469
+    },
+    {
+      "worldcupId": 8,
+      "name": "펩시콜라 제로 라임",
+      "imageUrl": "/uploads/1770263101646-637267653.jpg",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 1,
+      "id": 470
+    },
+    {
+      "worldcupId": 8,
+      "name": "포카리스웨트",
+      "imageUrl": "/uploads/1770263101788-758504322.jpeg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 471
+    },
+    {
+      "worldcupId": 8,
+      "name": "펩시콜라",
+      "imageUrl": "/uploads/1770263101787-984278273.jpg",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 472
+    },
+    {
+      "worldcupId": 8,
+      "name": "핫식스 더 킹 러쉬",
+      "imageUrl": "/uploads/1770263101788-334825880.jpg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 473
+    },
+    {
+      "worldcupId": 8,
+      "name": "핫식스 더 킹 아이스피치",
+      "imageUrl": "/uploads/1770263101789-752998989.jpeg",
+      "winCount": 2,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 474
+    },
+    {
+      "worldcupId": 8,
+      "name": "핫식스 더 킹 제로",
+      "imageUrl": "/uploads/1770263101791-801452614.jpg",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 475
+    },
+    {
+      "worldcupId": 8,
+      "name": "핫식스 더 킹 파워",
+      "imageUrl": "/uploads/1770263101963-163049834.jpg",
+      "winCount": 2,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 476
+    },
+    {
+      "worldcupId": 8,
+      "name": "나랑드사이다",
+      "imageUrl": "/uploads/1770263098125-924044678.jpg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 477
+    },
+    {
+      "worldcupId": 8,
+      "name": "핫식스(구)",
+      "imageUrl": "/uploads/1770263102274-616465619.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 478
+    },
+    {
+      "worldcupId": 8,
+      "name": "환타 파인애플맛",
+      "imageUrl": "/uploads/1770263102284-245211440.webp",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 479
+    },
+    {
+      "worldcupId": 8,
+      "name": "핫식스 더 킹 애플 홀릭",
+      "imageUrl": "/uploads/1770263102272-282215914.jpeg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 480
+    },
+    {
+      "worldcupId": 8,
+      "name": "핫식스 더 킹 퍼플 그레이프",
+      "imageUrl": "/uploads/1770263102273-744216308.jpg",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 481
+    },
+    {
+      "worldcupId": 8,
+      "name": "환타 오렌지맛",
+      "imageUrl": "/uploads/1770263102275-452379383.jpeg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 482
+    },
+    {
+      "worldcupId": 8,
+      "name": "환타 포도맛",
+      "imageUrl": "/uploads/1770263102455-913781349.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 483
+    },
+    {
+      "worldcupId": 8,
+      "name": "닥터페퍼 스트로베리 제로",
+      "imageUrl": "/uploads/1770263098163-881320414.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 484
+    },
+    {
+      "worldcupId": 8,
+      "name": "닥터페퍼",
+      "imageUrl": "/uploads/1770263098271-51352132.webp",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 485
+    },
+    {
+      "worldcupId": 8,
+      "name": "데미소다 레몬맛",
+      "imageUrl": "/uploads/1770263098489-180610437.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 486
+    },
+    {
+      "worldcupId": 8,
+      "name": "데미소다 사과맛",
+      "imageUrl": "/uploads/1770263098491-577696883.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 487
+    },
+    {
+      "worldcupId": 8,
+      "name": "딸기에몽",
+      "imageUrl": "/uploads/1770263098556-640011043.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 488
+    },
+    {
+      "worldcupId": 8,
+      "name": "데미소다 오렌지맛",
+      "imageUrl": "/uploads/1770263098555-944833910.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 489
+    },
+    {
+      "worldcupId": 8,
+      "name": "모구모구 딸기맛",
+      "imageUrl": "/uploads/1770263098557-451532976.jpg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 490
+    },
+    {
+      "worldcupId": 8,
+      "name": "모구모구 복숭아맛",
+      "imageUrl": "/uploads/1770263098740-616558588.jpeg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 491
+    },
+    {
+      "worldcupId": 8,
+      "name": "모구모구 서머 베리즈",
+      "imageUrl": "/uploads/1770263098892-984997758.webp",
+      "winCount": 2,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 492
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 오지 스타일 레모네이드",
+      "imageUrl": "/uploads/1770263098905-670066063.webp",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 493
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 울트라 선라이즈",
+      "imageUrl": "/uploads/1770263098897-931413717.webp",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 494
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 망고 로코",
+      "imageUrl": "/uploads/1770263098903-803121313.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 495
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 울트라 스트로베리 드림즈",
+      "imageUrl": "/uploads/1770263098974-837019764.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 496
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 울트라 시트라",
+      "imageUrl": "/uploads/1770263099246-945609756.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 497
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 울트라 피치 킨",
+      "imageUrl": "/uploads/1770263099358-619261302.webp",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 498
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 울트라",
+      "imageUrl": "/uploads/1770263099357-137117151.webp",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 499
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 제로 슈거",
+      "imageUrl": "/uploads/1770263099366-640803707.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 500
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 파이프라인 펀치",
+      "imageUrl": "/uploads/1770263099371-495006474.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 501
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지 파피용",
+      "imageUrl": "/uploads/1770263099565-905939846.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 502
+    },
+    {
+      "worldcupId": 8,
+      "name": "몬스터 에너지",
+      "imageUrl": "/uploads/1770263099790-344742269.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 503
+    },
+    {
+      "worldcupId": 8,
+      "name": "미에로화이바",
+      "imageUrl": "/uploads/1770263099792-586796422.jpeg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 504
+    },
+    {
+      "worldcupId": 8,
+      "name": "바나나맛우유",
+      "imageUrl": "/uploads/1770263099805-400920775.webp",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 505
+    },
+    {
+      "worldcupId": 8,
+      "name": "밀키스",
+      "imageUrl": "/uploads/1770263099800-781871203.jpg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 506
+    },
+    {
+      "worldcupId": 8,
+      "name": "보리차",
+      "imageUrl": "/uploads/1770263099806-98567095.jpg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 507
+    },
+    {
+      "worldcupId": 8,
+      "name": "비락식혜",
+      "imageUrl": "/uploads/1770263099940-204695737.webp",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 508
+    },
+    {
+      "worldcupId": 8,
+      "name": "서울우유 딸기맛",
+      "imageUrl": "/uploads/1770263100291-222549784.jpeg",
+      "winCount": 1,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 509
+    },
+    {
+      "worldcupId": 8,
+      "name": "암베사",
+      "imageUrl": "/uploads/1770263100293-791214337.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 510
+    },
+    {
+      "worldcupId": 8,
+      "name": "여명808",
+      "imageUrl": "/uploads/1770263100294-170546409.webp",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 511
+    },
+    {
+      "worldcupId": 8,
+      "name": "옥수수수염차",
+      "imageUrl": "/uploads/1770263100440-163932536.webp",
+      "winCount": 1,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 512
+    },
+    {
+      "worldcupId": 8,
+      "name": "서울우유 커피맛",
+      "imageUrl": "/uploads/1770263100292-94045852.jpg",
+      "winCount": 0,
+      "appearCount": 1,
+      "finalCount": 0,
+      "id": 513
     }
   ],
   "quizzes": [
@@ -4153,8 +4749,8 @@
       "userId": 5,
       "totalQuestions": 10,
       "createdAt": "2026-02-05T02:50:46.261Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 24,
+      "playCount": 20,
       "id": 1
     },
     {
@@ -4165,8 +4761,8 @@
       "userId": 5,
       "totalQuestions": 10,
       "createdAt": "2026-02-05T03:07:08.518Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 48,
+      "playCount": 31,
       "id": 2
     },
     {
@@ -4177,8 +4773,8 @@
       "userId": 5,
       "totalQuestions": 10,
       "createdAt": "2026-02-05T03:09:24.404Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 50,
+      "playCount": 34,
       "id": 3
     },
     {
@@ -4189,8 +4785,8 @@
       "userId": 5,
       "totalQuestions": 10,
       "createdAt": "2026-02-05T03:11:49.377Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 48,
+      "playCount": 47,
       "id": 4
     },
     {
@@ -4201,8 +4797,8 @@
       "userId": 5,
       "totalQuestions": 10,
       "createdAt": "2026-02-05T03:16:48.458Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 47,
+      "playCount": 15,
       "id": 5
     },
     {
@@ -4213,12 +4809,1782 @@
       "userId": 5,
       "totalQuestions": 10,
       "createdAt": "2026-02-05T03:19:55.242Z",
-      "viewCount": 0,
-      "playCount": 0,
+      "viewCount": 49,
+      "playCount": 21,
       "id": 6
+    },
+    {
+      "title": "영화/드라마 명대사 초성 퀴즈",
+      "description": "밈 천재 당신을 초대합니다",
+      "categoryId": 13,
+      "thumbnail": "/uploads/1770256298576-959007025.png",
+      "userId": 6,
+      "totalQuestions": 10,
+      "createdAt": "2026-02-05T02:25:01.079Z",
+      "viewCount": 47,
+      "playCount": 37,
+      "id": 7
     }
   ],
-  "worldcup_results": [],
+  "worldcup_results": [
+    {
+      "id": 1,
+      "worldcupId": 1,
+      "winnerId": 35,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.348Z"
+    },
+    {
+      "id": 2,
+      "worldcupId": 1,
+      "winnerId": 46,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 3,
+      "worldcupId": 1,
+      "winnerId": 61,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 4,
+      "worldcupId": 1,
+      "winnerId": 48,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 5,
+      "worldcupId": 1,
+      "winnerId": 29,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 6,
+      "worldcupId": 1,
+      "winnerId": 57,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 7,
+      "worldcupId": 1,
+      "winnerId": 22,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 8,
+      "worldcupId": 1,
+      "winnerId": 18,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 9,
+      "worldcupId": 1,
+      "winnerId": 19,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 10,
+      "worldcupId": 1,
+      "winnerId": 21,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 11,
+      "worldcupId": 1,
+      "winnerId": 61,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 12,
+      "worldcupId": 1,
+      "winnerId": 38,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 13,
+      "worldcupId": 1,
+      "winnerId": 56,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 14,
+      "worldcupId": 1,
+      "winnerId": 39,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 15,
+      "worldcupId": 1,
+      "winnerId": 57,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 16,
+      "worldcupId": 1,
+      "winnerId": 31,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 17,
+      "worldcupId": 1,
+      "winnerId": 64,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 18,
+      "worldcupId": 1,
+      "winnerId": 49,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 19,
+      "worldcupId": 1,
+      "winnerId": 10,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 20,
+      "worldcupId": 1,
+      "winnerId": 54,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 21,
+      "worldcupId": 1,
+      "winnerId": 35,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 22,
+      "worldcupId": 1,
+      "winnerId": 35,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 23,
+      "worldcupId": 1,
+      "winnerId": 38,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 24,
+      "worldcupId": 1,
+      "winnerId": 49,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 25,
+      "worldcupId": 1,
+      "winnerId": 21,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 26,
+      "worldcupId": 1,
+      "winnerId": 62,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 27,
+      "worldcupId": 1,
+      "winnerId": 40,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 28,
+      "worldcupId": 1,
+      "winnerId": 19,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 29,
+      "worldcupId": 1,
+      "winnerId": 40,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 30,
+      "worldcupId": 1,
+      "winnerId": 46,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 31,
+      "worldcupId": 1,
+      "winnerId": 35,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 32,
+      "worldcupId": 1,
+      "winnerId": 12,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 33,
+      "worldcupId": 1,
+      "winnerId": 61,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 34,
+      "worldcupId": 1,
+      "winnerId": 64,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 35,
+      "worldcupId": 1,
+      "winnerId": 63,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 36,
+      "worldcupId": 2,
+      "winnerId": 107,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 37,
+      "worldcupId": 2,
+      "winnerId": 119,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 38,
+      "worldcupId": 2,
+      "winnerId": 122,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 39,
+      "worldcupId": 2,
+      "winnerId": 90,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 40,
+      "worldcupId": 2,
+      "winnerId": 72,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 41,
+      "worldcupId": 2,
+      "winnerId": 91,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 42,
+      "worldcupId": 2,
+      "winnerId": 75,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 43,
+      "worldcupId": 2,
+      "winnerId": 86,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 44,
+      "worldcupId": 2,
+      "winnerId": 105,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 45,
+      "worldcupId": 2,
+      "winnerId": 68,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 46,
+      "worldcupId": 2,
+      "winnerId": 118,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 47,
+      "worldcupId": 2,
+      "winnerId": 124,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 48,
+      "worldcupId": 2,
+      "winnerId": 110,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 49,
+      "worldcupId": 2,
+      "winnerId": 71,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 50,
+      "worldcupId": 2,
+      "winnerId": 116,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 51,
+      "worldcupId": 2,
+      "winnerId": 100,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 52,
+      "worldcupId": 2,
+      "winnerId": 90,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 53,
+      "worldcupId": 2,
+      "winnerId": 106,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 54,
+      "worldcupId": 2,
+      "winnerId": 66,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 55,
+      "worldcupId": 2,
+      "winnerId": 75,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 56,
+      "worldcupId": 2,
+      "winnerId": 120,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 57,
+      "worldcupId": 2,
+      "winnerId": 76,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 58,
+      "worldcupId": 2,
+      "winnerId": 109,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 59,
+      "worldcupId": 2,
+      "winnerId": 109,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 60,
+      "worldcupId": 2,
+      "winnerId": 65,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 61,
+      "worldcupId": 2,
+      "winnerId": 112,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 62,
+      "worldcupId": 2,
+      "winnerId": 78,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 63,
+      "worldcupId": 2,
+      "winnerId": 90,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 64,
+      "worldcupId": 2,
+      "winnerId": 80,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 65,
+      "worldcupId": 2,
+      "winnerId": 69,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 66,
+      "worldcupId": 2,
+      "winnerId": 116,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 67,
+      "worldcupId": 3,
+      "winnerId": 138,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 68,
+      "worldcupId": 3,
+      "winnerId": 185,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 69,
+      "worldcupId": 3,
+      "winnerId": 184,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 70,
+      "worldcupId": 3,
+      "winnerId": 150,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 71,
+      "worldcupId": 3,
+      "winnerId": 154,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 72,
+      "worldcupId": 3,
+      "winnerId": 182,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 73,
+      "worldcupId": 3,
+      "winnerId": 182,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 74,
+      "worldcupId": 3,
+      "winnerId": 173,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 75,
+      "worldcupId": 3,
+      "winnerId": 189,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 76,
+      "worldcupId": 3,
+      "winnerId": 190,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 77,
+      "worldcupId": 3,
+      "winnerId": 189,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 78,
+      "worldcupId": 3,
+      "winnerId": 189,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 79,
+      "worldcupId": 3,
+      "winnerId": 140,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 80,
+      "worldcupId": 3,
+      "winnerId": 175,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 81,
+      "worldcupId": 3,
+      "winnerId": 155,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 82,
+      "worldcupId": 3,
+      "winnerId": 161,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 83,
+      "worldcupId": 3,
+      "winnerId": 170,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 84,
+      "worldcupId": 3,
+      "winnerId": 129,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 85,
+      "worldcupId": 3,
+      "winnerId": 140,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 86,
+      "worldcupId": 4,
+      "winnerId": 252,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 87,
+      "worldcupId": 4,
+      "winnerId": 194,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 88,
+      "worldcupId": 4,
+      "winnerId": 231,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 89,
+      "worldcupId": 4,
+      "winnerId": 232,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 90,
+      "worldcupId": 4,
+      "winnerId": 199,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 91,
+      "worldcupId": 4,
+      "winnerId": 249,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 92,
+      "worldcupId": 4,
+      "winnerId": 222,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 93,
+      "worldcupId": 4,
+      "winnerId": 253,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 94,
+      "worldcupId": 4,
+      "winnerId": 223,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 95,
+      "worldcupId": 4,
+      "winnerId": 218,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 96,
+      "worldcupId": 4,
+      "winnerId": 208,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 97,
+      "worldcupId": 4,
+      "winnerId": 236,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 98,
+      "worldcupId": 4,
+      "winnerId": 193,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 99,
+      "worldcupId": 4,
+      "winnerId": 208,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 100,
+      "worldcupId": 4,
+      "winnerId": 205,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 101,
+      "worldcupId": 4,
+      "winnerId": 229,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 102,
+      "worldcupId": 4,
+      "winnerId": 231,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 103,
+      "worldcupId": 4,
+      "winnerId": 226,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 104,
+      "worldcupId": 4,
+      "winnerId": 239,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 105,
+      "worldcupId": 4,
+      "winnerId": 193,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 106,
+      "worldcupId": 4,
+      "winnerId": 252,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 107,
+      "worldcupId": 4,
+      "winnerId": 200,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 108,
+      "worldcupId": 4,
+      "winnerId": 227,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 109,
+      "worldcupId": 4,
+      "winnerId": 209,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 110,
+      "worldcupId": 4,
+      "winnerId": 248,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 111,
+      "worldcupId": 4,
+      "winnerId": 202,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 112,
+      "worldcupId": 4,
+      "winnerId": 223,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 113,
+      "worldcupId": 4,
+      "winnerId": 244,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 114,
+      "worldcupId": 4,
+      "winnerId": 208,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 115,
+      "worldcupId": 5,
+      "winnerId": 290,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 116,
+      "worldcupId": 5,
+      "winnerId": 280,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 117,
+      "worldcupId": 5,
+      "winnerId": 288,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 118,
+      "worldcupId": 5,
+      "winnerId": 275,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 119,
+      "worldcupId": 5,
+      "winnerId": 267,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 120,
+      "worldcupId": 5,
+      "winnerId": 264,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 121,
+      "worldcupId": 5,
+      "winnerId": 262,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 122,
+      "worldcupId": 5,
+      "winnerId": 306,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 123,
+      "worldcupId": 5,
+      "winnerId": 281,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 124,
+      "worldcupId": 5,
+      "winnerId": 286,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 125,
+      "worldcupId": 5,
+      "winnerId": 283,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 126,
+      "worldcupId": 5,
+      "winnerId": 294,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 127,
+      "worldcupId": 5,
+      "winnerId": 291,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 128,
+      "worldcupId": 5,
+      "winnerId": 258,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 129,
+      "worldcupId": 5,
+      "winnerId": 286,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 130,
+      "worldcupId": 5,
+      "winnerId": 308,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 131,
+      "worldcupId": 5,
+      "winnerId": 299,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 132,
+      "worldcupId": 5,
+      "winnerId": 275,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 133,
+      "worldcupId": 5,
+      "winnerId": 261,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 134,
+      "worldcupId": 5,
+      "winnerId": 273,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 135,
+      "worldcupId": 5,
+      "winnerId": 277,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 136,
+      "worldcupId": 5,
+      "winnerId": 293,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 137,
+      "worldcupId": 5,
+      "winnerId": 282,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 138,
+      "worldcupId": 5,
+      "winnerId": 304,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 139,
+      "worldcupId": 5,
+      "winnerId": 271,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 140,
+      "worldcupId": 5,
+      "winnerId": 258,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 141,
+      "worldcupId": 5,
+      "winnerId": 279,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 142,
+      "worldcupId": 5,
+      "winnerId": 317,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 143,
+      "worldcupId": 5,
+      "winnerId": 314,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 144,
+      "worldcupId": 5,
+      "winnerId": 284,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 145,
+      "worldcupId": 5,
+      "winnerId": 303,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 146,
+      "worldcupId": 5,
+      "winnerId": 291,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 147,
+      "worldcupId": 5,
+      "winnerId": 303,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 148,
+      "worldcupId": 5,
+      "winnerId": 314,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 149,
+      "worldcupId": 5,
+      "winnerId": 269,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 150,
+      "worldcupId": 5,
+      "winnerId": 274,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 151,
+      "worldcupId": 5,
+      "winnerId": 310,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 152,
+      "worldcupId": 5,
+      "winnerId": 280,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 153,
+      "worldcupId": 5,
+      "winnerId": 261,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 154,
+      "worldcupId": 5,
+      "winnerId": 271,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 155,
+      "worldcupId": 5,
+      "winnerId": 290,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 156,
+      "worldcupId": 5,
+      "winnerId": 277,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 157,
+      "worldcupId": 5,
+      "winnerId": 315,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 158,
+      "worldcupId": 5,
+      "winnerId": 272,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 159,
+      "worldcupId": 5,
+      "winnerId": 299,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 160,
+      "worldcupId": 5,
+      "winnerId": 272,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 161,
+      "worldcupId": 5,
+      "winnerId": 263,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 162,
+      "worldcupId": 5,
+      "winnerId": 272,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 163,
+      "worldcupId": 5,
+      "winnerId": 288,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.349Z"
+    },
+    {
+      "id": 164,
+      "worldcupId": 6,
+      "winnerId": 339,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 165,
+      "worldcupId": 6,
+      "winnerId": 335,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 166,
+      "worldcupId": 6,
+      "winnerId": 325,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 167,
+      "worldcupId": 6,
+      "winnerId": 337,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 168,
+      "worldcupId": 6,
+      "winnerId": 373,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 169,
+      "worldcupId": 6,
+      "winnerId": 336,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 170,
+      "worldcupId": 6,
+      "winnerId": 336,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 171,
+      "worldcupId": 6,
+      "winnerId": 352,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 172,
+      "worldcupId": 6,
+      "winnerId": 362,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 173,
+      "worldcupId": 6,
+      "winnerId": 353,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 174,
+      "worldcupId": 6,
+      "winnerId": 381,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 175,
+      "worldcupId": 6,
+      "winnerId": 333,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 176,
+      "worldcupId": 6,
+      "winnerId": 361,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 177,
+      "worldcupId": 6,
+      "winnerId": 370,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 178,
+      "worldcupId": 6,
+      "winnerId": 339,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 179,
+      "worldcupId": 6,
+      "winnerId": 345,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 180,
+      "worldcupId": 6,
+      "winnerId": 337,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 181,
+      "worldcupId": 6,
+      "winnerId": 338,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 182,
+      "worldcupId": 6,
+      "winnerId": 363,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 183,
+      "worldcupId": 6,
+      "winnerId": 341,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 184,
+      "worldcupId": 6,
+      "winnerId": 350,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 185,
+      "worldcupId": 6,
+      "winnerId": 368,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 186,
+      "worldcupId": 6,
+      "winnerId": 339,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 187,
+      "worldcupId": 6,
+      "winnerId": 336,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 188,
+      "worldcupId": 6,
+      "winnerId": 347,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 189,
+      "worldcupId": 6,
+      "winnerId": 376,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 190,
+      "worldcupId": 6,
+      "winnerId": 382,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 191,
+      "worldcupId": 6,
+      "winnerId": 332,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 192,
+      "worldcupId": 6,
+      "winnerId": 342,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 193,
+      "worldcupId": 6,
+      "winnerId": 384,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 194,
+      "worldcupId": 6,
+      "winnerId": 367,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 195,
+      "worldcupId": 6,
+      "winnerId": 365,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 196,
+      "worldcupId": 6,
+      "winnerId": 370,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 197,
+      "worldcupId": 6,
+      "winnerId": 345,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 198,
+      "worldcupId": 6,
+      "winnerId": 335,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 199,
+      "worldcupId": 6,
+      "winnerId": 334,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 200,
+      "worldcupId": 6,
+      "winnerId": 368,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 201,
+      "worldcupId": 6,
+      "winnerId": 383,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 202,
+      "worldcupId": 7,
+      "winnerId": 391,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 203,
+      "worldcupId": 7,
+      "winnerId": 397,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 204,
+      "worldcupId": 7,
+      "winnerId": 443,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 205,
+      "worldcupId": 7,
+      "winnerId": 429,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 206,
+      "worldcupId": 7,
+      "winnerId": 389,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 207,
+      "worldcupId": 7,
+      "winnerId": 424,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 208,
+      "worldcupId": 7,
+      "winnerId": 443,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 209,
+      "worldcupId": 7,
+      "winnerId": 385,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 210,
+      "worldcupId": 7,
+      "winnerId": 420,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 211,
+      "worldcupId": 7,
+      "winnerId": 415,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 212,
+      "worldcupId": 7,
+      "winnerId": 419,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 213,
+      "worldcupId": 7,
+      "winnerId": 444,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 214,
+      "worldcupId": 7,
+      "winnerId": 403,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 215,
+      "worldcupId": 7,
+      "winnerId": 447,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 216,
+      "worldcupId": 8,
+      "winnerId": 458,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 217,
+      "worldcupId": 8,
+      "winnerId": 449,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 218,
+      "worldcupId": 8,
+      "winnerId": 493,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 219,
+      "worldcupId": 8,
+      "winnerId": 490,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 220,
+      "worldcupId": 8,
+      "winnerId": 476,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 221,
+      "worldcupId": 8,
+      "winnerId": 479,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 222,
+      "worldcupId": 8,
+      "winnerId": 470,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 223,
+      "worldcupId": 8,
+      "winnerId": 498,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 224,
+      "worldcupId": 8,
+      "winnerId": 481,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 225,
+      "worldcupId": 8,
+      "winnerId": 509,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 226,
+      "worldcupId": 8,
+      "winnerId": 465,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 227,
+      "worldcupId": 8,
+      "winnerId": 474,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 228,
+      "worldcupId": 8,
+      "winnerId": 460,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 229,
+      "worldcupId": 8,
+      "winnerId": 468,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 230,
+      "worldcupId": 8,
+      "winnerId": 506,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 231,
+      "worldcupId": 8,
+      "winnerId": 512,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 232,
+      "worldcupId": 8,
+      "winnerId": 492,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 233,
+      "worldcupId": 8,
+      "winnerId": 511,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 234,
+      "worldcupId": 8,
+      "winnerId": 494,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 235,
+      "worldcupId": 8,
+      "winnerId": 475,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 236,
+      "worldcupId": 8,
+      "winnerId": 492,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 237,
+      "worldcupId": 8,
+      "winnerId": 455,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 238,
+      "worldcupId": 8,
+      "winnerId": 467,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 239,
+      "worldcupId": 8,
+      "winnerId": 482,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 240,
+      "worldcupId": 8,
+      "winnerId": 451,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 241,
+      "worldcupId": 8,
+      "winnerId": 457,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 242,
+      "worldcupId": 8,
+      "winnerId": 476,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 243,
+      "worldcupId": 8,
+      "winnerId": 452,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 244,
+      "worldcupId": 8,
+      "winnerId": 508,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 245,
+      "worldcupId": 8,
+      "winnerId": 474,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 246,
+      "worldcupId": 8,
+      "winnerId": 453,
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 247,
+      "worldcupId": 8,
+      "winnerId": 455,
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 248,
+      "worldcupId": 8,
+      "winnerId": 452,
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 249,
+      "worldcupId": 8,
+      "winnerId": 504,
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 250,
+      "worldcupId": 8,
+      "winnerId": 472,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    },
+    {
+      "id": 251,
+      "worldcupId": 8,
+      "winnerId": 463,
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.350Z"
+    }
+  ],
   "quiz_questions": [
     {
       "quizId": 1,
@@ -4227,8 +6593,8 @@
       "questionImage": "/uploads/1770259150979-265235002.jpeg",
       "answer": "프리토리아",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 14,
+      "totalCount": 20,
       "id": 1
     },
     {
@@ -4238,8 +6604,8 @@
       "questionImage": "/uploads/1770259401599-316147662.png",
       "answer": "라바트",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 17,
+      "totalCount": 20,
       "id": 2
     },
     {
@@ -4249,8 +6615,8 @@
       "questionImage": "/uploads/1770259441968-597745547.jpg",
       "answer": "울란바토르",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 8,
+      "totalCount": 20,
       "id": 3
     },
     {
@@ -4260,8 +6626,8 @@
       "questionImage": "/uploads/1770259466467-697058854.jpeg",
       "answer": "카이로",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 20,
+      "totalCount": 20,
       "id": 4
     },
     {
@@ -4271,8 +6637,8 @@
       "questionImage": "/uploads/1770259595196-314929185.png",
       "answer": "도쿄",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 3,
+      "totalCount": 20,
       "id": 5
     },
     {
@@ -4282,8 +6648,8 @@
       "questionImage": "/uploads/1770259625040-125476928.png",
       "answer": "프라하",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 11,
+      "totalCount": 20,
       "id": 6
     },
     {
@@ -4293,8 +6659,8 @@
       "questionImage": "/uploads/1770259670732-106774500.png",
       "answer": "오타와",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 15,
+      "totalCount": 20,
       "id": 7
     },
     {
@@ -4304,8 +6670,8 @@
       "questionImage": "/uploads/1770259738051-829661004.webp",
       "answer": "뉴델리",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 15,
+      "totalCount": 20,
       "id": 8
     },
     {
@@ -4315,8 +6681,8 @@
       "questionImage": "/uploads/1770259797961-913984198.jpeg",
       "answer": "로마",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 13,
+      "totalCount": 20,
       "id": 9
     },
     {
@@ -4326,8 +6692,8 @@
       "questionImage": "/uploads/1770259825665-347737240.webp",
       "answer": "캔버라",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 18,
+      "totalCount": 20,
       "id": 10
     },
     {
@@ -4337,8 +6703,8 @@
       "questionImage": "/uploads/1770260723341-161426497.png",
       "answer": "덴마크",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 8,
+      "totalCount": 31,
       "id": 11
     },
     {
@@ -4348,8 +6714,8 @@
       "questionImage": "/uploads/1770260730064-210590872.png",
       "answer": "독일",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 26,
+      "totalCount": 31,
       "id": 12
     },
     {
@@ -4359,8 +6725,8 @@
       "questionImage": "/uploads/1770260736429-168126847.png",
       "answer": "러시아",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 16,
+      "totalCount": 31,
       "id": 13
     },
     {
@@ -4370,8 +6736,8 @@
       "questionImage": "/uploads/1770260742123-586667244.png",
       "answer": "베네수엘라",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 24,
+      "totalCount": 31,
       "id": 14
     },
     {
@@ -4381,8 +6747,8 @@
       "questionImage": "/uploads/1770260751597-872264193.png",
       "answer": "수리남",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 14,
+      "totalCount": 31,
       "id": 15
     },
     {
@@ -4392,8 +6758,8 @@
       "questionImage": "/uploads/1770260757660-40179045.png",
       "answer": "스웨덴",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 12,
+      "totalCount": 31,
       "id": 16
     },
     {
@@ -4403,8 +6769,8 @@
       "questionImage": "/uploads/1770260767461-303274941.jpeg",
       "answer": "스위스",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 17,
+      "totalCount": 31,
       "id": 17
     },
     {
@@ -4414,8 +6780,8 @@
       "questionImage": "/uploads/1770260782010-528235168.png",
       "answer": "에티오피아",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 21,
+      "totalCount": 31,
       "id": 18
     },
     {
@@ -4425,8 +6791,8 @@
       "questionImage": "/uploads/1770260787443-248555178.png",
       "answer": "중국",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 7,
+      "totalCount": 31,
       "id": 19
     },
     {
@@ -4436,8 +6802,8 @@
       "questionImage": "/uploads/1770260792929-570297141.png",
       "answer": "호주",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 12,
+      "totalCount": 31,
       "id": 20
     },
     {
@@ -4448,7 +6814,7 @@
       "answer": "강감찬",
       "timeLimit": 10,
       "correctCount": 0,
-      "totalCount": 0,
+      "totalCount": 34,
       "id": 21
     },
     {
@@ -4458,8 +6824,8 @@
       "questionImage": "/uploads/1770260876807-193388264.jpg",
       "answer": "김좌진",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 7,
+      "totalCount": 34,
       "id": 22
     },
     {
@@ -4469,8 +6835,8 @@
       "questionImage": "/uploads/1770260882725-889516102.jpg",
       "answer": "세종대왕",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 12,
+      "totalCount": 34,
       "id": 23
     },
     {
@@ -4480,8 +6846,8 @@
       "questionImage": "/uploads/1770260889877-171672461.jpeg",
       "answer": "안창호",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 17,
+      "totalCount": 34,
       "id": 24
     },
     {
@@ -4491,8 +6857,8 @@
       "questionImage": "/uploads/1770260895678-369753312.jpg",
       "answer": "윤동주",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 33,
+      "totalCount": 34,
       "id": 25
     },
     {
@@ -4502,8 +6868,8 @@
       "questionImage": "/uploads/1770260902127-898440787.jpg",
       "answer": "이봉창",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 4,
+      "totalCount": 34,
       "id": 26
     },
     {
@@ -4513,8 +6879,8 @@
       "questionImage": "/uploads/1770260908591-121050435.jpg",
       "answer": "이순신",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 31,
+      "totalCount": 34,
       "id": 27
     },
     {
@@ -4524,8 +6890,8 @@
       "questionImage": "/uploads/1770260916344-201979970.jpeg",
       "answer": "장영실",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 33,
+      "totalCount": 34,
       "id": 28
     },
     {
@@ -4535,8 +6901,8 @@
       "questionImage": "/uploads/1770260923292-363101655.jpg",
       "answer": "정약용",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 30,
+      "totalCount": 34,
       "id": 29
     },
     {
@@ -4546,8 +6912,8 @@
       "questionImage": "/uploads/1770260929878-497862347.jpg",
       "answer": "정조",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 14,
+      "totalCount": 34,
       "id": 30
     },
     {
@@ -4557,8 +6923,8 @@
       "questionImage": "/uploads/1770260999974-910026454.jpg",
       "answer": "고윤정",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 37,
+      "totalCount": 47,
       "id": 31
     },
     {
@@ -4568,8 +6934,8 @@
       "questionImage": "/uploads/1770261006763-348925663.webp",
       "answer": "노정의",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 23,
+      "totalCount": 47,
       "id": 32
     },
     {
@@ -4579,8 +6945,8 @@
       "questionImage": "/uploads/1770261012291-858122875.jpg",
       "answer": "박은빈",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 44,
+      "totalCount": 47,
       "id": 33
     },
     {
@@ -4590,8 +6956,8 @@
       "questionImage": "/uploads/1770261018230-541411046.jpg",
       "answer": "박해수",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 17,
+      "totalCount": 47,
       "id": 34
     },
     {
@@ -4601,8 +6967,8 @@
       "questionImage": "/uploads/1770261045479-739782205.webp",
       "answer": "변우석",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 31,
+      "totalCount": 47,
       "id": 35
     },
     {
@@ -4612,8 +6978,8 @@
       "questionImage": "/uploads/1770261052158-208540202.png",
       "answer": "송강",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 35,
+      "totalCount": 47,
       "id": 36
     },
     {
@@ -4623,8 +6989,8 @@
       "questionImage": "/uploads/1770261058278-916083501.jpg",
       "answer": "유연석",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 42,
+      "totalCount": 47,
       "id": 37
     },
     {
@@ -4634,8 +7000,8 @@
       "questionImage": "/uploads/1770261066558-807376035.webp",
       "answer": "이정은",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 12,
+      "totalCount": 47,
       "id": 38
     },
     {
@@ -4645,8 +7011,8 @@
       "questionImage": "/uploads/1770261072824-727773859.webp",
       "answer": "이정재",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 41,
+      "totalCount": 47,
       "id": 39
     },
     {
@@ -4656,8 +7022,8 @@
       "questionImage": "/uploads/1770261090712-390406500.jpg",
       "answer": "채종협",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 33,
+      "totalCount": 47,
       "id": 40
     },
     {
@@ -4667,8 +7033,8 @@
       "questionImage": "/uploads/1770261215375-164546665.jpg",
       "answer": "아기공룡 둘리",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 2,
+      "totalCount": 15,
       "id": 41
     },
     {
@@ -4678,8 +7044,8 @@
       "questionImage": "/uploads/1770261229672-777352913.jpg",
       "answer": "2",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 5,
+      "totalCount": 15,
       "id": 42
     },
     {
@@ -4689,8 +7055,8 @@
       "questionImage": "/uploads/1770261236926-806452291.jpeg",
       "answer": "10시 10분 32초",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 10,
+      "totalCount": 15,
       "id": 43
     },
     {
@@ -4701,7 +7067,7 @@
       "answer": "대한항공",
       "timeLimit": 10,
       "correctCount": 0,
-      "totalCount": 0,
+      "totalCount": 15,
       "id": 44
     },
     {
@@ -4711,8 +7077,8 @@
       "questionImage": "/uploads/1770261268512-512848102.png",
       "answer": "IDE",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 11,
+      "totalCount": 15,
       "id": 45
     },
     {
@@ -4722,8 +7088,8 @@
       "questionImage": "/uploads/1770261287624-342952748.jpg",
       "answer": "투게더",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 15,
+      "totalCount": 15,
       "id": 46
     },
     {
@@ -4733,8 +7099,8 @@
       "questionImage": "/uploads/1770261309890-887199785.jpg",
       "answer": "하겐다즈 파인트 쿠키앤크림",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 13,
+      "totalCount": 15,
       "id": 47
     },
     {
@@ -4744,8 +7110,8 @@
       "questionImage": "/uploads/1770261332279-312664019.jpg",
       "answer": "초고속 열차",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 6,
+      "totalCount": 15,
       "id": 48
     },
     {
@@ -4755,8 +7121,8 @@
       "questionImage": "/uploads/1770261389704-11405312.jpeg",
       "answer": "휴지",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 2,
+      "totalCount": 15,
       "id": 49
     },
     {
@@ -4766,8 +7132,8 @@
       "questionImage": "/uploads/1770261393678-839039626.webp",
       "answer": "고양이",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 2,
+      "totalCount": 15,
       "id": 50
     },
     {
@@ -4777,8 +7143,8 @@
       "questionImage": "/uploads/1770261500204-283062428.png",
       "answer": "마이멜로디",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 5,
+      "totalCount": 21,
       "id": 51
     },
     {
@@ -4788,8 +7154,8 @@
       "questionImage": "/uploads/1770261508825-140889204.jpg",
       "answer": "챠미키티",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 1,
+      "totalCount": 21,
       "id": 52
     },
     {
@@ -4799,8 +7165,8 @@
       "questionImage": "/uploads/1770261518107-51978037.png",
       "answer": "우사하나",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 1,
+      "totalCount": 21,
       "id": 53
     },
     {
@@ -4810,8 +7176,8 @@
       "questionImage": "/uploads/1770261525544-913114876.png",
       "answer": "시나모롤",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 12,
+      "totalCount": 21,
       "id": 54
     },
     {
@@ -4821,8 +7187,8 @@
       "questionImage": "/uploads/1770261531640-795895241.png",
       "answer": "구데타마",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 4,
+      "totalCount": 21,
       "id": 55
     },
     {
@@ -4832,8 +7198,8 @@
       "questionImage": "/uploads/1770261543274-95845528.png",
       "answer": "헬로키티",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 3,
+      "totalCount": 21,
       "id": 56
     },
     {
@@ -4843,8 +7209,8 @@
       "questionImage": "/uploads/1770261553590-10293945.png",
       "answer": "한교동",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 17,
+      "totalCount": 21,
       "id": 57
     },
     {
@@ -4854,8 +7220,8 @@
       "questionImage": "/uploads/1770261560390-607659639.png",
       "answer": "턱시도샘",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 16,
+      "totalCount": 21,
       "id": 58
     },
     {
@@ -4865,8 +7231,8 @@
       "questionImage": "/uploads/1770261568527-787333288.png",
       "answer": "쿠로미",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 7,
+      "totalCount": 21,
       "id": 59
     },
     {
@@ -4876,12 +7242,1968 @@
       "questionImage": "/uploads/1770261579906-793281170.png",
       "answer": "포챠코",
       "timeLimit": 10,
-      "correctCount": 0,
-      "totalCount": 0,
+      "correctCount": 1,
+      "totalCount": 21,
       "id": 60
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 1,
+      "questionText": "제목 : 극한직업\n배우 : 류승룡\n대사 : ㅈㄱㄲㅈ ㅇㄹ ㅁㅇ ㅇㅇㄷ ㅇㄱㅇ ㄱㅂㅇㄱ ㅌㄷㅇㄱ",
+      "questionImage": null,
+      "answer": "지금까지 이런 맛은 없었다 이것은 갈비인가 통닭인가",
+      "timeLimit": 20,
+      "correctCount": 11,
+      "totalCount": 37,
+      "id": 61
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 2,
+      "questionText": "제목 : 건축학개론\n배우 : 조정석\n대사 : ㄴㄷㅇ ㅇㄷㅇ ㄴㄷㅇ",
+      "questionImage": null,
+      "answer": "납득이 안돼요 납득이",
+      "timeLimit": 20,
+      "correctCount": 1,
+      "totalCount": 37,
+      "id": 62
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 3,
+      "questionText": "제목 : 아저씨\n배우 : 김희원\n대사 : ㅇㄱ ㅂㅌㅇㄹㅇ",
+      "questionImage": null,
+      "answer": "이거 방탄유리야",
+      "timeLimit": 10,
+      "correctCount": 6,
+      "totalCount": 37,
+      "id": 63
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 4,
+      "questionText": "제목 : 기생충\n배우 : 송강호\n대사 : ㅂㅈㅇㄷ ㅊㅎ ㄱ ㅇㄴㄱ ㅂㅈㄹㅅ ㅊㅎ ㄱㅇ",
+      "questionImage": null,
+      "answer": "부자인데 착한 게 아니고 부자라서 착한 거야",
+      "timeLimit": 20,
+      "correctCount": 8,
+      "totalCount": 37,
+      "id": 64
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 5,
+      "questionText": "제목 : 베테랑\n배우 : 황정민\n대사 : ㅇㄹㄱ ㄷㅇ ㅇㅈ ㄱㅇㄱ ㅇㅇ?",
+      "questionImage": null,
+      "answer": "우리가 돈이 없지 가오가 없어?",
+      "timeLimit": 20,
+      "correctCount": 27,
+      "totalCount": 37,
+      "id": 65
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 6,
+      "questionText": "제목 : 추격자\n배우 : 슈퍼 아줌마\n대사 : ㄱ ㅇㄱㅆㄱ ㅇㄱ ㅇㄷㄴㄲ?",
+      "questionImage": null,
+      "answer": "그 아가씨가 여기 있대니깐?",
+      "timeLimit": 20,
+      "correctCount": 12,
+      "totalCount": 37,
+      "id": 66
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 7,
+      "questionText": "제목 : 범죄도시\n배우 : 윤계상\n대사 : ㄷ ㅂㅇㄹ ㅇㄴㄷ ㅁ ㄱㄹㄱㄲㅈ ㅇㅇㅇㄷㄴ?",
+      "questionImage": null,
+      "answer": "돈 받으러 왔는데 뭐 그런거까지 알아야되니?",
+      "timeLimit": 20,
+      "correctCount": 2,
+      "totalCount": 37,
+      "id": 67
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 8,
+      "questionText": "제목 : 오징어게임\n배우 : 오일남\n대사 : ㄱㅁㅎㅇ ㅇㄹㄷㄱㄴ ㄷ ㅈㅇ",
+      "questionImage": null,
+      "answer": "그만해애 이러다가는 다 죽어",
+      "timeLimit": 20,
+      "correctCount": 19,
+      "totalCount": 37,
+      "id": 68
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 9,
+      "questionText": "제목 : 사랑했나봐\n배우 : 한윤진\n대사 : ㅇㄴ ㅅㅈㅇ ㄸㅇㅇㅇ",
+      "questionImage": null,
+      "answer": "예나 선정이 딸이에요",
+      "timeLimit": 20,
+      "correctCount": 5,
+      "totalCount": 37,
+      "id": 69
+    },
+    {
+      "quizId": 7,
+      "questionNumber": 10,
+      "questionText": "제목 : 타짜\n배우 : 백윤식\n대사 : ㅇㄹ ㅇ ㅂㄷㅇ ㅇㅇㅎ ㅊㄱㄷ ㅇㅅㄷ ㅇㅇ",
+      "questionImage": null,
+      "answer": "원래 이 바닥에 영원한 친구도 원수도 없어",
+      "timeLimit": 20,
+      "correctCount": 17,
+      "totalCount": 37,
+      "id": 70
     }
   ],
-  "quiz_results": [],
+  "quiz_results": [
+    {
+      "id": 1,
+      "quizId": 1,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 2,
+      "quizId": 1,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 3,
+      "quizId": 1,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 4,
+      "quizId": 1,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 5,
+      "quizId": 1,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 6,
+      "quizId": 1,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 7,
+      "quizId": 1,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 8,
+      "quizId": 1,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 9,
+      "quizId": 1,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 10,
+      "quizId": 1,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 11,
+      "quizId": 1,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 12,
+      "quizId": 1,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.351Z"
+    },
+    {
+      "id": 13,
+      "quizId": 1,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 14,
+      "quizId": 1,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 15,
+      "quizId": 1,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 16,
+      "quizId": 1,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 17,
+      "quizId": 1,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 18,
+      "quizId": 1,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 19,
+      "quizId": 1,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 20,
+      "quizId": 1,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 21,
+      "quizId": 2,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 22,
+      "quizId": 2,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 23,
+      "quizId": 2,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 24,
+      "quizId": 2,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 25,
+      "quizId": 2,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 26,
+      "quizId": 2,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 27,
+      "quizId": 2,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 28,
+      "quizId": 2,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 29,
+      "quizId": 2,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 30,
+      "quizId": 2,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 31,
+      "quizId": 2,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 32,
+      "quizId": 2,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 33,
+      "quizId": 2,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 34,
+      "quizId": 2,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 35,
+      "quizId": 2,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 36,
+      "quizId": 2,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 37,
+      "quizId": 2,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 38,
+      "quizId": 2,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 39,
+      "quizId": 2,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 40,
+      "quizId": 2,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 41,
+      "quizId": 2,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 42,
+      "quizId": 2,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 43,
+      "quizId": 2,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 44,
+      "quizId": 2,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 45,
+      "quizId": 2,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 46,
+      "quizId": 2,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 47,
+      "quizId": 2,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 48,
+      "quizId": 2,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 49,
+      "quizId": 2,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 50,
+      "quizId": 2,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 51,
+      "quizId": 2,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 52,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 53,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 54,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 55,
+      "quizId": 3,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 56,
+      "quizId": 3,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 57,
+      "quizId": 3,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 58,
+      "quizId": 3,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 59,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 60,
+      "quizId": 3,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 61,
+      "quizId": 3,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 62,
+      "quizId": 3,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.352Z"
+    },
+    {
+      "id": 63,
+      "quizId": 3,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 64,
+      "quizId": 3,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 65,
+      "quizId": 3,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 66,
+      "quizId": 3,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 67,
+      "quizId": 3,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 68,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 69,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 70,
+      "quizId": 3,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 71,
+      "quizId": 3,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 72,
+      "quizId": 3,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 73,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 74,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 75,
+      "quizId": 3,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 76,
+      "quizId": 3,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 77,
+      "quizId": 3,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 78,
+      "quizId": 3,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 79,
+      "quizId": 3,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 80,
+      "quizId": 3,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 81,
+      "quizId": 3,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 82,
+      "quizId": 3,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 83,
+      "quizId": 3,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 84,
+      "quizId": 3,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 85,
+      "quizId": 3,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 86,
+      "quizId": 4,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 87,
+      "quizId": 4,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 88,
+      "quizId": 4,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 89,
+      "quizId": 4,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 90,
+      "quizId": 4,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 91,
+      "quizId": 4,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 92,
+      "quizId": 4,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 93,
+      "quizId": 4,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 94,
+      "quizId": 4,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 95,
+      "quizId": 4,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 96,
+      "quizId": 4,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 97,
+      "quizId": 4,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 98,
+      "quizId": 4,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 99,
+      "quizId": 4,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 100,
+      "quizId": 4,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 101,
+      "quizId": 4,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 102,
+      "quizId": 4,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 103,
+      "quizId": 4,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 104,
+      "quizId": 4,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 105,
+      "quizId": 4,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 106,
+      "quizId": 4,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 107,
+      "quizId": 4,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 108,
+      "quizId": 4,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 109,
+      "quizId": 4,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 110,
+      "quizId": 4,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 111,
+      "quizId": 4,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 112,
+      "quizId": 4,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 113,
+      "quizId": 4,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 114,
+      "quizId": 4,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 115,
+      "quizId": 4,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 116,
+      "quizId": 4,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 117,
+      "quizId": 4,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 118,
+      "quizId": 4,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 119,
+      "quizId": 4,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 120,
+      "quizId": 4,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 121,
+      "quizId": 4,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 122,
+      "quizId": 4,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 123,
+      "quizId": 4,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 124,
+      "quizId": 4,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 125,
+      "quizId": 4,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 126,
+      "quizId": 4,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 127,
+      "quizId": 4,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 128,
+      "quizId": 4,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 129,
+      "quizId": 4,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 130,
+      "quizId": 4,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 131,
+      "quizId": 4,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 132,
+      "quizId": 4,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 133,
+      "quizId": 5,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 134,
+      "quizId": 5,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 135,
+      "quizId": 5,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 136,
+      "quizId": 5,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 137,
+      "quizId": 5,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 138,
+      "quizId": 5,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 139,
+      "quizId": 5,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 140,
+      "quizId": 5,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 141,
+      "quizId": 5,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 142,
+      "quizId": 5,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 143,
+      "quizId": 5,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 144,
+      "quizId": 5,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 145,
+      "quizId": 5,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 146,
+      "quizId": 5,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 147,
+      "quizId": 5,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 148,
+      "quizId": 6,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 149,
+      "quizId": 6,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 150,
+      "quizId": 6,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 151,
+      "quizId": 6,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 152,
+      "quizId": 6,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 153,
+      "quizId": 6,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 154,
+      "quizId": 6,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 155,
+      "quizId": 6,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 156,
+      "quizId": 6,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 157,
+      "quizId": 6,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 158,
+      "quizId": 6,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 159,
+      "quizId": 6,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 160,
+      "quizId": 6,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 161,
+      "quizId": 6,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 162,
+      "quizId": 6,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 163,
+      "quizId": 6,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 164,
+      "quizId": 6,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 165,
+      "quizId": 6,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 166,
+      "quizId": 6,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 167,
+      "quizId": 6,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 168,
+      "quizId": 6,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 169,
+      "quizId": 7,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 170,
+      "quizId": 7,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 171,
+      "quizId": 7,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 172,
+      "quizId": 7,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 173,
+      "quizId": 7,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 174,
+      "quizId": 7,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 175,
+      "quizId": 7,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 176,
+      "quizId": 7,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 177,
+      "quizId": 7,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 178,
+      "quizId": 7,
+      "correctCount": 7,
+      "score": 70,
+      "tier": "Gold",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 179,
+      "quizId": 7,
+      "correctCount": 5,
+      "score": 50,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 180,
+      "quizId": 7,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 181,
+      "quizId": 7,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 182,
+      "quizId": 7,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 183,
+      "quizId": 7,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 184,
+      "quizId": 7,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 185,
+      "quizId": 7,
+      "correctCount": 2,
+      "score": 20,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 186,
+      "quizId": 7,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 187,
+      "quizId": 7,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 188,
+      "quizId": 7,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 189,
+      "quizId": 7,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 190,
+      "quizId": 7,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 191,
+      "quizId": 7,
+      "correctCount": 4,
+      "score": 40,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 192,
+      "quizId": 7,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 4,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 193,
+      "quizId": 7,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 194,
+      "quizId": 7,
+      "correctCount": 3,
+      "score": 30,
+      "tier": "Bronze",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 195,
+      "quizId": 7,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 196,
+      "quizId": 7,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 197,
+      "quizId": 7,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 198,
+      "quizId": 7,
+      "correctCount": 0,
+      "score": 0,
+      "tier": "Bronze",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 199,
+      "quizId": 7,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 5,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 200,
+      "quizId": 7,
+      "correctCount": 9,
+      "score": 90,
+      "tier": "Diamond",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 201,
+      "quizId": 7,
+      "correctCount": 1,
+      "score": 10,
+      "tier": "Bronze",
+      "userId": 3,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 202,
+      "quizId": 7,
+      "correctCount": 10,
+      "score": 100,
+      "tier": "Diamond",
+      "userId": 2,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 203,
+      "quizId": 7,
+      "correctCount": 6,
+      "score": 60,
+      "tier": "Silver",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 204,
+      "quizId": 7,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    },
+    {
+      "id": 205,
+      "quizId": 7,
+      "correctCount": 8,
+      "score": 80,
+      "tier": "Platinum",
+      "userId": 1,
+      "createdAt": "2026-02-05T05:24:51.353Z"
+    }
+  ],
   "categories": [
     {
       "id": 1,
@@ -4942,6 +9264,11 @@
       "id": 12,
       "name": "동물",
       "type": "quiz"
+    },
+    {
+      "id": 13,
+      "name": "영화/드라마",
+      "type": "quiz"
     }
   ],
   "view_logs": [
@@ -4968,7 +9295,112 @@
       "contentId": 2,
       "identifier": "guest:2c3490ce-fe0f-4c8c-b5c0-584c32eabcbf",
       "timestamp": "2026-02-05T01:24:48.093Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "worldcup",
+      "contentId": 1,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:32:23.836Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "quiz",
+      "contentId": 7,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:39:59.583Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "quiz",
+      "contentId": 7,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:40:59.606Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "quiz",
+      "contentId": 6,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:41:03.046Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "worldcup",
+      "contentId": 6,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:41:07.322Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "worldcup",
+      "contentId": 3,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:41:14.447Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "worldcup",
+      "contentId": 8,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:45:24.316Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "quiz",
+      "contentId": 7,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:47:52.900Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "quiz",
+      "contentId": 7,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T05:31:10.701Z"
     }
   ],
-  "play_logs": []
+  "play_logs": [
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "worldcup",
+      "contentId": 1,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:32:44.371Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "quiz",
+      "contentId": 7,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:40:03.324Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "worldcup",
+      "contentId": 8,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:46:08.346Z"
+    },
+    {
+      "userId": null,
+      "guestId": "f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "type": "quiz",
+      "contentId": 7,
+      "identifier": "guest:f0e21816-268f-4258-8f3b-a4a6524dfe9a",
+      "timestamp": "2026-02-05T03:47:55.276Z"
+    }
+  ]
 }
