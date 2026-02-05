@@ -64,12 +64,13 @@
           <div class="card-body">
             <h3>{{ quiz.title }}</h3>
             <p class="card-description">{{ quiz.description }}</p>
-            <div class="card-info">
-              <span>📝 {{ quiz.totalQuestions }}문제</span>
-            </div>
+
 
             <div class="card-stats">
-              <div class="stats" style="margin-top: auto; margin-bottom: 10px;">
+              <div class="card-info" style="margin-top: auto; margin-bottom: 10px;">
+                <span><img src="@/assets/icons/candidates-icon.png" style="width:20px" alt="조회수" class="stat-icon"/> {{
+                    quiz.totalQuestions || 0
+                  }}</span>
               <span><img src="@/assets/icons/views-icon.png" style="width:20px" alt="조회수" class="stat-icon"/> {{
                   quiz.viewCount || 0
                 }}</span>

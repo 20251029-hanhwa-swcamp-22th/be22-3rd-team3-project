@@ -438,9 +438,11 @@ async function moveToNextQuestion() {
 .question-text {
   font-size: 1.5rem;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--spacing-xl);
   line-height: 1.6;
+  /* \n을 줄바꿈으로 렌더링하고, 가로 폭을 넘치면 자동 줄바꿈도 해줍니다. */
+  white-space: pre-wrap;
 }
 
 .answer-section {
