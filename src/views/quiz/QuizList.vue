@@ -59,9 +59,16 @@
             <div class="card-info">
               <span>📝 {{ quiz.totalQuestions }}문제</span>
             </div>
+
             <div class="card-stats">
-              <span>👁️ {{ quiz.viewCount || 0 }}</span>
-              <span>🎮 {{ quiz.playCount || 0 }}</span>
+              <div class="stats" style="margin-top: auto; margin-bottom: 10px;">
+              <span><img src="@/assets/icons/views-icon.png" style="width:20px" alt="조회수" class="stat-icon"/> {{
+                  quiz.viewCount || 0
+                }}</span>
+                <span><img src="@/assets/icons/play-icon.png" style="width:20px" alt="플레이" class="stat-icon"/>{{
+                    quiz.playCount || 0
+                  }}</span>
+              </div>
             </div>
           </div>
         </router-link>
