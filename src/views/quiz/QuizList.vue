@@ -1,6 +1,6 @@
 <template>
   <div class="quiz-list-page">
-    <ExitTransition ref="exitTransition" color="#D4BBFF" />
+    <ExitTransition ref="exitTransition" color="#D4BBFF"/>
     <div class="container">
       <div class="page-header">
         <h1 class="gradient-text">🧠 퀴즈 게임</h1>
@@ -14,23 +14,31 @@
       <div class="filters mb-4">
         <!-- 검색어 입력 필드 (엔터키를 치거나 입력이 멈추면 자동으로 처리됨) -->
         <el-input
-          v-model="searchQuery"
-          placeholder="검색..."
-          size="large"
-          clearable
-          @input="handleSearch"
+            v-model="searchQuery"
+            placeholder="검색..."
+            size="large"
+            clearable
+            @input="handleSearch"
         >
           <template #prefix>
-            <el-icon><search /></el-icon>
+            <el-icon>
+              <search/>
+            </el-icon>
           </template>
         </el-input>
 
-        <!-- 카테고리 선택 박스 -->
-        <el-select v-model="selectedCategory" placeholder="카테고리" size="large" @change="loadQuizzes">
-          <el-option label="전체" :value="null" />
-          <!-- categories 배열을 순회하며 옵션을 생성합니다 -->
-          <el-option 
-            v-for="category in categories" 
+        <!-- 카테고리 선택: 변경 시 loadWorldcups 직접 호출 -->
+        <el-select
+          v-model="selectedCategory"
+          placeholder="전체"
+          size="large"
+          @change="loadQuizzes"
+          style="width: 160px"
+        >
+
+          <el-option label="전체" value=""/>
+          <el-option
+            v-for="category in categories"
             :key="category.id"
             :label="category.name"
             :value="category.id"
@@ -42,16 +50,16 @@
       <div v-loading="loading" class="grid grid-3">
         <!-- 각 퀴즈 카드를 클릭하면 상세 페이지로 이동합니다 -->
         <router-link
-          v-for="(quiz, index) in quizzes"
-          :key="quiz.id"
-          :to="`/quiz/${quiz.id}/play`"
-          class="quiz-card card drop-in"
-          :style="{ animationDelay: `${index * 0.1}s` }"
-          @click.prevent="handleNavigation(`/quiz/${quiz.id}/play`)"
+            v-for="(quiz, index) in quizzes"
+            :key="quiz.id"
+            :to="`/quiz/${quiz.id}/play`"
+            class="quiz-card card drop-in"
+            :style="{ animationDelay: `${index * 0.1}s` }"
+            @click.prevent="handleNavigation(`/quiz/${quiz.id}/play`)"
         >
           <div class="card-image">
             <!-- 썸네일이 없으면 기본 이미지를 보여줍니다 -->
-            <img :src="getImageUrl(quiz.thumbnail || '/placeholder.jpg')" :alt="quiz.title" />
+            <img :src="getImageUrl(quiz.thumbnail || '/placeholder.jpg')" :alt="quiz.title"/>
           </div>
           <div class="card-body">
             <h3>{{ quiz.title }}</h3>
@@ -83,12 +91,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { useAuthStore } from '@/stores/auth'
-import { quizApi } from '@/api/quizApi'
-import { commonApi } from '@/api/commonApi'
-import { Search } from '@element-plus/icons-vue'
-import { useRouter } from 'vue-router'
+import {ref, onMounted} from 'vue'
+import {useAuthStore} from '@/stores/auth'
+import {quizApi} from '@/api/quizApi'
+import {commonApi} from '@/api/commonApi'
+import {Search} from '@element-plus/icons-vue'
+import {useRouter} from 'vue-router'
 import ExitTransition from '@/components/ExitTransition.vue'
 import {getImageUrl} from "@/utils/helpers.js";
 
@@ -113,7 +121,7 @@ const selectedCategory = ref(null) // 선택된 카테고리 ID
 
 // 컴포넌트가 화면에 나타나면 실행됩니다.
 onMounted(async () => {
-  await loadCategories() // 카테고리 정보 불러오기
+  await loadQuizCategories() // 카테고리 정보 불러오기
   await loadQuizzes() // 퀴즈 목록 불러오기
 })
 
@@ -124,7 +132,7 @@ onMounted(async () => {
 /**
  * 카테고리 목록을 서버에서 가져옵니다.
  */
-async function loadCategories() {
+async function loadQuizCategories() {
   try {
     const response = await commonApi.getCategories('quiz')
     categories.value = response.data
@@ -148,7 +156,7 @@ async function loadQuizzes() {
     if (selectedCategory.value) {
       params.categoryId = selectedCategory.value // 카테고리 필터
     }
-    
+
     // API 요청
     const response = await quizApi.getQuizzes(params)
     quizzes.value = response.data
@@ -179,7 +187,7 @@ async function handleNavigation(path) {
 /* 퀴즈 페이지 전체 배경 */
 .quiz-list-page {
   min-height: 100vh;
-  background: #D4BBFF;  /* 보라색 배경 */
+  background: #D4BBFF; /* 보라색 배경 */
   padding: var(--spacing-xl) 0;
 }
 
