@@ -25,9 +25,17 @@ export function formatTime(seconds) {
 }
 
 // 승률 계산
+// 승률 계산 (1:1 승률)
 export function calculateWinRate(winCount, appearCount) {
     if (appearCount === 0) return 0
     return Math.round((winCount / appearCount) * 100 * 10) / 10
+}
+
+// 우승 비율 계산 (전체 우승 횟수 대비)
+export function getWinRate(candidate, totalWinCount) {
+    if (!candidate || totalWinCount === 0) return '0.0';
+    const rate = (candidate.winCount / totalWinCount) * 100;
+    return rate.toFixed(1);
 }
 
 // 배열 셔플

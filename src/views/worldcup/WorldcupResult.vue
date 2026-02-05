@@ -34,7 +34,7 @@
             <div class="winner-stats">
               <span>총 우승: {{ winner?.winCount }}회</span>
               <span>결승 진출: {{ winner?.finalCount }}회</span>
-              <span>승률: {{ getWinRate(winner) }}%</span>
+              <span>승률: {{ getWinRate(winner, totalWinCount) }}%</span>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ import { useRoute } from 'vue-router'
 import { Loading } from '@element-plus/icons-vue'
 import { worldcupApi } from '@/api/worldcupApi'
 import apiClient from "@/api/axios.js"
-import { getImageUrl } from '@/utils/helpers'
+import { getImageUrl, getWinRate } from '@/utils/helpers'
 
 // ===== 라우터 =====
 const route = useRoute()
@@ -165,14 +165,7 @@ const totalWinCount = computed(() => {
   return candidates.value.reduce((sum, candidate) => sum + (candidate.winCount || 0), 0);
 });
 
-const getWinRate = (candidate) => {
-  if (!candidate || totalWinCount.value === 0) return '0.0';
 
-  // (해당 후보 우승 횟수 / 전제 후보 우승 횟수 총합) * 100
-  console.log(`우승횟수 : ${candidate.winCount} / 전체 후보 우승 횟수 : ${totalWinCount.value}`);
-  const rate = (candidate.winCount / totalWinCount.value) * 100;
-  return rate.toFixed(1);
-};
 
 // ===== 라이프사이클 훅 =====
 /**
