@@ -33,967 +33,4855 @@
   ],
   "worldcups": [
     {
-      "id": 1,
-      "title": "K-POP 아이돌 이상형 월드컵",
-      "description": "가장 좋아하는 K-POP 아이돌을 선택해보세요!",
-      "thumbnail": "/uploads/worldcup_1_thumb.jpg",
-      "categoryId": 2,
-      "userId": 1,
-      "createdAt": "2026-01-25T10:00:00Z",
-      "viewCount": 1523,
-      "playCount": 892
+      "title": "레전드 웹툰 월드컵",
+      "description": "여러분의 인생 웹툰을 골라주세요!",
+      "categoryId": 5,
+      "thumbnail": "/uploads/1770250835043-180047445.png",
+      "userId": 5,
+      "createdAt": "2026-02-05T00:20:52.756Z",
+      "viewCount": 1,
+      "playCount": 0,
+      "id": 1
     },
     {
-      "title": "레전드 웹툰 월드컵",
-      "description": "최애 웹툰 월드컵입니다~~",
+      "title": "인생 애니 월드컵",
+      "description": "인생 애니 골라보숑~",
       "categoryId": 5,
-      "thumbnail": "/uploads/1770167351995-338964800.png",
-      "userId": 2,
-      "createdAt": "2026-02-04T01:10:28.138Z",
-      "viewCount": 3,
-      "playCount": 1,
+      "thumbnail": "/uploads/1770251479701-373809190.jpg",
+      "userId": 5,
+      "createdAt": "2026-02-05T00:40:26.621Z",
+      "viewCount": 2,
+      "playCount": 0,
       "id": 2
     },
     {
-      "title": "레전드 웹툰 월드컵",
-      "description": "당신의 인생 웹툰에게 투표하세요",
-      "categoryId": 5,
-      "thumbnail": "/uploads/1770187529048-209590861.png",
-      "userId": 2,
-      "createdAt": "2026-02-04T06:51:13.714Z",
+      "title": "남자 아이돌 월드컵",
+      "description": "좋아하는 남돌 골라보숑",
+      "categoryId": 2,
+      "thumbnail": "/uploads/1770254394424-61086662.jpeg",
+      "userId": 5,
+      "createdAt": "2026-02-05T01:24:43.430Z",
       "viewCount": 0,
       "playCount": 0,
       "id": 3
+    },
+    {
+      "title": "여자 아이돌 월드컵",
+      "description": "당신의 원픽을 골라보숑!",
+      "categoryId": 2,
+      "thumbnail": "/uploads/1770257863852-349149361.jpeg",
+      "userId": 5,
+      "createdAt": "2026-02-05T02:19:52.720Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 4
+    },
+    {
+      "title": "여행지 월드컵",
+      "description": "어디를 제일 가고싶은지 골라보숑!",
+      "categoryId": 3,
+      "thumbnail": "/uploads/1770258138582-830528306.jpg",
+      "userId": 5,
+      "createdAt": "2026-02-05T02:22:23.992Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 5
+    },
+    {
+      "title": "최강 동물 월드컵",
+      "description": "최강 동물을 골라보숑!",
+      "categoryId": 4,
+      "thumbnail": "/uploads/1770258609988-694153735.jpg",
+      "userId": 5,
+      "createdAt": "2026-02-05T02:30:14.122Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 6
+    },
+    {
+      "title": "음식 월드컵",
+      "description": "제일 좋아하는 음식 한번 골라보숑!",
+      "categoryId": 1,
+      "thumbnail": "/uploads/1770259005574-47858605.jpg",
+      "userId": 5,
+      "createdAt": "2026-02-05T02:36:51.041Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 7
     }
   ],
   "worldcup_candidates": [
     {
-      "id": 1,
       "worldcupId": 1,
-      "name": "후보 1",
-      "imageUrl": "/uploads/candidate_1.jpg",
-      "winCount": 45,
-      "appearCount": 120,
-      "finalCount": 8
+      "name": "별을품은소드마스터",
+      "imageUrl": "/uploads/1770250763123-243061922.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 1
     },
     {
-      "worldcupId": 2,
-      "name": "킬러경찰",
-      "imageUrl": "/uploads/1770167167905-823179312.webp",
-      "winCount": 1,
-      "appearCount": 7,
-      "finalCount": 1,
+      "worldcupId": 1,
+      "name": "킬러경찰",
+      "imageUrl": "/uploads/1770250763121-933616884.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
       "id": 2
     },
     {
-      "worldcupId": 2,
-      "name": "광장",
-      "imageUrl": "/uploads/1770167174689-293749044.webp",
+      "worldcupId": 1,
+      "name": "천하서고대공자",
+      "imageUrl": "/uploads/1770250763134-940783349.webp",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 3
     },
     {
-      "worldcupId": 2,
-      "name": "역대급 영지 설계사 ",
-      "imageUrl": "/uploads/1770167174694-784644419.webp",
+      "worldcupId": 1,
+      "name": "광장",
+      "imageUrl": "/uploads/1770250763135-956127030.webp",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 4
     },
     {
-      "worldcupId": 2,
-      "name": "천화서고 대공자",
-      "imageUrl": "/uploads/1770167174690-52397882.webp",
+      "worldcupId": 1,
+      "name": "역대급영지설계사",
+      "imageUrl": "/uploads/1770250763125-976917645.webp",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 5
     },
     {
-      "worldcupId": 2,
-      "name": "별을품은 소드마스터",
-      "imageUrl": "/uploads/1770167174688-50406047.webp",
+      "worldcupId": 1,
+      "name": "당골",
+      "imageUrl": "/uploads/1770250763119-993322868.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 6
     },
     {
-      "worldcupId": 2,
-      "name": "덴마",
-      "imageUrl": "/uploads/1770167174697-807798043.jpg",
+      "worldcupId": 1,
+      "name": "절대회귀",
+      "imageUrl": "/uploads/1770250763131-869007431.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 7
     },
     {
-      "worldcupId": 2,
-      "name": "일렉시드",
-      "imageUrl": "/uploads/1770167174692-109842028.jpg",
+      "worldcupId": 1,
+      "name": "일렉시드",
+      "imageUrl": "/uploads/1770250763139-693721021.jpg",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 8
     },
     {
-      "worldcupId": 2,
-      "name": "별이삼샵",
-      "imageUrl": "/uploads/1770167174699-513362935.webp",
+      "worldcupId": 1,
+      "name": "샤money즘",
+      "imageUrl": "/uploads/1770250763128-579590120.jpg",
       "winCount": 0,
-      "appearCount": 8,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 9
     },
     {
-      "worldcupId": 2,
-      "name": "아비무쌍",
-      "imageUrl": "/uploads/1770167174700-24813330.webp",
+      "worldcupId": 1,
+      "name": "아비무쌍",
+      "imageUrl": "/uploads/1770250763142-692496294.webp",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 10
     },
     {
-      "worldcupId": 2,
-      "name": "지금우리 학교는",
-      "imageUrl": "/uploads/1770167174701-578568467.webp",
+      "worldcupId": 1,
+      "name": "덴마",
+      "imageUrl": "/uploads/1770250763152-407770325.jpg",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 11
     },
     {
-      "worldcupId": 2,
-      "name": "스위트홈",
-      "imageUrl": "/uploads/1770167174702-181111543.jpg",
+      "worldcupId": 1,
+      "name": "별이삼샵",
+      "imageUrl": "/uploads/1770250763154-868301633.webp",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 12
     },
     {
-      "worldcupId": 2,
-      "name": "절대회귀",
-      "imageUrl": "/uploads/1770167174696-149234050.jpg",
+      "worldcupId": 1,
+      "name": "지금우리학교는",
+      "imageUrl": "/uploads/1770250763155-463328928.webp",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 13
     },
     {
-      "worldcupId": 2,
-      "name": "샤money즘",
-      "imageUrl": "/uploads/1770167174691-654460416.jpg",
+      "worldcupId": 1,
+      "name": "스위트홈",
+      "imageUrl": "/uploads/1770250763157-194387507.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 14
     },
     {
-      "worldcupId": 2,
-      "name": "비질란테",
-      "imageUrl": "/uploads/1770167174706-577670117.webp",
+      "worldcupId": 1,
+      "name": "비질란테",
+      "imageUrl": "/uploads/1770250763161-620973569.webp",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 15
     },
     {
-      "worldcupId": 2,
-      "name": "타인은 지옥이다",
-      "imageUrl": "/uploads/1770167174707-150451732.jpeg",
+      "worldcupId": 1,
+      "name": "타인은지옥이다",
+      "imageUrl": "/uploads/1770250763163-578224687.jpeg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 16
     },
     {
-      "worldcupId": 2,
-      "name": "후레자식",
-      "imageUrl": "/uploads/1770167174709-730343969.jpg",
+      "worldcupId": 1,
+      "name": "후레자식",
+      "imageUrl": "/uploads/1770250763168-436050788.jpg",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 17
     },
     {
-      "worldcupId": 2,
-      "name": "프리드로우",
-      "imageUrl": "/uploads/1770167174710-591476315.jpg",
+      "worldcupId": 1,
+      "name": "프리드로우",
+      "imageUrl": "/uploads/1770250763172-539851337.jpg",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 18
     },
     {
-      "worldcupId": 2,
-      "name": "윈드브레이커",
-      "imageUrl": "/uploads/1770167174710-365188055.webp",
+      "worldcupId": 1,
+      "name": "국세청망나니",
+      "imageUrl": "/uploads/1770250763165-855283834.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 19
     },
     {
-      "worldcupId": 2,
-      "name": "정열맨",
-      "imageUrl": "/uploads/1770167174711-749792750.webp",
+      "worldcupId": 1,
+      "name": "정열맨",
+      "imageUrl": "/uploads/1770250763178-725512811.webp",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 20
     },
     {
-      "worldcupId": 2,
-      "name": "패션왕",
-      "imageUrl": "/uploads/1770167174714-493435358.jpg",
-      "winCount": 1,
-      "appearCount": 2,
-      "finalCount": 1,
+      "worldcupId": 1,
+      "name": "신과함께",
+      "imageUrl": "/uploads/1770250763181-807190925.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
       "id": 21
     },
     {
-      "worldcupId": 2,
-      "name": "트레이스",
-      "imageUrl": "/uploads/1770167174714-562274436.jpg",
-      "winCount": 1,
-      "appearCount": 6,
-      "finalCount": 1,
+      "worldcupId": 1,
+      "name": "선천적얼간이들",
+      "imageUrl": "/uploads/1770250763180-214875957.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
       "id": 22
     },
     {
-      "worldcupId": 2,
-      "name": "국세청 망나니",
-      "imageUrl": "/uploads/1770167174709-872612883.jpg",
+      "worldcupId": 1,
+      "name": "안나라수마나라",
+      "imageUrl": "/uploads/1770250763187-502710637.webp",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 23
     },
     {
-      "worldcupId": 2,
-      "name": "신과함께",
-      "imageUrl": "/uploads/1770167174713-228594648.jpg",
+      "worldcupId": 1,
+      "name": "연애혁명",
+      "imageUrl": "/uploads/1770250763188-512304044.webp",
       "winCount": 0,
-      "appearCount": 2,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 24
     },
     {
-      "worldcupId": 2,
-      "name": "타이밍ㅅ",
-      "imageUrl": "/uploads/1770167174716-235432601.jpg",
+      "worldcupId": 1,
+      "name": "트레이스",
+      "imageUrl": "/uploads/1770250763192-566235134.jpg",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 25
     },
     {
-      "worldcupId": 2,
-      "name": "선천적 얼간이들",
-      "imageUrl": "/uploads/1770167174712-375582875.jpg",
+      "worldcupId": 1,
+      "name": "패션왕",
+      "imageUrl": "/uploads/1770250763195-947601416.jpg",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 26
     },
     {
-      "worldcupId": 2,
-      "name": "기기괴괴",
-      "imageUrl": "/uploads/1770167174718-479102657.webp",
-      "winCount": 1,
-      "appearCount": 6,
-      "finalCount": 1,
+      "worldcupId": 1,
+      "name": "죽음에관하여",
+      "imageUrl": "/uploads/1770250763194-691148834.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
       "id": 27
     },
     {
-      "worldcupId": 2,
-      "name": "1초",
-      "imageUrl": "/uploads/1770167174719-921837057.webp",
+      "worldcupId": 1,
+      "name": "타이밍",
+      "imageUrl": "/uploads/1770250763202-159442594.jpg",
       "winCount": 0,
-      "appearCount": 1,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 28
     },
     {
-      "worldcupId": 2,
-      "name": "무빙",
-      "imageUrl": "/uploads/1770167174718-143837142.jpg",
+      "worldcupId": 1,
+      "name": "1초",
+      "imageUrl": "/uploads/1770250763204-32694199.webp",
       "winCount": 0,
-      "appearCount": 7,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 29
     },
     {
-      "worldcupId": 2,
-      "name": "죽음에 관하여",
-      "imageUrl": "/uploads/1770167174720-806464538.jpg",
+      "worldcupId": 1,
+      "name": "목욕의신",
+      "imageUrl": "/uploads/1770250763204-74590588.jpg",
       "winCount": 0,
-      "appearCount": 7,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 30
     },
     {
-      "worldcupId": 2,
-      "name": "목욕의 신",
-      "imageUrl": "/uploads/1770167174720-977575471.jpg",
-      "winCount": 1,
-      "appearCount": 6,
-      "finalCount": 1,
+      "worldcupId": 1,
+      "name": "격기3반",
+      "imageUrl": "/uploads/1770250763208-48660647.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
       "id": 31
     },
     {
-      "worldcupId": 2,
-      "name": "안나라수마나라",
-      "imageUrl": "/uploads/1770167174721-431386870.webp",
+      "worldcupId": 1,
+      "name": "이태원클라쓰",
+      "imageUrl": "/uploads/1770250763218-564554758.jpg",
       "winCount": 0,
-      "appearCount": 7,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 32
     },
     {
-      "worldcupId": 2,
-      "name": "당골",
-      "imageUrl": "/uploads/1770167422763-379832918.jpg",
-      "winCount": 1,
-      "appearCount": 6,
-      "finalCount": 1,
+      "worldcupId": 1,
+      "name": "레사",
+      "imageUrl": "/uploads/1770250763231-638040580.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
       "id": 33
     },
     {
-      "worldcupId": 3,
-      "name": "별을 품은 소드마스터",
-      "imageUrl": "/uploads/1770187537869-719806552.webp",
+      "worldcupId": 1,
+      "name": "초인의시대",
+      "imageUrl": "/uploads/1770250763220-390287518.jpg",
       "winCount": 0,
-      "appearCount": 6,
+      "appearCount": 0,
       "finalCount": 0,
       "id": 34
     },
     {
-      "worldcupId": 3,
-      "name": "킬러경찰",
-      "imageUrl": "/uploads/1770187537868-289416667.webp",
+      "worldcupId": 1,
+      "name": "치즈인더트랩",
+      "imageUrl": "/uploads/1770250763232-750632167.jpg",
       "winCount": 0,
       "appearCount": 0,
       "finalCount": 0,
       "id": 35
     },
     {
-      "worldcupId": 3,
-      "name": "절대회귀",
-      "imageUrl": "/uploads/1770187537871-16203170.jpg",
+      "worldcupId": 1,
+      "name": "헬퍼",
+      "imageUrl": "/uploads/1770250763234-633182973.webp",
       "winCount": 0,
       "appearCount": 0,
       "finalCount": 0,
       "id": 36
     },
     {
-      "worldcupId": 3,
-      "name": "역대급 영지 설계사",
-      "imageUrl": "/uploads/1770187537870-718703898.webp",
+      "worldcupId": 1,
+      "name": "싸움독학",
+      "imageUrl": "/uploads/1770250763236-988159850.webp",
       "winCount": 0,
       "appearCount": 0,
       "finalCount": 0,
       "id": 37
     },
     {
-      "worldcupId": 2,
-      "winnerId": 28,
-      "top4": [
-        28,
-        32,
-        19,
-        33
-      ],
-      "selections": [
-        28,
-        3,
-        4,
-        20,
-        32,
-        21,
-        10,
-        7,
-        19,
-        8,
-        22,
-        25,
-        33,
-        12,
-        23,
-        9,
-        28,
-        4,
-        32,
-        10,
-        19,
-        22,
-        33,
-        23,
-        28,
-        32,
-        19,
-        33,
-        28,
-        19,
-        28
-      ],
-      "createdAt": "2026-02-04T05:33:24.483Z",
-      "id": 6
+      "worldcupId": 1,
+      "name": "약한영웅",
+      "imageUrl": "/uploads/1770250763236-555831291.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 38
+    },
+    {
+      "worldcupId": 1,
+      "name": "기기괴괴",
+      "imageUrl": "/uploads/1770250763237-948396981.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 39
+    },
+    {
+      "worldcupId": 1,
+      "name": "캐슬",
+      "imageUrl": "/uploads/1770250763238-710917090.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 40
+    },
+    {
+      "worldcupId": 1,
+      "name": "고수",
+      "imageUrl": "/uploads/1770250763247-325563652.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 41
+    },
+    {
+      "worldcupId": 1,
+      "name": "외모지상주의",
+      "imageUrl": "/uploads/1770250763246-236489711.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 42
+    },
+    {
+      "worldcupId": 1,
+      "name": "더복서",
+      "imageUrl": "/uploads/1770250763248-27149726.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 43
+    },
+    {
+      "worldcupId": 1,
+      "name": "광마회귀",
+      "imageUrl": "/uploads/1770250763251-21255049.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 44
+    },
+    {
+      "worldcupId": 1,
+      "name": "나노마신",
+      "imageUrl": "/uploads/1770250763252-21773013.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 45
+    },
+    {
+      "worldcupId": 1,
+      "name": "호랑이형님",
+      "imageUrl": "/uploads/1770250763248-271279700.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 46
+    },
+    {
+      "worldcupId": 1,
+      "name": "나이트런",
+      "imageUrl": "/uploads/1770250763254-509810508.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 47
+    },
+    {
+      "worldcupId": 1,
+      "name": "화산귀환",
+      "imageUrl": "/uploads/1770250763260-765076192.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 48
+    },
+    {
+      "worldcupId": 1,
+      "name": "쿠베라",
+      "imageUrl": "/uploads/1770250763263-963721242.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 49
+    },
+    {
+      "worldcupId": 1,
+      "name": "이직로그",
+      "imageUrl": "/uploads/1770250763267-774742955.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 50
+    },
+    {
+      "worldcupId": 1,
+      "name": "독고",
+      "imageUrl": "/uploads/1770250763269-275023831.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 51
+    },
+    {
+      "worldcupId": 1,
+      "name": "나혼자만레벨업",
+      "imageUrl": "/uploads/1770250763268-585737301.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 52
+    },
+    {
+      "worldcupId": 1,
+      "name": "신의탑",
+      "imageUrl": "/uploads/1770250763268-782920834.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 53
+    },
+    {
+      "worldcupId": 1,
+      "name": "운명을보는회사원",
+      "imageUrl": "/uploads/1770250763276-316465814.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 54
+    },
+    {
+      "worldcupId": 1,
+      "name": "갓오브하이스쿨",
+      "imageUrl": "/uploads/1770250763274-748670867.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 55
+    },
+    {
+      "worldcupId": 1,
+      "name": "잔불의기사",
+      "imageUrl": "/uploads/1770250763291-217417174.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 56
+    },
+    {
+      "worldcupId": 1,
+      "name": "마술사",
+      "imageUrl": "/uploads/1770250763294-393565813.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 57
+    },
+    {
+      "worldcupId": 1,
+      "name": "노블레스",
+      "imageUrl": "/uploads/1770250763295-914876700.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 58
+    },
+    {
+      "worldcupId": 1,
+      "name": "통",
+      "imageUrl": "/uploads/1770250763285-273722250.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 59
+    },
+    {
+      "worldcupId": 1,
+      "name": "유미의세포들",
+      "imageUrl": "/uploads/1770250763290-3595483.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 60
+    },
+    {
+      "worldcupId": 1,
+      "name": "무빙",
+      "imageUrl": "/uploads/1770250763297-95665752.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 61
+    },
+    {
+      "worldcupId": 1,
+      "name": "바른연애길잡이",
+      "imageUrl": "/uploads/1770250763295-561789735.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 62
+    },
+    {
+      "worldcupId": 1,
+      "name": "전지적독자시점",
+      "imageUrl": "/uploads/1770250763301-162115080.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 63
+    },
+    {
+      "worldcupId": 1,
+      "name": "오피스누나이야기",
+      "imageUrl": "/uploads/1770250787377-248329623.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 64
     },
     {
       "worldcupId": 2,
-      "winnerId": 33,
-      "top4": [
-        17,
-        12,
-        4,
-        33
-      ],
-      "selections": [
-        17,
-        12,
-        4,
-        33,
-        17,
-        33,
-        33
-      ],
-      "createdAt": "2026-02-04T07:14:50.724Z",
-      "id": 7
+      "name": "도박묵시록카이지",
+      "imageUrl": "/uploads/1770251534846-967697033.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 65
+    },
+    {
+      "worldcupId": 2,
+      "name": "유희왕",
+      "imageUrl": "/uploads/1770251534862-447987825.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 66
+    },
+    {
+      "worldcupId": 2,
+      "name": "슈팅바쿠간",
+      "imageUrl": "/uploads/1770251534849-137938349.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 67
+    },
+    {
+      "worldcupId": 2,
+      "name": "스즈미야하루히의우울",
+      "imageUrl": "/uploads/1770251534864-296843299.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 68
+    },
+    {
+      "worldcupId": 2,
+      "name": "마법소녀마도카마기카",
+      "imageUrl": "/uploads/1770251534845-730744641.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 69
+    },
+    {
+      "worldcupId": 2,
+      "name": "한마바키",
+      "imageUrl": "/uploads/1770251534853-833904188.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 70
+    },
+    {
+      "worldcupId": 2,
+      "name": "러브라이브",
+      "imageUrl": "/uploads/1770251534851-497383192.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 71
+    },
+    {
+      "worldcupId": 2,
+      "name": "케이온",
+      "imageUrl": "/uploads/1770251534865-487342152.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 72
+    },
+    {
+      "worldcupId": 2,
+      "name": "탑블레이드",
+      "imageUrl": "/uploads/1770251534850-986682381.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 73
+    },
+    {
+      "worldcupId": 2,
+      "name": "고스트바둑왕",
+      "imageUrl": "/uploads/1770251534848-408663171.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 74
+    },
+    {
+      "worldcupId": 2,
+      "name": "토라도라",
+      "imageUrl": "/uploads/1770251534866-619468649.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 75
+    },
+    {
+      "worldcupId": 2,
+      "name": "봇치더락",
+      "imageUrl": "/uploads/1770251534868-521229554.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 76
+    },
+    {
+      "worldcupId": 2,
+      "name": "암살교실",
+      "imageUrl": "/uploads/1770251534856-107993328.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 77
+    },
+    {
+      "worldcupId": 2,
+      "name": "그날본꽃의이름은우리는아직모른다",
+      "imageUrl": "/uploads/1770251534870-918568485.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 78
+    },
+    {
+      "worldcupId": 2,
+      "name": "최애의아이",
+      "imageUrl": "/uploads/1770251534872-19608464.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 79
+    },
+    {
+      "worldcupId": 2,
+      "name": "카케구루이",
+      "imageUrl": "/uploads/1770251534859-159061301.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 80
+    },
+    {
+      "worldcupId": 2,
+      "name": "블루록",
+      "imageUrl": "/uploads/1770251534875-825600446.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 81
+    },
+    {
+      "worldcupId": 2,
+      "name": "테니스의왕자",
+      "imageUrl": "/uploads/1770251534876-227734914.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 82
+    },
+    {
+      "worldcupId": 2,
+      "name": "쿠로코의농구",
+      "imageUrl": "/uploads/1770251534877-631834064.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 83
+    },
+    {
+      "worldcupId": 2,
+      "name": "4월은너의거짓말",
+      "imageUrl": "/uploads/1770251534872-338689235.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 84
+    },
+    {
+      "worldcupId": 2,
+      "name": "하이큐",
+      "imageUrl": "/uploads/1770251534879-957333736.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 85
+    },
+    {
+      "worldcupId": 2,
+      "name": "헬싱",
+      "imageUrl": "/uploads/1770251534880-835820020.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 86
+    },
+    {
+      "worldcupId": 2,
+      "name": "베르세르크",
+      "imageUrl": "/uploads/1770251534881-457635800.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 87
+    },
+    {
+      "worldcupId": 2,
+      "name": "죠죠의기묘한모험",
+      "imageUrl": "/uploads/1770251534886-497036674.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 88
+    },
+    {
+      "worldcupId": 2,
+      "name": "은혼",
+      "imageUrl": "/uploads/1770251534886-844593224.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 89
+    },
+    {
+      "worldcupId": 2,
+      "name": "스파이패밀리",
+      "imageUrl": "/uploads/1770251534888-667481429.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 90
+    },
+    {
+      "worldcupId": 2,
+      "name": "오버로드",
+      "imageUrl": "/uploads/1770251534899-524425342.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 91
+    },
+    {
+      "worldcupId": 2,
+      "name": "노게임노라이프",
+      "imageUrl": "/uploads/1770251534900-84133450.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 92
+    },
+    {
+      "worldcupId": 2,
+      "name": "약속의네버랜드",
+      "imageUrl": "/uploads/1770251534890-867941266.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 93
+    },
+    {
+      "worldcupId": 2,
+      "name": "메이드인어비스",
+      "imageUrl": "/uploads/1770251534892-517881982.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 94
+    },
+    {
+      "worldcupId": 2,
+      "name": "바이올렛에버가든",
+      "imageUrl": "/uploads/1770251534894-54188531.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 95
+    },
+    {
+      "worldcupId": 2,
+      "name": "전생했더니슬라임이었던건에대하여",
+      "imageUrl": "/uploads/1770251534904-142504778.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 96
+    },
+    {
+      "worldcupId": 2,
+      "name": "무직전생",
+      "imageUrl": "/uploads/1770251534907-149927508.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 97
+    },
+    {
+      "worldcupId": 2,
+      "name": "제로부터시작하는이세계생활",
+      "imageUrl": "/uploads/1770251534908-813708880.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 98
+    },
+    {
+      "worldcupId": 2,
+      "name": "장송의프리렌",
+      "imageUrl": "/uploads/1770251534914-540165721.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 99
+    },
+    {
+      "worldcupId": 2,
+      "name": "슈타인즈게이트",
+      "imageUrl": "/uploads/1770251534896-78391625.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 100
+    },
+    {
+      "worldcupId": 2,
+      "name": "원펀맨",
+      "imageUrl": "/uploads/1770251534918-117769873.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 101
+    },
+    {
+      "worldcupId": 2,
+      "name": "기생수",
+      "imageUrl": "/uploads/1770251534921-97344550.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 102
+    },
+    {
+      "worldcupId": 2,
+      "name": "이멋진세계에축복을",
+      "imageUrl": "/uploads/1770251534919-263015094.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 103
+    },
+    {
+      "worldcupId": 2,
+      "name": "나의히어로아카데미아",
+      "imageUrl": "/uploads/1770251534923-309463034.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 104
+    },
+    {
+      "worldcupId": 2,
+      "name": "모브사이코100",
+      "imageUrl": "/uploads/1770251534916-844452442.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 105
+    },
+    {
+      "worldcupId": 2,
+      "name": "체인소맨",
+      "imageUrl": "/uploads/1770251534925-577436062.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 106
+    },
+    {
+      "worldcupId": 2,
+      "name": "도쿄구울",
+      "imageUrl": "/uploads/1770251534930-965866228.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 107
+    },
+    {
+      "worldcupId": 2,
+      "name": "도라에몽",
+      "imageUrl": "/uploads/1770251534933-380969408.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 108
+    },
+    {
+      "worldcupId": 2,
+      "name": "진격의거인",
+      "imageUrl": "/uploads/1770251534946-508598457.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 109
+    },
+    {
+      "worldcupId": 2,
+      "name": "데스노트",
+      "imageUrl": "/uploads/1770251534950-373022167.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 110
+    },
+    {
+      "worldcupId": 2,
+      "name": "짱구는못말려",
+      "imageUrl": "/uploads/1770251534952-754480375.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 111
+    },
+    {
+      "worldcupId": 2,
+      "name": "강철의연금술사",
+      "imageUrl": "/uploads/1770251534953-587354902.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 112
+    },
+    {
+      "worldcupId": 2,
+      "name": "에반게리온",
+      "imageUrl": "/uploads/1770251534956-532584685.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 113
+    },
+    {
+      "worldcupId": 2,
+      "name": "포켓몬스터",
+      "imageUrl": "/uploads/1770251534957-462858888.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 114
+    },
+    {
+      "worldcupId": 2,
+      "name": "디지몬어드벤처",
+      "imageUrl": "/uploads/1770251534955-234136155.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 115
+    },
+    {
+      "worldcupId": 2,
+      "name": "이누야샤",
+      "imageUrl": "/uploads/1770251534960-604887189.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 116
+    },
+    {
+      "worldcupId": 2,
+      "name": "명탐정코난",
+      "imageUrl": "/uploads/1770251534958-433260151.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 117
+    },
+    {
+      "worldcupId": 2,
+      "name": "슬램덩크",
+      "imageUrl": "/uploads/1770251534962-548719939.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 118
+    },
+    {
+      "worldcupId": 2,
+      "name": "나루토",
+      "imageUrl": "/uploads/1770251534965-636601055.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 119
+    },
+    {
+      "worldcupId": 2,
+      "name": "세일러문",
+      "imageUrl": "/uploads/1770251534968-354058797.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 120
+    },
+    {
+      "worldcupId": 2,
+      "name": "원피스",
+      "imageUrl": "/uploads/1770251534971-409546265.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 121
+    },
+    {
+      "worldcupId": 2,
+      "name": "블리치",
+      "imageUrl": "/uploads/1770251534972-786154807.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 122
+    },
+    {
+      "worldcupId": 2,
+      "name": "드래곤볼",
+      "imageUrl": "/uploads/1770251534969-131173593.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 123
+    },
+    {
+      "worldcupId": 2,
+      "name": "귀멸의칼날",
+      "imageUrl": "/uploads/1770251534974-721974211.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 124
+    },
+    {
+      "worldcupId": 2,
+      "name": "주술회전",
+      "imageUrl": "/uploads/1770251534974-848654090.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 125
+    },
+    {
+      "worldcupId": 2,
+      "name": "소드아트온라인",
+      "imageUrl": "/uploads/1770251534973-118027657.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 126
+    },
+    {
+      "worldcupId": 2,
+      "name": "헌터x헌터",
+      "imageUrl": "/uploads/1770251657189-69664888.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 127
+    },
+    {
+      "worldcupId": 2,
+      "name": "이누야시키",
+      "imageUrl": "/uploads/1770251686488-56069705.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 128
+    },
+    {
+      "worldcupId": 3,
+      "name": "하이라이트 이기광",
+      "imageUrl": "/uploads/1770254401619-347513360.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 129
+    },
+    {
+      "worldcupId": 3,
+      "name": "하이라이트 양요섭",
+      "imageUrl": "/uploads/1770254401621-142147177.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 130
+    },
+    {
+      "worldcupId": 3,
+      "name": "투모로우바이투게더 수빈",
+      "imageUrl": "/uploads/1770254418684-667729278.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 131
+    },
+    {
+      "worldcupId": 3,
+      "name": "하이라이트 손동운",
+      "imageUrl": "/uploads/1770254401622-281356917.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 132
+    },
+    {
+      "worldcupId": 3,
+      "name": "하이라이트 윤두준",
+      "imageUrl": "/uploads/1770254401620-554978710.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 133
+    },
+    {
+      "worldcupId": 3,
+      "name": "투모로우바이투게더 범규",
+      "imageUrl": "/uploads/1770254418685-19004870.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 134
+    },
+    {
+      "worldcupId": 3,
+      "name": "투모로우바이투게더 연준",
+      "imageUrl": "/uploads/1770254418683-784058290.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 135
+    },
+    {
+      "worldcupId": 3,
+      "name": "제로베이스원 장하오",
+      "imageUrl": "/uploads/1770254432528-599429752.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 136
+    },
+    {
+      "worldcupId": 3,
+      "name": "제로베이스원 성한빈",
+      "imageUrl": "/uploads/1770254432529-668330218.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 137
+    },
+    {
+      "worldcupId": 3,
+      "name": "워너원 박지훈",
+      "imageUrl": "/uploads/1770254443213-308582602.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 138
+    },
+    {
+      "worldcupId": 3,
+      "name": "워너원 강다니엘",
+      "imageUrl": "/uploads/1770254443214-40079228.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 139
+    },
+    {
+      "worldcupId": 3,
+      "name": "엔시티 재민",
+      "imageUrl": "/uploads/1770254454521-878884673.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 140
+    },
+    {
+      "worldcupId": 3,
+      "name": "엔시티 태용",
+      "imageUrl": "/uploads/1770254454520-504192206.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 141
+    },
+    {
+      "worldcupId": 3,
+      "name": "엔시티 마크",
+      "imageUrl": "/uploads/1770254454522-996527493.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 142
+    },
+    {
+      "worldcupId": 3,
+      "name": "엔시티 재현",
+      "imageUrl": "/uploads/1770254454521-622518787.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 143
+    },
+    {
+      "worldcupId": 3,
+      "name": "엔시티 도영",
+      "imageUrl": "/uploads/1770254454523-200917622.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 144
+    },
+    {
+      "worldcupId": 3,
+      "name": "엑소 세훈",
+      "imageUrl": "/uploads/1770254465705-560128159.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 145
+    },
+    {
+      "worldcupId": 3,
+      "name": "엑소 찬열",
+      "imageUrl": "/uploads/1770254465704-586767936.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 146
+    },
+    {
+      "worldcupId": 3,
+      "name": "엑소 수호",
+      "imageUrl": "/uploads/1770254465702-587710303.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 147
+    },
+    {
+      "worldcupId": 3,
+      "name": "엑소 카이",
+      "imageUrl": "/uploads/1770254465706-699863990.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 148
+    },
+    {
+      "worldcupId": 3,
+      "name": "엑소 백현",
+      "imageUrl": "/uploads/1770254465708-116190569.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 149
+    },
+    {
+      "worldcupId": 3,
+      "name": "엑소 디오",
+      "imageUrl": "/uploads/1770254465712-192938045.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 150
+    },
+    {
+      "worldcupId": 3,
+      "name": "아이콘 바비",
+      "imageUrl": "/uploads/1770254475929-337668644.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 151
+    },
+    {
+      "worldcupId": 3,
+      "name": "아이콘 김진환",
+      "imageUrl": "/uploads/1770254475929-518969614.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 152
+    },
+    {
+      "worldcupId": 3,
+      "name": "스트레이키즈 필릭스",
+      "imageUrl": "/uploads/1770254488565-215037470.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 153
+    },
+    {
+      "worldcupId": 3,
+      "name": "스트레이키즈 현진",
+      "imageUrl": "/uploads/1770254488564-415880528.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 154
+    },
+    {
+      "worldcupId": 3,
+      "name": "스트레이키즈 방찬",
+      "imageUrl": "/uploads/1770254488565-430972004.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 155
+    },
+    {
+      "worldcupId": 3,
+      "name": "스트레이키즈 리노",
+      "imageUrl": "/uploads/1770254488566-657137506.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 156
+    },
+    {
+      "worldcupId": 3,
+      "name": "세븐틴 정훈",
+      "imageUrl": "/uploads/1770254498951-502620728.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 157
+    },
+    {
+      "worldcupId": 3,
+      "name": "세븐틴 호시",
+      "imageUrl": "/uploads/1770254498951-28858296.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 158
+    },
+    {
+      "worldcupId": 3,
+      "name": "세븐틴 조슈아",
+      "imageUrl": "/uploads/1770254498952-511817458.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 159
+    },
+    {
+      "worldcupId": 3,
+      "name": "세븐틴 준",
+      "imageUrl": "/uploads/1770254498950-414501747.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 160
+    },
+    {
+      "worldcupId": 3,
+      "name": "세븐틴 원우",
+      "imageUrl": "/uploads/1770254498952-40474123.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 161
+    },
+    {
+      "worldcupId": 3,
+      "name": "세븐틴 에스쿱스",
+      "imageUrl": "/uploads/1770254498953-86300090.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 162
+    },
+    {
+      "worldcupId": 3,
+      "name": "세븐틴 민규",
+      "imageUrl": "/uploads/1770254498958-359301720.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 163
+    },
+    {
+      "worldcupId": 3,
+      "name": "샤이니 태민",
+      "imageUrl": "/uploads/1770254510702-17484514.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 164
+    },
+    {
+      "worldcupId": 3,
+      "name": "샤이니 키",
+      "imageUrl": "/uploads/1770254510701-893709500.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 165
+    },
+    {
+      "worldcupId": 3,
+      "name": "빅뱅 지드래곤",
+      "imageUrl": "/uploads/1770254525096-454104482.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 166
+    },
+    {
+      "worldcupId": 3,
+      "name": "빅뱅 태양",
+      "imageUrl": "/uploads/1770254525095-52933446.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 167
+    },
+    {
+      "worldcupId": 3,
+      "name": "비투비 이창섭",
+      "imageUrl": "/uploads/1770254537233-311131860.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 168
+    },
+    {
+      "worldcupId": 3,
+      "name": "비투비 이민혁",
+      "imageUrl": "/uploads/1770254537234-529672591.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 169
+    },
+    {
+      "worldcupId": 3,
+      "name": "비투비 육성재",
+      "imageUrl": "/uploads/1770254537234-146057239.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 170
+    },
+    {
+      "worldcupId": 3,
+      "name": "비투비 서은광",
+      "imageUrl": "/uploads/1770254537243-519530433.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 171
+    },
+    {
+      "worldcupId": 3,
+      "name": "보이넥스트도어 이한",
+      "imageUrl": "/uploads/1770254551648-779149223.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 172
+    },
+    {
+      "worldcupId": 3,
+      "name": "보이넥스트도어 운학",
+      "imageUrl": "/uploads/1770254551648-352933538.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 173
+    },
+    {
+      "worldcupId": 3,
+      "name": "보이넥스트도어 리우",
+      "imageUrl": "/uploads/1770254551649-594269278.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 174
+    },
+    {
+      "worldcupId": 3,
+      "name": "방탄소년단 지민",
+      "imageUrl": "/uploads/1770254564674-29585811.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 175
+    },
+    {
+      "worldcupId": 3,
+      "name": "방탄소년단 정국",
+      "imageUrl": "/uploads/1770254564676-14177053.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 176
+    },
+    {
+      "worldcupId": 3,
+      "name": "방탄소년단 진 ",
+      "imageUrl": "/uploads/1770254564675-165309037.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 177
+    },
+    {
+      "worldcupId": 3,
+      "name": "방탄소년단 제이홉",
+      "imageUrl": "/uploads/1770254564676-593551246.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 178
+    },
+    {
+      "worldcupId": 3,
+      "name": "방탄소년단 슈가",
+      "imageUrl": "/uploads/1770254564676-422168728.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 179
+    },
+    {
+      "worldcupId": 3,
+      "name": "방탄소년단 뷔",
+      "imageUrl": "/uploads/1770254564678-773223718.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 180
+    },
+    {
+      "worldcupId": 3,
+      "name": "방탄소년단 RM",
+      "imageUrl": "/uploads/1770254564682-177475514.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 181
+    },
+    {
+      "worldcupId": 3,
+      "name": "몬스타엑스 민혁",
+      "imageUrl": "/uploads/1770254577081-487183652.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 182
+    },
+    {
+      "worldcupId": 3,
+      "name": "몬스타엑스 셔누",
+      "imageUrl": "/uploads/1770254577081-998956095.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 183
+    },
+    {
+      "worldcupId": 3,
+      "name": "라이즈 원빈",
+      "imageUrl": "/uploads/1770254604796-905686306.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 184
+    },
+    {
+      "worldcupId": 3,
+      "name": "라이즈 소희",
+      "imageUrl": "/uploads/1770254604797-353162498.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 185
+    },
+    {
+      "worldcupId": 3,
+      "name": "라이즈 성찬",
+      "imageUrl": "/uploads/1770254604797-522086170.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 186
+    },
+    {
+      "worldcupId": 3,
+      "name": "더보이즈 주연",
+      "imageUrl": "/uploads/1770254625366-382012694.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 187
+    },
+    {
+      "worldcupId": 3,
+      "name": "더보이즈 현재",
+      "imageUrl": "/uploads/1770254625366-344633852.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 188
+    },
+    {
+      "worldcupId": 3,
+      "name": "2PM 준호",
+      "imageUrl": "/uploads/1770254634483-393241207.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 189
+    },
+    {
+      "worldcupId": 3,
+      "name": "2PM 택연",
+      "imageUrl": "/uploads/1770254634481-550071629.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 190
+    },
+    {
+      "worldcupId": 3,
+      "name": "2PM 찬성",
+      "imageUrl": "/uploads/1770254634482-740058590.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 191
+    },
+    {
+      "worldcupId": 3,
+      "name": "2PM 우영",
+      "imageUrl": "/uploads/1770254634483-414955461.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 192
+    },
+    {
+      "worldcupId": 4,
+      "name": "qwer - 히나",
+      "imageUrl": "/uploads/1770257899045-824724834.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 193
+    },
+    {
+      "worldcupId": 4,
+      "name": "qwer - 쵸단",
+      "imageUrl": "/uploads/1770257899046-254128789.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 194
+    },
+    {
+      "worldcupId": 4,
+      "name": "피프티피프티 키나",
+      "imageUrl": "/uploads/1770257899058-139446959.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 195
+    },
+    {
+      "worldcupId": 4,
+      "name": "qwer - 시연",
+      "imageUrl": "/uploads/1770257899054-341143211.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 196
+    },
+    {
+      "worldcupId": 4,
+      "name": "피프티피프티 하나",
+      "imageUrl": "/uploads/1770257899057-89248130.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 197
+    },
+    {
+      "worldcupId": 4,
+      "name": "exid-하니",
+      "imageUrl": "/uploads/1770257899053-737831495.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 198
+    },
+    {
+      "worldcupId": 4,
+      "name": "프로미스나인 이채영",
+      "imageUrl": "/uploads/1770257899060-78882710.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 199
+    },
+    {
+      "worldcupId": 4,
+      "name": "프로미스나인 이나경",
+      "imageUrl": "/uploads/1770257899063-997332905.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 200
+    },
+    {
+      "worldcupId": 4,
+      "name": "헌트릭스 조이",
+      "imageUrl": "/uploads/1770257899055-834396034.gif",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 201
+    },
+    {
+      "worldcupId": 4,
+      "name": "하츠투하츠 - 지우",
+      "imageUrl": "/uploads/1770257899071-58433426.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 202
+    },
+    {
+      "worldcupId": 4,
+      "name": "피프티피프티 문샤넬",
+      "imageUrl": "/uploads/1770257899070-914994836.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 203
+    },
+    {
+      "worldcupId": 4,
+      "name": "프로미스나인 송하영",
+      "imageUrl": "/uploads/1770257899073-820740010.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 204
+    },
+    {
+      "worldcupId": 4,
+      "name": "프로미스나인 박지원",
+      "imageUrl": "/uploads/1770257899074-305055329.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 205
+    },
+    {
+      "worldcupId": 4,
+      "name": "트와이스 지효",
+      "imageUrl": "/uploads/1770257899077-243337230.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 206
+    },
+    {
+      "worldcupId": 4,
+      "name": "트와이스 사나",
+      "imageUrl": "/uploads/1770257899079-737480616.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 207
+    },
+    {
+      "worldcupId": 4,
+      "name": "프로미스나인 백지헌",
+      "imageUrl": "/uploads/1770257899083-600295437.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 208
+    },
+    {
+      "worldcupId": 4,
+      "name": "트와이스 쯔위",
+      "imageUrl": "/uploads/1770257899084-626436653.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 209
+    },
+    {
+      "worldcupId": 4,
+      "name": "트와이스 모모",
+      "imageUrl": "/uploads/1770257899088-807516094.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 210
+    },
+    {
+      "worldcupId": 4,
+      "name": "트와이스 미나",
+      "imageUrl": "/uploads/1770257899089-775323589.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 211
+    },
+    {
+      "worldcupId": 4,
+      "name": "트와이스 나연",
+      "imageUrl": "/uploads/1770257899090-357270161.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 212
+    },
+    {
+      "worldcupId": 4,
+      "name": "트리플에스 - 이나경",
+      "imageUrl": "/uploads/1770257899092-338834381.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 213
+    },
+    {
+      "worldcupId": 4,
+      "name": "키오프 - 쥴리",
+      "imageUrl": "/uploads/1770257899097-397429182.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 214
+    },
+    {
+      "worldcupId": 4,
+      "name": "키오프 - 하늘",
+      "imageUrl": "/uploads/1770257899092-131955525.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 215
+    },
+    {
+      "worldcupId": 4,
+      "name": "트리플에스 - 김채연",
+      "imageUrl": "/uploads/1770257899094-848161063.png",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 216
+    },
+    {
+      "worldcupId": 4,
+      "name": "키오프 - 나띠",
+      "imageUrl": "/uploads/1770257899103-619329707.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 217
+    },
+    {
+      "worldcupId": 4,
+      "name": "케플러 김채현",
+      "imageUrl": "/uploads/1770257899113-695573068.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 218
+    },
+    {
+      "worldcupId": 4,
+      "name": "츄",
+      "imageUrl": "/uploads/1770257899121-104377304.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 219
+    },
+    {
+      "worldcupId": 4,
+      "name": "최예나",
+      "imageUrl": "/uploads/1770257899125-504656573.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 220
+    },
+    {
+      "worldcupId": 4,
+      "name": "조유리",
+      "imageUrl": "/uploads/1770257899126-562896376.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 221
+    },
+    {
+      "worldcupId": 4,
+      "name": "있지 채령",
+      "imageUrl": "/uploads/1770257899127-214142740.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 222
+    },
+    {
+      "worldcupId": 4,
+      "name": "케플러 최유진",
+      "imageUrl": "/uploads/1770257899127-465359042.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 223
+    },
+    {
+      "worldcupId": 4,
+      "name": "있지 유나",
+      "imageUrl": "/uploads/1770257899128-754619420.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 224
+    },
+    {
+      "worldcupId": 4,
+      "name": "있지 예지",
+      "imageUrl": "/uploads/1770257899130-485036825.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 225
+    },
+    {
+      "worldcupId": 4,
+      "name": "키오프 - 벨",
+      "imageUrl": "/uploads/1770257899108-879743469.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 226
+    },
+    {
+      "worldcupId": 4,
+      "name": "이안",
+      "imageUrl": "/uploads/1770257899136-92743032.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 227
+    },
+    {
+      "worldcupId": 4,
+      "name": "이일릿 - 모카",
+      "imageUrl": "/uploads/1770257899135-3951741.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 228
+    },
+    {
+      "worldcupId": 4,
+      "name": "있지 리아",
+      "imageUrl": "/uploads/1770257899135-905925674.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 229
+    },
+    {
+      "worldcupId": 4,
+      "name": "오마이걸 아린",
+      "imageUrl": "/uploads/1770257899138-949705340.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 230
+    },
+    {
+      "worldcupId": 4,
+      "name": "이달의소녀 츄",
+      "imageUrl": "/uploads/1770257899140-127549160.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 231
+    },
+    {
+      "worldcupId": 4,
+      "name": "오마이걸 유아",
+      "imageUrl": "/uploads/1770257899138-205840246.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 232
+    },
+    {
+      "worldcupId": 4,
+      "name": "여자아이들 민니",
+      "imageUrl": "/uploads/1770257899149-876532957.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 233
+    },
+    {
+      "worldcupId": 4,
+      "name": "여자아이들 우기",
+      "imageUrl": "/uploads/1770257899149-623156941.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 234
+    },
+    {
+      "worldcupId": 4,
+      "name": "여자아이들 슈화",
+      "imageUrl": "/uploads/1770257899152-455155389.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 235
+    },
+    {
+      "worldcupId": 4,
+      "name": "에이핑크 정은지",
+      "imageUrl": "/uploads/1770257899153-323868342.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 236
+    },
+    {
+      "worldcupId": 4,
+      "name": "에이핑크 손나은",
+      "imageUrl": "/uploads/1770257899153-551754912.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 237
+    },
+    {
+      "worldcupId": 4,
+      "name": "츄",
+      "imageUrl": "/uploads/1770257899162-395140377.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 238
+    },
+    {
+      "worldcupId": 4,
+      "name": "윈터",
+      "imageUrl": "/uploads/1770257899165-424158516.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 239
+    },
+    {
+      "worldcupId": 4,
+      "name": "에스파 윈터",
+      "imageUrl": "/uploads/1770257899167-25427151.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 240
+    },
+    {
+      "worldcupId": 4,
+      "name": "아일릿 - 이로하",
+      "imageUrl": "/uploads/1770257899168-538483805.webp",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 241
+    },
+    {
+      "worldcupId": 4,
+      "name": "에스파 카리나",
+      "imageUrl": "/uploads/1770257899165-8161908.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 242
+    },
+    {
+      "worldcupId": 4,
+      "name": "여자아이들 미연",
+      "imageUrl": "/uploads/1770257899170-554960371.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 243
+    },
+    {
+      "worldcupId": 4,
+      "name": "있지 류진",
+      "imageUrl": "/uploads/1770257899171-357199518.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 244
+    },
+    {
+      "worldcupId": 4,
+      "name": "이달의소녀 진솔",
+      "imageUrl": "/uploads/1770257899170-431701232.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 245
+    },
+    {
+      "worldcupId": 4,
+      "name": "아이브 장원영",
+      "imageUrl": "/uploads/1770257899174-723985348.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 246
+    },
+    {
+      "worldcupId": 4,
+      "name": "아일릿 - 민주",
+      "imageUrl": "/uploads/1770257899173-77813228.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 247
+    },
+    {
+      "worldcupId": 4,
+      "name": "아이브 안유진",
+      "imageUrl": "/uploads/1770257899178-109600271.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 248
+    },
+    {
+      "worldcupId": 4,
+      "name": "아이브 레이",
+      "imageUrl": "/uploads/1770257899179-385743473.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 249
+    },
+    {
+      "worldcupId": 4,
+      "name": "아이브 리즈",
+      "imageUrl": "/uploads/1770257899179-855431514.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 250
+    },
+    {
+      "worldcupId": 4,
+      "name": "아이린",
+      "imageUrl": "/uploads/1770257899182-859381961.jpeg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 251
+    },
+    {
+      "worldcupId": 4,
+      "name": "태연",
+      "imageUrl": "/uploads/1770257899183-421681455.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 252
+    },
+    {
+      "worldcupId": 4,
+      "name": "수지",
+      "imageUrl": "/uploads/1770257899183-484927392.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 253
+    },
+    {
+      "worldcupId": 4,
+      "name": "윤아",
+      "imageUrl": "/uploads/1770257899184-411169349.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 254
+    },
+    {
+      "worldcupId": 4,
+      "name": "권은비",
+      "imageUrl": "/uploads/1770257939772-93143704.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 255
+    },
+    {
+      "worldcupId": 4,
+      "name": "뉴진스 하니",
+      "imageUrl": "/uploads/1770257959324-545281691.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 256
+    },
+    {
+      "worldcupId": 5,
+      "name": "호주(멜버른)",
+      "imageUrl": "/uploads/1770258071732-490050534.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 257
+    },
+    {
+      "worldcupId": 5,
+      "name": "호주(시드니)",
+      "imageUrl": "/uploads/1770258071732-681587106.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 258
+    },
+    {
+      "worldcupId": 5,
+      "name": "홍콩",
+      "imageUrl": "/uploads/1770258071731-30611468.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 259
+    },
+    {
+      "worldcupId": 5,
+      "name": "한국(부산)",
+      "imageUrl": "/uploads/1770258071738-910868510.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 260
+    },
+    {
+      "worldcupId": 5,
+      "name": "헝가리(부다페스트)",
+      "imageUrl": "/uploads/1770258071733-330048267.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 261
+    },
+    {
+      "worldcupId": 5,
+      "name": "한국(강릉)",
+      "imageUrl": "/uploads/1770258071747-168954567.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 262
+    },
+    {
+      "worldcupId": 5,
+      "name": "한국(제주도)",
+      "imageUrl": "/uploads/1770258071736-389726830.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 263
+    },
+    {
+      "worldcupId": 5,
+      "name": "하와이(호놀룰루)",
+      "imageUrl": "/uploads/1770258071748-519206676.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 264
+    },
+    {
+      "worldcupId": 5,
+      "name": "필리핀(세부)",
+      "imageUrl": "/uploads/1770258071749-718346726.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 265
+    },
+    {
+      "worldcupId": 5,
+      "name": "필리핀(보라카이)",
+      "imageUrl": "/uploads/1770258071749-777920717.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 266
+    },
+    {
+      "worldcupId": 5,
+      "name": "필란드(헬싱키)",
+      "imageUrl": "/uploads/1770258071750-87343502.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 267
+    },
+    {
+      "worldcupId": 5,
+      "name": "프랑스(파리)",
+      "imageUrl": "/uploads/1770258071751-35482388.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 268
+    },
+    {
+      "worldcupId": 5,
+      "name": "프랑스(니스)",
+      "imageUrl": "/uploads/1770258071753-369117052.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 269
+    },
+    {
+      "worldcupId": 5,
+      "name": "포르투갈(리스본)",
+      "imageUrl": "/uploads/1770258071753-472129248.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 270
+    },
+    {
+      "worldcupId": 5,
+      "name": "페루(마추픽추)",
+      "imageUrl": "/uploads/1770258071755-589815937.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 271
+    },
+    {
+      "worldcupId": 5,
+      "name": "터키(카파도키아)",
+      "imageUrl": "/uploads/1770258071755-362634742.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 272
+    },
+    {
+      "worldcupId": 5,
+      "name": "태국(푸켓)",
+      "imageUrl": "/uploads/1770258071755-487905176.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 273
+    },
+    {
+      "worldcupId": 5,
+      "name": "터키(이스탄불)",
+      "imageUrl": "/uploads/1770258071755-388274033.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 274
+    },
+    {
+      "worldcupId": 5,
+      "name": "태국(방콕)",
+      "imageUrl": "/uploads/1770258071757-414674575.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 275
+    },
+    {
+      "worldcupId": 5,
+      "name": "크로아티아(두브로브니크)",
+      "imageUrl": "/uploads/1770258071757-511686752.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 276
+    },
+    {
+      "worldcupId": 5,
+      "name": "캐나다(토론토)",
+      "imageUrl": "/uploads/1770258071760-106378550.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 277
+    },
+    {
+      "worldcupId": 5,
+      "name": "체코(프라하)",
+      "imageUrl": "/uploads/1770258071761-120372661.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 278
+    },
+    {
+      "worldcupId": 5,
+      "name": "캐나다(밴쿠버)",
+      "imageUrl": "/uploads/1770258071761-78841633.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 279
+    },
+    {
+      "worldcupId": 5,
+      "name": "중국(장가계)",
+      "imageUrl": "/uploads/1770258071762-880441299.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 280
+    },
+    {
+      "worldcupId": 5,
+      "name": "중국(베이징)",
+      "imageUrl": "/uploads/1770258071762-824795386.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 281
+    },
+    {
+      "worldcupId": 5,
+      "name": "중국(상하이)",
+      "imageUrl": "/uploads/1770258071762-475384867.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 282
+    },
+    {
+      "worldcupId": 5,
+      "name": "일본(후쿠오카)",
+      "imageUrl": "/uploads/1770258071764-57029443.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 283
+    },
+    {
+      "worldcupId": 5,
+      "name": "일본(오사카)",
+      "imageUrl": "/uploads/1770258071765-729053593.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 284
+    },
+    {
+      "worldcupId": 5,
+      "name": "일본(삿포로)",
+      "imageUrl": "/uploads/1770258071766-311147092.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 285
+    },
+    {
+      "worldcupId": 5,
+      "name": "일본(도쿄)",
+      "imageUrl": "/uploads/1770258071766-34009813.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 286
+    },
+    {
+      "worldcupId": 5,
+      "name": "일본(교토)",
+      "imageUrl": "/uploads/1770258071766-654645428.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 287
+    },
+    {
+      "worldcupId": 5,
+      "name": "인도네시아(발리)",
+      "imageUrl": "/uploads/1770258071767-899923836.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 288
+    },
+    {
+      "worldcupId": 5,
+      "name": "이탈리아(베네치아)",
+      "imageUrl": "/uploads/1770258071767-562829950.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 289
+    },
+    {
+      "worldcupId": 5,
+      "name": "이탈리아(로마)",
+      "imageUrl": "/uploads/1770258071769-104425954.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 290
+    },
+    {
+      "worldcupId": 5,
+      "name": "이탈리아(밀라노)",
+      "imageUrl": "/uploads/1770258071769-933219981.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 291
+    },
+    {
+      "worldcupId": 5,
+      "name": "오스트리아(비엔나)",
+      "imageUrl": "/uploads/1770258071770-708783538.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 292
+    },
+    {
+      "worldcupId": 5,
+      "name": "이집트(카이로)",
+      "imageUrl": "/uploads/1770258071770-263578406.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 293
+    },
+    {
+      "worldcupId": 5,
+      "name": "아이슬란드(레이캬비크)",
+      "imageUrl": "/uploads/1770258071772-387732098.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 294
+    },
+    {
+      "worldcupId": 5,
+      "name": "영국(런던)",
+      "imageUrl": "/uploads/1770258071772-534103114.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 295
+    },
+    {
+      "worldcupId": 5,
+      "name": "싱가포르",
+      "imageUrl": "/uploads/1770258071773-328851193.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 296
+    },
+    {
+      "worldcupId": 5,
+      "name": "스페인(바르셀로나)",
+      "imageUrl": "/uploads/1770258071773-38642983.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 297
+    },
+    {
+      "worldcupId": 5,
+      "name": "스위스(취리히)",
+      "imageUrl": "/uploads/1770258071774-546781044.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 298
+    },
+    {
+      "worldcupId": 5,
+      "name": "스페인(마드리드)",
+      "imageUrl": "/uploads/1770258071775-67406365.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 299
+    },
+    {
+      "worldcupId": 5,
+      "name": "브라질(리우데자네이루)",
+      "imageUrl": "/uploads/1770258071777-345209570.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 300
+    },
+    {
+      "worldcupId": 5,
+      "name": "스위스(인터라켄)",
+      "imageUrl": "/uploads/1770258071777-301827910.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 301
+    },
+    {
+      "worldcupId": 5,
+      "name": "벨기에(브리쉘)",
+      "imageUrl": "/uploads/1770258071777-346573151.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 302
+    },
+    {
+      "worldcupId": 5,
+      "name": "베트남(하노이)",
+      "imageUrl": "/uploads/1770258071778-868507957.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 303
+    },
+    {
+      "worldcupId": 5,
+      "name": "베트남(호치민)",
+      "imageUrl": "/uploads/1770258071779-255396497.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 304
+    },
+    {
+      "worldcupId": 5,
+      "name": "베트남(다낭)",
+      "imageUrl": "/uploads/1770258071778-530916334.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 305
+    },
+    {
+      "worldcupId": 5,
+      "name": "미국(로스엔젤레스)",
+      "imageUrl": "/uploads/1770258071781-623287600.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 306
+    },
+    {
+      "worldcupId": 5,
+      "name": "미국(라스베이거스)",
+      "imageUrl": "/uploads/1770258071783-444348298.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 307
+    },
+    {
+      "worldcupId": 5,
+      "name": "미국(뉴욕)",
+      "imageUrl": "/uploads/1770258071783-186408252.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 308
+    },
+    {
+      "worldcupId": 5,
+      "name": "미국(샌프란시스코)",
+      "imageUrl": "/uploads/1770258071783-240198539.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 309
+    },
+    {
+      "worldcupId": 5,
+      "name": "멕시코(칸쿤)",
+      "imageUrl": "/uploads/1770258071787-520849453.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 310
+    },
+    {
+      "worldcupId": 5,
+      "name": "몰디브",
+      "imageUrl": "/uploads/1770258071787-359788574.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 311
+    },
+    {
+      "worldcupId": 5,
+      "name": "말레이시아(쿠알라룸푸르)",
+      "imageUrl": "/uploads/1770258071788-553005496.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 312
+    },
+    {
+      "worldcupId": 5,
+      "name": "두바이",
+      "imageUrl": "/uploads/1770258071788-848868229.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 313
+    },
+    {
+      "worldcupId": 5,
+      "name": "독일(베를린)",
+      "imageUrl": "/uploads/1770258071789-674200412.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 314
+    },
+    {
+      "worldcupId": 5,
+      "name": "대만(타이베이)",
+      "imageUrl": "/uploads/1770258071789-91975377.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 315
+    },
+    {
+      "worldcupId": 5,
+      "name": "남아프리카공화국(케이프타운)",
+      "imageUrl": "/uploads/1770258071798-988965434.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 316
+    },
+    {
+      "worldcupId": 5,
+      "name": "노르웨이(오슬로)",
+      "imageUrl": "/uploads/1770258071798-466019419.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 317
+    },
+    {
+      "worldcupId": 5,
+      "name": "네덜란드(암스테르담)",
+      "imageUrl": "/uploads/1770258071798-700820212.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 318
+    },
+    {
+      "worldcupId": 5,
+      "name": "그리스(산토리니)",
+      "imageUrl": "/uploads/1770258071799-822098654.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 319
+    },
+    {
+      "worldcupId": 5,
+      "name": "그리스(아테네)",
+      "imageUrl": "/uploads/1770258071799-386481497.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 320
+    },
+    {
+      "worldcupId": 6,
+      "name": "고릴라",
+      "imageUrl": "/uploads/1770258428748-982880451.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 321
+    },
+    {
+      "worldcupId": 6,
+      "name": "가우르",
+      "imageUrl": "/uploads/1770258428747-163036847.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 322
+    },
+    {
+      "worldcupId": 6,
+      "name": "가면올빼미",
+      "imageUrl": "/uploads/1770258428747-17979018.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 323
+    },
+    {
+      "worldcupId": 6,
+      "name": "나일악어",
+      "imageUrl": "/uploads/1770258428756-218276594.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 324
+    },
+    {
+      "worldcupId": 6,
+      "name": "그린 아나콘다",
+      "imageUrl": "/uploads/1770258428749-308914950.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 325
+    },
+    {
+      "worldcupId": 6,
+      "name": "검정카이만",
+      "imageUrl": "/uploads/1770258428748-872140669.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 326
+    },
+    {
+      "worldcupId": 6,
+      "name": "눈표범",
+      "imageUrl": "/uploads/1770258428758-997915205.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 327
+    },
+    {
+      "worldcupId": 6,
+      "name": "검독수리",
+      "imageUrl": "/uploads/1770258428748-920723292.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 328
+    },
+    {
+      "worldcupId": 6,
+      "name": "기린",
+      "imageUrl": "/uploads/1770258428755-689338448.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 329
+    },
+    {
+      "worldcupId": 6,
+      "name": "늑대거북",
+      "imageUrl": "/uploads/1770258428759-47958585.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 330
+    },
+    {
+      "worldcupId": 6,
+      "name": "대머리독수리",
+      "imageUrl": "/uploads/1770258428759-809644966.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 331
+    },
+    {
+      "worldcupId": 6,
+      "name": "도사견",
+      "imageUrl": "/uploads/1770258428761-800869591.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 332
+    },
+    {
+      "worldcupId": 6,
+      "name": "로트와일러",
+      "imageUrl": "/uploads/1770258428762-609421208.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 333
+    },
+    {
+      "worldcupId": 6,
+      "name": "말코손바닥사슴",
+      "imageUrl": "/uploads/1770258428763-459381121.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 334
+    },
+    {
+      "worldcupId": 6,
+      "name": "멘드릴",
+      "imageUrl": "/uploads/1770258428765-438855600.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 335
+    },
+    {
+      "worldcupId": 6,
+      "name": "바다악어",
+      "imageUrl": "/uploads/1770258428766-878024089.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 336
+    },
+    {
+      "worldcupId": 6,
+      "name": "바다코끼리",
+      "imageUrl": "/uploads/1770258428767-602394586.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 337
+    },
+    {
+      "worldcupId": 6,
+      "name": "반달가슴곰",
+      "imageUrl": "/uploads/1770258428767-888605666.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 338
+    },
+    {
+      "worldcupId": 6,
+      "name": "벵골호랑이",
+      "imageUrl": "/uploads/1770258428768-573899248.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 339
+    },
+    {
+      "worldcupId": 6,
+      "name": "벌꿀오소리",
+      "imageUrl": "/uploads/1770258428768-625691277.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 340
+    },
+    {
+      "worldcupId": 6,
+      "name": "북극곰",
+      "imageUrl": "/uploads/1770258428771-952720017.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 341
+    },
+    {
+      "worldcupId": 6,
+      "name": "보르네오 오랑우탄",
+      "imageUrl": "/uploads/1770258428771-73099548.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 342
+    },
+    {
+      "worldcupId": 6,
+      "name": "붉은 캥거루",
+      "imageUrl": "/uploads/1770258428772-212971192.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 343
+    },
+    {
+      "worldcupId": 6,
+      "name": "블랙맘바",
+      "imageUrl": "/uploads/1770258428772-426475797.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 344
+    },
+    {
+      "worldcupId": 6,
+      "name": "사자",
+      "imageUrl": "/uploads/1770258428773-917319380.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 345
+    },
+    {
+      "worldcupId": 6,
+      "name": "수리부엉이",
+      "imageUrl": "/uploads/1770258428774-377048362.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 346
+    },
+    {
+      "worldcupId": 6,
+      "name": "스라소니",
+      "imageUrl": "/uploads/1770258428775-94745466.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 347
+    },
+    {
+      "worldcupId": 6,
+      "name": "시베리아 호랑이",
+      "imageUrl": "/uploads/1770258428776-653957829.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 348
+    },
+    {
+      "worldcupId": 6,
+      "name": "아메리카 들소",
+      "imageUrl": "/uploads/1770258428778-289450243.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 349
+    },
+    {
+      "worldcupId": 6,
+      "name": "아마존 큰수달",
+      "imageUrl": "/uploads/1770258428777-301950210.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 350
+    },
+    {
+      "worldcupId": 6,
+      "name": "아프리카 들개",
+      "imageUrl": "/uploads/1770258428778-910059325.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 351
+    },
+    {
+      "worldcupId": 6,
+      "name": "아프리카 물소",
+      "imageUrl": "/uploads/1770258428778-826019817.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 352
+    },
+    {
+      "worldcupId": 6,
+      "name": "아이벡스",
+      "imageUrl": "/uploads/1770258428779-777282952.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 353
+    },
+    {
+      "worldcupId": 6,
+      "name": "아프리카코끼리",
+      "imageUrl": "/uploads/1770258428779-452585030.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 354
+    },
+    {
+      "worldcupId": 6,
+      "name": "악어거북",
+      "imageUrl": "/uploads/1770258428781-958356291.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 355
+    },
+    {
+      "worldcupId": 6,
+      "name": "안데스 콘도르",
+      "imageUrl": "/uploads/1770258428781-982407629.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 356
+    },
+    {
+      "worldcupId": 6,
+      "name": "알래스카반도불곰",
+      "imageUrl": "/uploads/1770258428782-956058381.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 357
+    },
+    {
+      "worldcupId": 6,
+      "name": "얼룩말",
+      "imageUrl": "/uploads/1770258428782-502722926.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 358
+    },
+    {
+      "worldcupId": 6,
+      "name": "야생말",
+      "imageUrl": "/uploads/1770258428782-797846045.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 359
+    },
+    {
+      "worldcupId": 6,
+      "name": "울버린",
+      "imageUrl": "/uploads/1770258428783-128426245.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 360
+    },
+    {
+      "worldcupId": 6,
+      "name": "자이언트숲멧돼지",
+      "imageUrl": "/uploads/1770258428784-986791022.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 361
+    },
+    {
+      "worldcupId": 6,
+      "name": "자칼",
+      "imageUrl": "/uploads/1770258428784-315798944.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 362
+    },
+    {
+      "worldcupId": 6,
+      "name": "자이언트 일런드",
+      "imageUrl": "/uploads/1770258428784-756565026.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 363
+    },
+    {
+      "worldcupId": 6,
+      "name": "재규어",
+      "imageUrl": "/uploads/1770258428786-970868875.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 364
+    },
+    {
+      "worldcupId": 6,
+      "name": "점박이하이애나",
+      "imageUrl": "/uploads/1770258428786-59422995.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 365
+    },
+    {
+      "worldcupId": 6,
+      "name": "줄무늬 스컹크",
+      "imageUrl": "/uploads/1770258428786-861138340.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 366
+    },
+    {
+      "worldcupId": 6,
+      "name": "천산갑",
+      "imageUrl": "/uploads/1770258428786-143506268.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 367
+    },
+    {
+      "worldcupId": 6,
+      "name": "치타",
+      "imageUrl": "/uploads/1770258428787-701925909.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 368
+    },
+    {
+      "worldcupId": 6,
+      "name": "침팬지",
+      "imageUrl": "/uploads/1770258428787-744209864.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 369
+    },
+    {
+      "worldcupId": 6,
+      "name": "코디액 베어",
+      "imageUrl": "/uploads/1770258428789-746921861.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 370
+    },
+    {
+      "worldcupId": 6,
+      "name": "코모도왕도마뱀",
+      "imageUrl": "/uploads/1770258428791-697215283.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 371
+    },
+    {
+      "worldcupId": 6,
+      "name": "킹코브라",
+      "imageUrl": "/uploads/1770258428791-682202572.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 372
+    },
+    {
+      "worldcupId": 6,
+      "name": "큰개미핥기",
+      "imageUrl": "/uploads/1770258428791-909600961.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 373
+    },
+    {
+      "worldcupId": 6,
+      "name": "타조",
+      "imageUrl": "/uploads/1770258428791-697029227.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 374
+    },
+    {
+      "worldcupId": 6,
+      "name": "티베만 마스티프",
+      "imageUrl": "/uploads/1770258428792-935870387.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 375
+    },
+    {
+      "worldcupId": 6,
+      "name": "표범",
+      "imageUrl": "/uploads/1770258428791-552156516.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 376
+    },
+    {
+      "worldcupId": 6,
+      "name": "퓨마",
+      "imageUrl": "/uploads/1770258428796-663490509.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 377
+    },
+    {
+      "worldcupId": 6,
+      "name": "하마",
+      "imageUrl": "/uploads/1770258428796-957285011.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 378
+    },
+    {
+      "worldcupId": 6,
+      "name": "호저",
+      "imageUrl": "/uploads/1770258428798-55021325.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 379
+    },
+    {
+      "worldcupId": 6,
+      "name": "화식조",
+      "imageUrl": "/uploads/1770258428798-732693583.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 380
+    },
+    {
+      "worldcupId": 6,
+      "name": "회색늑대",
+      "imageUrl": "/uploads/1770258428798-342199431.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 381
+    },
+    {
+      "worldcupId": 6,
+      "name": "핏 불 테리어",
+      "imageUrl": "/uploads/1770258428798-119566434.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 382
+    },
+    {
+      "worldcupId": 6,
+      "name": "흰머리수리",
+      "imageUrl": "/uploads/1770258428799-465760975.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 383
+    },
+    {
+      "worldcupId": 6,
+      "name": "흰코뿔소",
+      "imageUrl": "/uploads/1770258428800-870050039.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 384
+    },
+    {
+      "worldcupId": 7,
+      "name": "간장게장",
+      "imageUrl": "/uploads/1770258725042-899294807.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 385
+    },
+    {
+      "worldcupId": 7,
+      "name": "감자탕",
+      "imageUrl": "/uploads/1770258725044-837855756.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 386
+    },
+    {
+      "worldcupId": 7,
+      "name": "갈비탕",
+      "imageUrl": "/uploads/1770258725042-84675820.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 387
+    },
+    {
+      "worldcupId": 7,
+      "name": "곱창전골",
+      "imageUrl": "/uploads/1770258725045-881852572.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 388
+    },
+    {
+      "worldcupId": 7,
+      "name": "곱창",
+      "imageUrl": "/uploads/1770258725044-740314282.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 389
+    },
+    {
+      "worldcupId": 7,
+      "name": "김치볶음밥",
+      "imageUrl": "/uploads/1770258725047-681258988.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 390
+    },
+    {
+      "worldcupId": 7,
+      "name": "규카츠",
+      "imageUrl": "/uploads/1770258725050-267296439.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 391
+    },
+    {
+      "worldcupId": 7,
+      "name": "김치찌개",
+      "imageUrl": "/uploads/1770258725051-245468120.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 392
+    },
+    {
+      "worldcupId": 7,
+      "name": "닭발",
+      "imageUrl": "/uploads/1770258725056-418221020.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 393
+    },
+    {
+      "worldcupId": 7,
+      "name": "낙지볶음",
+      "imageUrl": "/uploads/1770258725055-349591629.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 394
+    },
+    {
+      "worldcupId": 7,
+      "name": "닭갈비",
+      "imageUrl": "/uploads/1770258725055-3771353.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 395
+    },
+    {
+      "worldcupId": 7,
+      "name": "닭볶음탕",
+      "imageUrl": "/uploads/1770258725057-475471267.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 396
+    },
+    {
+      "worldcupId": 7,
+      "name": "대패삼겹살",
+      "imageUrl": "/uploads/1770258725058-507400700.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 397
+    },
+    {
+      "worldcupId": 7,
+      "name": "돼지갈비",
+      "imageUrl": "/uploads/1770258725059-446689074.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 398
+    },
+    {
+      "worldcupId": 7,
+      "name": "돼지고기 김치찜",
+      "imageUrl": "/uploads/1770258725063-797625412.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 399
+    },
+    {
+      "worldcupId": 7,
+      "name": "돼지고기 김치찌개",
+      "imageUrl": "/uploads/1770258725063-330005485.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 400
+    },
+    {
+      "worldcupId": 7,
+      "name": "돼지국밥",
+      "imageUrl": "/uploads/1770258725063-658468150.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 401
+    },
+    {
+      "worldcupId": 7,
+      "name": "등심스테이크",
+      "imageUrl": "/uploads/1770258725063-163172735.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 402
+    },
+    {
+      "worldcupId": 7,
+      "name": "된장찌개",
+      "imageUrl": "/uploads/1770258725063-569156839.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 403
+    },
+    {
+      "worldcupId": 7,
+      "name": "돼지김치볶음",
+      "imageUrl": "/uploads/1770258725063-641325921.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 404
+    },
+    {
+      "worldcupId": 7,
+      "name": "떡볶이",
+      "imageUrl": "/uploads/1770258725068-255552765.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 405
+    },
+    {
+      "worldcupId": 7,
+      "name": "뚝배기불고기",
+      "imageUrl": "/uploads/1770258725068-222979703.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 406
+    },
+    {
+      "worldcupId": 7,
+      "name": "마라탕",
+      "imageUrl": "/uploads/1770258725068-760024295.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 407
+    },
+    {
+      "worldcupId": 7,
+      "name": "로제떡볶이",
+      "imageUrl": "/uploads/1770258725069-697229554.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 408
+    },
+    {
+      "worldcupId": 7,
+      "name": "라면",
+      "imageUrl": "/uploads/1770258725068-102978633.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 409
+    },
+    {
+      "worldcupId": 7,
+      "name": "방어회",
+      "imageUrl": "/uploads/1770258725069-648329000.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 410
+    },
+    {
+      "worldcupId": 7,
+      "name": "불닭볶음면",
+      "imageUrl": "/uploads/1770258725074-267487207.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 411
+    },
+    {
+      "worldcupId": 7,
+      "name": "부대찌개",
+      "imageUrl": "/uploads/1770258725074-882602197.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 412
+    },
+    {
+      "worldcupId": 7,
+      "name": "보쌈",
+      "imageUrl": "/uploads/1770258725074-496576621.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 413
+    },
+    {
+      "worldcupId": 7,
+      "name": "삼겹살",
+      "imageUrl": "/uploads/1770258725074-403249022.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 414
+    },
+    {
+      "worldcupId": 7,
+      "name": "뿌링클",
+      "imageUrl": "/uploads/1770258725075-515991689.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 415
+    },
+    {
+      "worldcupId": 7,
+      "name": "샤브샤브",
+      "imageUrl": "/uploads/1770258725075-86194749.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 416
+    },
+    {
+      "worldcupId": 7,
+      "name": "소갈비",
+      "imageUrl": "/uploads/1770258725079-825994760.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 417
+    },
+    {
+      "worldcupId": 7,
+      "name": "소고기",
+      "imageUrl": "/uploads/1770258725081-374586416.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 418
+    },
+    {
+      "worldcupId": 7,
+      "name": "소갈비찜",
+      "imageUrl": "/uploads/1770258725081-486162655.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 419
+    },
+    {
+      "worldcupId": 7,
+      "name": "순대국밥",
+      "imageUrl": "/uploads/1770258725081-823233598.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 420
+    },
+    {
+      "worldcupId": 7,
+      "name": "순두부찌개",
+      "imageUrl": "/uploads/1770258725081-794078517.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 421
+    },
+    {
+      "worldcupId": 7,
+      "name": "소금장어구이",
+      "imageUrl": "/uploads/1770258725081-959010115.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 422
+    },
+    {
+      "worldcupId": 7,
+      "name": "안심스테이크",
+      "imageUrl": "/uploads/1770258725082-464851295.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 423
+    },
+    {
+      "worldcupId": 7,
+      "name": "양갈비스테이크",
+      "imageUrl": "/uploads/1770258725085-870294137.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 424
+    },
+    {
+      "worldcupId": 7,
+      "name": "양념장어구이",
+      "imageUrl": "/uploads/1770258725085-610179310.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 425
+    },
+    {
+      "worldcupId": 7,
+      "name": "양꼬치",
+      "imageUrl": "/uploads/1770258725085-284759746.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 426
+    },
+    {
+      "worldcupId": 7,
+      "name": "양념치킨",
+      "imageUrl": "/uploads/1770258725085-814219954.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 427
+    },
+    {
+      "worldcupId": 7,
+      "name": "양념게장",
+      "imageUrl": "/uploads/1770258725086-355891954.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 428
+    },
+    {
+      "worldcupId": 7,
+      "name": "연어초밥",
+      "imageUrl": "/uploads/1770258725086-758550916.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 429
+    },
+    {
+      "worldcupId": 7,
+      "name": "오겹살",
+      "imageUrl": "/uploads/1770258725089-424757953.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 430
+    },
+    {
+      "worldcupId": 7,
+      "name": "육회",
+      "imageUrl": "/uploads/1770258725089-669026735.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 431
+    },
+    {
+      "worldcupId": 7,
+      "name": "제육볶음",
+      "imageUrl": "/uploads/1770258725090-510254654.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 432
+    },
+    {
+      "worldcupId": 7,
+      "name": "제주 흑돼지",
+      "imageUrl": "/uploads/1770258725090-892937160.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 433
+    },
+    {
+      "worldcupId": 7,
+      "name": "족발",
+      "imageUrl": "/uploads/1770258725092-913251586.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 434
+    },
+    {
+      "worldcupId": 7,
+      "name": "일본식 돈가스",
+      "imageUrl": "/uploads/1770258725092-992438310.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 435
+    },
+    {
+      "worldcupId": 7,
+      "name": "차돌된장찌개",
+      "imageUrl": "/uploads/1770258725096-398638659.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 436
+    },
+    {
+      "worldcupId": 7,
+      "name": "찜닭",
+      "imageUrl": "/uploads/1770258725096-650536089.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 437
+    },
+    {
+      "worldcupId": 7,
+      "name": "차돌짬뽕",
+      "imageUrl": "/uploads/1770258725097-699295738.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 438
+    },
+    {
+      "worldcupId": 7,
+      "name": "차돌박이",
+      "imageUrl": "/uploads/1770258725096-775712851.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 439
+    },
+    {
+      "worldcupId": 7,
+      "name": "치즈닭갈비",
+      "imageUrl": "/uploads/1770258725098-220770395.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 440
+    },
+    {
+      "worldcupId": 7,
+      "name": "참치회",
+      "imageUrl": "/uploads/1770258725099-188739626.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 441
+    },
+    {
+      "worldcupId": 7,
+      "name": "치즈떡볶이",
+      "imageUrl": "/uploads/1770258725101-329109712.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 442
+    },
+    {
+      "worldcupId": 7,
+      "name": "킹크랩찜",
+      "imageUrl": "/uploads/1770258725102-213590660.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 443
+    },
+    {
+      "worldcupId": 7,
+      "name": "티본스테이크",
+      "imageUrl": "/uploads/1770258725102-76564961.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 444
+    },
+    {
+      "worldcupId": 7,
+      "name": "햄버거",
+      "imageUrl": "/uploads/1770258725102-201648842.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 445
+    },
+    {
+      "worldcupId": 7,
+      "name": "흰살생선회",
+      "imageUrl": "/uploads/1770258725103-758993287.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 446
+    },
+    {
+      "worldcupId": 7,
+      "name": "후라이드치킨",
+      "imageUrl": "/uploads/1770258725103-844083902.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 447
+    },
+    {
+      "worldcupId": 7,
+      "name": "LA갈비",
+      "imageUrl": "/uploads/1770258725103-193890777.jpg",
+      "winCount": 0,
+      "appearCount": 0,
+      "finalCount": 0,
+      "id": 448
     }
   ],
   "quizzes": [
     {
-      "id": 1,
-      "title": "상식 퀴즈 - 기본편",
-      "description": "누구나 알 수 있는 기본 상식 퀴즈!",
-      "thumbnail": "/uploads/quiz_1_thumb.jpg",
-      "categoryId": 7,
-      "userId": 1,
+      "title": "수도 퀴즈 맞추기",
+      "description": "국기 보고 수도를 맞춰보숑!",
+      "categoryId": 9,
+      "thumbnail": "/uploads/1770259145128-225190284.jpeg",
+      "userId": 5,
       "totalQuestions": 10,
-      "totalTime": 120,
-      "createdAt": "2026-01-20T09:00:00Z",
-      "viewCount": 2341,
-      "playCount": 1567
+      "createdAt": "2026-02-05T02:50:46.261Z",
+      "viewCount": 0,
+      "playCount": 0,
+      "id": 1
     },
     {
-      "title": "123",
-      "description": "123",
-      "categoryId": 8,
-      "thumbnail": "/uploads/1769921716258-722250828.png",
-      "userId": 1,
-      "totalQuestions": 5,
-      "totalTime": 120,
-      "createdAt": "2026-02-01T04:55:34.863Z",
+      "title": "나라 이름 맞추기 퀴즈",
+      "description": "국기를 보고 나라 이름 맞춰보숑!",
+      "categoryId": 9,
+      "thumbnail": "/uploads/1770260823256-321418760.jpg",
+      "userId": 5,
+      "totalQuestions": 10,
+      "createdAt": "2026-02-05T03:07:08.518Z",
       "viewCount": 0,
       "playCount": 0,
       "id": 2
     },
     {
-      "title": "한국인이면 맞춰야하는 퀴즈 ",
-      "description": "못맞추면... 음...🤨",
+      "title": "한국인이면 맞춰야하는 퀴즈",
+      "description": "못맞추면... 음...🧐",
       "categoryId": 7,
-      "thumbnail": "/uploads/1770175403350-994349101.png",
-      "userId": 2,
+      "thumbnail": "/uploads/1770260961796-952233888.jpg",
+      "userId": 5,
       "totalQuestions": 10,
-      "createdAt": "2026-02-04T03:26:12.303Z",
+      "createdAt": "2026-02-05T03:09:24.404Z",
       "viewCount": 0,
       "playCount": 0,
       "id": 3
     },
     {
-      "title": "배우 이름 맞추기",
-      "description": "배우 이름 맞추기 퀴즈 입니다.",
+      "title": "배우 이름 맞추기 퀴즈",
+      "description": "사진 보고 한번 맞춰보숑!",
       "categoryId": 11,
-      "thumbnail": "/uploads/1770182113465-427758584.png",
-      "userId": 2,
+      "thumbnail": "/uploads/1770260993846-166255432.png",
+      "userId": 5,
       "totalQuestions": 10,
-      "createdAt": "2026-02-04T05:15:34.685Z",
+      "createdAt": "2026-02-05T03:11:49.377Z",
       "viewCount": 0,
       "playCount": 0,
       "id": 4
-    }
-  ],
-  "worldcup_results": [
-    {
-      "id": 1,
-      "worldcupId": 1,
-      "winnerId": 1,
-      "top4": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "selections": [
-        1,
-        3,
-        5,
-        7,
-        9,
-        11,
-        13,
-        15,
-        1,
-        3,
-        5,
-        7,
-        1,
-        3,
-        1
-      ],
-      "createdAt": "2026-01-30T14:30:00Z",
-      "userId": null
     },
     {
-      "worldcupId": 2,
-      "winnerId": 21,
-      "top4": [
-        25,
-        28,
-        10,
-        21
-      ],
-      "selections": [
-        8,
-        22,
-        19,
-        25,
-        18,
-        23,
-        4,
-        28,
-        14,
-        26,
-        7,
-        10,
-        12,
-        6,
-        3,
-        21,
-        22,
-        25,
-        23,
-        28,
-        26,
-        10,
-        6,
-        21,
-        25,
-        28,
-        10,
-        21,
-        28,
-        21,
-        21
-      ],
-      "createdAt": "2026-02-04T01:12:58.359Z",
-      "id": 2
-    },
-    {
-      "worldcupId": 2,
-      "winnerId": 32,
-      "top4": [
-        32,
-        8,
-        24,
-        2
-      ],
-      "selections": [
-        32,
-        8,
-        24,
-        2,
-        32,
-        2,
-        32
-      ],
-      "createdAt": "2026-02-04T06:41:29.499Z",
-      "id": 3
-    },
-    {
-      "worldcupId": 3,
-      "winnerId": 73,
-      "top4": [
-        41,
-        64,
-        73,
-        97
-      ],
-      "selections": [
-        96,
-        84,
-        41,
-        53,
-        64,
-        92,
-        93,
-        55,
-        81,
-        73,
-        38,
-        34,
-        89,
-        97,
-        37,
-        95,
-        96,
-        41,
-        64,
-        93,
-        73,
-        34,
-        97,
-        95,
-        41,
-        64,
-        73,
-        97,
-        41,
-        73,
-        73
-      ],
-      "createdAt": "2026-02-04T07:13:15.187Z",
-      "id": 4
-    },
-    {
-      "worldcupId": 3,
-      "winnerId": 34,
-      "top4": [
-        80,
-        39,
-        34,
-        38
-      ],
-      "selections": [
-        80,
-        37,
-        39,
-        58,
-        34,
-        49,
-        41,
-        38,
-        80,
-        39,
-        34,
-        38,
-        80,
-        34,
-        34
-      ],
-      "createdAt": "2026-02-04T08:38:06.785Z",
+      "title": "이건 못 맞출걸~?",
+      "description": "이거 한번 다 맞춰보숑!😎",
+      "categoryId": 8,
+      "thumbnail": "/uploads/1770261207962-190583576.jpg",
+      "userId": 5,
+      "totalQuestions": 10,
+      "createdAt": "2026-02-05T03:16:48.458Z",
+      "viewCount": 0,
+      "playCount": 0,
       "id": 5
     },
     {
-      "worldcupId": 3,
-      "winnerId": 84,
-      "top4": [
-        84,
-        64,
-        86,
-        47
-      ],
-      "selections": [
-        84,
-        64,
-        86,
-        47,
-        84,
-        47,
-        84
-      ],
-      "createdAt": "2026-02-04T08:59:16.009Z",
+      "title": "산리오 캐릭터 맞추기",
+      "description": "산리오 캐릭터 맞춰보숑!",
+      "categoryId": 10,
+      "thumbnail": "/uploads/1770261494654-129460568.png",
+      "userId": 5,
+      "totalQuestions": 10,
+      "createdAt": "2026-02-05T03:19:55.242Z",
+      "viewCount": 0,
+      "playCount": 0,
       "id": 6
-    },
-    {
-      "worldcupId": 3,
-      "winnerId": 37,
-      "top4": [
-        37,
-        46,
-        42,
-        56
-      ],
-      "selections": [
-        37,
-        46,
-        42,
-        56,
-        37,
-        42,
-        37
-      ],
-      "createdAt": "2026-02-04T08:59:48.573Z",
-      "id": 7
-    },
-    {
-      "worldcupId": 2,
-      "winnerId": 2,
-      "top4": [
-        21,
-        6,
-        23,
-        2
-      ],
-      "selections": [
-        {
-          "leftId": 21,
-          "rightId": 30,
-          "selectedId": 21,
-          "round": "8강"
-        },
-        {
-          "leftId": 6,
-          "rightId": 9,
-          "selectedId": 6,
-          "round": "8강"
-        },
-        {
-          "leftId": 23,
-          "rightId": 29,
-          "selectedId": 23,
-          "round": "8강"
-        },
-        {
-          "leftId": 2,
-          "rightId": 18,
-          "selectedId": 2,
-          "round": "8강"
-        },
-        {
-          "leftId": 21,
-          "rightId": 6,
-          "selectedId": 21,
-          "round": "4강"
-        },
-        {
-          "leftId": 23,
-          "rightId": 2,
-          "selectedId": 2,
-          "round": "4강"
-        },
-        {
-          "leftId": 21,
-          "rightId": 2,
-          "selectedId": 2,
-          "round": "결승"
-        }
-      ],
-      "startRound": 8,
-      "createdAt": "2026-02-05T00:20:55.548Z",
-      "id": 8
     }
   ],
+  "worldcup_results": [],
   "quiz_questions": [
     {
-      "id": 1,
       "quizId": 1,
       "questionNumber": 1,
-      "questionText": "대한민국의 수도는?",
-      "questionImage": null,
-      "answer": "서울",
+      "questionText": "남아프리카 공화국",
+      "questionImage": "/uploads/1770259150979-265235002.jpeg",
+      "answer": "프리토리아",
       "timeLimit": 10,
-      "correctCount": 452,
-      "totalCount": 505
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 1
     },
     {
-      "quizId": 2,
-      "questionNumber": 1,
-      "questionText": "123",
-      "questionImage": null,
-      "answer": "123",
+      "quizId": 1,
+      "questionNumber": 2,
+      "questionText": "모로코",
+      "questionImage": "/uploads/1770259401599-316147662.png",
+      "answer": "라바트",
       "timeLimit": 10,
-      "correctCount": 23,
-      "totalCount": 27,
+      "correctCount": 0,
+      "totalCount": 0,
       "id": 2
     },
     {
-      "quizId": 2,
-      "questionNumber": 2,
-      "questionText": "123",
-      "questionImage": null,
-      "answer": "123",
+      "quizId": 1,
+      "questionNumber": 3,
+      "questionText": "몽골",
+      "questionImage": "/uploads/1770259441968-597745547.jpg",
+      "answer": "울란바토르",
       "timeLimit": 10,
-      "correctCount": 13,
-      "totalCount": 17,
+      "correctCount": 0,
+      "totalCount": 0,
       "id": 3
     },
     {
-      "quizId": 2,
-      "questionNumber": 3,
-      "questionText": "123",
-      "questionImage": null,
-      "answer": "123",
+      "quizId": 1,
+      "questionNumber": 4,
+      "questionText": "이집트",
+      "questionImage": "/uploads/1770259466467-697058854.jpeg",
+      "answer": "카이로",
       "timeLimit": 10,
-      "correctCount": 9,
-      "totalCount": 12,
+      "correctCount": 0,
+      "totalCount": 0,
       "id": 4
     },
     {
-      "quizId": 2,
-      "questionNumber": 4,
-      "questionText": "123",
-      "questionImage": null,
-      "answer": "123",
+      "quizId": 1,
+      "questionNumber": 5,
+      "questionText": "일본",
+      "questionImage": "/uploads/1770259595196-314929185.png",
+      "answer": "도쿄",
       "timeLimit": 10,
-      "correctCount": 11,
-      "totalCount": 15,
+      "correctCount": 0,
+      "totalCount": 0,
       "id": 5
     },
     {
-      "quizId": 2,
-      "questionNumber": 5,
-      "questionText": "123",
-      "questionImage": null,
-      "answer": "123",
+      "quizId": 1,
+      "questionNumber": 6,
+      "questionText": "체코",
+      "questionImage": "/uploads/1770259625040-125476928.png",
+      "answer": "프라하",
       "timeLimit": 10,
-      "correctCount": 9,
-      "totalCount": 15,
+      "correctCount": 0,
+      "totalCount": 0,
       "id": 6
     },
     {
-      "quizId": 3,
-      "questionNumber": 1,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175411991-16397559.jpg",
-      "answer": "이순신",
+      "quizId": 1,
+      "questionNumber": 7,
+      "questionText": "캐나다",
+      "questionImage": "/uploads/1770259670732-106774500.png",
+      "answer": "오타와",
       "timeLimit": 10,
-      "correctCount": 3,
-      "totalCount": 3,
+      "correctCount": 0,
+      "totalCount": 0,
       "id": 7
     },
     {
-      "quizId": 3,
-      "questionNumber": 2,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175422368-906718740.jpg",
-      "answer": "세종대왕",
+      "quizId": 1,
+      "questionNumber": 8,
+      "questionText": "인도",
+      "questionImage": "/uploads/1770259738051-829661004.webp",
+      "answer": "뉴델리",
       "timeLimit": 10,
-      "correctCount": 2,
-      "totalCount": 2,
+      "correctCount": 0,
+      "totalCount": 0,
       "id": 8
     },
     {
-      "quizId": 3,
-      "questionNumber": 3,
-      "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175430190-732719343.jpeg",
-      "answer": "장영실",
+      "quizId": 1,
+      "questionNumber": 9,
+      "questionText": "이탈리아",
+      "questionImage": "/uploads/1770259797961-913984198.jpeg",
+      "answer": "로마",
       "timeLimit": 10,
-      "correctCount": 1,
-      "totalCount": 3,
+      "correctCount": 0,
+      "totalCount": 0,
       "id": 9
     },
     {
+      "quizId": 1,
+      "questionNumber": 10,
+      "questionText": "호주",
+      "questionImage": "/uploads/1770259825665-347737240.webp",
+      "answer": "캔버라",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 10
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 1,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260723341-161426497.png",
+      "answer": "덴마크",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 11
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 2,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260730064-210590872.png",
+      "answer": "독일",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 12
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 3,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260736429-168126847.png",
+      "answer": "러시아",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 13
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 4,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260742123-586667244.png",
+      "answer": "베네수엘라",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 14
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 5,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260751597-872264193.png",
+      "answer": "수리남",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 15
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 6,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260757660-40179045.png",
+      "answer": "스웨덴",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 16
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 7,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260767461-303274941.jpeg",
+      "answer": "스위스",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 17
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 8,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260782010-528235168.png",
+      "answer": "에티오피아",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 18
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 9,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260787443-248555178.png",
+      "answer": "중국",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 19
+    },
+    {
+      "quizId": 2,
+      "questionNumber": 10,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260792929-570297141.png",
+      "answer": "호주",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 20
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 1,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260870808-212381954.jpeg",
+      "answer": "강감찬",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 21
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 2,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260876807-193388264.jpg",
+      "answer": "김좌진",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 22
+    },
+    {
+      "quizId": 3,
+      "questionNumber": 3,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260882725-889516102.jpg",
+      "answer": "세종대왕",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 23
+    },
+    {
       "quizId": 3,
       "questionNumber": 4,
       "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175437063-439193981.jpg",
-      "answer": "윤동주",
+      "questionImage": "/uploads/1770260889877-171672461.jpeg",
+      "answer": "안창호",
       "timeLimit": 10,
-      "correctCount": 2,
-      "totalCount": 3,
-      "id": 10
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 24
     },
     {
       "quizId": 3,
       "questionNumber": 5,
       "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175445408-185379492.jpeg",
-      "answer": "안창호",
+      "questionImage": "/uploads/1770260895678-369753312.jpg",
+      "answer": "윤동주",
       "timeLimit": 10,
       "correctCount": 0,
-      "totalCount": 1,
-      "id": 11
+      "totalCount": 0,
+      "id": 25
     },
     {
       "quizId": 3,
       "questionNumber": 6,
       "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175487160-840736214.jpg",
+      "questionImage": "/uploads/1770260902127-898440787.jpg",
       "answer": "이봉창",
       "timeLimit": 10,
       "correctCount": 0,
-      "totalCount": 1,
-      "id": 12
+      "totalCount": 0,
+      "id": 26
     },
     {
       "quizId": 3,
       "questionNumber": 7,
       "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175499141-721479854.jpg",
-      "answer": "정조",
+      "questionImage": "/uploads/1770260908591-121050435.jpg",
+      "answer": "이순신",
       "timeLimit": 10,
       "correctCount": 0,
-      "totalCount": 1,
-      "id": 13
+      "totalCount": 0,
+      "id": 27
     },
     {
       "quizId": 3,
       "questionNumber": 8,
       "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175504786-732176751.jpg",
-      "answer": "정약용",
+      "questionImage": "/uploads/1770260916344-201979970.jpeg",
+      "answer": "장영실",
       "timeLimit": 10,
-      "correctCount": 2,
-      "totalCount": 2,
-      "id": 14
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 28
     },
     {
       "quizId": 3,
       "questionNumber": 9,
       "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175511506-801789738.jpeg",
-      "answer": "강감찬",
+      "questionImage": "/uploads/1770260923292-363101655.jpg",
+      "answer": "정약용",
       "timeLimit": 10,
-      "correctCount": 1,
-      "totalCount": 1,
-      "id": 15
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 29
     },
     {
       "quizId": 3,
       "questionNumber": 10,
       "questionText": "사진을 보고 정답을 맞춰보세요.",
-      "questionImage": "/uploads/1770175570254-357697866.jpg",
-      "answer": "김좌진",
+      "questionImage": "/uploads/1770260929878-497862347.jpg",
+      "answer": "정조",
       "timeLimit": 10,
-      "correctCount": 1,
-      "totalCount": 1,
-      "id": 16
-    }
-  ],
-  "quiz_results": [
-    {
-      "quizId": 2,
-      "userId": 4,
-      "nickname": "김태형",
-      "score": 0,
       "correctCount": 0,
-      "totalQuestions": 5,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T13:15:07.420Z",
-      "id": 1
+      "totalCount": 0,
+      "id": 30
     },
     {
-      "quizId": 3,
-      "userId": 4,
-      "nickname": "김태형",
-      "score": 0,
+      "quizId": 4,
+      "questionNumber": 1,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770260999974-910026454.jpg",
+      "answer": "고윤정",
+      "timeLimit": 10,
       "correctCount": 0,
-      "totalQuestions": 10,
-      "remainingTime": 0,
-      "tier": "노력필요",
-      "completedAt": "2026-02-04T13:33:15.002Z",
-      "id": 2
+      "totalCount": 0,
+      "id": 31
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 2,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261006763-348925663.webp",
+      "answer": "노정의",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 32
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 3,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261012291-858122875.jpg",
+      "answer": "박은빈",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 33
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 4,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261018230-541411046.jpg",
+      "answer": "박해수",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 34
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 5,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261045479-739782205.webp",
+      "answer": "변우석",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 35
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 6,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261052158-208540202.png",
+      "answer": "송강",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 36
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 7,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261058278-916083501.jpg",
+      "answer": "유연석",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 37
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 8,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261066558-807376035.webp",
+      "answer": "이정은",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 38
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 9,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261072824-727773859.webp",
+      "answer": "이정재",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 39
+    },
+    {
+      "quizId": 4,
+      "questionNumber": 10,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261090712-390406500.jpg",
+      "answer": "채종협",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 40
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 1,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261215375-164546665.jpg",
+      "answer": "아기공룡 둘리",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 41
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 2,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261229672-777352913.jpg",
+      "answer": "2",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 42
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 3,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261236926-806452291.jpeg",
+      "answer": "10시 10분 32초",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 43
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 4,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261254743-988672013.jpg",
+      "answer": "대한항공",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 44
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 5,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261268512-512848102.png",
+      "answer": "IDE",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 45
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 6,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261287624-342952748.jpg",
+      "answer": "투게더",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 46
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 7,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261309890-887199785.jpg",
+      "answer": "하겐다즈 파인트 쿠키앤크림",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 47
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 8,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261332279-312664019.jpg",
+      "answer": "초고속 열차",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 48
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 9,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261389704-11405312.jpeg",
+      "answer": "휴지",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 49
+    },
+    {
+      "quizId": 5,
+      "questionNumber": 10,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261393678-839039626.webp",
+      "answer": "고양이",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 50
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 1,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261500204-283062428.png",
+      "answer": "마이멜로디",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 51
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 2,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261508825-140889204.jpg",
+      "answer": "챠미키티",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 52
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 3,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261518107-51978037.png",
+      "answer": "우사하나",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 53
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 4,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261525544-913114876.png",
+      "answer": "시나모롤",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 54
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 5,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261531640-795895241.png",
+      "answer": "구데타마",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 55
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 6,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261543274-95845528.png",
+      "answer": "헬로키티",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 56
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 7,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261553590-10293945.png",
+      "answer": "한교동",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 57
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 8,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261560390-607659639.png",
+      "answer": "턱시도샘",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 58
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 9,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261568527-787333288.png",
+      "answer": "쿠로미",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 59
+    },
+    {
+      "quizId": 6,
+      "questionNumber": 10,
+      "questionText": "사진을 보고 정답을 맞춰보세요.",
+      "questionImage": "/uploads/1770261579906-793281170.png",
+      "answer": "포챠코",
+      "timeLimit": 10,
+      "correctCount": 0,
+      "totalCount": 0,
+      "id": 60
     }
   ],
+  "quiz_results": [],
   "categories": [
     {
       "id": 1,
@@ -1055,5 +4943,32 @@
       "name": "동물",
       "type": "quiz"
     }
-  ]
+  ],
+  "view_logs": [
+    {
+      "userId": null,
+      "guestId": "2c3490ce-fe0f-4c8c-b5c0-584c32eabcbf",
+      "type": "worldcup",
+      "contentId": 1,
+      "identifier": "guest:2c3490ce-fe0f-4c8c-b5c0-584c32eabcbf",
+      "timestamp": "2026-02-05T00:41:47.884Z"
+    },
+    {
+      "userId": null,
+      "guestId": "2c3490ce-fe0f-4c8c-b5c0-584c32eabcbf",
+      "type": "worldcup",
+      "contentId": 2,
+      "identifier": "guest:2c3490ce-fe0f-4c8c-b5c0-584c32eabcbf",
+      "timestamp": "2026-02-05T00:41:56.439Z"
+    },
+    {
+      "userId": null,
+      "guestId": "2c3490ce-fe0f-4c8c-b5c0-584c32eabcbf",
+      "type": "worldcup",
+      "contentId": 2,
+      "identifier": "guest:2c3490ce-fe0f-4c8c-b5c0-584c32eabcbf",
+      "timestamp": "2026-02-05T01:24:48.093Z"
+    }
+  ],
+  "play_logs": []
 }
