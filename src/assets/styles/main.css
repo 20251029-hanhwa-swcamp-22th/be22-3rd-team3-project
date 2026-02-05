@@ -272,8 +272,11 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+/* 한 줄에 4개 카드 배치 (컨테이너 1200px 기준) */
+/* 계산: (1200px - 48px 패딩 - 72px gap) ÷ 4 = 270px */
+/* 카드 개수가 줄어들어도 이 크기를 유지 (최소 240px, 최대 270px) */
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 270px));
 }
 
 @media (max-width: 768px) {
