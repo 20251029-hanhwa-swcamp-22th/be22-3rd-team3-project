@@ -167,6 +167,9 @@ onMounted(async () => {
 
     // 후보 수에 맞는 기본 라운드 설정
     const count = candidates.value.length
+    if (count >= 64) {
+      selectedRound.value = 64
+    }
     if (count >= 32) {
       selectedRound.value = 32
     } else if (count >= 16) {
