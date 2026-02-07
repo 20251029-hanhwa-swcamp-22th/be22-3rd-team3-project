@@ -7,7 +7,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
     const candidates = ref([])
     const currentRound = ref([])
     const nextRound = ref([])
-    const roundName = ref('32강')
+    const roundName = ref('64강')
     const startRoundCount = ref(16)  // 시작 라운드 (8, 16, 32 등)
     const matchIndex = ref(0)
     const selections = ref([])
@@ -25,7 +25,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
         // 후보 수에 따라 라운드 이름 결정
         const count = candidatesList.length
         startRoundCount.value = count  // 시작 라운드 저장
-        roundName.value = count === 32 ? '32강' : count === 16 ? '16강' :
+        roundName.value = count === 64 ? '64강' : count === 32 ? '32강' : count === 16 ? '16강' :
             count === 8 ? '8강' : count === 4 ? '4강' : '결승'
     }
 
@@ -67,7 +67,7 @@ export const useWorldcupStore = defineStore('worldcup', () => {
                 // 게임 종료
                 return { finished: true, winner: currentRound.value[0] }
             }
-            roundName.value = count === 16 ? '16강' : count === 8 ? '8강' :
+            roundName.value = count === 64 ? '64강' :roundName.value = count === 32 ? '32강' : count === 16 ? '16강' : count === 8 ? '8강' :
                 count === 4 ? '4강' : count === 2 ? '결승' : roundName.value
         }
 
