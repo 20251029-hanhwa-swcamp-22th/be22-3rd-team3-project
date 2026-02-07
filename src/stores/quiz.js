@@ -181,7 +181,7 @@ export const useQuizStore = defineStore('quiz', () => {
         // 점수 계산 로직
         let questionScore = 0
         if (isCorrect) {
-            // 기본 10점 + 빨리 맞출수록 추가 점수 (남은 시간 * 2)
+            // 정답 시 10점
             questionScore = 10
             score.value += questionScore // 총점 누적
         }
