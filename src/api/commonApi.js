@@ -17,14 +17,14 @@ export const commonApi = {
      * 단일 이미지 업로드
      * @param {File} file - 이미지 파일
      * @returns {Promise}
-     */
+        */
     uploadImage(file) {
-        const formData = new FormData()
-        formData.append('image', file)
-        return apiClient.post('/upload', formData, {
-            headers: { 'Content-Type': 'multipart/form-data' }
-        })
-    },
+    const formData = new FormData()
+    formData.append('image', file)
+    return apiClient.post('/upload', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+    })
+},
 
     /**
      * 다중 이미지 업로드
